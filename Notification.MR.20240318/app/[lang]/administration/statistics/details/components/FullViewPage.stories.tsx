@@ -1,0 +1,616 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { rest } from 'msw';
+import Apis from '@/utils/apis';
+import FullViewPage from './FullViewPage';
+
+const meta: Meta<typeof FullViewPage> = {
+  // eslint-disable-next-line storybook/no-title-property-in-meta
+  title: 'pages/StatisticDetail',
+  component: FullViewPage,
+  parameters: {
+    msw: {
+      handlers: [
+        rest.get(Apis.statistics.fullView, async (req, res, ctx) => {
+          return res(ctx.delay(10), ctx.json(detailViewSpnsAlpha_il8));
+        }),
+        rest.get(Apis.statistics.bySession, async (req, res, ctx) => {
+          return res(ctx.delay(10), ctx.json(sessionViewSpnsAlpha_il8));
+        })
+      ]
+    }
+  }
+};
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};
+
+/**  ____________________ fake data ___________________________________ */
+const detailViewSpnsAlpha_il8 = {
+  data: [
+    {
+      id: '659e6b2e8355fc001f297d4a',
+      date: '2024-01-10T10:02:21.000Z',
+      accountId: '659d832714bc9e000da91571_A',
+      accountName: 'Administrator_A',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 1091,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6b68732cb0001e217d29',
+      date: '2024-01-10T10:02:21.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'shara connor',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: '825b6237-2854-4c7c-967a-2c824e6afe85',
+      profileName: 'Translator NMT Generic (L) - ARFR',
+      operation: 'translate/async/file',
+      success: true,
+      elapsedTime: 59934,
+      mimetype: 'application/vnd.openxmlformats',
+      nbCharacters: 15975,
+      nbTokens: 0,
+      nbTus: 207,
+      nbTusFailed: 0,
+      userAgent: 'File Translate Box',
+      nbSegments: 207,
+      nbCacheHits: 44
+    },
+    {
+      id: '659e6b1c8355fc001f297d48',
+      date: '2024-01-10T10:02:03.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'jean de florette',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 1594,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6b55732cb0001e217d25',
+      date: '2024-01-10T10:02:03.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: '825b6237-2854-4c7c-967a-2c824e6afe85',
+      profileName: 'Translator NMT Generic (L) - ARFR',
+      operation: 'translate/async/file',
+      success: true,
+      elapsedTime: 58954,
+      mimetype: 'application/vnd.openxmlformats',
+      nbCharacters: 15975,
+      nbTokens: 0,
+      nbTus: 207,
+      nbTusFailed: 0,
+      userAgent: 'File Translate Box',
+      nbSegments: 207,
+      nbCacheHits: 0
+    },
+    {
+      id: '659e6b128355fc001f297d46',
+      date: '2024-01-10T10:01:53.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 1040,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6b12732cb0001e217d23',
+      date: '2024-01-10T10:01:53.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AUTO',
+      targetLanguage: 'FR',
+      profileId: '',
+      operation: 'translate/async/file',
+      success: false,
+      elapsedTime: 1046,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6b088355fc001f297d44',
+      date: '2024-01-10T10:01:43.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AUTO',
+      targetLanguage: 'FR',
+      profileId: '',
+      operation: 'translate/async/file',
+      success: false,
+      elapsedTime: 1628,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6b08732cb0001e217d20',
+      date: '2024-01-10T10:01:43.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 1621,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6aec8355fc001f297d3f',
+      date: '2024-01-10T10:01:15.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AR',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 1314,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6aec732cb0001e217d1c',
+      date: '2024-01-10T10:01:15.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'AUTO',
+      targetLanguage: 'FR',
+      profileId: '',
+      operation: 'translate/async/file',
+      success: false,
+      elapsedTime: 1335,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6aea732cb0001e217d19',
+      date: '2024-01-10T10:01:14.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      profileId: 'd61e807e-90ee-4332-9e98-97b300463b15',
+      profileName: 'Filter',
+      operation: 'detect/language',
+      success: true,
+      elapsedTime: 885,
+      mimetype: 'application/vnd.openxmlformats',
+      userAgent: 'File Translate Box'
+    },
+    {
+      id: '659e6af8732cb0001e217d1e',
+      date: '2024-01-10T10:01:14.000Z',
+      accountId: '659d832714bc9e000da91571',
+      accountName: 'Administrator',
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      profileId: '0522041e-e5a7-471c-bdcc-7f5cd54a8341',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      operation: 'translate/async/file',
+      success: true,
+      elapsedTime: 14567,
+      mimetype: 'application/vnd.openxmlformats',
+      nbCharacters: 5916,
+      nbTokens: 0,
+      nbTus: 71,
+      nbTusFailed: 0,
+      userAgent: 'File Translate Box',
+      nbSegments: 71,
+      nbCacheHits: 0
+    }
+  ],
+  total: 12
+};
+
+const sessionViewSpnsAlpha_il8 = {
+  data: [
+    {
+      total: 4,
+      totalSuccess: 4,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 4,
+      nbCacheHits: 2,
+      totalNbCharacters: 21,
+      avgNbCharacters: 5.3,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 7,
+      avgNbTus: 1.75,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 484,
+      avgElapsedTime: 121,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Self',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:28:07.000Z'
+    },
+    {
+      total: 3,
+      totalSuccess: 3,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 3,
+      nbCacheHits: 2,
+      totalNbCharacters: 16,
+      avgNbCharacters: 5.3,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 3,
+      avgNbTus: 1,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 204,
+      avgElapsedTime: 68,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Self',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:27:46.000Z'
+    },
+    {
+      total: 6,
+      totalSuccess: 6,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 6,
+      nbCacheHits: 4,
+      totalNbCharacters: 30,
+      avgNbCharacters: 5,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 8,
+      avgNbTus: 1.3333333333333333,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 626,
+      avgElapsedTime: 104.3,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Self',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:26:26.000Z'
+    },
+    {
+      total: 6,
+      totalSuccess: 6,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 6,
+      nbCacheHits: 5,
+      totalNbCharacters: 28,
+      avgNbCharacters: 4.7,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 8,
+      avgNbTus: 1.3333333333333333,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 286,
+      avgElapsedTime: 47.7,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Systran',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:25:13.000Z'
+    },
+    {
+      total: 2,
+      totalSuccess: 2,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 2,
+      nbCacheHits: 1,
+      totalNbCharacters: 20,
+      avgNbCharacters: 10,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 3,
+      avgNbTus: 1.5,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 2212,
+      avgElapsedTime: 1106,
+      sourceLanguage: 'FR',
+      targetLanguage: 'EN',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - FREN',
+      profileId: 'd52aff8c-f8a9-4710-ae01-31e265377c99',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Systran',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:22:39.000Z'
+    },
+    {
+      total: 7,
+      totalSuccess: 7,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 7,
+      nbCacheHits: 2,
+      totalNbCharacters: 46,
+      avgNbCharacters: 6.6,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 8,
+      avgNbTus: 1.1428571428571428,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 982,
+      avgElapsedTime: 140.3,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Systran',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:22:07.000Z'
+    },
+    {
+      total: 1,
+      totalSuccess: 1,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 1,
+      nbCacheHits: 0,
+      totalNbCharacters: 4,
+      avgNbCharacters: 4,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 2,
+      avgNbTus: 2,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 2126,
+      avgElapsedTime: 2126,
+      sourceLanguage: 'EN',
+      targetLanguage: 'FR',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'Translator NMT Generic (L) - ENFR',
+      profileId: '165b94da-fd68-46f6-9b5e-2d4ae35b14e9',
+      selectors: {
+        domain: 'Generic',
+        owner: 'Systran',
+        size: 'L',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-28T11:21:55.000Z'
+    },
+    {
+      total: 1,
+      totalSuccess: 1,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 1,
+      nbCacheHits: 0,
+      totalNbCharacters: 14,
+      avgNbCharacters: 14,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 1,
+      avgNbTus: 1,
+      totalNbTusFailed: 0,
+      avgNbTusFailed: 0,
+      totalElapsedTime: 300,
+      avgElapsedTime: 300,
+      sourceLanguage: 'RU',
+      targetLanguage: 'EN',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'ruen',
+      profileId: '8a1c5fba-0bef-418a-8b13-aabdb79d1af6',
+      selectors: {
+        domain: 'Technology',
+        owner: 'Systran',
+        size: 'M',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-14T10:55:17.000Z'
+    },
+    {
+      total: 1,
+      totalSuccess: 1,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 1,
+      nbCacheHits: 0,
+      totalNbCharacters: 0,
+      avgNbCharacters: 0,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 1,
+      avgNbTus: 1,
+      totalNbTusFailed: 1,
+      avgNbTusFailed: 1,
+      totalElapsedTime: 1121,
+      avgElapsedTime: 1121,
+      sourceLanguage: 'RU',
+      targetLanguage: 'EN',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'ruen',
+      profileId: '8a1c5fba-0bef-418a-8b13-aabdb79d1af6',
+      selectors: {
+        domain: 'Technology',
+        owner: 'Systran',
+        size: 'M',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-14T10:41:23.000Z'
+    },
+    {
+      total: 1,
+      totalSuccess: 1,
+      avgSuccess: 100,
+      totalError: 0,
+      avgError: 0,
+      nbSegments: 1,
+      nbCacheHits: 0,
+      totalNbCharacters: 0,
+      avgNbCharacters: 0,
+      totalNbTokens: 0,
+      avgNbTokens: 0,
+      totalNbTus: 1,
+      avgNbTus: 1,
+      totalNbTusFailed: 1,
+      avgNbTusFailed: 1,
+      totalElapsedTime: 1143,
+      avgElapsedTime: 1143,
+      sourceLanguage: 'RU',
+      targetLanguage: 'EN',
+      accountId: '65ca03b00c89ff000ff5b8f3',
+      accountName: 'Administrator',
+      profileName: 'ruen',
+      profileId: '8a1c5fba-0bef-418a-8b13-aabdb79d1af6',
+      selectors: {
+        domain: 'Technology',
+        owner: 'Systran',
+        size: 'M',
+        tech: {
+          name: 'Docker-OpenNMT-ctranslate',
+          type: 'NMT'
+        }
+      },
+      operation: 'translate/file',
+      mimetype: 'text/plain',
+      userAgent: 'Translation Box',
+      date: '2024-02-14T10:33:24.000Z'
+    }
+  ],
+  total: 45
+};
