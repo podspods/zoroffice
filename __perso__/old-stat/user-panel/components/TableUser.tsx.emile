@@ -1,0 +1,188 @@
+import { useMemo, useState } from 'react';
+
+import useSWR from 'swr';
+import { useTranslation } from 'react-i18next';
+import PageTitle from '@/components/PageTitle';
+import { Box, SelectChangeEvent } from '@mui/material';
+import Table, {
+  useRemoteHooks
+} from '@systran/react-components/lib/organisms/Table/Table';
+import StatisticToolbar from './StatisticToolbar';
+import useRefreshBuilder from '@systran/react-components/lib/organisms/Table/hooks/useRefresh';
+import ErrorCard from '@systran/react-components/lib/atoms/ErrorCard';
+import dayjs from 'dayjs';
+// https://spns10-alpha.systran.net/activity/user/659c20cd4b4de7000b09d1ec/details?date=2023-12&skip=0&limit=10&sortName=elapsedTime&sortOrder=desc
+
+const apiRoute =
+  'activity/user/659c20cd4b4de7000b09d1ec/details?date=2023-12&skip=0&limit=10&sortName=elapsedTime&sortOrder=desc';
+
+const apiRouteUser = (userId: string) => `activity/user/${userId}/details`;
+// ?date=2023-12&skip=0&limit=10&sortName=elapsedTime&sortOrder=desc''
+
+export type TableUserProps = {
+  // data: userStat[];
+  // periodToolbar: any;
+  // setPeriodGroups : (period : string) => void
+};
+
+export default function TableUser({ ...props }: TableUserProps) {
+  const { t } = useTranslation();
+
+  const [userId, setUserId] = useState<string>('');
+  const [period, setPeriod] = useState<string>('');
+  //  https://spns10-alpha.systran.net/admin/users/light?eleFilters[name]=&limit=50
+  const userListRoute = '/node/admin/users/light';
+
+  const {
+    data: rawDataUser,
+    isLoading: isloadingUser,
+    mutate: mutateUser
+  } = useSWR(userListRoute, {
+    // refreshInterval: refreshRate === 'Never' ? 0 : refreshRate * 1000,
+    shouldRetryOnError: false,
+    onError: (swrErr: Error) => (
+      <ErrorCard
+        errorMessage={`Error useSWR on ${userListRoute}: ${swrErr.message}`}
+      />
+    )
+  });
+
+  const useRefresh = useRefreshBuilder<userStat>({
+    route: apiRouteUser(userId),
+    useSWR,
+    adaptParamsOpts: {
+      paginationParamsFields: {
+        limit: 'limit',
+        skip: 'skip'
+      },
+      additionalParams: {
+        sortName: 'elapsedTime',
+        sortOrder: 'desc',
+        date: period ? period : currentPeriod()
+      }
+      // dayjs(date).valueOf()
+    },
+    adaptResponseOpts: {
+      validateRowFct: () => true,
+      rowsField: 'data',
+      totalRowCountField: 'total'
+    }
+  });
+
+  const {
+    mutate,
+    loading,
+    refreshRate,
+    setRefreshRate: setRefreshInterval,
+    rows: rawData,
+    rowCount,
+    // rowCount:(owCount) => rowCount*13,
+    ...remainningRemoteHookData
+  } = useRemoteHooks<userStat>({
+    useRefresh: useRefresh,
+    refreshRate: 'Never'
+  });
+
+  // const [periodGroups, setPeriodGroups] = useState<string>(usePeriode()[0]);
+  // const { accountId } = indicatorStatistic(countedRawData, uncountedRawData);
+
+  function onChange(event: SelectChangeEvent<string>) {
+    // console.log('onChangeGroups(event: 61==>', event);
+    // setPeriod(event.target.value);
+  }
+  // console.log('accountId ==>', accountId);
+
+  return (
+    <>
+      <Box sx={{ width: '100%', margin: '2rem' }}>
+        <PageTitle>
+          {t('Statistics Source')}: {period}
+        </PageTitle>
+
+        <Table
+          // rows={data}
+          rows={[]}
+          columns={useColumns()}
+          // slots={{ toolbar: StatisticToolbar }}
+          // slotProps={{ toolbar: { onChange: onChange } }}
+        />
+      </Box>
+    </>
+  );
+}
+
+export function useColumns() {
+  const { t } = useTranslation();
+  return useMemo(
+    () => [
+      {
+        headerName: t('profile'),
+        field: 'profile'
+      },
+      {
+        headerName: t('Language pair'),
+        field: 'languaguePair'
+      },
+      {
+        headerName: t('nbCharacters'),
+        field: 'nbCharacters'
+      },
+      {
+        headerName: t('mime-type'),
+        field: 'mimeType'
+      },
+      {
+        headerName: t('Requests'),
+        field: 'requests'
+      },
+      {
+        headerName: t('Success'),
+        field: 'success'
+      },
+      {
+        headerName: t('Segments'),
+        field: 'segments'
+      },
+      {
+        headerName: t('Segments in cache'),
+        field: 'segmentsInCache'
+      },
+      {
+        headerName: t('Characters'),
+        field: 'characters'
+      },
+      {
+        headerName: t('Characters in cache'),
+        field: 'charactersInCache'
+      },
+      {
+        headerName: t('Elapsed Time (ms)'),
+        field: 'elapsedTime '
+      },
+      {
+        headerName: t('User agent'),
+        field: 'userAgent'
+      }
+    ],
+    []
+  );
+}
+
+export type userStat = {
+  profile: string;
+  languaguePair: string;
+  nbCharacters: number;
+  mimeType: string;
+  requests: number;
+  success: number;
+  segments: number;
+  segmentsInCache: number;
+  characters: number;
+  charactersInCache: number;
+  userAgent: string;
+};
+
+export function currentPeriod(): string {
+  const currentDate: string = dayjs().format('YYYY-MM');
+  return currentDate;
+}
