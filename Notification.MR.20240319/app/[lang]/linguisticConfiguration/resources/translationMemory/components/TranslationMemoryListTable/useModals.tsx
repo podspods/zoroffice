@@ -1,0 +1,198 @@
+import { useContext, useState } from 'react';
+import { TranslationMemory } from '../../lib/TranslationMemory';
+import { commonFetch } from '@/utils/fetcher';
+import Apis from '@/utils/apis';
+import RenameTranslationMemoryModal from '../Modals/RenameTranslationMemoryModal';
+import DeleteTranslationMemoryModal from '../Modals/DeleteTranslationMemoryModal';
+import DetailsTranslationMemoryModal from '../Modals/DetailsTranslationMemoryModal';
+import MergeTranslationMemoryModal from '../Modals/MergeTranslationMemoryModal';
+import DownloadTranslationMemoryModal from '../Modals/DownloadTranslationMemoryModal';
+import UploadTranslationMemoryModal from '../Modals/UploadTranslationMemoryModal';
+import LinguisticResourceModal from '../../../../components/Modals/LinguisticResourceModal';
+import { useTranslation } from 'react-i18next';
+import { SettingsContext } from '@/components/SettingProvider';
+import PermissionsResourcesModal from '../../../../components/PermissionsResourcesModal';
+import { KeyedMutator } from 'swr';
+import { partial } from 'lodash';
+import { Part, uploadFile } from '@/utils/upload';
+import { SystranFile } from '@systran/react-components/lib/organisms/FileUploadCore';
+import { ToastMessageContext } from '@/components/contexts/ToastMessageContext';
+import { TFunction } from 'i18next';
+
+export type OpenedModal = {
+  selectedRows: TranslationMemory[],
+  modalType: 'rename' | 'delete' | 'merge' | 'download'
+} | {
+  selectedRow: TranslationMemory,
+  modalType: 'details' | 'usersPermissions' | 'groupsPermissions'
+} | {
+  modalType: 'create'
+} | {
+  modalType: 'upload',
+  currentDirectory: string
+} | undefined;
+
+export default function useModals(mutate: KeyedMutator<{files: unknown[]}>) {
+  const { t } = useTranslation();
+  const {updateToastMessage} = useContext(ToastMessageContext);
+  const [openedModal, setOpenedModal] = useState<OpenedModal>();
+
+  const commonProps = {
+    open: true,
+    onClose: () => setOpenedModal(undefined)
+  };
+
+  const { settings } = useContext(SettingsContext);
+
+  function uploadCorpus({currentDirectory}: {currentDirectory: string}) {
+    return async function(file: SystranFile) {
+      const parts = [{name: 'currentDir', value: currentDirectory}];
+      const response = await partial(uploadFile, Apis.corpus.upload, parts)(file);
+      if (response && response.error) {
+        updateToastMessage({
+          label: t('Unable to upload new corpus'),
+          status: 'error'
+        });
+        return response;
+      }
+      updateToastMessage({
+        label: t('Corpus upload succesfully'),
+        status: 'success'
+      });
+      return response;
+    };
+  }
+
+  let modal: JSX.Element | null;
+  switch (openedModal?.modalType) {
+    case 'rename':
+      modal = (
+        <RenameTranslationMemoryModal
+          {...commonProps}
+          name={openedModal.selectedRows[0].filename}
+          onConfirm={async (newName) => {
+            try {
+              await commonFetch(Apis.corpus.rename({id: openedModal.selectedRows[0].id}), {method: 'POST', body: JSON.stringify({filename: newName})});
+            }
+            catch (error) {
+              console.error('onConfirm', error); // eslint-disable-line no-console
+            }
+            finally {
+              await mutate();
+            }
+          }}
+        />
+      );
+      break;
+    case 'delete':
+      modal = (
+        <DeleteTranslationMemoryModal
+          {...commonProps}
+          selectedRows={openedModal.selectedRows}
+          onConfirm={async () => {
+            try {
+              await Promise.allSettled(openedModal.selectedRows.map(({id}) => commonFetch(Apis.corpus.delete({id}), {method: 'POST'})));
+            }
+            catch (error) {
+              console.error('onConfirm', error); // eslint-disable-line no-console
+            }
+            finally {
+              await mutate();
+            }
+          }}
+        />
+      );
+      break;
+    case 'details':
+      modal = (
+        <DetailsTranslationMemoryModal
+          {...commonProps}
+          corpusId={openedModal.selectedRow.id}
+        />
+      );
+      break;
+    case 'merge':
+      modal = (
+        <MergeTranslationMemoryModal
+          {...commonProps}
+          selectedRows={openedModal.selectedRows}
+          onConfirm={async (corpusName) => {
+            try {
+              await commonFetch(Apis.corpus.merge, {method: 'POST', body: JSON.stringify({
+                filename: corpusName,
+                ids: openedModal.selectedRows.map(({id}) => id)
+              })});
+            }
+            catch (error) {
+              console.error('onConfirm', error); // eslint-disable-line no-console
+            }
+            finally {
+              await mutate();
+            }
+          }}
+        />
+      );
+      break;
+    case 'download':
+      modal = (
+        <DownloadTranslationMemoryModal
+          {...commonProps}
+          selectedRow={openedModal.selectedRows[0]}
+        />
+      );
+      break;
+    case 'create':
+      modal = (
+        <LinguisticResourceModal
+          {...commonProps}
+          title={'Create a Translation Memory'}
+          primaryActionText={t('Create')}
+          onConfirm={async (corpus) => {
+            try {
+              await commonFetch(Apis.corpus.add, {method: 'POST', body: JSON.stringify(corpus)});
+            }
+            catch (error) {
+              console.error('onConfirm', error); // eslint-disable-line no-console
+            }
+            finally {
+              await mutate();
+            }
+          }}
+        />
+      );
+      break;
+    case 'upload':
+      modal = (
+        <UploadTranslationMemoryModal
+          {...commonProps}
+          whiteList={settings?.uploadWhiteList.corpus || []}
+          onConfirmUpload={uploadCorpus({currentDirectory: openedModal.currentDirectory})}
+        />
+      );
+      break;
+    case 'usersPermissions':
+      modal = (
+        <PermissionsResourcesModal
+          {...commonProps}
+          resourceType={'TM'}
+          entityType={'users'}
+          resourceId={openedModal.selectedRow.id}
+        />
+      );
+      break;
+    case 'groupsPermissions':
+      modal = (
+        <PermissionsResourcesModal
+          {...commonProps}
+          resourceType={'TM'}
+          entityType={'groups'}
+          resourceId={openedModal.selectedRow.id}
+        />
+      );
+      break;
+    default:
+      modal = null;
+  }
+
+  return [modal, setOpenedModal] as const;
+}

@@ -1,0 +1,299 @@
+{
+	"global": {
+		"elapsedTime": 137723,
+		"lastUsed": "2024-02-28T11:28:16.990Z",
+		"mimeType": [
+			"text/plain",
+			"text/html-old",
+			"text/rtf",
+			"xml/application"
+		],
+		"nbCacheHits": 4199,
+		"nbCharacters": 198430,
+		"nbCharactersCacheHits": 175433,
+		"nbSegments": 7272,
+		"nbTokens": 0,
+		"nbTus": 9863,
+		"nbTusFailed": 8,
+		"request": 207,
+		"success": 207,
+		"userAgent": [
+			"Integration test",
+			"gateway",
+			"Translation Box"
+		]
+	},
+	"id": "65ca03b00c89ff000ff5b8f3",
+	"name": "Administrator",
+	"date": "2024-2",
+	"data": [
+		{
+			"id": "d52aff8c-f8a9-4710-ae01-31e265377c99",
+			"lastUsed": "2024-02-28T11:22:44.344Z",
+			"name": "Translator NMT Generic (L) - FREN",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 116139,
+				"mimeType": [
+					"text/plain",
+					"text/html-old",
+					"text/rtf",
+					"xml/application"
+				],
+				"nbCacheHits": 4171,
+				"nbCharacters": 196362,
+				"nbCharactersCacheHits": 174001,
+				"nbSegments": 7215,
+				"nbTokens": 0,
+				"nbTus": 9793,
+				"nbTusFailed": 0,
+				"request": 125,
+				"success": 125,
+				"userAgent": [
+					"Integration test",
+					"gateway",
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "c1659c3e-83d9-4252-a759-2b894d2fabfb"
+		},
+		{
+			"id": "165b94da-fd68-46f6-9b5e-2d4ae35b14e9",
+			"lastUsed": "2024-02-28T11:28:16.990Z",
+			"name": "Translator NMT Generic (L) - ENFR",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 7320,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 23,
+				"nbCharacters": 1745,
+				"nbCharactersCacheHits": 1337,
+				"nbSegments": 37,
+				"nbTokens": 0,
+				"nbTus": 50,
+				"nbTusFailed": 0,
+				"request": 37,
+				"success": 37,
+				"userAgent": [
+					"Integration test",
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "548b59bd-4a81-4743-ba4c-a0c0768c9acc"
+		},
+		{
+			"id": "95fd9646-5ac2-44c4-b74c-89b18fcd8da4",
+			"lastUsed": "2024-02-12T11:48:57.761Z",
+			"name": "Filter",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 100,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 0,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 0,
+				"nbTokens": 0,
+				"nbTus": 0,
+				"nbTusFailed": 0,
+				"request": 25,
+				"success": 25,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "b866d27f-4f16-44b4-b53d-8723ffd5daa8"
+		},
+		{
+			"id": "8a1c5fba-0bef-418a-8b13-aabdb79d1af6",
+			"lastUsed": "2024-02-14T10:55:17.852Z",
+			"name": "ruen",
+			"source": "ru",
+			"target": "en",
+			"total": {
+				"elapsedTime": 11298,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 14,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 9,
+				"nbTokens": 0,
+				"nbTus": 9,
+				"nbTusFailed": 8,
+				"request": 9,
+				"success": 9,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "76efe86a-cc94-4a16-95a9-87e941905592"
+		},
+		{
+			"id": "87a00b1f-916a-4e08-9c5f-3dc16fd0b150",
+			"lastUsed": "2024-02-12T11:48:57.729Z",
+			"name": "Translator NMT Generic (L) - ZHEN",
+			"source": "zh-Hans",
+			"target": "en",
+			"total": {
+				"elapsedTime": 526,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 3,
+				"nbCharacters": 28,
+				"nbCharactersCacheHits": 21,
+				"nbSegments": 4,
+				"nbTokens": 0,
+				"nbTus": 4,
+				"nbTusFailed": 0,
+				"request": 4,
+				"success": 4,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "fb8cc1e6-9876-49d0-b906-c8b3cc5dfd62"
+		},
+		{
+			"id": "8bdd319f-ea70-46d5-a562-2b51a93c8145",
+			"lastUsed": "2024-02-12T11:53:12.497Z",
+			"name": "profile with corpus",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 404,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 1,
+				"nbCharacters": 74,
+				"nbCharactersCacheHits": 37,
+				"nbSegments": 2,
+				"nbTokens": 0,
+				"nbTus": 2,
+				"nbTusFailed": 0,
+				"request": 2,
+				"success": 2,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "55ad1e06-23aa-42e7-bcd4-ba1fdc97ec9d"
+		},
+		{
+			"id": "855392af-980e-4e0b-aea8-a803ddacbc7a",
+			"lastUsed": "2024-02-12T11:53:12.556Z",
+			"name": "profile with dictionary",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 550,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 1,
+				"nbCharacters": 74,
+				"nbCharactersCacheHits": 37,
+				"nbSegments": 2,
+				"nbTokens": 0,
+				"nbTus": 2,
+				"nbTusFailed": 0,
+				"request": 2,
+				"success": 2,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "55ad1e06-23aa-42e7-bcd4-ba1fdc97ec9d"
+		},
+		{
+			"id": "adb5fb8d-db3e-44ae-81e3-6e6f99c8a9e1",
+			"lastUsed": "2024-02-12T11:53:11.042Z",
+			"name": "profile without resources",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 522,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 37,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 1,
+				"nbTokens": 0,
+				"nbTus": 1,
+				"nbTusFailed": 0,
+				"request": 1,
+				"success": 1,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "55ad1e06-23aa-42e7-bcd4-ba1fdc97ec9d"
+		},
+		{
+			"id": "72d05b92-46f3-4501-87da-0d4760e3044a",
+			"lastUsed": "2024-02-12T11:53:12.434Z",
+			"name": "profile with normalisations",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 420,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 37,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 1,
+				"nbTokens": 0,
+				"nbTus": 1,
+				"nbTusFailed": 0,
+				"request": 1,
+				"success": 1,
+				"userAgent": [
+					"Integration test"
+				]
+			},
+			"translationResourceId": "55ad1e06-23aa-42e7-bcd4-ba1fdc97ec9d"
+		},
+		{
+			"id": "8dc5c292-a907-4d77-8fcc-981759447fd5",
+			"lastUsed": "2024-02-13T09:29:35.566Z",
+			"name": "test paen",
+			"source": "pa",
+			"target": "en",
+			"total": {
+				"elapsedTime": 444,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 59,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 1,
+				"nbTokens": 0,
+				"nbTus": 1,
+				"nbTusFailed": 0,
+				"request": 1,
+				"success": 1,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "a4f27383-6bc5-4a42-99e7-7d66b3031b43"
+		}
+	],
+	"total": 10,
+	"offset": 0
+}
