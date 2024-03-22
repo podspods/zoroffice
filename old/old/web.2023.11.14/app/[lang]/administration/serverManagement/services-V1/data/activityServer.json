@@ -1,0 +1,11 @@
+{
+  "_id": "65300697500b846a60b4e241",
+  "type": "ActivityServer",
+  "hostname": "http://ses-activity-collector:8701",
+  "insertedAt": "2023-10-31T19:24:47.123Z",
+  "lastFailedUpdate": "2023-11-01T09:50:41.745Z",
+  "lastPollingError": "Error: getaddrinfo ENOTFOUND ses-activity-collector",
+  "lastUpdate": "2023-11-01T09:50:41.745Z",
+  "status": "fail",
+  "name": "Activity Server"
+}

@@ -1,0 +1,13 @@
+{
+  "whiteList":
+          [
+            "/advancedConfiguration/translationResources/",
+            "/users/",
+            "/feedbacks/view/",
+            "/groups/",
+            "/advancedConfiguration/routes/",
+            "/advancedConfiguration/queues/",
+            "/administration/licenses",
+            "/profilesManagement"
+          ]
+}

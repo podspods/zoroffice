@@ -1,0 +1,203 @@
+{
+	"total": 12,
+	"offset": 0,
+	"notifications": [
+		{
+			"id": "6537fccdca3b733a408eec4f",
+			"insertedAt": "2023-10-24T17:20:13.920Z",
+			"level": "success",
+			"str": {
+				"display": "Computing Node ${hostname} de-registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "trm"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "653014a2a7272f07430b6dac",
+			"insertedAt": "2023-10-18T17:23:46.276Z",
+			"level": "success",
+			"str": {
+				"display": "Translation resource ${tr} has been applied ${nb} instances on the node ${n}",
+				"data": {
+					"tr": {
+						"type": "tr",
+						"value": "0344d189-9ed5-4043-8067-946a072e6e55",
+						"label": "0344d189-9ed5-4043-8067-946a072e6e55"
+					},
+					"n": {
+						"type": "node",
+						"value": "trm",
+						"label": "trm"
+					},
+					"nb": {
+						"type": "string",
+						"value": 1
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "65325b91acd4311953a9c601",
+			"insertedAt": "2023-10-18T17:23:46.276Z",
+			"level": "success",
+			"str": {
+				"display": "Translation resource ${tr} has been applied ${nb} instances on the node ${n}",
+				"data": {
+					"tr": {
+						"type": "tr",
+						"value": "0344d189-9ed5-4043-8067-946a072e6e55",
+						"label": "0344d189-9ed5-4043-8067-946a072e6e55"
+					},
+					"n": {
+						"type": "node",
+						"value": "trm",
+						"label": "trm"
+					},
+					"nb": {
+						"type": "string",
+						"value": 1
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "653014a2a7272f07430b6dab",
+			"insertedAt": "2023-10-18T17:23:46.240Z",
+			"level": "success",
+			"str": {
+				"display": "New Profile ${sn} created (${p})",
+				"data": {
+					"sn": {
+						"type": "string",
+						"value": "Translator NMT Generic (L) - ENFR"
+					},
+					"p": {
+						"type": "string",
+						"value": "653014a2a7272f07430b6daa"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "65301477a7272f07430b6d5f",
+			"insertedAt": "2023-10-18T17:23:03.471Z",
+			"level": "success",
+			"str": {
+				"display": "Translation resource ${tr} has been applied ${nb} instances on the node ${n}",
+				"data": {
+					"tr": {
+						"type": "tr",
+						"value": "14523713-53d9-4cfc-885d-050fc498cec8",
+						"label": "14523713-53d9-4cfc-885d-050fc498cec8"
+					},
+					"n": {
+						"type": "node",
+						"value": "trm",
+						"label": "trm"
+					},
+					"nb": {
+						"type": "string",
+						"value": 1
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "65301408a7272f07430b6ce6",
+			"insertedAt": "2023-10-18T17:21:12.088Z",
+			"level": "success",
+			"str": {
+				"display": "Route to the translation resource ${url} added",
+				"data": {
+					"url": {
+						"type": "tr",
+						"value": "14523713-53d9-4cfc-885d-050fc498cec8",
+						"label": "14523713-53d9-4cfc-885d-050fc498cec8"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "653013c9a7272f07430b6cb1",
+			"insertedAt": "2023-10-18T17:20:09.205Z",
+			"level": "success",
+			"str": {
+				"display": "Route to the translation resource ${url} added",
+				"data": {
+					"url": {
+						"type": "tr",
+						"value": "14523713-53d9-4cfc-885d-050fc498cec8",
+						"label": "14523713-53d9-4cfc-885d-050fc498cec8"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "65301213a7272f07430b6ba9",
+			"insertedAt": "2023-10-18T17:12:51.719Z",
+			"level": "success",
+			"str": {
+				"display": "Computing Node ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "nodeView",
+						"value": "trm",
+						"label": "trm"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		},
+		{
+			"id": "653011f4a7272f07430b6b8a",
+			"insertedAt": "2023-10-18T17:12:20.910Z",
+			"level": "success",
+			"str": {
+				"display": "Routing Server ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "routing"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		},
+		{
+			"id": "653011dca7272f07430b6b74",
+			"insertedAt": "2023-10-18T17:11:56.701Z",
+			"level": "success",
+			"str": {
+				"display": "Dispatcher ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "dispatcher"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		}
+	]
+}

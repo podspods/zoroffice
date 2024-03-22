@@ -1,0 +1,199 @@
+{
+	"total": 12,
+	"offset": 0,
+	"notifications": [
+		{
+			"id": "654ba938fe0caa00f95b3b5f",
+			"insertedAt": "2023-11-08T15:28:56.294Z",
+			"level": "success",
+			"str": {
+				"display": "cache ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "node totot"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		},
+		{
+			"id": "654ba9c5fe0caa00f95b3bc3",
+			"insertedAt": "2023-11-08T15:31:17.581Z",
+			"level": "success",
+			"str": {
+				"display": "broker ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "rabbitmq"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		},
+		{
+			"id": "654d35e4dd65915a91d453ee",
+			"insertedAt": "2023-11-09T19:41:24.142Z",
+			"level": "success",
+			"str": {
+				"display": "cache ${hostname} de-registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "node totot"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654d35fadd65915a91d453f5",
+			"insertedAt": "2023-11-09T19:41:46.078Z",
+			"level": "success",
+			"str": {
+				"display": "broker ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "briquez"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654d37c2dd65915a91d454a7",
+			"insertedAt": "2023-11-09T19:49:22.041Z",
+			"level": "success",
+			"str": {
+				"display": "broker ${hostname} de-registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "briquez"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654de78fdd65915a91d45a31",
+			"insertedAt": "2023-11-10T08:19:27.574Z",
+			"level": "success",
+			"str": {
+				"display": "Dispatcher ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "Dispatcher"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654de7afdd65915a91d45a47",
+			"insertedAt": "2023-11-10T08:19:59.400Z",
+			"level": "success",
+			"str": {
+				"display": "Routing Server ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "Routing"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654de7d6dd65915a91d45a60",
+			"insertedAt": "2023-11-10T08:20:38.506Z",
+			"level": "success",
+			"str": {
+				"display": "Computing Node ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "nodeView",
+						"value": "trm",
+						"label": "trm"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654e0d2505af2999296c9785",
+			"insertedAt": "2023-11-10T10:59:49.207Z",
+			"level": "success",
+			"str": {
+				"display": "Dispatcher ${hostname} de-registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "Dispatcher"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654e0d3a05af2999296c9792",
+			"insertedAt": "2023-11-10T11:00:10.394Z",
+			"level": "success",
+			"str": {
+				"display": "Dispatcher ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "dispatcher"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654e0e0d05af2999296c97a2",
+			"insertedAt": "2023-11-10T11:03:41.766Z",
+			"level": "success",
+			"str": {
+				"display": "Routing Server ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "routing"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654e0e5f05af2999296c97ac",
+			"insertedAt": "2023-11-10T11:05:03.620Z",
+			"level": "success",
+			"str": {
+				"display": "Routing Server ${hostname} de-registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "routing"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		}
+	]
+}

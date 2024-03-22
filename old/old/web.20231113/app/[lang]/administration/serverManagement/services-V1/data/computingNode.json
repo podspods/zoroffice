@@ -1,0 +1,32 @@
+{
+  "displayName": "Computing Node (TRM)",
+  "id": "65301213500b846a60b7139d",
+  "hostname": "trm",
+  "status": "fail",
+  "app": {
+    "name": "TranslationResourceMonitor",
+    "version": "8.30.0-3.el8",
+    "semverVersion": "8.30.0",
+    "invalidVersion": false
+  },
+  "lastUpdate": "2023-10-23T09:36:34.872Z",
+  "lastSuccessfulUpdate": "2023-10-23T09:36:24.790Z",
+  "nbCores": 12,
+  "loadAverage": "1.64 2.7 2.67",
+  "totalMemory": "32455888",
+  "availableMemory": "20681636",
+  "freeMemory": "10157340",
+  "cachedMemory": "10278156",
+  "buffersMemory": "795256",
+  "totalDisk": "959122528",
+  "availableDisk": "653842720",
+  "freeDisk": "702637136",
+  "os": "CentOS Linux release 8.4.2105",
+  "uptime": "0 day, 0:24:24",
+  "nbInstances": 0,
+  "translationResources": [],
+  "warning": true,
+  "name": "Computing Node"
+}
+
+

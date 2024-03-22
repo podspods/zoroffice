@@ -1,0 +1,817 @@
+{
+  "env": "PROD",
+  "mode": "ses",
+  "Workers": {
+    "sesConsole": 1,
+    "sesFileTranslationConsumer": 4,
+    "sesActivityCollector": 2,
+    "pingTimeout": 60
+  },
+  "tmpDir": null,
+  "setDefaultResultOrderDNS": "ipv4first",
+  "https": {
+    "activate": true,
+    "privateKey": "certificates_public/systran.key",
+    "certificate": "certificates_public/systran.crt",
+    "secureOptions": [
+      "SSL_OP_NO_SSLv2",
+      "SSL_OP_NO_SSLv3",
+      "SSL_OP_NO_TLSv1",
+      "SSL_OP_NO_TLSv1_1"
+    ]
+  },
+  "Console": {
+    "http": 3001,
+    "https": 3443,
+    "publicUrls": {
+      "http": "http://localhost:3001",
+      "https": "https://spns-alpha-el8.systran.net"
+    }
+  },
+  "Auth": {
+    "mode": "local",
+    "HttpHeader": {
+      "Mapping": {
+        "email": "email",
+        "groups": "groups",
+        "login": "login",
+        "name.familyName": "familyName",
+        "name.givenName": "givenName",
+        "providerId": "login"
+      },
+      "requiredFields": [
+        "login"
+      ]
+    },
+    "Ldap": {
+      "Mapping": {
+        "email": "mail",
+        "groups": "ou",
+        "name.familyName": "sn",
+        "name.givenName": "givenName",
+        "providerId": "mail"
+      },
+      "adminDn": "cn=admin,dc=planetexpress,dc=com",
+      "adminPassword": "GoodNewsEveryone",
+      "searchBase": "ou=people,dc=planetexpress,dc=com",
+      "searchFilter": "(uid={{username}})",
+      "url": "ldap://ldap-provider:389"
+    },
+    "Saml": {
+      "Authn": {
+        "disableRequestedAuthnContext": true,
+        "formAuthAfterSignout": true
+      },
+      "Certificates": {
+        "idpSigningCert": "certificates/auth0-cert.pem"
+      },
+      "Mapping": {
+        "email": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",
+        "name.familyName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname",
+        "name.givenName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname",
+        "providerId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+      },
+      "entryPoint": "https://dev-zeizpspgeee245hv.us.auth0.com/samlp/ggkdCJWsTgneSWvFdHY21tuMw21E53Wp",
+      "issuer": "urn:dev-zeizpspgeee245hv.us.auth0.com",
+      "logoutUrl": "https://dev-zeizpspgeee245hv.us.auth0.com/samlp/ggkdCJWsTgneSWvFdHY21tuMw21E53Wp/logout"
+    },
+    "SystranOauth": {
+      "Mapping": {
+        "email": "email",
+        "groupId": "id",
+        "groupName": "name",
+        "groups": "groups",
+        "login": "login",
+        "name.familyName": "name.familyName",
+        "name.givenName": "name.givenName",
+        "providerId": "id"
+      },
+      "authorizationUrl": "https://auth-dev.systran.net:3448/oidc",
+      "backchannelLogout": true,
+      "clientId": "gD72mj0yMVRGPYNSFxMl0",
+      "clientSecret": "Eq6BeNpR4qpSbqeD16ehpuQ1S6P1xMcRXbJpxoaPIsEd1QcmrJJVngLFJRNf0cqJrIBbRg8DwbbV0oyWcMedUg",
+      "sessionManagement": false
+    },
+    "enabledProviders": [
+      "local",
+      "ldap",
+      "saml",
+      "httpHeader",
+      "systran"
+    ]
+  },
+  "Users": {
+    "defaultGroups": [],
+    "defaultRoles": [
+      "Default User"
+    ],
+    "DefaultRoles": "Default User"
+  },
+  "Log": {
+    "level": "info"
+  },
+  "Redis": {
+    "mode": "default",
+    "default": {
+      "host": "redis",
+      "port": 6379,
+      "password": "SESpassword",
+      "pass": "SESpassword"
+    }
+  },
+  "ActivityServer": {
+    "host": "ses-activity-collector",
+    "port": 8701,
+    "https": {
+      "activate": false,
+      "key": "certificates/server.key",
+      "cert": "certificates/server.crt"
+    }
+  },
+  "Queue": {
+    "url": "amqp://rabbitmq:5672",
+    "management": "http://rabbitmq:15672/",
+    "heartbeat": 30,
+    "pollingTimeout": 86400000,
+    "pollingInterval": {
+      "min": 500,
+      "max": 30000
+    },
+    "user": "systran",
+    "pass": "SESpassword",
+    "expires": 3600000,
+    "autoDelete": true
+  },
+  "ElasticSearch": {
+    "url": "http://elasticsearch:9200"
+  },
+  "Scaling": {
+    "maxNbInstances": 10,
+    "maxMemoryPerInstances": 4000000,
+    "defaultNumberInstance": 1,
+    "disk": {
+      "min": 10000000
+    },
+    "loadCpuThreshold": 5,
+    "rules": [
+      "instances",
+      "cpuUsage",
+      "installed",
+      "freeMemory"
+    ]
+  },
+  "FeedbackManager": {
+    "sendEmailToSubmitter": true,
+    "from": "no-reply@systrangroup.com"
+  },
+  "Dictionary": {
+    "SDictLookup": {
+      "url": "http://lookup:8891"
+    },
+    "GDict": {
+      "url": "http://10.60.104.243:8892",
+      "Database": {
+        "user": "gdict",
+        "password": "gdict",
+        "host": "mongodb",
+        "database": "gdict_common",
+        "passord": "gdict"
+      }
+    },
+    "DctIndexer": {
+      "url": "http://dct-indexer:8893"
+    }
+  },
+  "CorpusManager": {
+    "url": "http://corpus-manager:8889",
+    "threshold": 0.7
+  },
+  "TmIndexer": {
+    "url": "http://tm-indexer:8890"
+  },
+  "Gateway": {
+    "url": "https://ses-gateway:8904",
+    "publicUrl": "https://spns-alpha-el8.systran.net:8904"
+  },
+  "TranslationResourceStore": {
+    "url": "https://trs-console:3445",
+    "delTrSES": true
+  },
+  "TranslationResourceManagerSES": {
+    "trWorkspace": "workspace/translationResource",
+    "default": {
+      "descriptionCfg": "etc/trmSES/default/description.cfg",
+      "configurationTemplate": "etc/trmSES/default/configuration.template",
+      "run": "etc/trmSES/default/run",
+      "runCfg": "etc/trmSES/default/run.cfg",
+      "postconfig": "etc/trmSES/default/postconfig"
+    },
+    "csli": {
+      "descriptionCfg": "etc/trmSES/csli/description.cfg",
+      "configurationTemplate": "etc/trmSES/csli/configuration.template",
+      "run": "etc/trmSES/csli/run",
+      "runCfg": "etc/trmSES/csli/run.cfg",
+      "configDefaultOptionsCfg": "etc/trmSES/csli/config_default_options.cfg",
+      "postconfig": "etc/trmSES/csli/postconfig"
+    },
+    "csliLanguagePairs": [
+      "jako",
+      "koja",
+      "kozh",
+      "zhko",
+      "enko",
+      "koen"
+    ]
+  },
+  "EngineManager": {
+    "engineWorkspace": "workspace/translationResource",
+    "optionConverter": "etc/engine/optionConverter.xml",
+    "descriptionCfg": "etc/engine/description.cfg",
+    "configurationTemplate": "etc/engine/configuration.template",
+    "run": "etc/engine/run",
+    "runCfg": "etc/engine/run.cfg"
+  },
+  "Poller": {
+    "pollingInterval": 5000,
+    "timeout": 5000
+  },
+  "UpgradeTR": {
+    "pollingTrTimeout": 3600000
+  },
+  "Stats": {
+    "statsTTL": 31540000,
+    "Requests": {
+      "enabled": true
+    },
+    "Translation": {
+      "enabled": true,
+      "input": true,
+      "userName": true,
+      "ipaddress": true
+    },
+    "AggregatedStats": {
+      "disabled": false,
+      "TTL": null,
+      "Aggregators": [
+        {
+          "duration": "d",
+          "fields": [
+            "account_id"
+          ],
+          "name": "users"
+        },
+        {
+          "duration": "d",
+          "fields": [
+            "groups"
+          ],
+          "name": "groups"
+        },
+        {
+          "duration": "d",
+          "fields": [
+            "feature.translationResourceId"
+          ],
+          "name": "tr"
+        },
+        {
+          "duration": "d",
+          "fields": [],
+          "name": "global"
+        },
+        {
+          "duration": "d",
+          "fields": [
+            "groups",
+            "data.user_agent"
+          ],
+          "name": "daily_chars"
+        }
+      ],
+      "Limits": {
+        "enabled": true
+      }
+    }
+  },
+  "FileTranslation": {
+    "dispatcherApi": "async",
+    "timeToLive": 259200,
+    "downloadTimeout": 300,
+    "backendTimeout": 300000,
+    "enableAnonymousUser": false,
+    "maximumNbCharsPerFile": 1000000,
+    "RetryTasks": {
+      "maxRetry": 3,
+      "minDelay": 3000,
+      "maxDelay": 30000
+    },
+    "Notification": {
+      "treshold": [
+        100
+      ]
+    },
+    "translationFilePerUserLimit": {
+      "enable": false,
+      "number": 10,
+      "fileLockTTL": 5,
+      "checkLockTTL": 50000
+    }
+  },
+  "Security": {
+    "Cookies": {
+      "domain": null,
+      "maxAge": 1200000
+    },
+    "Session": {
+      "interval": 60000,
+      "margin": 120000,
+      "Policy": {
+        "inactivity": "silent"
+      }
+    },
+    "OIDC": {
+      "refreshTokenTTL": 1209600,
+      "accessTokenTTL": 3600,
+      "clientCredentialsTTL": 600
+    },
+    "jadeCache": true,
+    "noCache": false,
+    "withRememberMe": true,
+    "trustProxy": false,
+    "enforcePasswordHistory": 24,
+    "RateLimit": null,
+    "withResetPassword": true,
+    "ResetPassword": {
+      "from": "no-reply@systrangroup.com",
+      "timeToLive": 1200
+    },
+    "DefinePassword": {
+      "timeToLive": 259200
+    },
+    "BruteForce": {
+      "freeRetries": 2,
+      "minWait": 500,
+      "maxWait": 900000
+    },
+    "Password": {
+      "policy": "Medium"
+    },
+    "TranslateBox": {
+      "textOnly": false,
+      "limitCharacters": 0,
+      "speechRecognition": false,
+      "timeout": 120000,
+      "exposeTranslateFree": false,
+      "TranslateBoxV2": true,
+      "cache": true,
+      "autodetectionMode": "single",
+      "TranslateBoxV3": false
+    },
+    "Concordance": {
+      "limitCharacters": 60
+    },
+    "Advanced": {
+      "enabled": true,
+      "Csp": {
+        "disabled": false
+      }
+    },
+    "FileUpload": {
+      "tmpDir": null,
+      "sizeLimit": 52428800,
+      "maxUploadFileTranslationNumber": 10,
+      "FileTranslationType": {
+        "Small": {
+          "extensions": [
+            "txt"
+          ],
+          "size": 10
+        },
+        "Medium": {
+          "extensions": [
+            "html",
+            "htm",
+            "xhtml",
+            "xml",
+            "tmx",
+            "xliff",
+            "xlf",
+            "doc",
+            "docx",
+            "pptx",
+            "xlsx",
+            "rtf",
+            "odp",
+            "ods",
+            "odt",
+            "json",
+            "properties",
+            "resx",
+            "bmp",
+            "jpg",
+            "jpeg",
+            "png",
+            "tif",
+            "tiff",
+            "markdown",
+            "md"
+          ],
+          "size": 20
+        },
+        "Large": {
+          "extensions": [
+            "zip",
+            "tar",
+            "tar.gz",
+            "tgz",
+            "mp3",
+            "wav",
+            "pdf"
+          ],
+          "size": 40
+        }
+      },
+      "WhiteList": {
+        "corpus": [
+          "tmx",
+          "txt"
+        ],
+        "profile": [
+          "tar.gz",
+          "tgz",
+          "tar.bz2",
+          "tbz",
+          "zip"
+        ],
+        "dictionary": [
+          "dic",
+          "dct",
+          "xml",
+          "tmx",
+          "tbx",
+          "xliff",
+          "xlf",
+          "txt",
+          "xls"
+        ],
+        "trc": [
+          "trc"
+        ],
+        "sts": [
+          "xslt",
+          "xsl",
+          "xsd",
+          "dtd",
+          "xml"
+        ],
+        "entityRule": [
+          "rules"
+        ],
+        "languageModel": [
+          "lm"
+        ],
+        "database": [
+          "sql"
+        ]
+      }
+    }
+  },
+  "localization": {
+    "supported": [
+      "en",
+      "fr",
+      "ko",
+      "de",
+      "ja",
+      "ar",
+      "es",
+      "pt",
+      "zh"
+    ],
+    "provided": [
+      "en",
+      "fr",
+      "ko",
+      "de",
+      "ja",
+      "ar"
+    ]
+  },
+  "Email": {
+    "smtp": "external",
+    "options": {
+      "host": "pro2.mail.ovh.net",
+      "port": 587,
+      "secure": false,
+      "auth": {
+        "user": "no-reply@systran.net",
+        "pass": "9Vcruxo26MHoRZP@z.P4bpaTQTy6HCb-MxRRwy3t",
+        "type": "login",
+        "oauth2": {
+          "clientId": null,
+          "clientSecret": null,
+          "refreshToken": null,
+          "expires": null,
+          "accessUrl": null
+        }
+      },
+      "tlsOptions": {
+        "servername": null,
+        "ignoreTLS": null,
+        "requireTLS": true,
+        "tls": {
+          "rejectUnauthorized": null
+        }
+      },
+      "advancedOptions": {
+        "proxy": null,
+        "service": null,
+        "pool": null,
+        "maxConnection": 5,
+        "maxMessages": 100,
+        "name": null,
+        "localAddress": null,
+        "connectionTimeout": null,
+        "greetingTimeout": null,
+        "socketTimeout": null,
+        "authMethod": null
+      }
+    }
+  },
+  "Theme": null,
+  "SpeechRecognition": {
+    "provider": "WhisperASR",
+    "sampling": "high",
+    "Nuance": {
+      "url": null,
+      "format": [
+        "wav"
+      ],
+      "operatingMode": "fast",
+      "language": {
+        "en": "eng-USA",
+        "ru": "rus-RUS"
+      }
+    },
+    "Vocapia": {
+      "url": null,
+      "user": null,
+      "pass": null,
+      "format": [
+        "mp3",
+        "wav",
+        "m4a"
+      ],
+      "language": {
+        "en": "eng",
+        "ru": "rus",
+        "fr": "fre",
+        "de": "ger",
+        "pt": "por",
+        "it": "ita",
+        "es": "spa",
+        "ko": "kor",
+        "ar": "ara",
+        "nl": "dut",
+        "fi": "fin",
+        "el": "gre",
+        "lt": "lit",
+        "pl": "pol",
+        "ro": "rum",
+        "tr": "tur",
+        "zh": "chi",
+        "zt": "chi",
+        "hi": "hin",
+        "hu": "hun",
+        "lv": "lav",
+        "fa": "per",
+        "sw": "swa",
+        "ur": "urd",
+        "he": "heb",
+        "ps": "pus",
+        "uk": "ukr",
+        "sv": "swe"
+      }
+    },
+    "Apptek": {
+      "url": null,
+      "token": null,
+      "format": [
+        "mp3",
+        "wav",
+        "m4a",
+        "ogg",
+        "flac"
+      ],
+      "language": {
+        "ar": "ar-ae.bcn",
+        "pl": "pl-pl.bcn",
+        "en": "en-us.bcn",
+        "et": "et-ee.bcn",
+        "uk": "uk-ua.bcn",
+        "fr": "fr-fr.bcn",
+        "hi": "hi-in.bcn",
+        "de": "de-de.bcn",
+        "zt": "zh-tw.bcn",
+        "ja": "ja-jp.bcn",
+        "ro": "ro-ro.bcn",
+        "tr": "tr-tr.bcn",
+        "pt": "pt-br.bcn",
+        "bg": "bg-bg.bcn",
+        "hu": "hu-hu.bcn",
+        "es": "es-us.bcn",
+        "th": "th-th.bcn",
+        "id": "id-id.bcn",
+        "nl": "nl-nl.bcn",
+        "el": "el-gr.bcn",
+        "fa": "fa-ir.bcn",
+        "ko": "ko-kr.bcn",
+        "lt": "lt-lt.bcn",
+        "vi": "vi-vn.bcn",
+        "he": "he-il.bcn",
+        "ru": "ru-ru.bcn",
+        "sk": "sk-sk.bcn",
+        "af": "af-za.bcn",
+        "lv": "lv-lv.bcn",
+        "it": "it-it.bcn",
+        "ps": "ps-af.bcn",
+        "sv": "sv-se.bcn",
+        "zh": "zh-cn.bcn",
+        "tl": "tl-ph.bcn",
+        "sl": "sl-si.bcn",
+        "ms": "ms-my.bcn"
+      }
+    },
+    "WhisperASR": {
+      "url": "http://whisper-asr:5000",
+      "format": [
+        "aac",
+        "aiff",
+        "alac",
+        "avi",
+        "flac",
+        "m4a",
+        "mkv",
+        "mov",
+        "mp3",
+        "mp4",
+        "mpeg",
+        "ogg",
+        "wav",
+        "webm",
+        "wma",
+        "wmv"
+      ],
+      "language": {
+        "en": "en",
+        "zh": "zh",
+        "de": "de",
+        "es": "es",
+        "ru": "ru",
+        "ko": "ko",
+        "fr": "fr",
+        "ja": "ja",
+        "pt": "pt",
+        "tr": "tr",
+        "pl": "pl",
+        "ca": "ca",
+        "nl": "nl",
+        "ar": "ar",
+        "sv": "sv",
+        "it": "it",
+        "id": "id",
+        "hi": "hi",
+        "fi": "fi",
+        "vi": "vi",
+        "he": "he",
+        "uk": "uk",
+        "el": "el",
+        "ms": "ms",
+        "cs": "cs",
+        "ro": "ro",
+        "da": "da",
+        "hu": "hu",
+        "ta": "ta",
+        "no": "no",
+        "th": "th",
+        "ur": "ur",
+        "hr": "hr",
+        "bg": "bg",
+        "lt": "lt",
+        "la": "la",
+        "mi": "mi",
+        "ml": "ml",
+        "cy": "cy",
+        "sk": "sk",
+        "te": "te",
+        "fa": "fa",
+        "lv": "lv",
+        "bn": "bn",
+        "sr": "sr",
+        "az": "az",
+        "sl": "sl",
+        "kn": "kn",
+        "et": "et",
+        "mk": "mk",
+        "br": "br",
+        "eu": "eu",
+        "is": "is",
+        "hy": "hy",
+        "ne": "ne",
+        "mn": "mn",
+        "bs": "bs",
+        "kk": "kk",
+        "sq": "sq",
+        "sw": "sw",
+        "gl": "gl",
+        "mr": "mr",
+        "pa": "pa",
+        "si": "si",
+        "km": "km",
+        "sn": "sn",
+        "yo": "yo",
+        "so": "so",
+        "af": "af",
+        "oc": "oc",
+        "ka": "ka",
+        "be": "be",
+        "tg": "tg",
+        "sd": "sd",
+        "gu": "gu",
+        "am": "am",
+        "yi": "yi",
+        "lo": "lo",
+        "uz": "uz",
+        "fo": "fo",
+        "ht": "ht",
+        "ps": "ps",
+        "tk": "tk",
+        "nn": "nn",
+        "mt": "mt",
+        "sa": "sa",
+        "lb": "lb",
+        "my": "my",
+        "bo": "bo",
+        "tl": "tl",
+        "mg": "mg",
+        "as": "as",
+        "tt": "tt",
+        "haw": "haw",
+        "ln": "ln",
+        "ha": "ha",
+        "ba": "ba",
+        "jw": "jw",
+        "su": "su",
+        "false": "no"
+      }
+    }
+  },
+  "ServicesHealth": {
+    "enable": true
+  },
+  "Features": {
+    "PreferredDomain2": {
+      "enable": true
+    },
+    "AlternativeTranslations2": {
+      "enable": true,
+      "maxNbAltTrans": 5
+    },
+    "FormFeature": {
+      "enable": false,
+      "localesAndFormality": false
+    }
+  },
+  "SecretServer": {
+    "enable": false,
+    "Conjur": null
+  },
+  "Database": {
+    "hosts": [
+      {
+        "host": "mongodb",
+        "port": 27017
+      }
+    ],
+    "replicaSet": "indexers",
+    "serverSelectionTimeoutMS": 15000,
+    "poolSize": 10,
+    "mongoose": {
+      "debug": false
+    },
+    "tls": true,
+    "tlsInsecure": false,
+    "tlsCAFile": "/etc/ssl/certificates/ca_certificate.pem",
+    "tlsCertificateKeyFile": null,
+    "tlsCertificateKeyFilePassword": null,
+    "tlsAllowInvalidCertificates": false,
+    "tlsAllowInvalidHostnames": null,
+    "readPreference": null,
+    "readConcern": null,
+    "writeConcern": null,
+    "User": {
+      "login": "systran",
+      "password": "SESpassword"
+    }
+  }
+}

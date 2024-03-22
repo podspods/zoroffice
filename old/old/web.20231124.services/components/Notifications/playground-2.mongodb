@@ -1,0 +1,79 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('test');
+
+// Create a new document in the collection.
+db.getCollection('notifications').insertOne({
+    "name": "Product 1",
+    "details": {
+      "description": "This is a blue product description.",
+      "specs": {
+        "color": "blue",
+        "size": "medium"
+      }
+    }
+  
+});
+
+db.notifications.find().pretty()
+db.notifications.find({ "$str": { $regex: /string_search/ } })
+
+
+db.notifications.find({
+  $expr: {
+    $in: [ "red", { $objectToArray: "$details" }.v ]
+  }
+})
+
+{ $objectToArray: { item: "foo", qty: 25 } }
+
+
+db.notifications.aggregate([
+  {
+    $project: {
+      detailsToArray: { $objectToArray: "$str" }
+    }
+  }
+])
+
+
+db.notifications.aggregate([
+  {
+    $project: {
+      str: {
+        $map: {
+          input: { $objectToArray: "$str" },
+          as: "str",
+          in: {
+            k: "$$str.k",
+            v: {
+              $cond: {
+                if: { $eq: [{ $type: "$$str.v" }, "object"] },
+                then: { $objectToArray: "$$str.v" },
+                else: "$$str.v"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+])
+
+
+
+db.notifications.aggregate([
+  {
+    $addFields: {
+      "newDescription": {
+        $regexReplace: {
+          input: str,
+          find: "${filename}",
+          replacement: str.data.filename.value
+        }
+      }
+    }
+  }
+])

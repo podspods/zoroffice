@@ -1,0 +1,187 @@
+{
+	"global": {
+		"elapsedTime": 2357936,
+		"lastUsed": "2023-11-29T14:19:06.368Z",
+		"mimeType": [
+			"text/plain"
+		],
+		"nbCacheHits": 1226,
+		"nbCharacters": 107460,
+		"nbCharactersCacheHits": 24742,
+		"nbSegments": 3334,
+		"nbTokens": 0,
+		"nbTus": 3677,
+		"nbTusFailed": 0,
+		"request": 3182,
+		"success": 3182,
+		"userAgent": [
+			"Translation Box",
+			"SYSTRAN Browser Extension - Firefox / Page"
+		]
+	},
+	"id": "648890bea0fa3f2b02079e51",
+	"name": "Emile DESTRIEUX",
+	"date": "2023-11",
+	"data": [
+		{
+			"id": "578b017f-627d-41ff-8ce2-5dfae7b2d32f",
+			"lastUsed": "2023-11-29T13:31:37.538Z",
+			"name": "Model: IT (by SYSTRAN)",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 631298,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 915,
+				"nbCharacters": 41868,
+				"nbCharactersCacheHits": 17928,
+				"nbSegments": 1592,
+				"nbTokens": 0,
+				"nbTus": 1512,
+				"nbTusFailed": 0,
+				"request": 1512,
+				"success": 1512,
+				"userAgent": [
+					"SYSTRAN Browser Extension - Firefox / Page",
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "af0d08d8-12dd-49b2-906b-cc7910d8528f"
+		},
+		{
+			"id": "71a96631-0d5d-4439-8754-62be08dc2556",
+			"lastUsed": "2023-11-29T14:17:37.363Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 1517567,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 99,
+				"nbCharacters": 39139,
+				"nbCharactersCacheHits": 3792,
+				"nbSegments": 886,
+				"nbTokens": 0,
+				"nbTus": 1354,
+				"nbTusFailed": 0,
+				"request": 876,
+				"success": 876,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "c1659c3e-83d9-4252-a759-2b894d2fabfb"
+		},
+		{
+			"id": "d5d9833f-ccd8-4d55-be2c-74f5a31508d2",
+			"lastUsed": "2023-11-29T13:54:48.322Z",
+			"name": "Model: IT (by SYSTRAN)",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 156825,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 183,
+				"nbCharacters": 20760,
+				"nbCharactersCacheHits": 2248,
+				"nbSegments": 742,
+				"nbTokens": 0,
+				"nbTus": 702,
+				"nbTusFailed": 0,
+				"request": 702,
+				"success": 702,
+				"userAgent": [
+					"Translation Box",
+					"SYSTRAN Browser Extension - Firefox / Page"
+				]
+			},
+			"translationResourceId": "4d48a8bb-c9a6-47b1-8cae-32a56aee0d84"
+		},
+		{
+			"id": "376b97d7-5653-43c2-84cf-f9298fba486a",
+			"lastUsed": "2023-11-29T14:19:06.368Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 44564,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 28,
+				"nbCharacters": 5601,
+				"nbCharactersCacheHits": 751,
+				"nbSegments": 108,
+				"nbTokens": 0,
+				"nbTus": 102,
+				"nbTusFailed": 0,
+				"request": 86,
+				"success": 86,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "422fa011-5a0b-4922-ae6e-99dbae47f772"
+		},
+		{
+			"id": "10bfefa2-d329-4bb6-aa8e-98490977f937",
+			"lastUsed": "2023-11-27T15:01:04.202Z",
+			"name": "Model: Generic (by Systran)",
+			"source": "sv",
+			"target": "en",
+			"total": {
+				"elapsedTime": 638,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 1,
+				"nbCharacters": 86,
+				"nbCharactersCacheHits": 23,
+				"nbSegments": 4,
+				"nbTokens": 0,
+				"nbTus": 5,
+				"nbTusFailed": 0,
+				"request": 4,
+				"success": 4,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "f67b342e-d948-4022-a7ae-989204613acc"
+		},
+		{
+			"id": "a6d4d228-842c-4aef-a1f0-0115c0abf734",
+			"lastUsed": "2023-11-27T14:56:14.536Z",
+			"name": "Model: IT (by Systran)",
+			"source": "es",
+			"target": "en",
+			"total": {
+				"elapsedTime": 7044,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 6,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 2,
+				"nbTokens": 0,
+				"nbTus": 2,
+				"nbTusFailed": 0,
+				"request": 2,
+				"success": 2,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "8cd68967-cff3-4eed-9e9e-d19bb56f2775"
+		}
+	],
+	"total": 6,
+	"offset": 0
+}

@@ -1,0 +1,31 @@
+import useDefaultSWR, { type SWRHook, SWRResponse } from 'swr';
+import { RowWithId } from '@systran/react-components/lib/organisms/Table/Table';
+import { useRefreshProps } from '@systran/react-components/lib/organisms/Table/hooks/useRemoteHooks';
+import adaptParamsBuilder, { adaptParamsBuilderOpts } from '@/components/fromReact/adaptParams';
+import adaptResponseBuilder, { ResponseRowType, type adaptResponseBuilderProps } from '@systran/react-components/lib/organisms/Table/hooks/adaptResponse';
+
+export type useRefreshBuilderOpts = {
+  route: string,
+  useSWR: SWRHook,
+  adaptParamsOpts?: adaptParamsBuilderOpts,
+  adaptResponseOpts: adaptResponseBuilderProps
+};
+
+export default function useRefreshBuilder<Row extends RowWithId>(opts: useRefreshBuilderOpts) {
+  const {adaptParamsOpts, adaptResponseOpts, route, useSWR = useDefaultSWR} = opts;
+  console.log('adaptParamsOpts 16==>',adaptParamsOpts );
+  
+  const adaptParams = adaptParamsBuilder(adaptParamsOpts);
+  console.log('adaptParams 19==>',adaptParams );
+
+  const adaptResponse = adaptResponseBuilder<Row>(adaptResponseOpts);
+
+  return function useRefresh(query: useRefreshProps): ResponseRowType<Row> {
+    const searchParams = adaptParams(query);
+    console.log('query 25 ==>',query );
+    console.log('searchParams 25 ==>',searchParams );
+    const swrResponse: SWRResponse<unknown> = useSWR(route + '?' + searchParams, { refreshInterval: (query.refreshRate === 'Never') ? 0 : (query.refreshRate * 1000) });
+    const response = adaptResponse(swrResponse);
+    return response;
+  };
+}

@@ -1,0 +1,52 @@
+{
+	"global": {
+		"elapsedTime": 1600,
+		"lastUsed": "2024-01-04T17:06:48.045Z",
+		"mimeType": [
+			"text/plain"
+		],
+		"nbCacheHits": 1,
+		"nbCharacters": 50,
+		"nbCharactersCacheHits": 3,
+		"nbSegments": 9,
+		"nbTus": 11,
+		"nbTusFailed": 0,
+		"request": 9,
+		"success": 9,
+		"userAgent": [
+			"Translation Box"
+		]
+	},
+	"id": "6596e1955868f3000b588d96",
+	"name": "Administrator",
+	"date": "2024-1",
+	"data": [
+		{
+			"id": "3e1f279e-b116-42d7-9d3b-997f4a1b8bec",
+			"lastUsed": "2024-01-04T17:06:48.045Z",
+			"name": "Translator NMT Generic (L) - FREN",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 1600,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 1,
+				"nbCharacters": 50,
+				"nbCharactersCacheHits": 3,
+				"nbSegments": 9,
+				"nbTus": 11,
+				"nbTusFailed": 0,
+				"request": 9,
+				"success": 9,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "10b0b924-8e39-43ea-81c8-cc62478b25fa"
+		}
+	],
+	"total": 1,
+	"offset": 0
+}

@@ -1,0 +1,77 @@
+version: '2.1'
+Configurator:
+  computingNodes:
+    - hostname: localhost
+      secure: false
+
+  routingServers:
+    - hostname: localhost
+      secure: false
+
+
+  dispatchers:
+    - hostname: localhost
+      secure: false
+
+  brokers:
+    - hostname: localhost
+      secure: false
+
+  pollingInterval: 10000 # poll every 10 seconds
+  maxNoConvergenceTry: 180 # abort after 180 * 10 seconds: 30min of TR installation not progressing
+
+  Filters:
+    - nbInstances: 1
+
+  LanguagePairs:
+    # New NMT Engine
+#    - source: en
+#      target: ru
+#      domain: Gaming                                     # optional, default to Generic
+#      owner: Systran                                     # optional
+#      size: L                                            # optional, default to M
+#      engine: nmt                                        # optional, default to rbmt
+##     role: TranslatorNMT_enru_<Owner>_<Domain>          # optional, specify exact role, it ignore other optional params
+#      public: true                                       # optional, default to true
+#      nbInstances: 1                                     # optional, default to 1
+
+    # RBMT
+    - source: en
+      target: fr
+      engine: rbmt
+#      role: SystranTranslationEngineBin_enfr
+      nbInstances: 1
+
+    # RBMT+SPE / SMT / NMT v8
+    - source: en
+      target: fr
+      domain: Generic
+      engine: rbmt_spe
+#      role: SystranTranslationEngine_enfr_<Owner>_<Domain>
+      nbInstances: 1
+
+#    - source: en
+#      target: fr
+#      domain: LifeSciences
+#      public: false
+#      engine: rbmt_spe
+#      users:
+#        - 0 # set accountId
+#      groups:
+#        - 0 # set groupId
+
+    - source: en
+      target: de
+      nbInstances: 1
+
+    - source: de
+      target: en
+      nbInstances: 1
+
+    - source: en
+      target: es
+      nbInstances: 1
+
+    - source: es
+      target: en
+      nbInstances: 1

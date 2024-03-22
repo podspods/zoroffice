@@ -1,0 +1,61 @@
+import { GridValidRowModel } from '@systran/react-components/lib/organisms/Table/Table';
+import { DateTime } from 'luxon';
+
+export type Column = {
+  field: string;
+  label: string;
+  hidden?: boolean;
+  hideable?: boolean;
+  renderHeaderFilter?: () => void;
+  valueGetter?: ({ row }: { row: GridValidRowModel }) => string;
+  sortable?: boolean;
+};
+
+
+export type DetailStat = {
+  id: string;
+  date: DateTime;
+  userName: string;
+  groupName: string;
+  sourceLang: string;
+  targetLang: string;
+  langPair: string;
+  profileName: string;
+  userAgent: string;
+  mimeType: string;
+  numberChar: number;
+  operation: string;
+  success: boolean;
+  request: number;  // data missing
+  requestSuccess: number; // data missing
+  requestError: number; // data missing
+  requestSuccessPercent: number; // data missing
+  segments: number;
+  segmentsCache: number; // data missing
+  numberCharCache: number;// data missing or nbCacheHits
+  tus: number;
+  tusFail: number;
+  elapsedTime: number;
+};
+
+export type RawDetailStat = {
+  id: string;
+  date: string;
+  accountId: string;
+  accountName: string;
+  sourceLanguage: string;
+  targetLanguage: string;
+  profileId: string;
+  profileName: string;
+  operation: string;
+  success: boolean;
+  elapsedTime: number;
+  mimetype: string;
+  nbCharacters: number;
+  nbTokens: string;
+  nbTus: number;
+  nbTusFailed: number;
+  userAgent: string;
+  nbSegments: number;
+  nbCacheHits: number;
+};

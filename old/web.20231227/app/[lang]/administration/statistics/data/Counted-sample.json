@@ -1,0 +1,993 @@
+{
+	"accountId": {
+		"6220f6e9d2e3fb121bb85818": {
+			"name": "Caroline ROYER",
+			"nbCharacters": 53240,
+			"request": 5
+		},
+		"5fdcfb0121b8d53788d6386a": {
+			"name": "Philip STAIGER",
+			"nbCharacters": 63640,
+			"request": 290
+		},
+		"6245a6255a3a2a6e27c7bf46": {
+			"name": "Esther Bille",
+			"nbCharacters": 4189195,
+			"request": 15512
+		},
+		"63e52210e2b290b102ec142f": {
+			"name": "Alexis MEYER",
+			"nbCharacters": 747218,
+			"request": 1916
+		},
+		"5ef4f2d872f70f7e9db5559d": {
+			"name": "Philip Staiger",
+			"nbCharacters": 129112,
+			"request": 2528
+		},
+		"63e51f51b1170391963084c7": {
+			"name": "Catherine Tura",
+			"nbCharacters": 653863,
+			"request": 5929
+		},
+		"63b4467c96387e5b9a104de7": {
+			"name": "Izzy SKELLEY",
+			"nbCharacters": 182,
+			"request": 18
+		},
+		"5fdcd9707afe010591dbe436": {
+			"name": "Janany PERINPARAJAH",
+			"nbCharacters": 5218,
+			"request": 361
+		},
+		"5fdb87d291b4f535dbe2fd38": {
+			"name": "Yannick DOUZANT",
+			"nbCharacters": 77277,
+			"request": 19
+		},
+		"6238480b731d685735ae4b0f": {
+			"name": "Antoine Senellart",
+			"nbCharacters": 257,
+			"request": 7
+		},
+		"6525086b370764b400a5b25b": {
+			"name": "Koichi Sano",
+			"nbCharacters": 47196,
+			"request": 4
+		},
+		"633c4421fa33eb2029518fa2": {
+			"name": "Elena Spiridonova",
+			"nbCharacters": 2990,
+			"request": 3
+		},
+		"5fe0dc37aacbc7377c17412b": {
+			"name": "Stéphanie Labroue",
+			"nbCharacters": 2947,
+			"request": 16
+		},
+		"6262a638e5704071aab60d42": {
+			"name": "Alexandre DUBOIS",
+			"nbCharacters": 8380,
+			"request": 3
+		},
+		"633c4420b561e96cbfc39b63": {
+			"name": "aude casteigts",
+			"nbCharacters": 341,
+			"request": 2
+		}
+	},
+	"elapsedTime": 63960633,
+	"groupName": "Systran",
+	"groups": {
+		"601bf10868bffa1db67a072f": {
+			"groupName": "Systran",
+			"nbCharacters": 5981056,
+			"request": 26613
+		},
+		"5fdb8a28f4b1504045ed075a": {
+			"groupName": "Customer Service",
+			"nbCharacters": 66587,
+			"request": 306
+		},
+		"5e4569aced2b223fa952b5e6": {
+			"groupName": "SYSTRAN Account Manager",
+			"nbCharacters": 4936413,
+			"request": 17428
+		},
+		"5ef4f1ca0484990d43ca7f9c": {
+			"groupName": "staiger",
+			"nbCharacters": 129112,
+			"request": 2528
+		},
+		"60746f39419b8c553f475020": {
+			"groupName": "STAIGER_01",
+			"nbCharacters": 84953,
+			"request": 913
+		},
+		"5d1079ad76b502201f010725": {
+			"groupName": "Administrator",
+			"nbCharacters": 82677,
+			"request": 398
+		}
+	},
+	"mimeType": {
+		"application/pdf": {
+			"nbCharacters": 201604,
+			"request": 36
+		},
+		"text/plain": {
+			"nbCharacters": 813494,
+			"request": 9201
+		},
+		"xml/application": {
+			"nbCharacters": 4805650,
+			"request": 17311
+		},
+		"text/html-old": {
+			"nbCharacters": 72573,
+			"request": 31
+		},
+		"application/vndopenxmlformats": {
+			"nbCharacters": 85334,
+			"request": 15
+		},
+		"image/png": {
+			"nbCharacters": 1892,
+			"request": 10
+		},
+		"image/jpeg": {
+			"nbCharacters": 509,
+			"request": 4
+		}
+	},
+	"nbCacheHits": 40523,
+	"nbCharacters": 5981056,
+	"nbCharactersCacheHits": 1721097,
+	"nbSegments": 93482,
+	"nbTokens": 0,
+	"nbTus": 90536,
+	"nbTusFailed": 0,
+	"product": {
+		"SYSTRAN Pure Neural® Server": {
+			"nbCharacters": 915550,
+			"request": 1866
+		},
+		"SYSTRAN Translate API": {
+			"nbCharacters": 5065506,
+			"request": 24737
+		},
+		"SYSTRAN LID API": {
+			"nbCharacters": 0,
+			"request": 10
+		}
+	},
+	"request": 26613,
+	"serviceName": {
+		"filter/import": {
+			"nbCharacters": 0,
+			"request": 24
+		},
+		"translate/async/file": {
+			"nbCharacters": 5107927,
+			"request": 16767
+		},
+		"translate/file": {
+			"nbCharacters": 873129,
+			"request": 9202
+		},
+		"detect/language": {
+			"nbCharacters": 0,
+			"request": 620
+		}
+	},
+	"success": 26590,
+	"domain": {
+		"Legal": {
+			"nbCharacters": 10292,
+			"request": 6
+		},
+		"Generic": {
+			"nbCharacters": 5894544,
+			"request": 25258
+		},
+		"LANGUAGEIO_Formal": {
+			"nbCharacters": 9487,
+			"request": 48
+		},
+		"Industry": {
+			"nbCharacters": 3349,
+			"request": 15
+		},
+		"Finance": {
+			"nbCharacters": 22546,
+			"request": 586
+		},
+		"IT": {
+			"nbCharacters": 40014,
+			"request": 2
+		},
+		"Health": {
+			"nbCharacters": 418,
+			"request": 11
+		},
+		"Technology": {
+			"nbCharacters": 406,
+			"request": 1
+		}
+	},
+	"owner": {
+		"Systran": {
+			"nbCharacters": 5652451,
+			"request": 24409
+		},
+		"Self": {
+			"nbCharacters": 320225,
+			"request": 1517
+		},
+		"Crosslang": {
+			"nbCharacters": 8380,
+			"request": 1
+		}
+	},
+	"profile": {
+		"b2e41cd5-c698-483f-b381-d035ab195a31": {
+			"name": "Model: Legal (by Systran)",
+			"nbCharacters": 1397,
+			"request": 2
+		},
+		"722598ec-a744-4c67-bf65-a4aac9fa75ff": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 8191,
+			"request": 44
+		},
+		"20c2d72a-7aa1-444a-858a-9f9477dd1ec2": {
+			"name": "LANGUAGEIO ENIT Formal (UD)",
+			"nbCharacters": 9487,
+			"request": 48
+		},
+		"e0c6ede7-d4e9-4224-a631-53a4c836b860": {
+			"name": "Translator NMT GenericPLUS_byPS (L) - ENES",
+			"nbCharacters": 8552,
+			"request": 45
+		},
+		"663f4c0f-e0f3-4d9e-96ca-e6a614947133": {
+			"name": "Translator NMT DEMO (L) - ENAR",
+			"nbCharacters": 8363,
+			"request": 45
+		},
+		"85e609c2-62cb-4832-ae62-7c34922252cb": {
+			"name": "Translator NMT DEMO  (L) - ENFR",
+			"nbCharacters": 15141,
+			"request": 52
+		},
+		"d53cc3e9-4840-45be-836e-8102566d215e": {
+			"name": "Translator NMT DEMO (L) - FREN",
+			"nbCharacters": 515,
+			"request": 3
+		},
+		"e5bb28c0-432a-41e0-a399-c8862be752a1": {
+			"name": "Translator NMT Generic (M) - ENES SYSTRAN Bruno",
+			"nbCharacters": 312,
+			"request": 2
+		},
+		"cef6d1d1-9361-4e4b-b9cd-c7d592f538cd": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 169,
+			"request": 1
+		},
+		"684a632e-a8dd-4d86-b573-3708d20073aa": {
+			"name": "Filter",
+			"nbCharacters": 0,
+			"request": 596
+		},
+		"a3cab31f-1a56-49d2-bf1a-1e5deb3ddaee": {
+			"name": "Double Translation (FR >> EN >> FI)",
+			"nbCharacters": 698,
+			"request": 1
+		},
+		"6c476a22-89d2-4aa7-b166-e11b93464fb6": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 567971,
+			"request": 845
+		},
+		"0231843b-d5bc-4c3d-943e-b0651d2690b3": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 609,
+			"request": 25
+		},
+		"652f0465-7abf-47c5-96a2-66219b5c8e9a": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 387,
+			"request": 8
+		},
+		"e070ecd7-1fe8-45a6-a326-bf63862ece73": {
+			"name": "Double Translation (AR >> EN >> IT)",
+			"nbCharacters": 37,
+			"request": 1
+		},
+		"35c59030-dda3-4a04-820e-9ef09a2dcf21": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 90,
+			"request": 2
+		},
+		"736817f0-dca7-42fc-9b91-bb01d327a854": {
+			"name": "English to French 1",
+			"nbCharacters": 46855,
+			"request": 167
+		},
+		"376b97d7-5653-43c2-84cf-f9298fba486a": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 26614,
+			"request": 543
+		},
+		"253b535d-ada2-4705-ba40-3fef7be296f2": {
+			"name": "Translator NMT my_Automotive_PLUS (L) - ENDE",
+			"nbCharacters": 3349,
+			"request": 15
+		},
+		"9048f124-52c8-4eaf-85f2-535a0ff1356f": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1115,
+			"request": 1
+		},
+		"5a091697-4a12-4bbd-8660-ab471422541a": {
+			"name": "Model: Finance (by Systran)",
+			"nbCharacters": 22199,
+			"request": 573
+		},
+		"ec20c37f-4b23-4ff7-8105-8fc95508aa62": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 540,
+			"request": 5
+		},
+		"9351985e-9a7f-4d00-88d9-eddb72dc8424": {
+			"name": "Double Translation (DA >> EN >> FR)",
+			"nbCharacters": 1,
+			"request": 1
+		},
+		"71a96631-0d5d-4439-8754-62be08dc2556": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 6373,
+			"request": 5
+		},
+		"ae34b2ea-7e09-4139-b8ca-e28ae0a4bb9d": {
+			"name": "Model: Generic_Loca_GB (by SYSTRAN)",
+			"nbCharacters": 11766,
+			"request": 8
+		},
+		"0428657a-44b7-4f01-84ad-675e2d5d19df": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 103794,
+			"request": 35
+		},
+		"85a005b6-3275-47db-a8c4-a542af3f21d9": {
+			"name": "CADTH_ENFR",
+			"nbCharacters": 166059,
+			"request": 337
+		},
+		"b91f2a1d-325e-4b74-aeec-f06b41a16b80": {
+			"name": "Double Translation (TH >> EN >> FR)",
+			"nbCharacters": 51,
+			"request": 1
+		},
+		"cb247a29-23a7-4133-aecd-4213af863aa5": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 152,
+			"request": 5
+		},
+		"5944e1d6-0fb7-4f1e-8776-7c4d3d781efc": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 172,
+			"request": 3
+		},
+		"4273b645-3855-4940-b5df-052684954ce9": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 21,
+			"request": 1
+		},
+		"45804f45-2565-40ca-8754-a1622d0aa666": {
+			"name": "Double Translation (JA >> EN >> FR)",
+			"nbCharacters": 962,
+			"request": 2
+		},
+		"e5957033-7d23-47c0-971a-eab7bd5c8f43": {
+			"name": "Double Translation (UR >> EN >> FR)",
+			"nbCharacters": 12,
+			"request": 2
+		},
+		"4cf3929e-4543-4351-89c3-ee1a1eadeef7": {
+			"name": "Double Translation (MS >> EN >> FR)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"6562c395-253b-4017-8047-51441e4dba49": {
+			"name": "Double Translation (VI >> EN >> FR)",
+			"nbCharacters": 60,
+			"request": 2
+		},
+		"bdded962-1a5b-4728-949f-4e5a180ee501": {
+			"name": "Double Translation (RO >> EN >> FR)",
+			"nbCharacters": 472,
+			"request": 2
+		},
+		"80955152-ec38-4e70-bc1e-34ebef7140e0": {
+			"name": "Double Translation (NO >> EN >> FR)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"94a8740a-a495-4c6d-a3ac-2a33db175408": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 66,
+			"request": 1
+		},
+		"eb757e55-39d3-43e2-8ff1-3c49117a1671": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 20,
+			"request": 1
+		},
+		"db19f44b-323d-4d88-8a7f-967d04b1b6e1": {
+			"name": "Double Translation (HE >> EN >> FR)",
+			"nbCharacters": 141,
+			"request": 1
+		},
+		"5a1e1257-0797-4506-90fa-107287bde16f": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 3866,
+			"request": 31
+		},
+		"6fe83de4-a356-4374-b244-75d4324fa6ed": {
+			"name": "Translator NMT MyGenericPLUS (L) - ENDE",
+			"nbCharacters": 30693,
+			"request": 615
+		},
+		"564cabaf-ee71-4953-966c-3aa068ac6287": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 4834,
+			"request": 4
+		},
+		"f7706d02-4e1d-437a-920e-ea9efbbc5a17": {
+			"name": "Double Translation (HR >> EN >> FR)",
+			"nbCharacters": 29,
+			"request": 1
+		},
+		"595c388d-e604-4cc7-a0a0-c9a1c0650b4c": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 45239,
+			"request": 3
+		},
+		"c7058a35-bce3-4baa-9a39-febe617048f6": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 311264,
+			"request": 2999
+		},
+		"3903a1a6-2918-4824-b5a4-b68976ba6896": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 330789,
+			"request": 2777
+		},
+		"39f39e61-cdd5-45f5-9f40-ed1e297a34ef": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 40014,
+			"request": 2
+		},
+		"70396b16-7821-4a0a-b194-5d2203d5e5e2": {
+			"name": "Translator NMT myGenericPLUS (L) - ENIT",
+			"nbCharacters": 6187,
+			"request": 163
+		},
+		"ea53525f-0278-4ff6-932b-5fcd55e2869b": {
+			"name": "0 FR > EN (Trained) for TGF",
+			"nbCharacters": 418,
+			"request": 11
+		},
+		"518af644-4708-460e-b367-6bc3e1f64feb": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 8170,
+			"request": 2
+		},
+		"23c1d61d-939f-4f27-9246-56ba6063f665": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 4142943,
+			"request": 15505
+		},
+		"ece72804-51c5-4231-a9b7-6e3534c2fc0c": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 7099,
+			"request": 159
+		},
+		"50294047-895c-4937-8008-97bfee21c118": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 365,
+			"request": 2
+		},
+		"d6792d84-f3d7-49ce-a83e-dc79604f6f15": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1539,
+			"request": 4
+		},
+		"1f4c0d1d-a3c7-491c-bf87-1ff8da060b97": {
+			"name": "Model: Legal (by Crosslang)",
+			"nbCharacters": 8380,
+			"request": 1
+		},
+		"54be61eb-d952-4700-9392-05178bebe370": {
+			"name": "dico PUI",
+			"nbCharacters": 532,
+			"request": 1
+		},
+		"c1ea2b34-d590-4baf-a734-8687bb4dd6d1": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 9492,
+			"request": 787
+		},
+		"c8e4d975-fd9f-41d3-b139-abdcf8601166": {
+			"name": "Model: Finance (by Systran)",
+			"nbCharacters": 347,
+			"request": 13
+		},
+		"a2c0c1c5-dbbf-4d45-8759-840f2f85359b": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 406,
+			"request": 1
+		},
+		"b1f08586-d67a-419d-8473-c9fb9ba97d76": {
+			"name": "Power_Transmission_ENFR_with_UD",
+			"nbCharacters": 1080,
+			"request": 1
+		},
+		"1b2ce4a4-3e49-42fb-9869-b41738f34d5c": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 971,
+			"request": 1
+		},
+		"c68cd344-9f16-4bcc-b687-b03cd9595ff7": {
+			"name": "DILA FREN",
+			"nbCharacters": 10916,
+			"request": 4
+		},
+		"95e5694a-b612-4842-8bd7-cdea9cd6c0e2": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1822,
+			"request": 2
+		},
+		"c1575a2f-6aed-4ffd-8744-1f677d440ce1": {
+			"name": "Double Translation (FR >> EN >> JA)",
+			"nbCharacters": 908,
+			"request": 1
+		}
+	},
+	"size": {
+		"L": {
+			"nbCharacters": 5873481,
+			"request": 25830
+		},
+		"M": {
+			"nbCharacters": 107575,
+			"request": 97
+		}
+	},
+	"source": {
+		"fr": {
+			"nbCharacters": 67433,
+			"request": 63
+		},
+		"en": {
+			"nbCharacters": 5771358,
+			"request": 26252
+		},
+		"auto": {
+			"nbCharacters": 0,
+			"request": 15
+		},
+		"es": {
+			"nbCharacters": 104403,
+			"request": 111
+		},
+		"de": {
+			"nbCharacters": 20685,
+			"request": 37
+		},
+		"th": {
+			"nbCharacters": 51,
+			"request": 3
+		},
+		"nl": {
+			"nbCharacters": 172,
+			"request": 9
+		},
+		"sq": {
+			"nbCharacters": 0,
+			"request": 1
+		},
+		"it": {
+			"nbCharacters": 3887,
+			"request": 35
+		},
+		"ja": {
+			"nbCharacters": 2784,
+			"request": 6
+		},
+		"ro": {
+			"nbCharacters": 472,
+			"request": 5
+		},
+		"ur": {
+			"nbCharacters": 12,
+			"request": 6
+		},
+		"ms": {
+			"nbCharacters": 15,
+			"request": 3
+		},
+		"zh-Hans": {
+			"nbCharacters": 2011,
+			"request": 8
+		},
+		"cy": {
+			"nbCharacters": 0,
+			"request": 1
+		},
+		"ar": {
+			"nbCharacters": 5411,
+			"request": 16
+		},
+		"ko": {
+			"nbCharacters": 1115,
+			"request": 1
+		},
+		"da": {
+			"nbCharacters": 1,
+			"request": 2
+		},
+		"vi": {
+			"nbCharacters": 60,
+			"request": 4
+		},
+		"no": {
+			"nbCharacters": 25,
+			"request": 2
+		},
+		"ka": {
+			"nbCharacters": 0,
+			"request": 1
+		},
+		"pl": {
+			"nbCharacters": 20,
+			"request": 2
+		},
+		"he": {
+			"nbCharacters": 141,
+			"request": 2
+		},
+		"hr": {
+			"nbCharacters": 29,
+			"request": 2
+		},
+		"fa": {
+			"nbCharacters": 971,
+			"request": 2
+		}
+	},
+	"target": {
+		"en": {
+			"nbCharacters": 46817,
+			"request": 101
+		},
+		"zh-Hans": {
+			"nbCharacters": 8191,
+			"request": 44
+		},
+		"it": {
+			"nbCharacters": 584768,
+			"request": 1404
+		},
+		"es": {
+			"nbCharacters": 9033,
+			"request": 48
+		},
+		"ar": {
+			"nbCharacters": 61772,
+			"request": 50
+		},
+		"fr": {
+			"nbCharacters": 392861,
+			"request": 2049
+		},
+		"fi": {
+			"nbCharacters": 698,
+			"request": 2
+		},
+		"de": {
+			"nbCharacters": 364831,
+			"request": 3407
+		},
+		"ja": {
+			"nbCharacters": 352186,
+			"request": 3003
+		},
+		"et": {
+			"nbCharacters": 4142943,
+			"request": 15505
+		},
+		"hi": {
+			"nbCharacters": 7099,
+			"request": 159
+		},
+		"fa": {
+			"nbCharacters": 365,
+			"request": 2
+		},
+		"ka": {
+			"nbCharacters": 9492,
+			"request": 791
+		}
+	},
+	"techName": {
+		"Docker-OpenNMT-ctranslate": {
+			"nbCharacters": 5981056,
+			"request": 25927
+		}
+	},
+	"techType": {
+		"NMT": {
+			"nbCharacters": 5981056,
+			"request": 25927
+		}
+	},
+	"translationResourceId": {
+		"178cb29d-926e-4a53-85d2-8d3997f2adce": {
+			"nbCharacters": 1912,
+			"request": 5
+		},
+		"31be0462-30ca-4b63-9c92-dca26249a8d8": {
+			"nbCharacters": 8191,
+			"request": 44
+		},
+		"992a455a-900c-4490-b5b9-8a1d9ec6a28c": {
+			"nbCharacters": 9487,
+			"request": 48
+		},
+		"f4d6b5fc-db45-4898-9f0c-86842eb2d5e3": {
+			"nbCharacters": 9033,
+			"request": 48
+		},
+		"f1e2042e-c429-44e1-8641-27b5c0fd36ba": {
+			"nbCharacters": 16533,
+			"request": 47
+		},
+		"3b413678-6aac-4e43-9088-58733092dcce": {
+			"nbCharacters": 15141,
+			"request": 52
+		},
+		"185ede5c-d19f-4d99-86eb-9d98e92f6776": {
+			"nbCharacters": 0,
+			"request": 596
+		},
+		"94642e5f-28e2-4842-9fcb-77dbbf68fe96": {
+			"nbCharacters": 698,
+			"request": 1
+		},
+		"ce87256c-ca72-4b0b-93b5-ad6b5f2d3b12": {
+			"nbCharacters": 574158,
+			"request": 1008
+		},
+		"a66367c4-8366-483e-a5f2-415dbb3c9a08": {
+			"nbCharacters": 609,
+			"request": 25
+		},
+		"41bf3697-6af4-4852-a44e-7a4e773927c3": {
+			"nbCharacters": 387,
+			"request": 8
+		},
+		"4c231358-ddd5-4680-bc41-c8574383b024": {
+			"nbCharacters": 37,
+			"request": 1
+		},
+		"acc21ad3-bde6-434c-9fe9-477a45757746": {
+			"nbCharacters": 90,
+			"request": 2
+		},
+		"422fa011-5a0b-4922-ae6e-99dbae47f772": {
+			"nbCharacters": 240608,
+			"request": 1048
+		},
+		"1a13a8e2-6ca7-40ae-bbda-e69defd6ae7d": {
+			"nbCharacters": 3349,
+			"request": 15
+		},
+		"3ebaac5c-f099-4630-aae5-e10183263ec8": {
+			"nbCharacters": 1115,
+			"request": 1
+		},
+		"13fab0b0-3687-48e4-96e9-b392b134ea64": {
+			"nbCharacters": 22199,
+			"request": 573
+		},
+		"ed0799bc-2cbe-4efb-ab64-d36ce9071d91": {
+			"nbCharacters": 540,
+			"request": 5
+		},
+		"698f0ce5-451e-4882-900a-9e3fd9fea5bc": {
+			"nbCharacters": 1,
+			"request": 1
+		},
+		"c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+			"nbCharacters": 17821,
+			"request": 10
+		},
+		"14e9ce6d-bbad-4f63-b3ac-9df0a4aabf61": {
+			"nbCharacters": 11766,
+			"request": 8
+		},
+		"87813889-55b2-4f57-b396-26d6e5eabf9c": {
+			"nbCharacters": 103794,
+			"request": 35
+		},
+		"286554c5-b0a1-4041-ba5c-ccdd551edc78": {
+			"nbCharacters": 51,
+			"request": 1
+		},
+		"be2ad60d-b71f-455b-bef9-37b2810317bd": {
+			"nbCharacters": 152,
+			"request": 5
+		},
+		"f5a56cf0-48f8-4e06-89d1-494866b1949e": {
+			"nbCharacters": 172,
+			"request": 3
+		},
+		"05211179-340e-4522-aa02-49c4fec56333": {
+			"nbCharacters": 21,
+			"request": 1
+		},
+		"e666cf9e-713f-46fc-9fb8-52f51cdd2990": {
+			"nbCharacters": 962,
+			"request": 2
+		},
+		"22138a4e-a4f1-4905-9990-4c9326ecf925": {
+			"nbCharacters": 12,
+			"request": 2
+		},
+		"8f364326-36ad-4f59-a7cb-16401ca0cbd9": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"e86dd7b7-ad2b-437e-9b6c-e9adf6e90776": {
+			"nbCharacters": 60,
+			"request": 2
+		},
+		"556dbc0f-5cb8-4a9b-a459-f1e0bd86f0c2": {
+			"nbCharacters": 472,
+			"request": 2
+		},
+		"bb383812-0816-4e0d-bcbb-a35edf362257": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"10fa13b8-931e-469b-8ebb-08d375eaeaae": {
+			"nbCharacters": 66,
+			"request": 1
+		},
+		"4a4c2cf0-0a74-409f-a28c-889c565cb195": {
+			"nbCharacters": 20,
+			"request": 1
+		},
+		"ac895e3b-b216-45a2-adc1-6dc3a7e05116": {
+			"nbCharacters": 141,
+			"request": 1
+		},
+		"07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff": {
+			"nbCharacters": 3866,
+			"request": 31
+		},
+		"a121f78c-07fb-4fde-9814-3e2d2e6347f7": {
+			"nbCharacters": 361482,
+			"request": 3392
+		},
+		"697c531a-5c5b-4c00-8e39-da30fc28ee99": {
+			"nbCharacters": 4834,
+			"request": 4
+		},
+		"5598a561-c375-455a-abe8-e20d29eda223": {
+			"nbCharacters": 29,
+			"request": 1
+		},
+		"9c692d1c-6410-4d98-9489-c98d4194e9fe": {
+			"nbCharacters": 45239,
+			"request": 3
+		},
+		"b7f98ea6-8717-4669-909e-2612256334c5": {
+			"nbCharacters": 311264,
+			"request": 2999
+		},
+		"18ef9be9-1a5a-4b5c-8181-2e00d48ed141": {
+			"nbCharacters": 40014,
+			"request": 2
+		},
+		"e1505d7c-8674-4d92-a749-71720600f10d": {
+			"nbCharacters": 418,
+			"request": 11
+		},
+		"e7123cc7-d198-4691-a3e6-fb16d76ff2b9": {
+			"nbCharacters": 4142943,
+			"request": 15505
+		},
+		"05f701e3-03d2-4fed-b823-16fcf01c0071": {
+			"nbCharacters": 7099,
+			"request": 159
+		},
+		"4a69e785-fcc8-4095-a088-fa706394a132": {
+			"nbCharacters": 365,
+			"request": 2
+		},
+		"fb8cc1e6-9876-49d0-b906-c8b3cc5dfd62": {
+			"nbCharacters": 1539,
+			"request": 4
+		},
+		"d87b8f1f-bb5a-44ba-994e-98918063585e": {
+			"nbCharacters": 8380,
+			"request": 1
+		},
+		"8b4c789b-c161-48d2-a07f-ad82172c22cf": {
+			"nbCharacters": 9492,
+			"request": 787
+		},
+		"263c226a-bf15-4add-acd6-b22bb92a228f": {
+			"nbCharacters": 347,
+			"request": 13
+		},
+		"6b819569-d474-4484-a4a3-6664245da001": {
+			"nbCharacters": 406,
+			"request": 1
+		},
+		"20e79057-8a53-4e73-ad4f-e037f9a59a9e": {
+			"nbCharacters": 971,
+			"request": 1
+		},
+		"1055bdfb-e970-4a23-aad4-9dde32cab96e": {
+			"nbCharacters": 1822,
+			"request": 2
+		},
+		"f5fd1d4f-4487-45a3-aa5f-7e4d02e7e7d3": {
+			"nbCharacters": 908,
+			"request": 1
+		}
+	},
+	"userAgent": {
+		"File Translate Box": {
+			"nbCharacters": 915550,
+			"request": 1866
+		},
+		"gateway": {
+			"nbCharacters": 4238902,
+			"request": 15794
+		},
+		"Google compat mode": {
+			"nbCharacters": 653863,
+			"request": 5929
+		},
+		"Office Add-Ins - File Translation": {
+			"nbCharacters": 74168,
+			"request": 36
+		},
+		"SYSTRAN Browser Extension - Chrome / Page": {
+			"nbCharacters": 89418,
+			"request": 2581
+		},
+		"SYSTRAN Browser Extension - Chrome / Text": {
+			"nbCharacters": 554,
+			"request": 42
+		},
+		"SYSTRAN Browser Extension - Firefox / Page": {
+			"nbCharacters": 5218,
+			"request": 361
+		},
+		"SYSTRAN Windows App - File Translation": {
+			"nbCharacters": 2800,
+			"request": 1
+		},
+		"SYSTRAN Browser Extension - Firefox / Text": {
+			"nbCharacters": 583,
+			"request": 3
+		}
+	}
+}

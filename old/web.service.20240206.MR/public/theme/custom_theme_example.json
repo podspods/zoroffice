@@ -1,0 +1,22 @@
+{
+  "palette": {
+    "primary": {
+      "light": "#F8FCFF",
+      "main": "#1A519A",
+      "dark": "#133F7A",
+      "hover": "#133F7A",
+      "active": "#033261",
+      "activeShadow": "#5ABFEA",
+      "contrastText": "#fff",
+      "textColor": {
+        "main": "#1A519A",
+        "hover": "#133F7A",
+        "active": "#033261"
+      }
+    },
+    "navigationColor": {
+      "hover": "#E5F1F8",
+      "active": "#1A519A"
+    }
+  }
+}

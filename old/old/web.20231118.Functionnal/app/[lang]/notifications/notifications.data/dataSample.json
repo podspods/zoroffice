@@ -1,0 +1,25 @@
+{
+	"total": 1,
+	"offset": 0,
+	"notifications": [
+	
+		{
+			"id": "6488959f18de370e30ebb15e",
+			"insertedAt": "2023-11-08T15:28:56.294Z",
+			"level": "error",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "7be078af-8542-44bb-89b9-01fb697dddaa",
+						"label": "Organization_chart_SYSTRAN_SAS_2023-06-12.pdf"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+  "displayName": "Computing Node (TRM)",
+  "id": "65bc3423eb6ceaf920c2a3ba",
+  "hostname": "trm",
+  "status": "running",
+  "app": {
+    "name": "TranslationResourceMonitor",
+    "version": "8.31.1-2.el8",
+    "semverVersion": "8.31.1",
+    "invalidVersion": false
+  },
+  "lastUpdate": "2024-02-02T11:25:18.341Z",
+  "lastSuccessfulUpdate": "2024-02-02T11:25:18.341Z",
+  "nbCores": 8,
+  "loadAverage": "2.98 2.33 2.23",
+  "totalMemory": "30083540",
+  "availableMemory": "8241172",
+  "freeMemory": "750076",
+  "cachedMemory": "7022160",
+  "buffersMemory": "341880",
+  "totalDisk": "203056560",
+  "availableDisk": "94788812",
+  "freeDisk": "94805196",
+  "os": "AlmaLinux release 8.9 (Midnight Oncilla)",
+  "uptime": "449 days, 20:38:9",
+  "nbInstances": 3,
+  "translationResources": [
+    {
+      "id": "2b7126af-991f-41ac-ae27-80f956bc8a53",
+      "name": "PTE Data Generic (L) fren",
+      "status": "downloaded",
+      "nbInstances": 0,
+      "routes": []
+    },
+    {
+      "id": "1d046c5e-748d-4ae9-a826-65d0756cbd43",
+      "name": "Container Data Generic (L) fren",
+      "status": "downloaded",
+      "nbInstances": 0,
+      "routes": []
+    },
+    {
+      "id": "10b0b924-8e39-43ea-81c8-cc62478b25fa",
+      "name": "Translator NMT Generic (L) - FREN",
+      "status": "installed",
+      "nbInstances": 1,
+      "routes": [
+        {
+          "_id": "65bc3514eb6ceaf920c51ee4",
+          "profileId": "cebc64f7-ac6c-49b1-9aa9-9a6c0cd86822",
+          "queue": "10b0b924-8e39-43ea-81c8-cc62478b25fa",
+          "serverVersion": "0cba5f40-763f-4b6c-8709-8975373194bd_8.31.0-0.el8",
+          "service": "Translate_fr_en",
+          "comment": {
+            "profileId": "65bc34adb26ba04c14a1141c",
+            "serviceName": "Translator NMT Generic (L) - FREN",
+            "translationResourceId": "10b0b924-8e39-43ea-81c8-cc62478b25fa",
+            "translationResourceName": "Translator NMT Generic (L) - FREN"
+          },
+          "deactivated": false,
+          "eTag": "5040923f-d7f9-406d-a88d-13bd51ceb5f0",
+          "insertedAt": "2024-02-02T00:19:32.450Z",
+          "insertionTime": "1706833069250",
+          "internal": false,
+          "json_schema": {
+            "additionalProperties": false,
+            "properties": {
+              "locale": {
+                "default": "en-US",
+                "enum": [
+                  "en-US",
+                  "en-GB",
+                  "en-CA"
+                ],
+                "title": "Locale",
+                "type": "string"
+              }
+            },
+            "title": "Locale",
+            "type": "object"
+          },
+          "options": [
+            {
+              "name": "json_schema",
+              "value": "{\"properties\":{\"locale\":{\"default\":\"en-US\",\"enum\":[\"en-US\",\"en-GB\",\"en-CA\"],\"title\":\"Locale\",\"type\":\"string\"}},\"title\":\"Locale\",\"type\":\"object\"}"
+            },
+            {
+              "name": "supported_features",
+              "value": "{\"ND\":true,\"TM\":true,\"UD\":true,\"NFA\":true,\"Multi-Locale\":true}"
+            }
+          ],
+          "priority": 0,
+          "public": true,
+          "running": true,
+          "selectors": {
+            "domain": "Generic",
+            "owner": "Systran",
+            "size": "L",
+            "strictProfileMatching": "true",
+            "tech": {
+              "name": "OpenNMT-ctranslate",
+              "type": "NMT"
+            }
+          },
+          "sharingStatus": "public",
+          "source": "fr",
+          "target": "en",
+          "version": "2.0"
+        }
+      ]
+    },
+    {
+      "id": "0344d189-9ed5-4043-8067-946a072e6e55",
+      "name": "Translator NMT Generic (L) - ENFR",
+      "status": "installed",
+      "nbInstances": 1,
+      "routes": [
+        {
+          "_id": "65bc3514eb6ceaf920c51ee7",
+          "profileId": "a86540ce-1b2c-4cd2-b8a9-4037edcf21b6",
+          "queue": "0344d189-9ed5-4043-8067-946a072e6e55",
+          "serverVersion": "0cba5f40-763f-4b6c-8709-8975373194bd_8.31.0-0.el8",
+          "service": "Translate_en_fr",
+          "comment": {
+            "profileId": "65bc34adb26ba0e544a11420",
+            "serviceName": "Translator NMT Generic (L) - ENFR",
+            "translationResourceId": "0344d189-9ed5-4043-8067-946a072e6e55",
+            "translationResourceName": "Translator NMT Generic (L) - ENFR"
+          },
+          "deactivated": false,
+          "eTag": "69f2cd4e-d238-411c-b467-c8e303c51368",
+          "insertedAt": "2024-02-02T00:19:32.451Z",
+          "insertionTime": "1706833069339",
+          "internal": false,
+          "json_schema": {
+            "additionalProperties": false
+          },
+          "options": [
+            {
+              "name": "json_schema",
+              "value": "{}"
+            },
+            {
+              "name": "supported_features",
+              "value": "{\"ND\":true,\"UD\":true,\"TM\":true,\"NFA\":true}"
+            }
+          ],
+          "priority": 0,
+          "public": true,
+          "running": true,
+          "selectors": {
+            "domain": "Generic",
+            "owner": "Systran",
+            "size": "L",
+            "strictProfileMatching": "true",
+            "tech": {
+              "name": "OpenNMT-ctranslate",
+              "type": "NMT"
+            }
+          },
+          "sharingStatus": "public",
+          "source": "en",
+          "target": "fr",
+          "version": "2.0"
+        }
+      ]
+    },
+    {
+      "id": "2239b878-f944-46d7-be5f-6846baaa7eac",
+      "name": "PTE Data Generic (L) enfr",
+      "status": "downloaded",
+      "nbInstances": 0,
+      "routes": []
+    },
+    {
+      "id": "4e011e92-195e-46bf-9a8f-67b68e1a7d85",
+      "name": "Common Translator Engine",
+      "status": "downloaded",
+      "nbInstances": 0,
+      "routes": []
+    },
+    {
+      "id": "6cfb346b-859b-495f-94cc-23d99301526d",
+      "name": "Filter",
+      "status": "installed",
+      "nbInstances": 1,
+      "routes": [
+        {
+          "_id": "65bc3514eb6ceaf920c51ee5",
+          "profileId": "af6f3d7f-4b85-4dad-88d7-13d04dbf05f5",
+          "queue": "6cfb346b-859b-495f-94cc-23d99301526d",
+          "serverVersion": "0cba5f40-763f-4b6c-8709-8975373194bd_8.31.0-0.el8",
+          "service": "Filter",
+          "comment": {
+            "serviceName": "Filter",
+            "translationResourceId": "6cfb346b-859b-495f-94cc-23d99301526d",
+            "translationResourceName": "Filter"
+          },
+          "deactivated": false,
+          "eTag": "7a4a0ee0-63ea-4ef8-ac2f-850c754fedd6",
+          "insertedAt": "2024-02-02T00:19:32.450Z",
+          "insertionTime": "1706833068604",
+          "internal": false,
+          "priority": 0,
+          "public": true,
+          "running": true,
+          "selectors": {
+            "strictProfileMatching": "true"
+          },
+          "sharingStatus": "public",
+          "version": "2.0"
+        }
+      ]
+    },
+    {
+      "id": "b0b85d25-694c-4d66-85a0-3988055d511b",
+      "name": "Container Data Generic (L) enfr",
+      "status": "downloaded",
+      "nbInstances": 0,
+      "routes": []
+    }
+  ],
+  "name": "Computing Node"
+},

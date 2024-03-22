@@ -1,0 +1,16 @@
+{
+	"groups": [
+		{
+			"name": "Administrator",
+			"roles": [],
+			"accounts": [],
+			"id": "65832b57166836000be8b53f"
+		},
+		{
+			"name": "Default",
+			"roles": [],
+			"accounts": [],
+			"id": "65832b57166836000be8b538"
+		}
+	]
+}

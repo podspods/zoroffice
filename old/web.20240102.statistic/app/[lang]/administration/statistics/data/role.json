@@ -1,0 +1,48 @@
+{
+	"name": {
+		"familyName": "Administrator"
+	},
+	"provider": "local",
+	"enable": true,
+	"email": "admin@systran.fr",
+	"groups": [],
+	"roles": [
+		{
+			"id": "65832b57166836000be8b527",
+			"name": "Default User"
+		},
+		{
+			"id": "65832b57166836000be8b504",
+			"name": "super"
+		}
+	],
+	"displayName": "Administrator",
+	"groupRoles": [],
+	"id": "65832b57166836000be8b52e",
+	"authorizations": {
+		"permissions": {
+			"user": true,
+			"user self update": true,
+			"user personal statistics": true,
+			"notifications": true,
+			"help": true,
+			"feedback submit": true,
+			"translation box": true,
+			"translation box settings": true,
+			"translation concordance": true,
+			"translation file": true,
+			"translation file postedit": true,
+			"translation file PDF": true,
+			"labs": true,
+			"user api keys": true,
+			"user api credentials": true,
+			"user active applications": true
+		},
+		"isSuper": true,
+		"userId": "65832b57166836000be8b52e"
+	},
+	"preferences": {
+		"notificationLevel": "info",
+		"localizationLanguage": "auto"
+	}
+}

@@ -1,0 +1,51 @@
+import React, { CSSProperties } from 'react';
+import Chip from '@mui/material/Chip';
+import styled from '@emotion/styled';
+// import {SystranTheme} from '@systran/react-components/lib/Theme/theme';
+import { useTranslation } from 'react-i18next';
+import { Theme } from '@mui/material';
+
+export enum Status {
+  DEFAULT = 'default',
+  ERROR = 'error',
+  INFO = 'info',
+  SUCCESS = 'success',
+  WARNING = 'warning',
+  PRIMARY = 'primary'
+}
+
+type Props = {
+  text: string;
+  type?: Status;
+  style?: CSSProperties;
+  title?: string;
+};
+
+
+export default function StatusBadge({
+  text,
+  type = Status.DEFAULT,
+  style,
+  title
+}: Props) {
+  const typeStatus = type === 'info' || type === 'primary' ? 'secondary' : type;
+  const { t } = useTranslation();
+
+  return (
+    <StyledChip
+      label={t(text)}
+      title={title ? t(title) : undefined}
+      className={`label label-${type}`}
+      style={{ ...style }}
+      typeStatus={typeStatus.valueOf()}
+    />
+  );
+}
+
+const StyledChip = styled(Chip)<{ theme?: Theme; typeStatus: Status }>`
+  border-radius: 5px;
+  min-width: 82px;
+  background-color: ${({ theme, typeStatus }) =>
+    theme.palette[typeStatus].light};
+  color: ${({ theme, typeStatus }) => theme.palette[typeStatus].dark};
+`;

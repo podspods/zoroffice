@@ -1,0 +1,473 @@
+{
+    "total": 16,
+    "offset": 0,
+    "notifications": [
+        {
+            "id": "64d5e03046dc67e57f918160",
+            "insertedAt": "2023-08-11T07:16:00.800Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "51f5a4aa-b1c2-4c2f-ba65-5e3ece1e9ed0",
+                        "label": "51f5a4aa-b1c2-4c2f-ba65-5e3ece1e9ed0"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff",
+                        "label": "07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "64d4c956d3af42e5879a1bc2",
+            "insertedAt": "2023-08-10T11:26:14.005Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "b059ff16-83ec-4fb1-bb49-3f58a21b9159",
+                        "label": "b059ff16-83ec-4fb1-bb49-3f58a21b9159"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "20e79057-8a53-4e73-ad4f-e037f9a59a9e",
+                        "label": "20e79057-8a53-4e73-ad4f-e037f9a59a9e"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "64afc7fcbbabe38c0748a4ee",
+            "insertedAt": "2023-07-13T09:46:36.777Z",
+            "level": "error",
+            "str": {
+                "display": "Unable to import the corpus ${filename}: ${err}",
+                "data": {
+                    "filename": {
+                        "type": "string",
+                        "value": "/file.tmx"
+                    },
+                    "err": {
+                        "type": "error",
+                        "value": 502
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "640b0edb2e4ebb18756d27e6",
+            "insertedAt": "2023-03-10T11:04:59.615Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "640a10d16ac5359df3939e6f",
+            "insertedAt": "2023-03-09T17:01:05.688Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "eaeb7470-0b05-4a72-823b-bdba9038eade",
+                        "label": "eaeb7470-0b05-4a72-823b-bdba9038eade"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "eaeb7470-0b05-4a72-823b-bdba9038eade",
+                        "label": "eaeb7470-0b05-4a72-823b-bdba9038eade"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "640a1079ead6d7a11f7987de",
+            "insertedAt": "2023-03-09T16:59:37.966Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "429d642f-f4f6-46c2-baab-794c9f658f1a",
+                        "label": "429d642f-f4f6-46c2-baab-794c9f658f1a"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "429d642f-f4f6-46c2-baab-794c9f658f1a",
+                        "label": "429d642f-f4f6-46c2-baab-794c9f658f1a"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "640a1075377149a11ed74f0b",
+            "insertedAt": "2023-03-09T16:59:33.991Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "e67d0457-e26c-4273-a8f5-25f93515d527",
+                        "label": "e67d0457-e26c-4273-a8f5-25f93515d527"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "e67d0457-e26c-4273-a8f5-25f93515d527",
+                        "label": "e67d0457-e26c-4273-a8f5-25f93515d527"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "63dd3902335eaf8d5fdb0806",
+            "insertedAt": "2023-02-03T16:40:34.913Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "63b6dc88f8a5aa56b7b7026b",
+            "insertedAt": "2023-01-05T14:19:52.461Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca",
+                        "label": "1192e5f8-025f-4ddd-b551-192f2c6ac8ca"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "639ae2ab96387e5b9ae87381",
+            "insertedAt": "2022-12-15T09:02:35.219Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "51f5a4aa-b1c2-4c2f-ba65-5e3ece1e9ed0",
+                        "label": "51f5a4aa-b1c2-4c2f-ba65-5e3ece1e9ed0"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff",
+                        "label": "07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "639ad3ea17217b61cb91e593",
+            "insertedAt": "2022-12-15T07:59:38.709Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "146f7323-a7b6-4179-ad77-dd4ec03b6b01",
+                        "label": "146f7323-a7b6-4179-ad77-dd4ec03b6b01"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "c2be67d6-344e-481d-ac3c-e8b39d27db92",
+                        "label": "c2be67d6-344e-481d-ac3c-e8b39d27db92"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "62e23f76c335516df14ccc29",
+            "insertedAt": "2022-07-28T07:49:10.448Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "b851b52a-c748-4866-84bd-ff30f22edcb0",
+                        "label": "b851b52a-c748-4866-84bd-ff30f22edcb0"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "f4d6b5fc-db45-4898-9f0c-86842eb2d5e3",
+                        "label": "f4d6b5fc-db45-4898-9f0c-86842eb2d5e3"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": false,
+            "pushed": true
+        },
+        {
+            "id": "6286109988e2311048b024ed",
+            "insertedAt": "2022-05-19T09:40:41.481Z",
+            "level": "error",
+            "str": {
+                "display": "${type} Translation Resource ${id} to ${upgradeId} with error : ${err}",
+                "data": {
+                    "type": {
+                        "value": "upgrade",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "tr",
+                        "value": "5b0d006b-1f03-4c80-9c7c-fb67b027728a",
+                        "label": "5b0d006b-1f03-4c80-9c7c-fb67b027728a"
+                    },
+                    "upgradeId": {
+                        "type": "tr",
+                        "value": "c6211ccb-061e-4c56-b966-925a32a59913",
+                        "label": "c6211ccb-061e-4c56-b966-925a32a59913"
+                    },
+                    "err": {
+                        "type": "string",
+                        "value": "Unable to upgrade TR correctly"
+                    }
+                },
+                "v": 2
+            },
+            "read": true,
+            "pushed": true
+        },
+        {
+            "id": "61efcca823ff984536228609",
+            "insertedAt": "2022-01-25T10:10:48.111Z",
+            "level": "error",
+            "str": {
+                "display": "Unable to install the translation resource ${tr} on the node ${n}",
+                "data": {
+                    "tr": {
+                        "type": "tr",
+                        "value": "93a4cba9-7f5a-4a6f-ae89-b4a11cc3b98d",
+                        "label": "93a4cba9-7f5a-4a6f-ae89-b4a11cc3b98d"
+                    },
+                    "n": {
+                        "type": "node",
+                        "value": "st-trm-l-07.stranslate-prod",
+                        "label": "st-trm-l-07.stranslate-prod"
+                    }
+                },
+                "v": 2
+            },
+            "read": true
+        },
+        {
+            "id": "61efcc79b65ec2510a3b55e0",
+            "insertedAt": "2022-01-25T10:10:01.253Z",
+            "level": "error",
+            "str": {
+                "display": "Unable to apply ${nb} instances to the translation resource ${tr} on the node ${n}",
+                "data": {
+                    "tr": {
+                        "type": "tr",
+                        "value": "3c6780dc-4919-40d6-8c54-2473045d820d",
+                        "label": "3c6780dc-4919-40d6-8c54-2473045d820d"
+                    },
+                    "n": {
+                        "type": "node",
+                        "value": "st-trm-l-07.stranslate-prod",
+                        "label": "st-trm-l-07.stranslate-prod"
+                    },
+                    "nb": {
+                        "type": "string",
+                        "value": 1
+                    }
+                },
+                "v": 2
+            },
+            "read": true
+        },
+        {
+            "id": "61efcc79b65ec2510a3b55df",
+            "insertedAt": "2022-01-25T10:10:01.244Z",
+            "level": "error",
+            "str": {
+                "display": "Unable to apply ${nb} instances to the translation resource ${tr} on the node ${n}",
+                "data": {
+                    "tr": {
+                        "type": "tr",
+                        "value": "3c6780dc-4919-40d6-8c54-2473045d820d",
+                        "label": "3c6780dc-4919-40d6-8c54-2473045d820d"
+                    },
+                    "n": {
+                        "type": "node",
+                        "value": "st-trm-l-05.stranslate-prod",
+                        "label": "st-trm-l-05.stranslate-prod"
+                    },
+                    "nb": {
+                        "type": "string",
+                        "value": 1
+                    }
+                },
+                "v": 2
+            },
+            "read": true
+        }
+    ]
+}

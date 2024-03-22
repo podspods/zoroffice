@@ -1,0 +1,1743 @@
+{
+	"accountId": {
+		"633c4421fa33eb2029518fa2": {
+			"name": "Elena Spiridonova",
+			"nbCharacters": 9971,
+			"request": 173
+		},
+		"623a6ea29f565858588834cb": {
+			"name": "Gina Oh",
+			"nbCharacters": 6009,
+			"request": 218
+		},
+		"648890bea0fa3f2b02079e51": {
+			"name": "Emile DESTRIEUX",
+			"nbCharacters": 23688,
+			"request": 413
+		},
+		"6220f6e9d2e3fb121bb85818": {
+			"name": "Caroline ROYER",
+			"nbCharacters": 10333,
+			"request": 106
+		},
+		"5ece98c83729f50d5dfb91fb": {
+			"name": "SHULER Ashley",
+			"nbCharacters": 6708,
+			"request": 102
+		},
+		"5fdcfb0121b8d53788d6386a": {
+			"name": "Philip STAIGER",
+			"nbCharacters": 5950,
+			"request": 69
+		},
+		"5ef4f2d872f70f7e9db5559d": {
+			"name": "Philip Staiger",
+			"nbCharacters": 33889,
+			"request": 689
+		},
+		"61caedf62a26686c3d65d292": {
+			"name": "Ramzi Rahli",
+			"nbCharacters": 8024,
+			"request": 43
+		},
+		"63b4467c96387e5b9a104de7": {
+			"name": "Izzy SKELLEY",
+			"nbCharacters": 1289,
+			"request": 34
+		},
+		"63639845216f8466e0341c8c": {
+			"name": "Annalena HÜTSCH",
+			"nbCharacters": 98424,
+			"request": 591
+		},
+		"6238480b731d685735ae4b0f": {
+			"name": "Antoine Senellart",
+			"nbCharacters": 778,
+			"request": 2
+		},
+		"6227182fc7705925546c8c17": {
+			"name": "Eleonore GAULTIER",
+			"nbCharacters": 6707,
+			"request": 79
+		},
+		"655386b17dc7c867204a776b": {
+			"name": "SunHyung LEE",
+			"nbCharacters": 538,
+			"request": 25
+		},
+		"6108feee2fc20a680b4956e4": {
+			"name": "Alexis Jacob",
+			"nbCharacters": 207,
+			"request": 12
+		},
+		"63e52210e2b290b102ec142f": {
+			"name": "Alexis MEYER",
+			"nbCharacters": 4487,
+			"request": 123
+		},
+		"5fdb87d291b4f535dbe2fd38": {
+			"name": "Yannick DOUZANT",
+			"nbCharacters": 1996,
+			"request": 65
+		},
+		"6245a6255a3a2a6e27c7bf46": {
+			"name": "Esther Bille",
+			"nbCharacters": 1596,
+			"request": 67
+		},
+		"654ba53e788c86b70bd3da27": {
+			"name": "Charlotte VAN DE VELDE",
+			"nbCharacters": 645,
+			"request": 17
+		},
+		"6262a638e5704071aab60d42": {
+			"name": "Alexandre DUBOIS",
+			"nbCharacters": 1217,
+			"request": 14
+		},
+		"603941a057c79a47d5099e3f": {
+			"name": "Nobutaka OKUMURA",
+			"nbCharacters": 2811,
+			"request": 11
+		},
+		"6192646cf0c33a130fe62cc6": {
+			"name": "Guillaume BRETIN",
+			"nbCharacters": 1775,
+			"request": 65
+		},
+		"62f29218d79a6a03c2e378d4": {
+			"name": "Aurore AUGIZEAU",
+			"nbCharacters": 1946,
+			"request": 43
+		},
+		"603e774fb9fbc21990cb5f8d": {
+			"name": "Guersande Chaminade",
+			"nbCharacters": 4,
+			"request": 2
+		},
+		"6525086b370764b400a5b25b": {
+			"name": "Koichi Sano",
+			"nbCharacters": 32,
+			"request": 4
+		},
+		"5fdb8a28f4b1504045ed0759": {
+			"name": "Christophe DEMONTEAUX",
+			"nbCharacters": 560,
+			"request": 44
+		},
+		"62272b6ffedf323a013cbf69": {
+			"name": "Mickaël KIFAJI SOCAR ",
+			"nbCharacters": 43899,
+			"request": 276
+		},
+		"64060e3ad5d5a2c5220c7f60": {
+			"name": "Malek FAKHFAKH",
+			"nbCharacters": 2767,
+			"request": 23
+		},
+		"634435b1222ed66cc0a8469a": {
+			"name": "Sacha WANONO",
+			"nbCharacters": 1,
+			"request": 1
+		},
+		"5fdcd9707afe010591dbe436": {
+			"name": "Janany PERINPARAJAH",
+			"nbCharacters": 3282,
+			"request": 34
+		}
+	},
+	"elapsedTime": 10688268,
+	"groupName": "Systran",
+	"groups": {
+		"601bf10868bffa1db67a072f": {
+			"groupName": "Systran",
+			"nbCharacters": 279533,
+			"request": 3345
+		},
+		"5fac4276088de25cc1d3cd10": {
+			"groupName": "Systran Linguists",
+			"nbCharacters": 6009,
+			"request": 218
+		},
+		"5e4569aced2b223fa952b5e6": {
+			"groupName": "SYSTRAN Account Manager",
+			"nbCharacters": 12791,
+			"request": 292
+		},
+		"5fdb8a28f4b1504045ed075a": {
+			"groupName": "Customer Service",
+			"nbCharacters": 6514,
+			"request": 115
+		},
+		"5ef4f1ca0484990d43ca7f9c": {
+			"groupName": "staiger",
+			"nbCharacters": 33889,
+			"request": 689
+		},
+		"60746f39419b8c553f475020": {
+			"groupName": "STAIGER_01",
+			"nbCharacters": 21631,
+			"request": 530
+		},
+		"5d1079ad76b502201f010725": {
+			"groupName": "Administrator",
+			"nbCharacters": 11153,
+			"request": 209
+		},
+		"5fdb8e31156b383e1197f59d": {
+			"groupName": "Customer Service Administrators",
+			"nbCharacters": 2811,
+			"request": 11
+		}
+	},
+	"mimeType": {
+		"text/plain": {
+			"nbCharacters": 273072,
+			"request": 3158
+		},
+		"text/html-old": {
+			"nbCharacters": 6461,
+			"request": 70
+		}
+	},
+	"nbCacheHits": 984,
+	"nbCharacters": 279533,
+	"nbCharactersCacheHits": 70507,
+	"nbSegments": 3845,
+	"nbTokens": 0,
+	"nbTus": 4400,
+	"nbTusFailed": 1,
+	"product": {
+		"SYSTRAN Translate API": {
+			"nbCharacters": 32509,
+			"request": 773
+		},
+		"SYSTRAN Pure Neural® Server": {
+			"nbCharacters": 247024,
+			"request": 2572
+		}
+	},
+	"request": 3345,
+	"serviceName": {
+		"detect/language": {
+			"nbCharacters": 0,
+			"request": 89
+		},
+		"translate/file": {
+			"nbCharacters": 279533,
+			"request": 3256
+		}
+	},
+	"source": {
+		"fr": {
+			"nbCharacters": 181486,
+			"request": 1525
+		},
+		"en": {
+			"nbCharacters": 77173,
+			"request": 1335
+		},
+		"zh-Hans": {
+			"nbCharacters": 1427,
+			"request": 84
+		},
+		"ko": {
+			"nbCharacters": 1415,
+			"request": 70
+		},
+		"vi": {
+			"nbCharacters": 1205,
+			"request": 36
+		},
+		"ro": {
+			"nbCharacters": 62,
+			"request": 7
+		},
+		"ka": {
+			"nbCharacters": 10,
+			"request": 1
+		},
+		"ar": {
+			"nbCharacters": 4429,
+			"request": 77
+		},
+		"de": {
+			"nbCharacters": 8720,
+			"request": 70
+		},
+		"fa": {
+			"nbCharacters": 7,
+			"request": 1
+		},
+		"no": {
+			"nbCharacters": 13,
+			"request": 2
+		},
+		"tr": {
+			"nbCharacters": 824,
+			"request": 44
+		},
+		"sl": {
+			"nbCharacters": 23,
+			"request": 3
+		},
+		"es": {
+			"nbCharacters": 719,
+			"request": 30
+		},
+		"it": {
+			"nbCharacters": 1317,
+			"request": 32
+		},
+		"ms": {
+			"nbCharacters": 202,
+			"request": 4
+		},
+		"pt": {
+			"nbCharacters": 327,
+			"request": 13
+		},
+		"so": {
+			"nbCharacters": 0,
+			"request": 1
+		},
+		"hr": {
+			"nbCharacters": 6,
+			"request": 3
+		},
+		"pl": {
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"nl": {
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"ca": {
+			"nbCharacters": 51,
+			"request": 2
+		},
+		"ru": {
+			"nbCharacters": 104,
+			"request": 2
+		},
+		"fi": {
+			"nbCharacters": 5,
+			"request": 1
+		}
+	},
+	"success": 3228,
+	"domain": {
+		"Generic": {
+			"nbCharacters": 215881,
+			"request": 2435
+		},
+		"Legal": {
+			"nbCharacters": 5323,
+			"request": 78
+		},
+		"Energy": {
+			"nbCharacters": 641,
+			"request": 14
+		},
+		"Generic_TX_loca_CA": {
+			"nbCharacters": 704,
+			"request": 11
+		},
+		"Dialog": {
+			"nbCharacters": 44509,
+			"request": 280
+		},
+		"Finance": {
+			"nbCharacters": 1528,
+			"request": 40
+		},
+		"Health": {
+			"nbCharacters": 1796,
+			"request": 52
+		},
+		"Cybersecurity": {
+			"nbCharacters": 704,
+			"request": 16
+		},
+		"Patent": {
+			"nbCharacters": 1771,
+			"request": 21
+		},
+		"IT": {
+			"nbCharacters": 2842,
+			"request": 82
+		},
+		"Industry": {
+			"nbCharacters": 776,
+			"request": 19
+		},
+		"Agriculture": {
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"News": {
+			"nbCharacters": 1317,
+			"request": 34
+		},
+		"Generic_Canada": {
+			"nbCharacters": 246,
+			"request": 2
+		},
+		"SYMCOR": {
+			"nbCharacters": 50,
+			"request": 1
+		},
+		"Patent_Building": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Physics": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Textiles": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Shaping": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Printing": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Packing": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"Patent_Tobacco": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"DEMO": {
+			"nbCharacters": 279,
+			"request": 20
+		}
+	},
+	"owner": {
+		"Systran": {
+			"nbCharacters": 231210,
+			"request": 2339
+		},
+		"Terminotix": {
+			"nbCharacters": 941,
+			"request": 32
+		},
+		"TAUS": {
+			"nbCharacters": 846,
+			"request": 31
+		},
+		"Self": {
+			"nbCharacters": 44090,
+			"request": 684
+		},
+		"Kern": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"Crosslang": {
+			"nbCharacters": 568,
+			"request": 8
+		},
+		"AFP": {
+			"nbCharacters": 1317,
+			"request": 34
+		},
+		"Dragoman": {
+			"nbCharacters": 62,
+			"request": 2
+		},
+		"InnovaLang": {
+			"nbCharacters": 392,
+			"request": 7
+		},
+		"TRSB_01": {
+			"nbCharacters": 82,
+			"request": 1
+		}
+	},
+	"profile": {
+		"71a96631-0d5d-4439-8754-62be08dc2556": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 119457,
+			"request": 945
+		},
+		"d2ffeab3-0527-452c-928a-e15c6342984f": {
+			"name": "Model: Legal - FR-CA (by Terminotix)",
+			"nbCharacters": 79,
+			"request": 3
+		},
+		"b2e41cd5-c698-483f-b381-d035ab195a31": {
+			"name": "Model: Legal (by Systran)",
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"8493f652-9137-464e-b97c-a353a10bade5": {
+			"name": "Model: Energy (by Systran)",
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"62d487be-f921-4265-b5a3-f0022e14a2d9": {
+			"name": "Model: Generic_TX_loca_CA (by Systran)",
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"6cd81079-2d59-4e3a-9c21-bba9f774b367": {
+			"name": "Model: Dialog (by SYSTRAN)",
+			"nbCharacters": 44476,
+			"request": 276
+		},
+		"c8e4d975-fd9f-41d3-b139-abdcf8601166": {
+			"name": "Model: Finance (by Systran)",
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"d54e494e-d0d2-49ae-b22b-e6ef6ce2f4b2": {
+			"name": "Model: CoronaCrisisCorpus (by TAUS)",
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"d24e369d-b3f3-4182-94ad-9280e796e2fc": {
+			"name": "Model: Cybersecurity (by Systran)",
+			"nbCharacters": 424,
+			"request": 7
+		},
+		"0fd7ac83-071b-45e0-b9e4-a0267581dfb7": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"e2f133f7-1260-4310-a129-4c8f6d4f7851": {
+			"name": "Test_generic_enko_20231219",
+			"nbCharacters": 2001,
+			"request": 30
+		},
+		"093ea5a4-a8af-4972-8d33-542b460ffc49": {
+			"name": "Test_generic_enzh_20231030",
+			"nbCharacters": 359,
+			"request": 10
+		},
+		"879dcf82-1a45-4fea-a73a-1fd77f2efcb9": {
+			"name": "Test_generic_zhen_20231030",
+			"nbCharacters": 919,
+			"request": 30
+		},
+		"352cba16-3f14-444e-a286-9c724e056da6": {
+			"name": "Test_generic_kozh_20231219",
+			"nbCharacters": 192,
+			"request": 10
+		},
+		"9b989fc1-af39-4e68-98f9-885ee41c273f": {
+			"name": "Test_generic_koen_20231030",
+			"nbCharacters": 350,
+			"request": 10
+		},
+		"f2901c19-a2d4-4eac-bd36-f461aaa8ca37": {
+			"name": "Model: Patent (by Systran)",
+			"nbCharacters": 873,
+			"request": 10
+		},
+		"b9dd4950-2c58-4c7c-8c10-912dfc28bdcc": {
+			"name": "Model: Patent (by Systran)",
+			"nbCharacters": 873,
+			"request": 10
+		},
+		"a6abcca2-df98-4cd3-a25c-6f484d2a79bb": {
+			"name": "Test_generic_zhko_20231219",
+			"nbCharacters": 442,
+			"request": 10
+		},
+		"6562c395-253b-4017-8047-51441e4dba49": {
+			"name": "Double Translation (VI >> EN >> FR)",
+			"nbCharacters": 172,
+			"request": 8
+		},
+		"de18ec43-8ef4-493f-8d2d-f52fa6033dae": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1033,
+			"request": 28
+		},
+		"f0a04a30-5637-48c5-a896-885fde0aec13": {
+			"name": "Model: IT (by Systran)",
+			"nbCharacters": 17,
+			"request": 2
+		},
+		"ae4ec6c0-4035-4bbf-a047-63c983eb0881": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 40,
+			"request": 4
+		},
+		"376b97d7-5653-43c2-84cf-f9298fba486a": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 31889,
+			"request": 436
+		},
+		"253b535d-ada2-4705-ba40-3fef7be296f2": {
+			"name": "Translator NMT my_Automotive_PLUS (L) - ENDE",
+			"nbCharacters": 751,
+			"request": 18
+		},
+		"85e609c2-62cb-4832-ae62-7c34922252cb": {
+			"name": "Translator NMT DEMO  (L) - ENFR",
+			"nbCharacters": 818,
+			"request": 4
+		},
+		"c1ea2b34-d590-4baf-a734-8687bb4dd6d1": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 18,
+			"request": 2
+		},
+		"40434873-cc52-4575-8b30-4244f01a282d": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 10,
+			"request": 1
+		},
+		"564cabaf-ee71-4953-966c-3aa068ac6287": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 1036,
+			"request": 33
+		},
+		"41cd1507-b1e6-4e6d-9e6f-45d2d7c9a4ee": {
+			"name": "Model: Cybersecurity (by Systran)",
+			"nbCharacters": 236,
+			"request": 4
+		},
+		"c26b7e07-4924-4ea2-bf2d-34dcf1e31c9c": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 236,
+			"request": 4
+		},
+		"a6c92a38-ce20-4e83-8f76-6d11b48bb941": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1199,
+			"request": 20
+		},
+		"2e715e2c-3ad1-4634-b2d3-4e8c7337c06a": {
+			"name": "Model: Finance (by SYSTRAN)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"0cef178e-4335-4d61-917c-e3dcdb4427bf": {
+			"name": "Model: Automotive (by Systran)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"f03fedb8-67be-4628-a46f-04b5e060f862": {
+			"name": "Model: Finance (by Kern)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"ae34b2ea-7e09-4139-b8ca-e28ae0a4bb9d": {
+			"name": "Model: Generic_Loca_GB (by SYSTRAN)",
+			"nbCharacters": 25,
+			"request": 2
+		},
+		"aaa4e705-06e9-47b9-b4f6-60b98f8e05e8": {
+			"name": "Model: Patent (by SYSTRAN)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"3a44b304-1aeb-4648-9f69-a6a8f52927b1": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"63e957fd-0b9d-43eb-a9e5-c30c599ce380": {
+			"name": "Model: Legal (by Crosslang)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"79099ae3-44ab-4a0f-b604-bfb116d672e1": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"6588e553-084c-4843-b492-e41c19809896": {
+			"name": "Model: Cybersecurity (by Systran)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"736817f0-dca7-42fc-9b91-bb01d327a854": {
+			"name": "English to French 1",
+			"nbCharacters": 22279,
+			"request": 282
+		},
+		"030829b0-d02f-41c5-a5f8-bf81946e415a": {
+			"name": "Model: Agribusiness (by SYSTRAN)",
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"54702782-51c4-4935-8131-9596e41a075f": {
+			"name": "English to French 333",
+			"nbCharacters": 692,
+			"request": 26
+		},
+		"5a091697-4a12-4bbd-8660-ab471422541a": {
+			"name": "Model: Finance (by Systran)",
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"578b017f-627d-41ff-8ce2-5dfae7b2d32f": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 893,
+			"request": 30
+		},
+		"1cb8438c-dfcc-427b-a2f5-43a48fd8f71b": {
+			"name": "Model: News (by AFP)",
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"5ea4d726-737d-4bcb-8612-d411b6698931": {
+			"name": "Model: Legal FR-Canada (by Terminotix)",
+			"nbCharacters": 862,
+			"request": 29
+		},
+		"10934160-85f9-47c8-ad7a-b459861d5fe1": {
+			"name": "Translator NMT Generic+DNT (M) - ENFR",
+			"nbCharacters": 692,
+			"request": 26
+		},
+		"0a5ed744-e021-4ae8-b898-83c91aef2585": {
+			"name": "Model: CoronaCrisisCorpus (by TAUS)",
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"7c477525-3c01-4b57-817d-2d58a8bc293a": {
+			"name": "Translator NMT Beyond_Legal-FRCA (M) - FREN",
+			"nbCharacters": 271,
+			"request": 5
+		},
+		"6b016ef9-4aec-4430-8127-1f8075f0cbab": {
+			"name": "Caro",
+			"nbCharacters": 2921,
+			"request": 23
+		},
+		"85a005b6-3275-47db-a8c4-a542af3f21d9": {
+			"name": "CADTH_ENFR",
+			"nbCharacters": 4152,
+			"request": 62
+		},
+		"5198081b-8f03-4618-a28e-80c3e3b51061": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 58,
+			"request": 7
+		},
+		"090ccf06-80ec-4929-b62d-6a9cdb5c1d6c": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"dd1e01d8-87e3-484f-9aed-fc0344e9ba88": {
+			"name": "Model: Oil-and-Gas (by SYSTRAN)",
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"29157b33-4b32-4116-b9a6-54c13f3ae665": {
+			"name": "Model: Cybersecurity (by Systran)",
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"1d58d073-88fd-4d97-8b23-65ea6c9f4d78": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"cb247a29-23a7-4133-aecd-4213af863aa5": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 7281,
+			"request": 38
+		},
+		"d5d9833f-ccd8-4d55-be2c-74f5a31508d2": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 1679,
+			"request": 37
+		},
+		"ec20c37f-4b23-4ff7-8105-8fc95508aa62": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 2854,
+			"request": 23
+		},
+		"6fae495d-37f6-4df4-b1bb-7c326e27bc71": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1338,
+			"request": 20
+		},
+		"abc41fb7-2fe2-46e4-8858-bd391defe5a4": {
+			"name": "Double Translation (FR >> EN >> SQ)",
+			"nbCharacters": 127,
+			"request": 13
+		},
+		"595c388d-e604-4cc7-a0a0-c9a1c0650b4c": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 72,
+			"request": 4
+		},
+		"1b2ce4a4-3e49-42fb-9869-b41738f34d5c": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 7,
+			"request": 1
+		},
+		"80955152-ec38-4e70-bc1e-34ebef7140e0": {
+			"name": "Double Translation (NO >> EN >> FR)",
+			"nbCharacters": 3,
+			"request": 1
+		},
+		"3627695d-e8d2-41b3-b9c8-8aed58d68f5b": {
+			"name": "Model: CoronaCrisisCorpus (by TAUS)",
+			"nbCharacters": 10,
+			"request": 2
+		},
+		"e4d2a0aa-949b-46d9-b37a-8af99a0279ff": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 762,
+			"request": 36
+		},
+		"8df0b7b0-aa8e-420e-ba01-508c6df8e05e": {
+			"name": "Model: Generic (by Dragoman)",
+			"nbCharacters": 62,
+			"request": 2
+		},
+		"710a1753-f448-471e-a6e6-7d6e00131ec9": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 52,
+			"request": 4
+		},
+		"54be61eb-d952-4700-9392-05178bebe370": {
+			"name": "dico PUI",
+			"nbCharacters": 1175,
+			"request": 43
+		},
+		"988a844a-01e5-4461-b96d-7d4dde914e93": {
+			"name": "Double Translation (SL >> EN >> FR)",
+			"nbCharacters": 23,
+			"request": 3
+		},
+		"e46ea8e6-39c8-4fa0-835c-dc3628a610b2": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 243,
+			"request": 9
+		},
+		"8c012055-e0c7-4b2e-8561-b8c6e626050c": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 215,
+			"request": 5
+		},
+		"0428657a-44b7-4f01-84ad-675e2d5d19df": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 260,
+			"request": 12
+		},
+		"5a1e1257-0797-4506-90fa-107287bde16f": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 388,
+			"request": 8
+		},
+		"5796a55e-80c4-4edf-af90-dc8dbd5f7e65": {
+			"name": "ASSUREME_01 ZH > EN",
+			"nbCharacters": 22,
+			"request": 2
+		},
+		"c68cd344-9f16-4bcc-b687-b03cd9595ff7": {
+			"name": "DILA FREN",
+			"nbCharacters": 4235,
+			"request": 57
+		},
+		"e0c6ede7-d4e9-4224-a631-53a4c836b860": {
+			"name": "Translator NMT GenericPLUS_byPS (L) - ENES",
+			"nbCharacters": 2389,
+			"request": 26
+		},
+		"4cf3929e-4543-4351-89c3-ee1a1eadeef7": {
+			"name": "Double Translation (MS >> EN >> FR)",
+			"nbCharacters": 202,
+			"request": 2
+		},
+		"f6b93c9a-79ca-485d-9eb0-edf326e08dec": {
+			"name": "Model: Generic_Canada (by Systran)",
+			"nbCharacters": 246,
+			"request": 2
+		},
+		"e8f4d68e-31ce-4a47-88fc-9e9fb268c1db": {
+			"name": "TRADUCTA_01 EDP PT-EN",
+			"nbCharacters": 92,
+			"request": 3
+		},
+		"33299e9a-a0a4-47ad-b35f-e98655a628fa": {
+			"name": "Model: IT_Loca_PT (by SYSTRAN)",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"c8d03f29-7b88-456c-9a4c-2302568a728b": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"01a65ce6-aa33-4eb4-aa51-a209bbf829e3": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 37,
+			"request": 2
+		},
+		"e17c16c1-9508-4f75-9bd6-a778ec71f753": {
+			"name": "Model: IT (by Systran)",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"d6db00ad-8e0a-46f7-9477-3d8996379427": {
+			"name": "TRADUCTA_01 FINANCEIRO PT-EN",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"71621768-c8e5-4f51-b7bc-399ecf7c1376": {
+			"name": "TRADUCTA_01 CDT EMA PT-EN",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"bccb63c2-a5ce-451c-a8e5-f5a563bdf2ae": {
+			"name": "TRADUCTA_01 JURIDICO PT-EN",
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"af00b33b-d347-4b01-bf5e-0f62d2f6e8ae": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 2308,
+			"request": 16
+		},
+		"00b6a3bf-3d42-43ac-8fbc-00bd8bf9fd53": {
+			"name": "Double Translation (FR >> EN >> HR)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"35c59030-dda3-4a04-820e-9ef09a2dcf21": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 30,
+			"request": 2
+		},
+		"652f0465-7abf-47c5-96a2-66219b5c8e9a": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"f7706d02-4e1d-437a-920e-ea9efbbc5a17": {
+			"name": "Double Translation (HR >> EN >> FR)",
+			"nbCharacters": 4,
+			"request": 2
+		},
+		"eb757e55-39d3-43e2-8ff1-3c49117a1671": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"d30fb46d-f957-43cd-94fe-5658b27369c9": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"831c8507-a443-41c8-ae66-afd54ddd6298": {
+			"name": "Double Translation (FR >> EN >> KO)",
+			"nbCharacters": 9,
+			"request": 1
+		},
+		"4a51ada9-7cc7-443e-942a-91bc2f2455a4": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"ec217410-7f20-4ba3-b335-3b4acdeb14af": {
+			"name": "Translator NMT myGenericPLUS (L) - ENFR",
+			"nbCharacters": 50,
+			"request": 1
+		},
+		"2bca35a6-d60b-46bb-89d5-b5bf7cb558f7": {
+			"name": "Model: Legal (by Crosslang)",
+			"nbCharacters": 543,
+			"request": 7
+		},
+		"21137305-a4fa-4e39-a484-138f6f4e287d": {
+			"name": "Model: News (by AFP)",
+			"nbCharacters": 543,
+			"request": 7
+		},
+		"40090a58-a1e8-4633-af93-fd40c8e0eaf2": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 339,
+			"request": 13
+		},
+		"bfac6ebd-0884-4d3b-905e-9c51a89b6620": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 51,
+			"request": 2
+		},
+		"1b447916-43b0-4848-bb8e-f2f5a00c428e": {
+			"name": "Double Translation (RU >> EN >> FR)",
+			"nbCharacters": 104,
+			"request": 2
+		},
+		"c7058a35-bce3-4baa-9a39-febe617048f6": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 1615,
+			"request": 11
+		},
+		"518af644-4708-460e-b367-6bc3e1f64feb": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 531,
+			"request": 22
+		},
+		"3903a1a6-2918-4824-b5a4-b68976ba6896": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 269,
+			"request": 8
+		},
+		"2c448a09-a83b-4ce2-9e41-7149799f5b58": {
+			"name": "Translator NMT Generic (M) - NOEN",
+			"nbCharacters": 10,
+			"request": 1
+		},
+		"0f2e192d-bdfc-48aa-a7c8-647e9ba58e3a": {
+			"name": "Model: CoronaCrisisCorpus (by TAUS)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"4256af91-1423-4531-bc93-410cff231455": {
+			"name": "Model: IT (by Systran)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"09131c6b-7e03-4832-bb3a-383bfb5cabeb": {
+			"name": "Model: Patent_Building (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"47e4bd07-acb1-4a23-b8e6-b09340dfccef": {
+			"name": "Model: Patent_Physics (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"2b62a9da-47cc-49d7-9b7b-f5f7c670dcbb": {
+			"name": "Model: Patent_Textiles (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"31631d99-9924-45aa-a5ec-b209bdb34cf4": {
+			"name": "Model: Patent_Shaping (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"461bfa3f-a297-4a54-9c3d-f0363b1d24bc": {
+			"name": "Model: Patent_Paper_Printing (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"019f0968-c62f-4774-b84b-ed846f70ee40": {
+			"name": "Model: Patent_Packing_Packaging_Storing (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"365516a1-a9f0-4ec9-b6ee-bc6fb5632e5e": {
+			"name": "Model: Patent_Tobacco (by InnovaLang)",
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"cef6d1d1-9361-4e4b-b9cd-c7d592f538cd": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"6c476a22-89d2-4aa7-b166-e11b93464fb6": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"c1aaca2c-b7a1-43aa-a7ec-159e1df77aa6": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"632f2fc1-516e-4d57-b9d6-be802ff7a893": {
+			"name": "Model: IT_Loca_PT (by SYSTRAN)",
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"72d0bc64-6c88-4873-98ed-d2b95fe4c101": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"722598ec-a744-4c67-bf65-a4aac9fa75ff": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 27,
+			"request": 3
+		},
+		"140ef45d-5fab-43dd-af32-c4b6f5928c59": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"4273b645-3855-4940-b5df-052684954ce9": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 425,
+			"request": 13
+		},
+		"94a8740a-a495-4c6d-a3ac-2a33db175408": {
+			"name": "Model: Generic (by SYSTRAN)",
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"b61789f8-d4f2-409b-b1e7-689c5453fe12": {
+			"name": "Model: Dialog (by SYSTRAN)",
+			"nbCharacters": 33,
+			"request": 4
+		},
+		"9dfcabf3-07fb-442d-9c3d-db33a44f6d23": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"b1f03d36-f4e5-4d47-9561-f26a47584743": {
+			"name": "Translator NMT Generic_PLUS (L) - ENES byPS 931",
+			"nbCharacters": 13,
+			"request": 1
+		},
+		"937b9b1c-6653-4895-89d2-7b20be689bbd": {
+			"name": "Translator NMT DEMO (M) - ENES",
+			"nbCharacters": 279,
+			"request": 20
+		},
+		"1dfc500c-1f1b-4092-bb00-036595957fe6": {
+			"name": "ARENpivotARCStesto",
+			"nbCharacters": 67,
+			"request": 1
+		},
+		"01df6b32-6455-4db9-91fa-b375dfc6740f": {
+			"name": "TRSBResearchtest1",
+			"nbCharacters": 82,
+			"request": 1
+		},
+		"6c6fee43-08b0-4e0e-8458-fe0b0f15e4b8": {
+			"name": "Model: Generic_TX_loca_CA (by Systran)",
+			"nbCharacters": 82,
+			"request": 1
+		},
+		"b2c60777-7aaf-41bf-8749-996fcb0e3914": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"8a9ea12b-f739-4dec-9eff-b68bd9f1b1ad": {
+			"name": "Double Translation (ES >> EN >> SV)",
+			"nbCharacters": 1,
+			"request": 1
+		},
+		"b46f6786-aad9-41f3-99ba-23e6cbb1a42b": {
+			"name": "Model: Generic (by Systran)",
+			"nbCharacters": 69,
+			"request": 9
+		},
+		"43aff30d-bdad-4c95-ac4a-c1c7a921a264": {
+			"name": "Model: IT (by SYSTRAN)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"7302dbca-daf1-4ea1-917b-c917be615906": {
+			"name": "Model: Medical (by Systran)",
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"bdded962-1a5b-4728-949f-4e5a180ee501": {
+			"name": "Double Translation (RO >> EN >> FR)",
+			"nbCharacters": 22,
+			"request": 3
+		},
+		"f9fef81a-af7a-4458-9064-a17d61e1ca0d": {
+			"name": "Double Translation (FI >> EN >> FR)",
+			"nbCharacters": 5,
+			"request": 1
+		}
+	},
+	"size": {
+		"L": {
+			"nbCharacters": 272499,
+			"request": 2937
+		},
+		"M": {
+			"nbCharacters": 7034,
+			"request": 202
+		}
+	},
+	"target": {
+		"en": {
+			"nbCharacters": 187540,
+			"request": 1751
+		},
+		"ko": {
+			"nbCharacters": 3402,
+			"request": 79
+		},
+		"zh-Hans": {
+			"nbCharacters": 578,
+			"request": 63
+		},
+		"fr": {
+			"nbCharacters": 77229,
+			"request": 1124
+		},
+		"de": {
+			"nbCharacters": 3543,
+			"request": 48
+		},
+		"ka": {
+			"nbCharacters": 18,
+			"request": 2
+		},
+		"ru": {
+			"nbCharacters": 144,
+			"request": 25
+		},
+		"sq": {
+			"nbCharacters": 1465,
+			"request": 33
+		},
+		"ar": {
+			"nbCharacters": 603,
+			"request": 26
+		},
+		"es": {
+			"nbCharacters": 2726,
+			"request": 51
+		},
+		"hr": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"it": {
+			"nbCharacters": 84,
+			"request": 6
+		},
+		"ca": {
+			"nbCharacters": 339,
+			"request": 13
+		},
+		"ja": {
+			"nbCharacters": 1615,
+			"request": 11
+		},
+		"nl": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"pt": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"vi": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"zh-Hant": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"sv": {
+			"nbCharacters": 100,
+			"request": 12
+		},
+		"ps": {
+			"nbCharacters": 0,
+			"request": 1
+		}
+	},
+	"techName": {
+		"Docker-OpenNMT-ctranslate": {
+			"nbCharacters": 279533,
+			"request": 3139
+		}
+	},
+	"techType": {
+		"NMT": {
+			"nbCharacters": 279533,
+			"request": 3139
+		}
+	},
+	"translationResourceId": {
+		"c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+			"nbCharacters": 169343,
+			"request": 1321
+		},
+		"2c55d85d-6237-4a73-b570-08e9054d95b4": {
+			"nbCharacters": 350,
+			"request": 8
+		},
+		"178cb29d-926e-4a53-85d2-8d3997f2adce": {
+			"nbCharacters": 3543,
+			"request": 33
+		},
+		"3029feab-de30-4941-b6cb-22c15ff4545d": {
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"30d99d8b-a517-4628-a421-c0dab1482257": {
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"263c226a-bf15-4add-acd6-b22bb92a228f": {
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"44d2e954-9448-4577-8e34-661979675f2e": {
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"3552848b-fab7-42e0-8e25-94f3cca5bedf": {
+			"nbCharacters": 424,
+			"request": 7
+		},
+		"9dce2a1a-3921-43a1-aef9-a89e9ca8d156": {
+			"nbCharacters": 622,
+			"request": 10
+		},
+		"47a3249f-056a-4392-8207-54648d741c9c": {
+			"nbCharacters": 2053,
+			"request": 34
+		},
+		"31be0462-30ca-4b63-9c92-dca26249a8d8": {
+			"nbCharacters": 386,
+			"request": 13
+		},
+		"fb8cc1e6-9876-49d0-b906-c8b3cc5dfd62": {
+			"nbCharacters": 941,
+			"request": 32
+		},
+		"3409049b-df43-4aca-930a-efade4e3d364": {
+			"nbCharacters": 192,
+			"request": 10
+		},
+		"3ebaac5c-f099-4630-aae5-e10183263ec8": {
+			"nbCharacters": 350,
+			"request": 10
+		},
+		"84f9320f-f267-4921-8727-48d2ef0477aa": {
+			"nbCharacters": 873,
+			"request": 10
+		},
+		"4583e46b-5ebd-4555-999a-1c290c2098ee": {
+			"nbCharacters": 873,
+			"request": 10
+		},
+		"61a6e5f5-98fe-4b4b-94b7-4959ba508cfd": {
+			"nbCharacters": 467,
+			"request": 11
+		},
+		"e86dd7b7-ad2b-437e-9b6c-e9adf6e90776": {
+			"nbCharacters": 172,
+			"request": 8
+		},
+		"2109372b-c1d3-4523-b784-fd172dfa401b": {
+			"nbCharacters": 1033,
+			"request": 28
+		},
+		"b38dedab-b0de-4e8f-b17b-2c4d9e12d1b0": {
+			"nbCharacters": 17,
+			"request": 2
+		},
+		"9b3486a7-18cd-45cc-8dc1-b984bbde2406": {
+			"nbCharacters": 40,
+			"request": 4
+		},
+		"422fa011-5a0b-4922-ae6e-99dbae47f772": {
+			"nbCharacters": 60561,
+			"request": 864
+		},
+		"1a13a8e2-6ca7-40ae-bbda-e69defd6ae7d": {
+			"nbCharacters": 751,
+			"request": 18
+		},
+		"3b413678-6aac-4e43-9088-58733092dcce": {
+			"nbCharacters": 1064,
+			"request": 6
+		},
+		"8b4c789b-c161-48d2-a07f-ad82172c22cf": {
+			"nbCharacters": 18,
+			"request": 2
+		},
+		"ebdfcc21-e476-46c6-9f20-5fc125fc7caf": {
+			"nbCharacters": 10,
+			"request": 1
+		},
+		"697c531a-5c5b-4c00-8e39-da30fc28ee99": {
+			"nbCharacters": 1103,
+			"request": 34
+		},
+		"c05017ec-af01-4dbe-b245-aeac8a317256": {
+			"nbCharacters": 236,
+			"request": 4
+		},
+		"7527ccea-731a-471b-92f1-8d5ec1909d5d": {
+			"nbCharacters": 236,
+			"request": 4
+		},
+		"9b184784-1775-4731-b6bb-7613a105e96f": {
+			"nbCharacters": 1199,
+			"request": 20
+		},
+		"0a49c60d-bd17-4bba-9617-530ecdc2178a": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"40cf9eb1-bdd4-4787-bb98-565a108f44b0": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"9728b2b4-09ba-4551-84a5-9fe9718c0900": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"14e9ce6d-bbad-4f63-b3ac-9df0a4aabf61": {
+			"nbCharacters": 25,
+			"request": 2
+		},
+		"1296bcae-5818-4428-aa3a-7fd0b1ab745d": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"ca3f641a-d487-4bf8-afbe-4af0a442ee61": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"e7ea6191-05a8-44cf-830e-2f3b2b547c00": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"b98dea0f-0d4a-40c2-b922-ac365a9f190f": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"3a926bcc-4fa9-4fd4-90c0-8cefca63f8be": {
+			"nbCharacters": 25,
+			"request": 1
+		},
+		"13fab0b0-3687-48e4-96e9-b392b134ea64": {
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"af0d08d8-12dd-49b2-906b-cc7910d8528f": {
+			"nbCharacters": 893,
+			"request": 30
+		},
+		"06f9f03b-c78a-456c-b797-632a9cd15c0c": {
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"567a0bc9-e788-457b-8379-7f42f4081392": {
+			"nbCharacters": 862,
+			"request": 29
+		},
+		"7e918005-5140-464a-8aaf-193db55eb5d7": {
+			"nbCharacters": 774,
+			"request": 27
+		},
+		"bbfda3fe-531c-4108-8b65-9fd3594229b8": {
+			"nbCharacters": 58,
+			"request": 7
+		},
+		"f4919173-264b-4298-a6c7-f988de5b5b98": {
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"12c398ed-a225-41f3-aa93-1a51fb6e4be2": {
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"83742dc2-306c-445b-b07f-1783b1df1a8a": {
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"6ce260e1-7388-420a-ab0e-fed6e03f5a89": {
+			"nbCharacters": 19,
+			"request": 4
+		},
+		"be2ad60d-b71f-455b-bef9-37b2810317bd": {
+			"nbCharacters": 7281,
+			"request": 38
+		},
+		"4d48a8bb-c9a6-47b1-8cae-32a56aee0d84": {
+			"nbCharacters": 1679,
+			"request": 37
+		},
+		"ed0799bc-2cbe-4efb-ab64-d36ce9071d91": {
+			"nbCharacters": 2854,
+			"request": 23
+		},
+		"f8b1717d-c1cc-4376-958b-ab950be112bd": {
+			"nbCharacters": 1338,
+			"request": 20
+		},
+		"765aa136-95aa-46e8-99ed-7b7d0fc6f161": {
+			"nbCharacters": 127,
+			"request": 13
+		},
+		"9c692d1c-6410-4d98-9489-c98d4194e9fe": {
+			"nbCharacters": 72,
+			"request": 4
+		},
+		"20e79057-8a53-4e73-ad4f-e037f9a59a9e": {
+			"nbCharacters": 7,
+			"request": 1
+		},
+		"bb383812-0816-4e0d-bcbb-a35edf362257": {
+			"nbCharacters": 3,
+			"request": 1
+		},
+		"d8615cf8-3a1b-4c27-a7e7-cc770ed8cf4b": {
+			"nbCharacters": 10,
+			"request": 2
+		},
+		"2cd5e182-ee56-46b8-a1e9-1cb1fee3f15c": {
+			"nbCharacters": 762,
+			"request": 36
+		},
+		"67d42c59-b1a3-46b5-8926-ad1a6a943e4b": {
+			"nbCharacters": 62,
+			"request": 2
+		},
+		"5031732e-a87d-4bcd-9747-e52b7ddfa9ad": {
+			"nbCharacters": 23,
+			"request": 3
+		},
+		"a148cbb7-1c5c-4d2f-b974-e5edfb797848": {
+			"nbCharacters": 243,
+			"request": 9
+		},
+		"d4676859-122a-47d6-9d6e-af354c326c82": {
+			"nbCharacters": 215,
+			"request": 5
+		},
+		"87813889-55b2-4f57-b396-26d6e5eabf9c": {
+			"nbCharacters": 260,
+			"request": 12
+		},
+		"07d9bc3b-38dd-42f9-8cbe-66dd3220a5ff": {
+			"nbCharacters": 388,
+			"request": 8
+		},
+		"f4d6b5fc-db45-4898-9f0c-86842eb2d5e3": {
+			"nbCharacters": 2720,
+			"request": 50
+		},
+		"8f364326-36ad-4f59-a7cb-16401ca0cbd9": {
+			"nbCharacters": 202,
+			"request": 2
+		},
+		"506fa049-52bd-4924-b7d7-1171c0f67703": {
+			"nbCharacters": 195,
+			"request": 7
+		},
+		"7ecf8434-b548-4481-9cc2-d048dfe8d121": {
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"5de46623-f17e-4ae3-a842-61343b584409": {
+			"nbCharacters": 33,
+			"request": 1
+		},
+		"e27094d5-c2a6-42be-aa7d-08de176a6ac6": {
+			"nbCharacters": 66,
+			"request": 2
+		},
+		"f9b0de3c-c2db-438f-958e-6369009b833f": {
+			"nbCharacters": 2308,
+			"request": 16
+		},
+		"b9d3c1ee-be49-4a0a-be02-ded898ade78d": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"acc21ad3-bde6-434c-9fe9-477a45757746": {
+			"nbCharacters": 30,
+			"request": 2
+		},
+		"41bf3697-6af4-4852-a44e-7a4e773927c3": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"5598a561-c375-455a-abe8-e20d29eda223": {
+			"nbCharacters": 4,
+			"request": 2
+		},
+		"4a4c2cf0-0a74-409f-a28c-889c565cb195": {
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"fa26ffb9-773a-4439-85bd-74758a992103": {
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"8ebda9ba-6fb4-4d56-8d5c-b0856aeb0248": {
+			"nbCharacters": 9,
+			"request": 1
+		},
+		"093b44d4-3697-4766-b3f2-936f24431052": {
+			"nbCharacters": 543,
+			"request": 7
+		},
+		"c2c0460a-7f06-408a-ba44-a6ad639cf8f6": {
+			"nbCharacters": 543,
+			"request": 7
+		},
+		"2133b4b7-071e-4d9f-a905-3b33be428fc9": {
+			"nbCharacters": 339,
+			"request": 13
+		},
+		"5983ba36-fa0e-4af6-8900-baefb4295b3c": {
+			"nbCharacters": 51,
+			"request": 2
+		},
+		"874a403c-a930-4fc9-b85f-ef94b6b5b20f": {
+			"nbCharacters": 104,
+			"request": 2
+		},
+		"b7f98ea6-8717-4669-909e-2612256334c5": {
+			"nbCharacters": 1615,
+			"request": 11
+		},
+		"f1e2042e-c429-44e1-8641-27b5c0fd36ba": {
+			"nbCharacters": 531,
+			"request": 22
+		},
+		"a121f78c-07fb-4fde-9814-3e2d2e6347f7": {
+			"nbCharacters": 269,
+			"request": 8
+		},
+		"8d4d5969-a32c-4061-bf18-967b09884ba7": {
+			"nbCharacters": 10,
+			"request": 1
+		},
+		"f0c9272a-49a7-4473-8cc0-a26367e82384": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"4ff590ee-fb35-4751-9fa4-9d8736d917e0": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"f9063e38-7b9c-4dfd-9979-0248ace0505e": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"fdd6ec53-7624-488e-977c-34a96a7474b2": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"f174abd0-ae2e-408a-bdb8-1bd8530be6e3": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"8e24874c-e0eb-4881-9029-aa6775bfc3ce": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"22271002-7c16-4f09-93bd-5acc2a3187e4": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"1ec03312-8990-40b8-9aeb-e8f693667150": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"71c72296-cadb-4352-912d-484dcdfbfdec": {
+			"nbCharacters": 56,
+			"request": 1
+		},
+		"ce87256c-ca72-4b0b-93b5-ad6b5f2d3b12": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"d431e181-8ec3-4126-8bb3-b94347b198b9": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"f0044ccc-02c5-4b27-8409-21107a80f636": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"69eda53c-cac5-49f3-9be1-42544f3cb7ba": {
+			"nbCharacters": 39,
+			"request": 3
+		},
+		"ce1ee3c8-2a48-425b-8702-dda87660d562": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"05211179-340e-4522-aa02-49c4fec56333": {
+			"nbCharacters": 425,
+			"request": 13
+		},
+		"10fa13b8-931e-469b-8ebb-08d375eaeaae": {
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"d4fc70b2-9a42-4dc1-8203-4418248f0fb6": {
+			"nbCharacters": 6,
+			"request": 1
+		},
+		"87cc2f93-0a5a-4d03-9e17-7b50682c472f": {
+			"nbCharacters": 82,
+			"request": 1
+		},
+		"e53b82b9-d15c-4813-8393-7a3c29e8c70b": {
+			"nbCharacters": 82,
+			"request": 1
+		},
+		"b8da31c8-6204-447a-85ce-ca7bbf26cb9e": {
+			"nbCharacters": 2,
+			"request": 1
+		},
+		"e90aa3a1-a176-4094-bd32-2dd7fc689421": {
+			"nbCharacters": 1,
+			"request": 1
+		},
+		"b921d232-2ed0-4bdf-9726-f155ec05a94e": {
+			"nbCharacters": 69,
+			"request": 9
+		},
+		"b366be20-a3b8-4d82-8ac8-b6a3372cee4e": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"142a5878-9236-4c91-9643-4cf2c6cc8d76": {
+			"nbCharacters": 15,
+			"request": 1
+		},
+		"556dbc0f-5cb8-4a9b-a459-f1e0bd86f0c2": {
+			"nbCharacters": 22,
+			"request": 3
+		},
+		"afb2cc0e-c447-4812-8066-56674ce4679b": {
+			"nbCharacters": 5,
+			"request": 1
+		}
+	},
+	"userAgent": {
+		"SYSTRAN Windows App": {
+			"nbCharacters": 23011,
+			"request": 606
+		},
+		"Translation Box": {
+			"nbCharacters": 247024,
+			"request": 2572
+		},
+		"Office Add-Ins - Text Translation": {
+			"nbCharacters": 7767,
+			"request": 118
+		},
+		"SYSTRAN macOS App": {
+			"nbCharacters": 1731,
+			"request": 49
+		}
+	}
+}

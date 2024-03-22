@@ -1,0 +1,5122 @@
+{
+	"services": [
+		{
+			"id": "65300697500b846a60b4e241",
+			"type": "ActivityServer",
+			"hostname": "http://ses-activity-collector:8701",
+			"insertedAt": "2023-10-24T07:13:31.245Z",
+			"lastFailedUpdate": "2023-10-23T09:36:32.955Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND ses-activity-collector",
+			"lastUpdate": "2023-10-23T09:36:32.955Z",
+			"status": "success",
+			"warning": true,
+			"name": "Activity Server"
+		},
+		{
+			"id": "65300697500b846a60b4e248",
+			"type": "Gateway",
+			"hostname": "http://ses-gateway:8903",
+			"insertedAt": "2023-10-24T07:13:31.256Z",
+			"lastFailedUpdate": "2023-10-23T09:36:32.991Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND ses-gateway",
+			"lastUpdate": "2023-10-23T09:36:32.991Z",
+			"status": "fail",
+			"warning": true,
+			"name": "Gateway",
+			"statusFailed": false
+		},
+		{
+			"id": "65300697500b846a60b4e24a",
+			"type": "TrsConsole",
+			"hostname": "https://trs-console:3445",
+			"insertedAt": "2023-10-24T07:13:31.261Z",
+			"app": {
+				"name": "Local TranslationResourceStore console",
+				"version": "10.0.0-0.2.beta2.el8",
+				"semverVersion": "10.0.0",
+				"invalidVersion": false
+			},
+			"data": {
+				"app": {
+					"name": "Local TranslationResourceStore console",
+					"version": "10.0.0-0.2.beta2.el8",
+					"semverVersion": "10.0.0",
+					"invalidVersion": false
+				},
+				"status": true
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:27.807Z",
+			"lastUpdate": "2023-10-23T09:36:32.991Z",
+			"status": "fail",
+			"lastFailedUpdate": "2023-10-23T09:36:32.991Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND trs-console",
+			"warning": true,
+			"name": "TRS Console",
+			"statusFailed": false
+		},
+		{
+			"id": "653011dc500b846a60b70ecc",
+			"hostname": "dispatcher",
+			"insertedAt": "2023-10-18T17:11:56.688Z",
+			"secure": false,
+			"lastFailedUpdate": "2023-10-23T09:36:32.410Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND dispatcher",
+			"lastUpdate": "2023-10-23T09:36:32.410Z",
+			"pollingHost": "dispatcher:8887",
+			"status": "fail",
+			"app": {
+				"name": "SystranTranslationDispatcher",
+				"version": "8.30.0-4.el8",
+				"semverVersion": "8.30.0"
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:22.346Z",
+			"warning": true,
+			"name": "Dispatcher"
+		},
+		{
+			"id": "653011f4500b846a60b71106",
+			"hostname": "routing",
+			"insertedAt": "2023-10-18T17:12:20.895Z",
+			"secure": false,
+			"version": "d828c4d2-0ce9-4cf6-baba-a4567bb0d632_8.30.0-4.el8",
+			"lastFailedUpdate": "2023-10-23T09:36:32.432Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND routing",
+			"lastUpdate": "2023-10-23T09:36:32.432Z",
+			"status": "fail",
+			"app": {
+				"name": "RoutingServer",
+				"version": "8.30.0-4.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:27.370Z",
+			"warning": true,
+			"name": "Routing Server"
+		},
+		{
+			"id": "65300697500b846a60b4e250",
+			"type": "GDict",
+			"hostname": "http://gdict:8892",
+			"insertedAt": "2023-10-24T07:13:31.276Z",
+			"app": {
+				"name": "GDict Mongo",
+				"version": "8.30.0-3.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"data": {
+				"app": {
+					"name": "GDict Mongo",
+					"version": "8.30.0-3.el8",
+					"semverVersion": "8.30.0",
+					"invalidVersion": false
+				},
+				"status": true
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:22.669Z",
+			"lastUpdate": "2023-10-23T09:36:33.036Z",
+			"status": "fail",
+			"lastFailedUpdate": "2023-10-23T09:36:33.036Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND gdict",
+			"warning": true,
+			"name": "GDict"
+		},
+		{
+			"id": "65300697500b846a60b4e252",
+			"type": "DctIndexer",
+			"hostname": "http://dct-indexer:8893",
+			"insertedAt": "2023-10-24T07:13:31.280Z",
+			"app": {
+				"name": "DctIndexer",
+				"version": "8.30.0-1.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"data": {
+				"app": {
+					"name": "DctIndexer",
+					"version": "8.30.0-1.el8",
+					"semverVersion": "8.30.0",
+					"invalidVersion": false
+				},
+				"status": true
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:27.812Z",
+			"lastUpdate": "2023-10-23T09:36:33.036Z",
+			"status": "fail",
+			"lastFailedUpdate": "2023-10-23T09:36:33.036Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND dct-indexer",
+			"warning": true,
+			"name": "DCT Indexer"
+		},
+		{
+			"id": "65300697500b846a60b4e243",
+			"type": "CorpusManager",
+			"hostname": "http://corpus-manager:8889",
+			"insertedAt": "2023-10-24T07:13:31.248Z",
+			"lastFailedUpdate": "2023-10-23T09:36:32.974Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND corpus-manager",
+			"lastUpdate": "2023-10-23T09:36:32.974Z",
+			"status": "fail",
+			"warning": true,
+			"name": "Corpus Manager"
+		},
+		{
+			"id": "65300697500b846a60b4e246",
+			"type": "TmIndexer",
+			"hostname": "http://tm-indexer:8890",
+			"insertedAt": "2023-10-24T07:13:31.252Z",
+			"app": {
+				"name": "TmIndexer",
+				"version": "8.30.0-2.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"data": {
+				"app": {
+					"name": "TmIndexer",
+					"version": "8.30.0-2.el8",
+					"semverVersion": "8.30.0",
+					"invalidVersion": false
+				},
+				"status": true
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:22.667Z",
+			"lastUpdate": "2023-10-23T09:36:32.973Z",
+			"status": "fail",
+			"lastFailedUpdate": "2023-10-23T09:36:32.973Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND tm-indexer",
+			"warning": true,
+			"name": "TM Indexer"
+		},
+		{
+			"id": "65300697500b846a60b4e24e",
+			"type": "Lookup",
+			"hostname": "http://lookup:8891",
+			"insertedAt": "2023-10-24T07:13:31.269Z",
+			"app": {
+				"name": "LookupServer",
+				"version": "8.30.0-0.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"data": {
+				"app": {
+					"name": "LookupServer",
+					"version": "8.30.0-0.el8",
+					"semverVersion": "8.30.0",
+					"invalidVersion": false
+				},
+				"status": true
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:22.669Z",
+			"lastUpdate": "2023-10-23T09:36:33.011Z",
+			"status": "fail",
+			"lastFailedUpdate": "2023-10-23T09:36:33.011Z",
+			"lastPollingError": "Error: getaddrinfo ENOTFOUND lookup",
+			"warning": true,
+			"name": "Lookup Server"
+		},
+		{
+			"displayName": "Computing Node (TRM)",
+			"id": "65301213500b846a60b7139d",
+			"hostname": "trm",
+			"status": "fail",
+			"app": {
+				"name": "TranslationResourceMonitor",
+				"version": "8.30.0-3.el8",
+				"semverVersion": "8.30.0",
+				"invalidVersion": false
+			},
+			"lastUpdate": "2023-10-23T09:36:34.872Z",
+			"lastSuccessfulUpdate": "2023-10-23T09:36:24.790Z",
+			"nbCores": 12,
+			"loadAverage": "1.64 2.7 2.67",
+			"totalMemory": "32455888",
+			"availableMemory": "20681636",
+			"freeMemory": "10157340",
+			"cachedMemory": "10278156",
+			"buffersMemory": "795256",
+			"totalDisk": "959122528",
+			"availableDisk": "653842720",
+			"freeDisk": "702637136",
+			"os": "CentOS Linux release 8.4.2105",
+			"uptime": "0 day, 0:24:24",
+			"nbInstances": 0,
+			"translationResources": [],
+			"warning": true,
+			"name": "Computing Node"
+		},
+		{
+			"id": "TRS Poller2023-10-23T09:34:19.629Z",
+			"name": "TRS Poller",
+			"status": "fail",
+			"lastPollingDate": "2023-10-23T09:34:19.629Z",
+			"lastTrsUpdate": "2023-10-23T09:34:19.629Z",
+			"app": {
+				"version": "10.0.0-0.2.beta2.el8"
+			},
+			"lastUpdate": "2023-10-23T09:36:33.010Z"
+		},
+		{
+			"id": "SES File Translation Consumer2023-10-23T09:34:19.629Z",
+
+			"name": "SES File Translation Consumer",
+			"app": {
+				"version": null
+			},
+			"status": "fail"
+		},
+		{
+			"id": "SES Polle2023-10-23T09:34:19.629Z",
+			"name": "SES Poller",
+			"app": {
+				"version": null
+			},
+			"status": "fail"
+		},
+		{
+			"id": "65300697500b846a60b4e254",
+			"type": "RabbitMQ",
+			"hostname": "http://rabbitmq:15672/",
+			"insertedAt": "2023-10-24T07:13:31.284Z",
+			"app": {
+				"version": "3.9.29",
+				"semverVersion": "3.9.29",
+				"invalidVersion": false
+			},
+			"data": {
+				"managementUrl": "http://rabbitmq:15672/",
+				"name": "RabbitMQ",
+				"hostname": "http://rabbitmq:15672/",
+				"displayName": "RabbitMQ (used by ses-file-translation-consumer)",
+				"overview": {
+					"management_version": "3.9.29",
+					"rates_mode": "basic",
+					"sample_retention_policies": {
+						"global": [
+							600,
+							3600,
+							28800,
+							86400
+						],
+						"basic": [
+							600,
+							3600
+						],
+						"detailed": [
+							600
+						]
+					},
+					"exchange_types": [
+						{
+							"name": "direct",
+							"description": "AMQP direct exchange, as per the AMQP specification",
+							"enabled": true
+						},
+						{
+							"name": "fanout",
+							"description": "AMQP fanout exchange, as per the AMQP specification",
+							"enabled": true
+						},
+						{
+							"name": "headers",
+							"description": "AMQP headers exchange, as per the AMQP specification",
+							"enabled": true
+						},
+						{
+							"name": "topic",
+							"description": "AMQP topic exchange, as per the AMQP specification",
+							"enabled": true
+						},
+						{
+							"name": "x-delayed-message",
+							"description": "Delayed Message Exchange.",
+							"enabled": true
+						}
+					],
+					"product_version": "3.9.29",
+					"product_name": "RabbitMQ",
+					"rabbitmq_version": "3.9.29",
+					"cluster_name": "rabbit@rabbitmq",
+					"erlang_version": "25.3",
+					"erlang_full_version": "Erlang/OTP 25 [erts-13.2] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-threads:1] [jit:ns]",
+					"release_series_support_status": "out of support",
+					"disable_stats": false,
+					"enable_queue_totals": false,
+					"message_stats": {
+						"ack": 86,
+						"ack_details": {
+							"rate": 0
+						},
+						"confirm": 86,
+						"confirm_details": {
+							"rate": 0
+						},
+						"deliver": 86,
+						"deliver_details": {
+							"rate": 0
+						},
+						"deliver_get": 86,
+						"deliver_get_details": {
+							"rate": 0
+						},
+						"deliver_no_ack": 0,
+						"deliver_no_ack_details": {
+							"rate": 0
+						},
+						"disk_reads": 0,
+						"disk_reads_details": {
+							"rate": 0
+						},
+						"disk_writes": 0,
+						"disk_writes_details": {
+							"rate": 0
+						},
+						"drop_unroutable": 0,
+						"drop_unroutable_details": {
+							"rate": 0
+						},
+						"get": 0,
+						"get_details": {
+							"rate": 0
+						},
+						"get_empty": 0,
+						"get_empty_details": {
+							"rate": 0
+						},
+						"get_no_ack": 0,
+						"get_no_ack_details": {
+							"rate": 0
+						},
+						"publish": 86,
+						"publish_details": {
+							"rate": 0
+						},
+						"redeliver": 0,
+						"redeliver_details": {
+							"rate": 0
+						},
+						"return_unroutable": 0,
+						"return_unroutable_details": {
+							"rate": 0
+						}
+					},
+					"churn_rates": {
+						"channel_closed": 400,
+						"channel_closed_details": {
+							"rate": 80
+						},
+						"channel_created": 432,
+						"channel_created_details": {
+							"rate": 0
+						},
+						"connection_closed": 400,
+						"connection_closed_details": {
+							"rate": 80
+						},
+						"connection_created": 432,
+						"connection_created_details": {
+							"rate": 0
+						},
+						"queue_created": 4,
+						"queue_created_details": {
+							"rate": 0
+						},
+						"queue_declared": 1043,
+						"queue_declared_details": {
+							"rate": 0
+						},
+						"queue_deleted": 0,
+						"queue_deleted_details": {
+							"rate": 0
+						}
+					},
+					"queue_totals": {
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						}
+					},
+					"object_totals": {
+						"channels": 0,
+						"connections": 0,
+						"consumers": 0,
+						"exchanges": 8,
+						"queues": 6
+					},
+					"statistics_db_event_queue": 0,
+					"node": "rabbit@rabbitmq",
+					"listeners": [
+						{
+							"node": "rabbit@rabbitmq",
+							"protocol": "amqp",
+							"ip_address": "::",
+							"port": 5672,
+							"socket_opts": {
+								"backlog": 128,
+								"nodelay": true,
+								"linger": [
+									true,
+									0
+								],
+								"exit_on_close": false
+							}
+						},
+						{
+							"node": "rabbit@rabbitmq",
+							"protocol": "clustering",
+							"ip_address": "::",
+							"port": 25672,
+							"socket_opts": []
+						},
+						{
+							"node": "rabbit@rabbitmq",
+							"protocol": "http",
+							"ip_address": "::",
+							"port": 15672,
+							"socket_opts": {
+								"cowboy_opts": {
+									"sendfile": false
+								},
+								"port": 15672
+							}
+						},
+						{
+							"node": "rabbit@rabbitmq",
+							"protocol": "http/prometheus",
+							"ip_address": "::",
+							"port": 15692,
+							"socket_opts": {
+								"cowboy_opts": {
+									"sendfile": false
+								},
+								"port": 15692,
+								"protocol": "http/prometheus"
+							}
+						}
+					],
+					"contexts": [
+						{
+							"ssl_opts": [],
+							"node": "rabbit@rabbitmq",
+							"description": "RabbitMQ Management",
+							"path": "/",
+							"cowboy_opts": "[{sendfile,false}]",
+							"port": "15672"
+						},
+						{
+							"ssl_opts": [],
+							"node": "rabbit@rabbitmq",
+							"description": "RabbitMQ Prometheus",
+							"path": "/",
+							"cowboy_opts": "[{sendfile,false}]",
+							"port": "15692",
+							"protocol": "'http/prometheus'"
+						}
+					]
+				},
+				"nodes": [
+					{
+						"partitions": [],
+						"os_pid": "19",
+						"fd_total": 1048576,
+						"sockets_total": 943629,
+						"mem_limit": 13293931724,
+						"mem_alarm": false,
+						"disk_free_limit": 50000000,
+						"disk_free_alarm": false,
+						"proc_total": 1048576,
+						"rates_mode": "basic",
+						"uptime": 1437156,
+						"run_queue": 1,
+						"processors": 12,
+						"exchange_types": [
+							{
+								"name": "direct",
+								"description": "AMQP direct exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "headers",
+								"description": "AMQP headers exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "topic",
+								"description": "AMQP topic exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "x-delayed-message",
+								"description": "Delayed Message Exchange.",
+								"enabled": true
+							},
+							{
+								"name": "fanout",
+								"description": "AMQP fanout exchange, as per the AMQP specification",
+								"enabled": true
+							}
+						],
+						"auth_mechanisms": [
+							{
+								"name": "PLAIN",
+								"description": "SASL PLAIN authentication mechanism",
+								"enabled": true
+							},
+							{
+								"name": "RABBIT-CR-DEMO",
+								"description": "RabbitMQ Demo challenge-response authentication mechanism",
+								"enabled": false
+							},
+							{
+								"name": "AMQPLAIN",
+								"description": "QPid AMQPLAIN mechanism",
+								"enabled": true
+							}
+						],
+						"applications": [
+							{
+								"name": "accept",
+								"description": "Accept header(s) for Erlang/Elixir",
+								"version": "0.3.5"
+							},
+							{
+								"name": "amqp10_common",
+								"description": "Modules shared by rabbitmq-amqp1.0 and rabbitmq-amqp1.0-client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "amqp_client",
+								"description": "RabbitMQ AMQP Client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "asn1",
+								"description": "The Erlang ASN1 compiler version 5.0.21",
+								"version": "5.0.21"
+							},
+							{
+								"name": "aten",
+								"description": "Erlang node failure detector",
+								"version": "0.5.8"
+							},
+							{
+								"name": "compiler",
+								"description": "ERTS  CXC 138 10",
+								"version": "8.2.4"
+							},
+							{
+								"name": "cowboy",
+								"description": "Small, fast, modern HTTP server.",
+								"version": "2.8.0"
+							},
+							{
+								"name": "cowlib",
+								"description": "Support library for manipulating Web protocols.",
+								"version": "2.9.1"
+							},
+							{
+								"name": "credentials_obfuscation",
+								"description": "Helper library that obfuscates sensitive values in process state",
+								"version": "3.1.0"
+							},
+							{
+								"name": "crypto",
+								"description": "CRYPTO",
+								"version": "5.1.3"
+							},
+							{
+								"name": "cuttlefish",
+								"description": "cuttlefish configuration abstraction",
+								"version": "3.0.1"
+							},
+							{
+								"name": "enough",
+								"description": "A gen_server implementation with additional, overload-protected call type",
+								"version": "0.1.0"
+							},
+							{
+								"name": "gen_batch_server",
+								"description": "Generic batching server",
+								"version": "0.8.8"
+							},
+							{
+								"name": "inets",
+								"description": "INETS  CXC 138 49",
+								"version": "8.3"
+							},
+							{
+								"name": "jsx",
+								"description": "a streaming, evented json parsing toolkit",
+								"version": "3.1.0"
+							},
+							{
+								"name": "kernel",
+								"description": "ERTS  CXC 138 10",
+								"version": "8.5.4"
+							},
+							{
+								"name": "mnesia",
+								"description": "MNESIA  CXC 138 12",
+								"version": "4.21.4"
+							},
+							{
+								"name": "observer_cli",
+								"description": "Visualize Erlang Nodes On The Command Line",
+								"version": "1.7.3"
+							},
+							{
+								"name": "os_mon",
+								"description": "CPO  CXC 138 46",
+								"version": "2.8.1"
+							},
+							{
+								"name": "osiris",
+								"description": "New project",
+								"version": "1.0.0"
+							},
+							{
+								"name": "prometheus",
+								"description": "Prometheus.io client in Erlang",
+								"version": "4.9.1"
+							},
+							{
+								"name": "public_key",
+								"description": "Public key infrastructure",
+								"version": "1.13.3"
+							},
+							{
+								"name": "ra",
+								"description": "Raft library",
+								"version": "2.0.13"
+							},
+							{
+								"name": "rabbit",
+								"description": "RabbitMQ",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbit_common",
+								"description": "Modules shared by rabbitmq-server and rabbitmq-erlang-client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_delayed_message_exchange",
+								"description": "RabbitMQ Delayed Message Exchange",
+								"version": "3.9.0"
+							},
+							{
+								"name": "rabbitmq_management",
+								"description": "RabbitMQ Management Console",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_management_agent",
+								"description": "RabbitMQ Management Agent",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_prelaunch",
+								"description": "RabbitMQ prelaunch setup",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_prometheus",
+								"description": "",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_web_dispatch",
+								"description": "RabbitMQ Web Dispatcher",
+								"version": "3.9.29"
+							},
+							{
+								"name": "ranch",
+								"description": "Socket acceptor pool for TCP protocols.",
+								"version": "2.1.0"
+							},
+							{
+								"name": "recon",
+								"description": "Diagnostic tools for production use",
+								"version": "2.5.3"
+							},
+							{
+								"name": "redbug",
+								"description": "Erlang Tracing Debugger",
+								"version": "2.0.7"
+							},
+							{
+								"name": "runtime_tools",
+								"description": "RUNTIME_TOOLS",
+								"version": "1.19"
+							},
+							{
+								"name": "sasl",
+								"description": "SASL  CXC 138 11",
+								"version": "4.2"
+							},
+							{
+								"name": "seshat",
+								"description": "Counters",
+								"version": "0.1.0"
+							},
+							{
+								"name": "ssl",
+								"description": "Erlang/OTP SSL application",
+								"version": "10.9"
+							},
+							{
+								"name": "stdlib",
+								"description": "ERTS  CXC 138 10",
+								"version": "4.3"
+							},
+							{
+								"name": "stdout_formatter",
+								"description": "Tools to format paragraphs, lists and tables as plain text",
+								"version": "0.2.4"
+							},
+							{
+								"name": "syntax_tools",
+								"description": "Syntax tools",
+								"version": "3.0.1"
+							},
+							{
+								"name": "sysmon_handler",
+								"description": "Rate-limiting system_monitor event handler",
+								"version": "1.3.0"
+							},
+							{
+								"name": "systemd",
+								"description": "systemd integration for Erlang applications",
+								"version": "0.6.1"
+							},
+							{
+								"name": "tools",
+								"description": "DEVTOOLS  CXC 138 16",
+								"version": "3.5.3"
+							},
+							{
+								"name": "xmerl",
+								"description": "XML parser",
+								"version": "1.3.31"
+							}
+						],
+						"contexts": [
+							{
+								"description": "RabbitMQ Management",
+								"path": "/",
+								"cowboy_opts": "[{sendfile,false}]",
+								"port": "15672"
+							},
+							{
+								"description": "RabbitMQ Prometheus",
+								"path": "/",
+								"cowboy_opts": "[{sendfile,false}]",
+								"port": "15692",
+								"protocol": "'http/prometheus'"
+							}
+						],
+						"log_files": [
+							"/var/log/rabbitmq/rabbit@rabbitmq_upgrade.log",
+							"<stdout>"
+						],
+						"db_dir": "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq",
+						"config_files": [
+							"/etc/rabbitmq/conf.d/10-defaults.conf"
+						],
+						"net_ticktime": 60,
+						"enabled_plugins": [
+							"rabbitmq_delayed_message_exchange",
+							"rabbitmq_management",
+							"rabbitmq_prometheus"
+						],
+						"mem_calculation_strategy": "rss",
+						"ra_open_file_metrics": {
+							"ra_log_wal": 1,
+							"ra_log_segment_writer": 0
+						},
+						"name": "rabbit@rabbitmq",
+						"type": "disc",
+						"running": true,
+						"mem_used": 259174400,
+						"mem_used_details": {
+							"rate": 119603.2
+						},
+						"fd_used": 469,
+						"fd_used_details": {
+							"rate": 0
+						},
+						"sockets_used": 432,
+						"sockets_used_details": {
+							"rate": 0
+						},
+						"proc_used": 5177,
+						"proc_used_details": {
+							"rate": 0
+						},
+						"disk_free": 669543993344,
+						"disk_free_details": {
+							"rate": 0
+						},
+						"gc_num": 253599,
+						"gc_num_details": {
+							"rate": 254.2
+						},
+						"gc_bytes_reclaimed": 4239693352,
+						"gc_bytes_reclaimed_details": {
+							"rate": 4966737.6
+						},
+						"context_switches": 774657,
+						"context_switches_details": {
+							"rate": 434.6
+						},
+						"io_read_count": 1,
+						"io_read_count_details": {
+							"rate": 0
+						},
+						"io_read_bytes": 1,
+						"io_read_bytes_details": {
+							"rate": 0
+						},
+						"io_read_avg_time": 0.144,
+						"io_read_avg_time_details": {
+							"rate": 0
+						},
+						"io_write_count": 0,
+						"io_write_count_details": {
+							"rate": 0
+						},
+						"io_write_bytes": 0,
+						"io_write_bytes_details": {
+							"rate": 0
+						},
+						"io_write_avg_time": 0,
+						"io_write_avg_time_details": {
+							"rate": 0
+						},
+						"io_sync_count": 0,
+						"io_sync_count_details": {
+							"rate": 0
+						},
+						"io_sync_avg_time": 0,
+						"io_sync_avg_time_details": {
+							"rate": 0
+						},
+						"io_seek_count": 0,
+						"io_seek_count_details": {
+							"rate": 0
+						},
+						"io_seek_avg_time": 0,
+						"io_seek_avg_time_details": {
+							"rate": 0
+						},
+						"io_reopen_count": 0,
+						"io_reopen_count_details": {
+							"rate": 0
+						},
+						"mnesia_ram_tx_count": 1463,
+						"mnesia_ram_tx_count_details": {
+							"rate": 0
+						},
+						"mnesia_disk_tx_count": 2,
+						"mnesia_disk_tx_count_details": {
+							"rate": 0
+						},
+						"msg_store_read_count": 0,
+						"msg_store_read_count_details": {
+							"rate": 0
+						},
+						"msg_store_write_count": 0,
+						"msg_store_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_journal_write_count": 0,
+						"queue_index_journal_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_write_count": 0,
+						"queue_index_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_read_count": 0,
+						"queue_index_read_count_details": {
+							"rate": 0
+						},
+						"io_file_handle_open_attempt_count": 11,
+						"io_file_handle_open_attempt_count_details": {
+							"rate": 0
+						},
+						"io_file_handle_open_attempt_avg_time": 0.14454545454545453,
+						"io_file_handle_open_attempt_avg_time_details": {
+							"rate": 0
+						},
+						"connection_created": 432,
+						"connection_created_details": {
+							"rate": 0
+						},
+						"connection_closed": 400,
+						"connection_closed_details": {
+							"rate": 80
+						},
+						"channel_created": 432,
+						"channel_created_details": {
+							"rate": 0
+						},
+						"channel_closed": 400,
+						"channel_closed_details": {
+							"rate": 80
+						},
+						"queue_declared": 1043,
+						"queue_declared_details": {
+							"rate": 0
+						},
+						"queue_created": 4,
+						"queue_created_details": {
+							"rate": 0
+						},
+						"queue_deleted": 0,
+						"queue_deleted_details": {
+							"rate": 0
+						},
+						"cluster_links": [],
+						"metrics_gc_queue_length": {
+							"connection_closed": 0,
+							"channel_closed": 0,
+							"consumer_deleted": 0,
+							"exchange_deleted": 0,
+							"queue_deleted": 0,
+							"vhost_deleted": 0,
+							"node_node_deleted": 0,
+							"channel_consumer_deleted": 0
+						}
+					},
+					{
+						"partitions": [],
+						"os_pid": "19",
+						"fd_total": 1048576,
+						"sockets_total": 943629,
+						"mem_limit": 13293931724,
+						"mem_alarm": false,
+						"disk_free_limit": 50000000,
+						"disk_free_alarm": false,
+						"proc_total": 1048576,
+						"rates_mode": "basic",
+						"uptime": 1437156,
+						"run_queue": 1,
+						"processors": 12,
+						"exchange_types": [
+							{
+								"name": "direct",
+								"description": "AMQP direct exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "headers",
+								"description": "AMQP headers exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "topic",
+								"description": "AMQP topic exchange, as per the AMQP specification",
+								"enabled": true
+							},
+							{
+								"name": "x-delayed-message",
+								"description": "Delayed Message Exchange.",
+								"enabled": true
+							},
+							{
+								"name": "fanout",
+								"description": "AMQP fanout exchange, as per the AMQP specification",
+								"enabled": true
+							}
+						],
+						"auth_mechanisms": [
+							{
+								"name": "PLAIN",
+								"description": "SASL PLAIN authentication mechanism",
+								"enabled": true
+							},
+							{
+								"name": "RABBIT-CR-DEMO",
+								"description": "RabbitMQ Demo challenge-response authentication mechanism",
+								"enabled": false
+							},
+							{
+								"name": "AMQPLAIN",
+								"description": "QPid AMQPLAIN mechanism",
+								"enabled": true
+							}
+						],
+						"applications": [
+							{
+								"name": "accept",
+								"description": "Accept header(s) for Erlang/Elixir",
+								"version": "0.3.5"
+							},
+							{
+								"name": "amqp10_common",
+								"description": "Modules shared by rabbitmq-amqp1.0 and rabbitmq-amqp1.0-client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "amqp_client",
+								"description": "RabbitMQ AMQP Client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "asn1",
+								"description": "The Erlang ASN1 compiler version 5.0.21",
+								"version": "5.0.21"
+							},
+							{
+								"name": "aten",
+								"description": "Erlang node failure detector",
+								"version": "0.5.8"
+							},
+							{
+								"name": "compiler",
+								"description": "ERTS  CXC 138 10",
+								"version": "8.2.4"
+							},
+							{
+								"name": "cowboy",
+								"description": "Small, fast, modern HTTP server.",
+								"version": "2.8.0"
+							},
+							{
+								"name": "cowlib",
+								"description": "Support library for manipulating Web protocols.",
+								"version": "2.9.1"
+							},
+							{
+								"name": "credentials_obfuscation",
+								"description": "Helper library that obfuscates sensitive values in process state",
+								"version": "3.1.0"
+							},
+							{
+								"name": "crypto",
+								"description": "CRYPTO",
+								"version": "5.1.3"
+							},
+							{
+								"name": "cuttlefish",
+								"description": "cuttlefish configuration abstraction",
+								"version": "3.0.1"
+							},
+							{
+								"name": "enough",
+								"description": "A gen_server implementation with additional, overload-protected call type",
+								"version": "0.1.0"
+							},
+							{
+								"name": "gen_batch_server",
+								"description": "Generic batching server",
+								"version": "0.8.8"
+							},
+							{
+								"name": "inets",
+								"description": "INETS  CXC 138 49",
+								"version": "8.3"
+							},
+							{
+								"name": "jsx",
+								"description": "a streaming, evented json parsing toolkit",
+								"version": "3.1.0"
+							},
+							{
+								"name": "kernel",
+								"description": "ERTS  CXC 138 10",
+								"version": "8.5.4"
+							},
+							{
+								"name": "mnesia",
+								"description": "MNESIA  CXC 138 12",
+								"version": "4.21.4"
+							},
+							{
+								"name": "observer_cli",
+								"description": "Visualize Erlang Nodes On The Command Line",
+								"version": "1.7.3"
+							},
+							{
+								"name": "os_mon",
+								"description": "CPO  CXC 138 46",
+								"version": "2.8.1"
+							},
+							{
+								"name": "osiris",
+								"description": "New project",
+								"version": "1.0.0"
+							},
+							{
+								"name": "prometheus",
+								"description": "Prometheus.io client in Erlang",
+								"version": "4.9.1"
+							},
+							{
+								"name": "public_key",
+								"description": "Public key infrastructure",
+								"version": "1.13.3"
+							},
+							{
+								"name": "ra",
+								"description": "Raft library",
+								"version": "2.0.13"
+							},
+							{
+								"name": "rabbit",
+								"description": "RabbitMQ",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbit_common",
+								"description": "Modules shared by rabbitmq-server and rabbitmq-erlang-client",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_delayed_message_exchange",
+								"description": "RabbitMQ Delayed Message Exchange",
+								"version": "3.9.0"
+							},
+							{
+								"name": "rabbitmq_management",
+								"description": "RabbitMQ Management Console",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_management_agent",
+								"description": "RabbitMQ Management Agent",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_prelaunch",
+								"description": "RabbitMQ prelaunch setup",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_prometheus",
+								"description": "",
+								"version": "3.9.29"
+							},
+							{
+								"name": "rabbitmq_web_dispatch",
+								"description": "RabbitMQ Web Dispatcher",
+								"version": "3.9.29"
+							},
+							{
+								"name": "ranch",
+								"description": "Socket acceptor pool for TCP protocols.",
+								"version": "2.1.0"
+							},
+							{
+								"name": "recon",
+								"description": "Diagnostic tools for production use",
+								"version": "2.5.3"
+							},
+							{
+								"name": "redbug",
+								"description": "Erlang Tracing Debugger",
+								"version": "2.0.7"
+							},
+							{
+								"name": "runtime_tools",
+								"description": "RUNTIME_TOOLS",
+								"version": "1.19"
+							},
+							{
+								"name": "sasl",
+								"description": "SASL  CXC 138 11",
+								"version": "4.2"
+							},
+							{
+								"name": "seshat",
+								"description": "Counters",
+								"version": "0.1.0"
+							},
+							{
+								"name": "ssl",
+								"description": "Erlang/OTP SSL application",
+								"version": "10.9"
+							},
+							{
+								"name": "stdlib",
+								"description": "ERTS  CXC 138 10",
+								"version": "4.3"
+							},
+							{
+								"name": "stdout_formatter",
+								"description": "Tools to format paragraphs, lists and tables as plain text",
+								"version": "0.2.4"
+							},
+							{
+								"name": "syntax_tools",
+								"description": "Syntax tools",
+								"version": "3.0.1"
+							},
+							{
+								"name": "sysmon_handler",
+								"description": "Rate-limiting system_monitor event handler",
+								"version": "1.3.0"
+							},
+							{
+								"name": "systemd",
+								"description": "systemd integration for Erlang applications",
+								"version": "0.6.1"
+							},
+							{
+								"name": "tools",
+								"description": "DEVTOOLS  CXC 138 16",
+								"version": "3.5.3"
+							},
+							{
+								"name": "xmerl",
+								"description": "XML parser",
+								"version": "1.3.31"
+							}
+						],
+						"contexts": [
+							{
+								"description": "RabbitMQ Management",
+								"path": "/",
+								"cowboy_opts": "[{sendfile,false}]",
+								"port": "15672"
+							},
+							{
+								"description": "RabbitMQ Prometheus",
+								"path": "/",
+								"cowboy_opts": "[{sendfile,false}]",
+								"port": "15692",
+								"protocol": "'http/prometheus'"
+							}
+						],
+						"log_files": [
+							"/var/log/rabbitmq/rabbit@rabbitmq_upgrade.log",
+							"<stdout>"
+						],
+						"db_dir": "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq",
+						"config_files": [
+							"/etc/rabbitmq/conf.d/10-defaults.conf"
+						],
+						"net_ticktime": 60,
+						"enabled_plugins": [
+							"rabbitmq_delayed_message_exchange",
+							"rabbitmq_management",
+							"rabbitmq_prometheus"
+						],
+						"mem_calculation_strategy": "rss",
+						"ra_open_file_metrics": {
+							"ra_log_wal": 1,
+							"ra_log_segment_writer": 0
+						},
+						"name": "rabbit@rabbitmq",
+						"type": "disc",
+						"running": false,
+						"mem_used": 259174400,
+						"mem_used_details": {
+							"rate": 119603.2
+						},
+						"fd_used": 469,
+						"fd_used_details": {
+							"rate": 0
+						},
+						"sockets_used": 432,
+						"sockets_used_details": {
+							"rate": 0
+						},
+						"proc_used": 5177,
+						"proc_used_details": {
+							"rate": 0
+						},
+						"disk_free": 669543993344,
+						"disk_free_details": {
+							"rate": 0
+						},
+						"gc_num": 253599,
+						"gc_num_details": {
+							"rate": 254.2
+						},
+						"gc_bytes_reclaimed": 4239693352,
+						"gc_bytes_reclaimed_details": {
+							"rate": 4966737.6
+						},
+						"context_switches": 774657,
+						"context_switches_details": {
+							"rate": 434.6
+						},
+						"io_read_count": 1,
+						"io_read_count_details": {
+							"rate": 0
+						},
+						"io_read_bytes": 1,
+						"io_read_bytes_details": {
+							"rate": 0
+						},
+						"io_read_avg_time": 0.144,
+						"io_read_avg_time_details": {
+							"rate": 0
+						},
+						"io_write_count": 0,
+						"io_write_count_details": {
+							"rate": 0
+						},
+						"io_write_bytes": 0,
+						"io_write_bytes_details": {
+							"rate": 0
+						},
+						"io_write_avg_time": 0,
+						"io_write_avg_time_details": {
+							"rate": 0
+						},
+						"io_sync_count": 0,
+						"io_sync_count_details": {
+							"rate": 0
+						},
+						"io_sync_avg_time": 0,
+						"io_sync_avg_time_details": {
+							"rate": 0
+						},
+						"io_seek_count": 0,
+						"io_seek_count_details": {
+							"rate": 0
+						},
+						"io_seek_avg_time": 0,
+						"io_seek_avg_time_details": {
+							"rate": 0
+						},
+						"io_reopen_count": 0,
+						"io_reopen_count_details": {
+							"rate": 0
+						},
+						"mnesia_ram_tx_count": 1463,
+						"mnesia_ram_tx_count_details": {
+							"rate": 0
+						},
+						"mnesia_disk_tx_count": 2,
+						"mnesia_disk_tx_count_details": {
+							"rate": 0
+						},
+						"msg_store_read_count": 0,
+						"msg_store_read_count_details": {
+							"rate": 0
+						},
+						"msg_store_write_count": 0,
+						"msg_store_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_journal_write_count": 0,
+						"queue_index_journal_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_write_count": 0,
+						"queue_index_write_count_details": {
+							"rate": 0
+						},
+						"queue_index_read_count": 0,
+						"queue_index_read_count_details": {
+							"rate": 0
+						},
+						"io_file_handle_open_attempt_count": 11,
+						"io_file_handle_open_attempt_count_details": {
+							"rate": 0
+						},
+						"io_file_handle_open_attempt_avg_time": 0.14454545454545453,
+						"io_file_handle_open_attempt_avg_time_details": {
+							"rate": 0
+						},
+						"connection_created": 432,
+						"connection_created_details": {
+							"rate": 0
+						},
+						"connection_closed": 400,
+						"connection_closed_details": {
+							"rate": 80
+						},
+						"channel_created": 432,
+						"channel_created_details": {
+							"rate": 0
+						},
+						"channel_closed": 400,
+						"channel_closed_details": {
+							"rate": 80
+						},
+						"queue_declared": 1043,
+						"queue_declared_details": {
+							"rate": 0
+						},
+						"queue_created": 4,
+						"queue_created_details": {
+							"rate": 0
+						},
+						"queue_deleted": 0,
+						"queue_deleted_details": {
+							"rate": 0
+						},
+						"cluster_links": [],
+						"metrics_gc_queue_length": {
+							"connection_closed": 0,
+							"channel_closed": 0,
+							"consumer_deleted": 0,
+							"exchange_deleted": 0,
+							"queue_deleted": 0,
+							"vhost_deleted": 0,
+							"node_node_deleted": 0,
+							"channel_consumer_deleted": 0
+						}
+					}
+				],
+				"queues": [
+					{
+						"arguments": {},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0,
+							"avg_ack_ingress_rate": 0,
+							"avg_egress_rate": 0,
+							"avg_ingress_rate": 0,
+							"delta": [
+								"delta",
+								0,
+								0,
+								0,
+								0
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 0,
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 1,
+						"consumer_utilisation": 1,
+						"consumers": 100,
+						"durable": true,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 52
+						},
+						"head_message_timestamp": null,
+						"idle_since": "2023-10-23 9:34:40",
+						"memory": 13648,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "Reply.async.v2",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 149371,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					},
+					{
+						"arguments": {
+							"x-expires": 600000,
+							"x-message-ttl": 600000
+						},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0.09995882165605806,
+							"avg_ack_ingress_rate": 0.09995882165605806,
+							"avg_egress_rate": 0.09995882165605806,
+							"avg_ingress_rate": 0.09995882165605806,
+							"delta": [
+								"delta",
+								"undefined",
+								0,
+								0,
+								"undefined"
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 43,
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 1,
+						"consumer_utilisation": 1,
+						"consumers": 100,
+						"durable": false,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 186
+						},
+						"head_message_timestamp": null,
+						"memory": 184576,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"message_stats": {
+							"ack": 43,
+							"ack_details": {
+								"rate": 0
+							},
+							"deliver": 43,
+							"deliver_details": {
+								"rate": 0
+							},
+							"deliver_get": 43,
+							"deliver_get_details": {
+								"rate": 0
+							},
+							"deliver_no_ack": 0,
+							"deliver_no_ack_details": {
+								"rate": 0
+							},
+							"get": 0,
+							"get_details": {
+								"rate": 0
+							},
+							"get_empty": 0,
+							"get_empty_details": {
+								"rate": 0
+							},
+							"get_no_ack": 0,
+							"get_no_ack_details": {
+								"rate": 0
+							},
+							"publish": 43,
+							"publish_details": {
+								"rate": 0
+							},
+							"redeliver": 0,
+							"redeliver_details": {
+								"rate": 0
+							}
+						},
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "Reply.c8842691-cb7e-4376-ac8d-2f6b12cc5ae6",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 442381,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					},
+					{
+						"arguments": {
+							"x-dead-letter-exchange": "amq.match"
+						},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0.09997770617448871,
+							"avg_ack_ingress_rate": 0.09997770617448871,
+							"avg_egress_rate": 0.09997770617448871,
+							"avg_ingress_rate": 0.09997770617448871,
+							"delta": [
+								"delta",
+								"undefined",
+								0,
+								0,
+								"undefined"
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 43,
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 1,
+						"consumer_utilisation": 1,
+						"consumers": 32,
+						"durable": false,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 12
+						},
+						"head_message_timestamp": null,
+						"memory": 277024,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"message_stats": {
+							"ack": 43,
+							"ack_details": {
+								"rate": 0
+							},
+							"deliver": 43,
+							"deliver_details": {
+								"rate": 0
+							},
+							"deliver_get": 43,
+							"deliver_get_details": {
+								"rate": 0
+							},
+							"deliver_no_ack": 0,
+							"deliver_no_ack_details": {
+								"rate": 0
+							},
+							"get": 0,
+							"get_details": {
+								"rate": 0
+							},
+							"get_empty": 0,
+							"get_empty_details": {
+								"rate": 0
+							},
+							"get_no_ack": 0,
+							"get_no_ack_details": {
+								"rate": 0
+							},
+							"publish": 43,
+							"publish_details": {
+								"rate": 0
+							},
+							"redeliver": 0,
+							"redeliver_details": {
+								"rate": 0
+							}
+						},
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "Request.routing-queue",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 161766,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					},
+					{
+						"arguments": {
+							"x-dead-letter-exchange": "amq.match",
+							"x-max-priority": 9
+						},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0,
+							"avg_ack_ingress_rate": 0,
+							"avg_egress_rate": 0,
+							"avg_ingress_rate": 0,
+							"delta": [
+								"delta",
+								"todo",
+								"todo",
+								"todo",
+								"todo"
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 0,
+							"priority_lengths": {
+								"0": 0,
+								"1": 0,
+								"2": 0,
+								"3": 0,
+								"4": 0,
+								"5": 0,
+								"6": 0,
+								"7": 0,
+								"8": 0,
+								"9": 0
+							},
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 0,
+						"consumer_utilisation": 0,
+						"consumers": 0,
+						"durable": false,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 43
+						},
+						"head_message_timestamp": null,
+						"idle_since": "2023-10-23 9:34:40",
+						"memory": 69472,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "Request.v2.0344d189-9ed5-4043-8067-946a072e6e55",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 141557,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					},
+					{
+						"arguments": {
+							"x-dead-letter-exchange": "amq.match",
+							"x-max-priority": 9
+						},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0,
+							"avg_ack_ingress_rate": 0,
+							"avg_egress_rate": 0,
+							"avg_ingress_rate": 0,
+							"delta": [
+								"delta",
+								"todo",
+								"todo",
+								"todo",
+								"todo"
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 0,
+							"priority_lengths": {
+								"0": 0,
+								"1": 0,
+								"2": 0,
+								"3": 0,
+								"4": 0,
+								"5": 0,
+								"6": 0,
+								"7": 0,
+								"8": 0,
+								"9": 0
+							},
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 0,
+						"consumer_utilisation": 0,
+						"consumers": 0,
+						"durable": false,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 28
+						},
+						"head_message_timestamp": null,
+						"idle_since": "2023-10-23 9:34:40",
+						"memory": 69472,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "Request.v2.14523713-53d9-4cfc-885d-050fc498cec8",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 143265,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					},
+					{
+						"arguments": {},
+						"auto_delete": false,
+						"backing_queue_status": {
+							"avg_ack_egress_rate": 0,
+							"avg_ack_ingress_rate": 0,
+							"avg_egress_rate": 0,
+							"avg_ingress_rate": 0,
+							"delta": [
+								"delta",
+								0,
+								0,
+								0,
+								0
+							],
+							"len": 0,
+							"mode": "default",
+							"next_seqid": 0,
+							"q1": 0,
+							"q2": 0,
+							"q3": 0,
+							"q4": 0,
+							"target_ram_count": "infinity"
+						},
+						"consumer_capacity": 0,
+						"consumer_utilisation": 0,
+						"consumers": 0,
+						"durable": true,
+						"effective_policy_definition": {},
+						"exclusive": false,
+						"exclusive_consumer_tag": null,
+						"garbage_collection": {
+							"fullsweep_after": 65535,
+							"max_heap_size": 0,
+							"min_bin_vheap_size": 46422,
+							"min_heap_size": 233,
+							"minor_gcs": 15
+						},
+						"head_message_timestamp": null,
+						"idle_since": "2023-10-23 9:34:41",
+						"memory": 13432,
+						"message_bytes": 0,
+						"message_bytes_paged_out": 0,
+						"message_bytes_persistent": 0,
+						"message_bytes_ram": 0,
+						"message_bytes_ready": 0,
+						"message_bytes_unacknowledged": 0,
+						"messages": 0,
+						"messages_details": {
+							"rate": 0
+						},
+						"messages_paged_out": 0,
+						"messages_persistent": 0,
+						"messages_ram": 0,
+						"messages_ready": 0,
+						"messages_ready_details": {
+							"rate": 0
+						},
+						"messages_ready_ram": 0,
+						"messages_unacknowledged": 0,
+						"messages_unacknowledged_details": {
+							"rate": 0
+						},
+						"messages_unacknowledged_ram": 0,
+						"name": "SesFileTranslationConsumer.FileConsumption",
+						"node": "rabbit@rabbitmq",
+						"operator_policy": null,
+						"policy": null,
+						"recoverable_slaves": null,
+						"reductions": 19919,
+						"reductions_details": {
+							"rate": 0
+						},
+						"single_active_consumer_tag": null,
+						"state": "running",
+						"type": "classic",
+						"vhost": "/"
+					}
+				],
+				"app": {
+					"version": "3.9.29",
+					"semverVersion": "3.9.29",
+					"invalidVersion": false
+				},
+				"status": "running"
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:33.043Z",
+			"lastUpdate": "2023-10-23T09:36:33.043Z",
+			"status": "running",
+			"warning": true,
+			"name": "RabbitMQ (used by ses-file-translation-consumer)"
+		},
+		{
+			"id": "mongodb",
+			"host": "mongodb",
+			"version": "5.0.21",
+			"process": "mongod",
+			"pid": 1,
+			"uptime": 84803,
+			"uptimeMillis": 84,
+			"uptimeEstimate": 84802,
+			"localTime": "2023-10-24T13:02:43.675Z",
+			"asserts": {
+				"regular": 0,
+				"warning": 0,
+				"msg": 0,
+				"user": 48649,
+				"tripwire": 0,
+				"rollovers": 0
+			},
+			"catalogStats": {
+				"collections": 54,
+				"capped": 0,
+				"timeseries": 0,
+				"views": 0,
+				"internalCollections": 19,
+				"internalViews": 1
+			},
+			"connections": {
+				"current": 122,
+				"available": 838738,
+				"totalCreated": 24272,
+				"active": 19,
+				"threaded": 122,
+				"exhaustIsMaster": 0,
+				"exhaustHello": 18,
+				"awaitingTopologyChanges": 84
+			},
+			"defaultRWConcern": {
+				"defaultReadConcern": {
+					"level": "local"
+				},
+				"defaultWriteConcern": {
+					"w": "majority",
+					"wtimeout": 0
+				},
+				"defaultWriteConcernSource": "implicit",
+				"defaultReadConcernSource": "implicit",
+				"localUpdateWallClockTime": "2023-10-23T13:29:23.315Z"
+			},
+			"electionMetrics": {
+				"stepUpCmd": {
+					"called": 0,
+					"successful": 0
+				},
+				"priorityTakeover": {
+					"called": 0,
+					"successful": 0
+				},
+				"catchUpTakeover": {
+					"called": 0,
+					"successful": 0
+				},
+				"electionTimeout": {
+					"called": 1,
+					"successful": 1
+				},
+				"freezeTimeout": {
+					"called": 0,
+					"successful": 0
+				},
+				"numStepDownsCausedByHigherTerm": 0,
+				"numCatchUps": 0,
+				"numCatchUpsSucceeded": 0,
+				"numCatchUpsAlreadyCaughtUp": 0,
+				"numCatchUpsSkipped": 1,
+				"numCatchUpsTimedOut": 0,
+				"numCatchUpsFailedWithError": 0,
+				"numCatchUpsFailedWithNewTerm": 0,
+				"numCatchUpsFailedWithReplSetAbortPrimaryCatchUpCmd": 0,
+				"averageCatchUpOps": 0
+			},
+			"extra_info": {
+				"note": "fields vary by platform",
+				"user_time_us": 740292837,
+				"system_time_us": 332520160,
+				"maximum_resident_set_kb": 158820,
+				"input_blocks": 195336,
+				"output_blocks": 1594536,
+				"page_reclaims": 143821,
+				"page_faults": 701,
+				"voluntary_context_switches": 7837723,
+				"involuntary_context_switches": 51715
+			},
+			"flowControl": {
+				"enabled": true,
+				"targetRateLimit": 1000000000,
+				"timeAcquiringMicros": 42042,
+				"locksPerKiloOp": 106610,
+				"sustainerRate": 0,
+				"isLagged": false,
+				"isLaggedCount": 2,
+				"isLaggedTimeMicros": 2000077
+			},
+			"globalLock": {
+				"totalTime": 84802868000,
+				"currentQueue": {
+					"total": 0,
+					"readers": 0,
+					"writers": 0
+				},
+				"activeClients": {
+					"total": 0,
+					"readers": 0,
+					"writers": 0
+				}
+			},
+			"indexBulkBuilder": {
+				"count": 0,
+				"resumed": 0,
+				"filesOpenedForExternalSort": 0,
+				"filesClosedForExternalSort": 0
+			},
+			"indexStats": {
+				"count": 281,
+				"features": {
+					"2d": {
+						"count": 0,
+						"accesses": 0
+					},
+					"2dsphere": {
+						"count": 0,
+						"accesses": 0
+					},
+					"collation": {
+						"count": 0,
+						"accesses": 0
+					},
+					"compound": {
+						"count": 23,
+						"accesses": 0
+					},
+					"hashed": {
+						"count": 0,
+						"accesses": 0
+					},
+					"id": {
+						"count": 54,
+						"accesses": 1904
+					},
+					"normal": {
+						"count": 225,
+						"accesses": 473
+					},
+					"partial": {
+						"count": 0,
+						"accesses": 0
+					},
+					"single": {
+						"count": 204,
+						"accesses": 473
+					},
+					"sparse": {
+						"count": 1,
+						"accesses": 0
+					},
+					"text": {
+						"count": 2,
+						"accesses": 0
+					},
+					"ttl": {
+						"count": 13,
+						"accesses": 0
+					},
+					"unique": {
+						"count": 20,
+						"accesses": 0
+					},
+					"wildcard": {
+						"count": 0,
+						"accesses": 0
+					}
+				}
+			},
+			"locks": {
+				"ParallelBatchWriterMode": {
+					"acquireCount": {
+						"r": 840877,
+						"W": 1
+					}
+				},
+				"FeatureCompatibilityVersion": {
+					"acquireCount": {
+						"r": 426798,
+						"w": 54993
+					}
+				},
+				"ReplicationStateTransition": {
+					"acquireCount": {
+						"w": 1874626,
+						"W": 2
+					},
+					"acquireWaitCount": {
+						"w": 2
+					},
+					"timeAcquiringMicros": {
+						"w": 20368
+					}
+				},
+				"Global": {
+					"acquireCount": {
+						"r": 1210438,
+						"w": 846532,
+						"W": 6
+					}
+				},
+				"Database": {
+					"acquireCount": {
+						"r": 83121,
+						"w": 838696,
+						"W": 3
+					}
+				},
+				"Collection": {
+					"acquireCount": {
+						"r": 4909,
+						"w": 838667,
+						"W": 6
+					}
+				},
+				"Mutex": {
+					"acquireCount": {
+						"r": 921922
+					}
+				},
+				"oplog": {
+					"acquireCount": {
+						"r": 78285,
+						"w": 1,
+						"W": 1
+					}
+				}
+			},
+			"logicalSessionRecordCache": {
+				"activeSessionsCount": 4,
+				"sessionsCollectionJobCount": 262,
+				"lastSessionsCollectionJobDurationMillis": 16,
+				"lastSessionsCollectionJobTimestamp": "2023-10-24T13:02:39.010Z",
+				"lastSessionsCollectionJobEntriesRefreshed": 6,
+				"lastSessionsCollectionJobEntriesEnded": 91,
+				"lastSessionsCollectionJobCursorsClosed": 0,
+				"transactionReaperJobCount": 262,
+				"lastTransactionReaperJobDurationMillis": 0,
+				"lastTransactionReaperJobTimestamp": "2023-10-24T13:02:39.015Z",
+				"lastTransactionReaperJobEntriesCleanedUp": 0,
+				"sessionCatalogSize": 2
+			},
+			"network": {
+				"bytesIn": 101328907,
+				"bytesOut": 1840682619,
+				"physicalBytesIn": 67354560,
+				"physicalBytesOut": 1840682619,
+				"numSlowDNSOperations": 0,
+				"numSlowSSLOperations": 0,
+				"numRequests": 531883,
+				"tcpFastOpen": {
+					"kernelSetting": 1,
+					"serverSupported": true,
+					"clientSupported": true,
+					"accepted": 0
+				},
+				"compression": {
+					"snappy": {
+						"compressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						},
+						"decompressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						}
+					},
+					"zstd": {
+						"compressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						},
+						"decompressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						}
+					},
+					"zlib": {
+						"compressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						},
+						"decompressor": {
+							"bytesIn": 0,
+							"bytesOut": 0
+						}
+					}
+				},
+				"serviceExecutors": {
+					"passthrough": {
+						"threadsRunning": 122,
+						"clientsInTotal": 122,
+						"clientsRunning": 122,
+						"clientsWaitingForData": 0
+					},
+					"fixed": {
+						"threadsRunning": 1,
+						"clientsInTotal": 0,
+						"clientsRunning": 0,
+						"clientsWaitingForData": 0
+					}
+				}
+			},
+			"opLatencies": {
+				"reads": {
+					"latency": 461914,
+					"ops": 1788
+				},
+				"writes": {
+					"latency": 781082,
+					"ops": 680
+				},
+				"commands": {
+					"latency": 53367717,
+					"ops": 529396
+				},
+				"transactions": {
+					"latency": 0,
+					"ops": 0
+				}
+			},
+			"opcounters": {
+				"insert": 0,
+				"query": 2014,
+				"update": 557,
+				"delete": 23703,
+				"getmore": 0,
+				"command": 530697
+			},
+			"opcountersRepl": {
+				"insert": 0,
+				"query": 0,
+				"update": 0,
+				"delete": 0,
+				"getmore": 0,
+				"command": 0
+			},
+			"oplogTruncation": {
+				"totalTimeProcessingMicros": 796605,
+				"processingMethod": "sampling",
+				"totalTimeTruncatingMicros": 0,
+				"truncateCount": 0
+			},
+			"readConcernCounters": {
+				"nonTransactionOps": {
+					"none": 1788,
+					"noneInfo": {
+						"CWRC": {
+							"local": 0,
+							"available": 0,
+							"majority": 0
+						},
+						"implicitDefault": {
+							"local": 1788,
+							"available": 0
+						}
+					},
+					"local": 0,
+					"available": 0,
+					"majority": 0,
+					"snapshot": {
+						"withClusterTime": 0,
+						"withoutClusterTime": 0
+					},
+					"linearizable": 0
+				},
+				"transactionOps": {
+					"none": 0,
+					"noneInfo": {
+						"CWRC": {
+							"local": 0,
+							"majority": 0
+						},
+						"implicitDefault": {
+							"local": 0
+						}
+					},
+					"local": 0,
+					"majority": 0,
+					"snapshot": {
+						"withClusterTime": 0,
+						"withoutClusterTime": 0
+					}
+				}
+			},
+			"repl": {
+				"topologyVersion": {
+					"processId": "653675309be41222f26502cf",
+					"counter": 6
+				},
+				"hosts": [
+					"mongodb:27017"
+				],
+				"setName": "indexers",
+				"setVersion": 1,
+				"isWritablePrimary": true,
+				"secondary": false,
+				"primary": "mongodb:27017",
+				"me": "mongodb:27017",
+				"electionId": "7fffffff0000000000000008",
+				"lastWrite": {
+					"opTime": {
+						"ts": "7293509704523710470",
+						"t": 8
+					},
+					"lastWriteDate": "2023-10-24T13:02:39.000Z",
+					"majorityOpTime": {
+						"ts": "7293509704523710470",
+						"t": 8
+					},
+					"majorityWriteDate": "2023-10-24T13:02:39.000Z"
+				},
+				"primaryOnlyServices": {
+					"TenantMigrationDonorService": {
+						"state": "running",
+						"numInstances": 0
+					},
+					"TenantMigrationRecipientService": {
+						"state": "running",
+						"numInstances": 0
+					}
+				},
+				"rbid": 2
+			},
+			"scramCache": {
+				"SCRAM-SHA-1": {
+					"count": 0,
+					"hits": 0,
+					"misses": 0
+				},
+				"SCRAM-SHA-256": {
+					"count": 0,
+					"hits": 0,
+					"misses": 0
+				}
+			},
+			"security": {
+				"authentication": {
+					"saslSupportedMechsReceived": 24102,
+					"mechanisms": {
+						"MONGODB-X509": {
+							"speculativeAuthenticate": {
+								"received": 0,
+								"successful": 0
+							},
+							"clusterAuthenticate": {
+								"received": 0,
+								"successful": 0
+							},
+							"authenticate": {
+								"received": 0,
+								"successful": 0
+							}
+						},
+						"SCRAM-SHA-1": {
+							"speculativeAuthenticate": {
+								"received": 0,
+								"successful": 0
+							},
+							"clusterAuthenticate": {
+								"received": 0,
+								"successful": 0
+							},
+							"authenticate": {
+								"received": 0,
+								"successful": 0
+							}
+						},
+						"SCRAM-SHA-256": {
+							"speculativeAuthenticate": {
+								"received": 24106,
+								"successful": 24106
+							},
+							"clusterAuthenticate": {
+								"received": 0,
+								"successful": 0
+							},
+							"authenticate": {
+								"received": 24106,
+								"successful": 24106
+							}
+						}
+					}
+				}
+			},
+			"storageEngine": {
+				"name": "wiredTiger",
+				"supportsCommittedReads": true,
+				"oldestRequiredTimestampForCrashRecovery": "7293509446825672705",
+				"supportsPendingDrops": true,
+				"dropPendingIdents": 0,
+				"supportsSnapshotReadConcern": true,
+				"readOnly": false,
+				"persistent": true,
+				"backupCursorOpen": false,
+				"supportsResumableIndexBuilds": true
+			},
+			"tcmalloc": {
+				"generic": {
+					"current_allocated_bytes": 129434344,
+					"heap_size": 146198528
+				},
+				"tcmalloc": {
+					"pageheap_free_bytes": 4587520,
+					"pageheap_unmapped_bytes": 454656,
+					"max_total_thread_cache_bytes": 1048576000,
+					"current_total_thread_cache_bytes": 8118720,
+					"total_free_bytes": 11722008,
+					"central_cache_free_bytes": 937944,
+					"transfer_cache_free_bytes": 2665344,
+					"thread_cache_free_bytes": 8118720,
+					"aggressive_memory_decommit": 0,
+					"pageheap_committed_bytes": 145743872,
+					"pageheap_scavenge_count": 620,
+					"pageheap_commit_count": 1504,
+					"pageheap_total_commit_bytes": 449826816,
+					"pageheap_decommit_count": 620,
+					"pageheap_total_decommit_bytes": 304082944,
+					"pageheap_reserve_count": 81,
+					"pageheap_total_reserve_bytes": 146198528,
+					"spinlock_total_delay_ns": 205932257,
+					"release_rate": 1,
+					"formattedString": "------------------------------------------------\nMALLOC:      129434920 (  123.4 MiB) Bytes in use by application\nMALLOC: +      4587520 (    4.4 MiB) Bytes in page heap freelist\nMALLOC: +       937944 (    0.9 MiB) Bytes in central cache freelist\nMALLOC: +      2665344 (    2.5 MiB) Bytes in transfer cache freelist\nMALLOC: +      8118144 (    7.7 MiB) Bytes in thread cache freelists\nMALLOC: +      3407872 (    3.2 MiB) Bytes in malloc metadata\nMALLOC:   ------------\nMALLOC: =    149151744 (  142.2 MiB) Actual memory used (physical + swap)\nMALLOC: +       454656 (    0.4 MiB) Bytes released to OS (aka unmapped)\nMALLOC:   ------------\nMALLOC: =    149606400 (  142.7 MiB) Virtual address space used\nMALLOC:\nMALLOC:           3246              Spans in use\nMALLOC:            172              Thread heaps in use\nMALLOC:           4096              Tcmalloc page size\n------------------------------------------------\nCall ReleaseFreeMemory() to release freelist memory to the OS (via madvise()).\nBytes released to the OS take up virtual address space but no physical memory.\n"
+				}
+			},
+			"tenantMigrations": {
+				"currentMigrationsDonating": 0,
+				"currentMigrationsReceiving": 0,
+				"totalSuccessfulMigrationsDonated": 0,
+				"totalSuccessfulMigrationsReceived": 0,
+				"totalFailedMigrationsDonated": 0,
+				"totalFailedMigrationsReceived": 0
+			},
+			"trafficRecording": {
+				"running": false
+			},
+			"transactions": {
+				"retriedCommandsCount": 0,
+				"retriedStatementsCount": 0,
+				"transactionsCollectionWriteCount": 76,
+				"currentActive": 0,
+				"currentInactive": 0,
+				"currentOpen": 0,
+				"totalAborted": 0,
+				"totalCommitted": 0,
+				"totalStarted": 0,
+				"totalPrepared": 0,
+				"totalPreparedThenCommitted": 0,
+				"totalPreparedThenAborted": 0,
+				"currentPrepared": 0
+			},
+			"transportSecurity": {
+				"1.0": 0,
+				"1.1": 0,
+				"1.2": 0,
+				"1.3": 0,
+				"unknown": 0
+			},
+			"twoPhaseCommitCoordinator": {
+				"totalCreated": 0,
+				"totalStartedTwoPhaseCommit": 0,
+				"totalAbortedTwoPhaseCommit": 0,
+				"totalCommittedTwoPhaseCommit": 0,
+				"currentInSteps": {
+					"writingParticipantList": 0,
+					"waitingForVotes": 0,
+					"writingDecision": 0,
+					"waitingForDecisionAcks": 0,
+					"deletingCoordinatorDoc": 0
+				}
+			},
+			"wiredTiger": {
+				"uri": "statistics:",
+				"block-manager": {
+					"block cache cached blocks updated": 0,
+					"block cache cached bytes updated": 0,
+					"block cache evicted blocks": 0,
+					"block cache file size causing bypass": 0,
+					"block cache lookups": 0,
+					"block cache number of blocks not evicted due to overhead": 0,
+					"block cache number of bypasses because no-write-allocate setting was on": 0,
+					"block cache number of bypasses due to overhead on put": 0,
+					"block cache number of bypasses on get": 0,
+					"block cache number of bypasses on put because file is too small": 0,
+					"block cache number of eviction passes": 0,
+					"block cache number of hits including existence checks": 0,
+					"block cache number of misses including existence checks": 0,
+					"block cache number of put bypasses on checkpoint I/O": 0,
+					"block cache removed blocks": 0,
+					"block cache total blocks": 0,
+					"block cache total blocks inserted on read path": 0,
+					"block cache total blocks inserted on write path": 0,
+					"block cache total bytes": 0,
+					"block cache total bytes inserted on read path": 0,
+					"block cache total bytes inserted on write path": 0,
+					"blocks pre-loaded": 128,
+					"blocks read": 19683,
+					"blocks written": 37234,
+					"bytes read": 136343552,
+					"bytes read via memory map API": 0,
+					"bytes read via system call API": 0,
+					"bytes written": 490618880,
+					"bytes written for checkpoint": 490577920,
+					"bytes written via memory map API": 0,
+					"bytes written via system call API": 0,
+					"mapped blocks read": 0,
+					"mapped bytes read": 0,
+					"number of times the file was remapped because it changed size via fallocate or truncate": 0,
+					"number of times the region was remapped via write": 0
+				},
+				"cache": {
+					"application threads page read from disk to cache count": 14020,
+					"application threads page read from disk to cache time (usecs)": 554873,
+					"application threads page write from cache to disk count": 24541,
+					"application threads page write from cache to disk time (usecs)": 3675904,
+					"bytes allocated for updates": 2229373,
+					"bytes belonging to page images in the cache": 1560575,
+					"bytes belonging to the history store table in the cache": 1110,
+					"bytes currently in the cache": 4108384,
+					"bytes dirty in the cache cumulative": 1802011098,
+					"bytes not belonging to page images in the cache": 2547809,
+					"bytes read into cache": 168848491,
+					"bytes written from cache": 1129849440,
+					"cache overflow score": 0,
+					"checkpoint blocked page eviction": 0,
+					"checkpoint of history store file blocked non-history store page eviction": 0,
+					"eviction calls to get a page": 9438,
+					"eviction calls to get a page found queue empty": 7582,
+					"eviction calls to get a page found queue empty after locking": 179,
+					"eviction currently operating in aggressive mode": 0,
+					"eviction empty score": 0,
+					"eviction gave up due to detecting an out of order on disk value behind the last update on the chain": 0,
+					"eviction gave up due to detecting an out of order tombstone ahead of the selected on disk update": 0,
+					"eviction gave up due to detecting an out of order tombstone ahead of the selected on disk update after validating the update chain": 0,
+					"eviction gave up due to detecting out of order timestamps on the update chain after the selected on disk update": 0,
+					"eviction gave up due to needing to remove a record from the history store but checkpoint is running": 0,
+					"eviction passes of a file": 0,
+					"eviction server candidate queue empty when topping up": 0,
+					"eviction server candidate queue not empty when topping up": 0,
+					"eviction server evicting pages": 0,
+					"eviction server slept, because we did not make progress with eviction": 3427,
+					"eviction server unable to reach eviction goal": 0,
+					"eviction server waiting for a leaf page": 1470,
+					"eviction state": 64,
+					"eviction walk most recent sleeps for checkpoint handle gathering": 0,
+					"eviction walk target pages histogram - 0-9": 0,
+					"eviction walk target pages histogram - 10-31": 0,
+					"eviction walk target pages histogram - 128 and higher": 0,
+					"eviction walk target pages histogram - 32-63": 0,
+					"eviction walk target pages histogram - 64-128": 0,
+					"eviction walk target pages reduced due to history store cache pressure": 0,
+					"eviction walk target strategy both clean and dirty pages": 0,
+					"eviction walk target strategy only clean pages": 0,
+					"eviction walk target strategy only dirty pages": 0,
+					"eviction walks abandoned": 0,
+					"eviction walks gave up because they restarted their walk twice": 0,
+					"eviction walks gave up because they saw too many pages and found no candidates": 0,
+					"eviction walks gave up because they saw too many pages and found too few candidates": 0,
+					"eviction walks reached end of tree": 0,
+					"eviction walks restarted": 0,
+					"eviction walks started from root of tree": 0,
+					"eviction walks started from saved location in tree": 0,
+					"eviction worker thread active": 4,
+					"eviction worker thread created": 0,
+					"eviction worker thread evicting pages": 1576,
+					"eviction worker thread removed": 0,
+					"eviction worker thread stable number": 0,
+					"files with active eviction walks": 0,
+					"files with new eviction walks started": 0,
+					"force re-tuning of eviction workers once in a while": 0,
+					"forced eviction - do not retry count to evict pages selected to evict during reconciliation": 0,
+					"forced eviction - history store pages failed to evict while session has history store cursor open": 0,
+					"forced eviction - history store pages selected while session has history store cursor open": 0,
+					"forced eviction - history store pages successfully evicted while session has history store cursor open": 0,
+					"forced eviction - pages evicted that were clean count": 13679,
+					"forced eviction - pages evicted that were clean time (usecs)": 54021,
+					"forced eviction - pages evicted that were dirty count": 0,
+					"forced eviction - pages evicted that were dirty time (usecs)": 0,
+					"forced eviction - pages selected because of a large number of updates to a single item": 0,
+					"forced eviction - pages selected because of too many deleted items count": 455,
+					"forced eviction - pages selected count": 14829,
+					"forced eviction - pages selected unable to be evicted count": 1150,
+					"forced eviction - pages selected unable to be evicted time": 157,
+					"hazard pointer blocked page eviction": 17,
+					"hazard pointer check calls": 16405,
+					"hazard pointer check entries walked": 46406,
+					"hazard pointer maximum array length": 3,
+					"history store score": 0,
+					"history store table insert calls": 291,
+					"history store table insert calls that returned restart": 0,
+					"history store table max on-disk size": 0,
+					"history store table on-disk size": 28672,
+					"history store table out-of-order resolved updates that lose their durable timestamp": 0,
+					"history store table out-of-order updates that were fixed up by reinserting with the fixed timestamp": 0,
+					"history store table reads": 0,
+					"history store table reads missed": 0,
+					"history store table reads requiring squashed modifies": 0,
+					"history store table truncation by rollback to stable to remove an unstable update": 0,
+					"history store table truncation by rollback to stable to remove an update": 0,
+					"history store table truncation to remove an update": 4,
+					"history store table truncation to remove range of updates due to key being removed from the data page during reconciliation": 0,
+					"history store table truncation to remove range of updates due to out-of-order timestamp update on data page": 0,
+					"history store table writes requiring squashed modifies": 0,
+					"in-memory page passed criteria to be split": 0,
+					"in-memory page splits": 0,
+					"internal pages evicted": 12922,
+					"internal pages queued for eviction": 0,
+					"internal pages seen by eviction walk": 0,
+					"internal pages seen by eviction walk that are already queued": 0,
+					"internal pages split during eviction": 0,
+					"leaf pages split during eviction": 0,
+					"maximum bytes configured": 4294967296,
+					"maximum milliseconds spent at a single eviction": 0,
+					"maximum page size seen at eviction": 368,
+					"modified pages evicted": 1284,
+					"modified pages evicted by application threads": 0,
+					"operations timed out waiting for space in cache": 0,
+					"overflow pages read into cache": 0,
+					"page split during eviction deepened the tree": 0,
+					"page written requiring history store records": 73,
+					"pages currently held in the cache": 230,
+					"pages evicted by application threads": 0,
+					"pages evicted in parallel with checkpoint": 1509,
+					"pages queued for eviction": 0,
+					"pages queued for eviction post lru sorting": 0,
+					"pages queued for urgent eviction": 1576,
+					"pages queued for urgent eviction during walk": 0,
+					"pages queued for urgent eviction from history store due to high dirty content": 0,
+					"pages read into cache": 14112,
+					"pages read into cache after truncate": 1287,
+					"pages read into cache after truncate in prepare state": 0,
+					"pages removed from the ordinary queue to be queued for urgent eviction": 0,
+					"pages requested from the cache": 756453,
+					"pages seen by eviction walk": 0,
+					"pages seen by eviction walk that are already queued": 0,
+					"pages selected for eviction unable to be evicted": 1205,
+					"pages selected for eviction unable to be evicted because of active children on an internal page": 1188,
+					"pages selected for eviction unable to be evicted because of failure in reconciliation": 0,
+					"pages selected for eviction unable to be evicted because of race between checkpoint and out of order timestamps handling": 0,
+					"pages walked for eviction": 0,
+					"pages written from cache": 24562,
+					"pages written requiring in-memory restoration": 19,
+					"percentage overhead": 8,
+					"the number of times full update inserted to history store": 286,
+					"the number of times reverse modify inserted to history store": 5,
+					"total milliseconds spent inside reentrant history store evictions in a reconciliation": 0,
+					"tracked bytes belonging to internal pages in the cache": 473996,
+					"tracked bytes belonging to leaf pages in the cache": 3634388,
+					"tracked dirty bytes in the cache": 2227717,
+					"tracked dirty pages in the cache": 9,
+					"unmodified pages evicted": 13916
+				},
+				"capacity": {
+					"background fsync file handles considered": 0,
+					"background fsync file handles synced": 0,
+					"background fsync time (msecs)": 0,
+					"bytes read": 70766592,
+					"bytes written for checkpoint": 296852566,
+					"bytes written for eviction": 2376,
+					"bytes written for log": 841193600,
+					"bytes written total": 1138048542,
+					"threshold to call fsync": 0,
+					"time waiting due to total capacity (usecs)": 0,
+					"time waiting during checkpoint (usecs)": 0,
+					"time waiting during eviction (usecs)": 0,
+					"time waiting during logging (usecs)": 0,
+					"time waiting during read (usecs)": 0
+				},
+				"checkpoint-cleanup": {
+					"pages added for eviction": 1280,
+					"pages removed": 1,
+					"pages skipped during tree walk": 5376078,
+					"pages visited": 5485204
+				},
+				"connection": {
+					"auto adjusting condition resets": 11283,
+					"auto adjusting condition wait calls": 490393,
+					"auto adjusting condition wait raced to update timeout and skipped updating": 1,
+					"detected system time went backwards": 0,
+					"files currently open": 82,
+					"hash bucket array size for data handles": 512,
+					"hash bucket array size general": 512,
+					"memory allocations": 14550518,
+					"memory frees": 14519597,
+					"memory re-allocations": 741086,
+					"pthread mutex condition wait calls": 1291797,
+					"pthread mutex shared lock read-lock calls": 3344155,
+					"pthread mutex shared lock write-lock calls": 296918,
+					"total fsync I/Os": 22328,
+					"total read I/Os": 21915,
+					"total write I/Os": 49713
+				},
+				"cursor": {
+					"Total number of entries skipped by cursor next calls": 109260,
+					"Total number of entries skipped by cursor prev calls": 35299,
+					"Total number of entries skipped to position the history store cursor": 0,
+					"Total number of times a search near has exited due to prefix config": 0,
+					"cached cursor count": 104,
+					"cursor bulk loaded cursor insert calls": 0,
+					"cursor close calls that result in cache": 752519,
+					"cursor create calls": 239291,
+					"cursor insert calls": 22540,
+					"cursor insert key and value bytes": 10121430,
+					"cursor modify calls": 7975,
+					"cursor modify key and value bytes affected": 803038,
+					"cursor modify value bytes modified": 64267,
+					"cursor next calls": 58786,
+					"cursor next calls that skip due to a globally visible history store tombstone": 0,
+					"cursor next calls that skip greater than or equal to 100 entries": 266,
+					"cursor next calls that skip less than 100 entries": 57524,
+					"cursor operation restarted": 0,
+					"cursor prev calls": 50564,
+					"cursor prev calls that skip due to a globally visible history store tombstone": 0,
+					"cursor prev calls that skip greater than or equal to 100 entries": 188,
+					"cursor prev calls that skip less than 100 entries": 50376,
+					"cursor remove calls": 1177,
+					"cursor remove key bytes removed": 29895,
+					"cursor reserve calls": 0,
+					"cursor reset calls": 1299992,
+					"cursor search calls": 349844,
+					"cursor search history store calls": 0,
+					"cursor search near calls": 59420,
+					"cursor sweep buckets": 965205,
+					"cursor sweep cursors closed": 0,
+					"cursor sweep cursors examined": 74342,
+					"cursor sweeps": 95739,
+					"cursor truncate calls": 0,
+					"cursor update calls": 0,
+					"cursor update key and value bytes": 0,
+					"cursor update value size change": 60,
+					"cursors reused from cache": 752415,
+					"open cursor count": 7
+				},
+				"data-handle": {
+					"connection data handle size": 440,
+					"connection data handles currently active": 157,
+					"connection sweep candidate became referenced": 0,
+					"connection sweep dhandles closed": 0,
+					"connection sweep dhandles removed from hash list": 5861,
+					"connection sweep time-of-death sets": 64270,
+					"connection sweeps": 7828,
+					"connection sweeps skipped due to checkpoint gathering handles": 0,
+					"session dhandles swept": 8417,
+					"session sweep attempts": 26767
+				},
+				"lock": {
+					"checkpoint lock acquisitions": 1305,
+					"checkpoint lock application thread wait time (usecs)": 0,
+					"checkpoint lock internal thread wait time (usecs)": 0,
+					"dhandle lock application thread time waiting (usecs)": 0,
+					"dhandle lock internal thread time waiting (usecs)": 7,
+					"dhandle read lock acquisitions": 326729,
+					"dhandle write lock acquisitions": 11887,
+					"durable timestamp queue lock application thread time waiting (usecs)": 0,
+					"durable timestamp queue lock internal thread time waiting (usecs)": 0,
+					"durable timestamp queue read lock acquisitions": 0,
+					"durable timestamp queue write lock acquisitions": 0,
+					"metadata lock acquisitions": 1304,
+					"metadata lock application thread wait time (usecs)": 0,
+					"metadata lock internal thread wait time (usecs)": 0,
+					"read timestamp queue lock application thread time waiting (usecs)": 0,
+					"read timestamp queue lock internal thread time waiting (usecs)": 0,
+					"read timestamp queue read lock acquisitions": 0,
+					"read timestamp queue write lock acquisitions": 0,
+					"schema lock acquisitions": 1464,
+					"schema lock application thread wait time (usecs)": 1242,
+					"schema lock internal thread wait time (usecs)": 0,
+					"table lock application thread time waiting for the table lock (usecs)": 325,
+					"table lock internal thread time waiting for the table lock (usecs)": 0,
+					"table read lock acquisitions": 0,
+					"table write lock acquisitions": 156647,
+					"txn global lock application thread time waiting (usecs)": 0,
+					"txn global lock internal thread time waiting (usecs)": 0,
+					"txn global read lock acquisitions": 22513,
+					"txn global write lock acquisitions": 37471
+				},
+				"log": {
+					"busy returns attempting to switch slots": 0,
+					"force archive time sleeping (usecs)": 0,
+					"log bytes of payload data": 4672300,
+					"log bytes written": 6626176,
+					"log files manually zero-filled": 0,
+					"log flush operations": 783646,
+					"log force write operations": 870335,
+					"log force write operations skipped": 860469,
+					"log records compressed": 1380,
+					"log records not compressed": 8643,
+					"log records too small to compress": 14363,
+					"log release advances write LSN": 1305,
+					"log scan operations": 4,
+					"log scan records requiring two reads": 5,
+					"log server thread advances write LSN": 9866,
+					"log server thread write LSN walk skipped": 73233,
+					"log sync operations": 11322,
+					"log sync time duration (usecs)": 95092933,
+					"log sync_dir operations": 1,
+					"log sync_dir time duration (usecs)": 6234,
+					"log write operations": 24386,
+					"logging bytes consolidated": 6625664,
+					"maximum log file size": 104857600,
+					"number of pre-allocated log files to create": 2,
+					"pre-allocated log files not ready and missed": 1,
+					"pre-allocated log files prepared": 2,
+					"pre-allocated log files used": 0,
+					"records processed by log scan": 20,
+					"slot close lost race": 0,
+					"slot close unbuffered waits": 0,
+					"slot closures": 11171,
+					"slot join atomic update races": 0,
+					"slot join calls atomic updates raced": 0,
+					"slot join calls did not yield": 24386,
+					"slot join calls found active slot closed": 0,
+					"slot join calls slept": 0,
+					"slot join calls yielded": 0,
+					"slot join found active slot closed": 0,
+					"slot joins yield time (usecs)": 0,
+					"slot transitions unable to find free slot": 0,
+					"slot unbuffered writes": 0,
+					"total in-memory size of compressed records": 8890576,
+					"total log buffer size": 33554432,
+					"total size of compressed records": 2446351,
+					"written slots coalesced": 0,
+					"yields waiting for previous log file close": 0
+				},
+				"perf": {
+					"file system read latency histogram (bucket 1) - 10-49ms": 0,
+					"file system read latency histogram (bucket 2) - 50-99ms": 0,
+					"file system read latency histogram (bucket 3) - 100-249ms": 0,
+					"file system read latency histogram (bucket 4) - 250-499ms": 0,
+					"file system read latency histogram (bucket 5) - 500-999ms": 0,
+					"file system read latency histogram (bucket 6) - 1000ms+": 0,
+					"file system write latency histogram (bucket 1) - 10-49ms": 0,
+					"file system write latency histogram (bucket 2) - 50-99ms": 0,
+					"file system write latency histogram (bucket 3) - 100-249ms": 0,
+					"file system write latency histogram (bucket 4) - 250-499ms": 0,
+					"file system write latency histogram (bucket 5) - 500-999ms": 0,
+					"file system write latency histogram (bucket 6) - 1000ms+": 0,
+					"operation read latency histogram (bucket 1) - 100-249us": 43,
+					"operation read latency histogram (bucket 2) - 250-499us": 2,
+					"operation read latency histogram (bucket 3) - 500-999us": 0,
+					"operation read latency histogram (bucket 4) - 1000-9999us": 1,
+					"operation read latency histogram (bucket 5) - 10000us+": 0,
+					"operation write latency histogram (bucket 1) - 100-249us": 4,
+					"operation write latency histogram (bucket 2) - 250-499us": 0,
+					"operation write latency histogram (bucket 3) - 500-999us": 1,
+					"operation write latency histogram (bucket 4) - 1000-9999us": 1,
+					"operation write latency histogram (bucket 5) - 10000us+": 0
+				},
+				"reconciliation": {
+					"approximate byte size of timestamps in pages written": 748144,
+					"approximate byte size of transaction IDs in pages written": 446144,
+					"fast-path pages deleted": 0,
+					"leaf-page overflow keys": 0,
+					"maximum milliseconds spent in a reconciliation call": 0,
+					"maximum milliseconds spent in building a disk image in a reconciliation": 3,
+					"maximum milliseconds spent in moving updates to the history store in a reconciliation": 0,
+					"page reconciliation calls": 21089,
+					"page reconciliation calls for eviction": 1283,
+					"page reconciliation calls that resulted in values with prepared transaction metadata": 0,
+					"page reconciliation calls that resulted in values with timestamps": 1520,
+					"page reconciliation calls that resulted in values with transaction ids": 5361,
+					"pages deleted": 4195,
+					"pages written including an aggregated newest start durable timestamp ": 4093,
+					"pages written including an aggregated newest stop durable timestamp ": 232,
+					"pages written including an aggregated newest stop timestamp ": 142,
+					"pages written including an aggregated newest stop transaction ID": 142,
+					"pages written including an aggregated newest transaction ID ": 4213,
+					"pages written including an aggregated oldest start timestamp ": 38,
+					"pages written including an aggregated prepare": 0,
+					"pages written including at least one prepare state": 0,
+					"pages written including at least one start durable timestamp": 1530,
+					"pages written including at least one start timestamp": 1530,
+					"pages written including at least one start transaction ID": 5371,
+					"pages written including at least one stop durable timestamp": 172,
+					"pages written including at least one stop timestamp": 172,
+					"pages written including at least one stop transaction ID": 172,
+					"records written including a prepare state": 0,
+					"records written including a start durable timestamp": 44984,
+					"records written including a start timestamp": 44984,
+					"records written including a start transaction ID": 53993,
+					"records written including a stop durable timestamp": 1775,
+					"records written including a stop timestamp": 1775,
+					"records written including a stop transaction ID": 1775,
+					"split bytes currently awaiting free": 0,
+					"split objects currently awaiting free": 0
+				},
+				"session": {
+					"attempts to remove a local object and the object is in use": 0,
+					"flush_tier operation calls": 0,
+					"local objects removed": 0,
+					"open session count": 16,
+					"session query timestamp calls": 2,
+					"table alter failed calls": 0,
+					"table alter successful calls": 0,
+					"table alter triggering checkpoint calls": 0,
+					"table alter unchanged and skipped": 0,
+					"table compact failed calls": 0,
+					"table compact failed calls due to cache pressure": 0,
+					"table compact running": 0,
+					"table compact skipped as process would not reduce file size": 0,
+					"table compact successful calls": 0,
+					"table compact timeout": 0,
+					"table create failed calls": 0,
+					"table create successful calls": 1,
+					"table drop failed calls": 0,
+					"table drop successful calls": 0,
+					"table rename failed calls": 0,
+					"table rename successful calls": 0,
+					"table salvage failed calls": 0,
+					"table salvage successful calls": 0,
+					"table truncate failed calls": 0,
+					"table truncate successful calls": 0,
+					"table verify failed calls": 0,
+					"table verify successful calls": 0,
+					"tiered operations dequeued and processed": 0,
+					"tiered operations scheduled": 0,
+					"tiered storage local retention time (secs)": 0
+				},
+				"thread-state": {
+					"active filesystem fsync calls": 0,
+					"active filesystem read calls": 0,
+					"active filesystem write calls": 0
+				},
+				"thread-yield": {
+					"application thread time evicting (usecs)": 0,
+					"application thread time waiting for cache (usecs)": 0,
+					"connection close blocked waiting for transaction state stabilization": 0,
+					"connection close yielded for lsm manager shutdown": 0,
+					"data handle lock yielded": 993,
+					"get reference for page index and slot time sleeping (usecs)": 0,
+					"page access yielded due to prepare state change": 0,
+					"page acquire busy blocked": 0,
+					"page acquire eviction blocked": 0,
+					"page acquire locked blocked": 0,
+					"page acquire read blocked": 1,
+					"page acquire time sleeping (usecs)": 100,
+					"page delete rollback time sleeping for state change (usecs)": 0,
+					"page reconciliation yielded due to child modification": 0
+				},
+				"transaction": {
+					"Number of prepared updates": 0,
+					"Number of prepared updates committed": 0,
+					"Number of prepared updates repeated on the same key": 0,
+					"Number of prepared updates rolled back": 0,
+					"oldest pinned transaction ID rolled back for eviction": 0,
+					"prepared transactions": 0,
+					"prepared transactions committed": 0,
+					"prepared transactions currently active": 0,
+					"prepared transactions rolled back": 0,
+					"query timestamp calls": 1011260,
+					"race to read prepared update retry": 0,
+					"rollback to stable calls": 0,
+					"rollback to stable history store records with stop timestamps older than newer records": 0,
+					"rollback to stable inconsistent checkpoint": 0,
+					"rollback to stable keys removed": 0,
+					"rollback to stable keys restored": 0,
+					"rollback to stable pages visited": 0,
+					"rollback to stable restored tombstones from history store": 0,
+					"rollback to stable restored updates from history store": 0,
+					"rollback to stable skipping delete rle": 0,
+					"rollback to stable skipping stable rle": 0,
+					"rollback to stable sweeping history store keys": 0,
+					"rollback to stable tree walk skipping pages": 0,
+					"rollback to stable updates aborted": 0,
+					"rollback to stable updates removed from history store": 0,
+					"sessions scanned in each walk of concurrent sessions": 16675297,
+					"set timestamp calls": 15811,
+					"set timestamp durable calls": 0,
+					"set timestamp durable updates": 0,
+					"set timestamp oldest calls": 7905,
+					"set timestamp oldest updates": 7905,
+					"set timestamp stable calls": 7906,
+					"set timestamp stable updates": 7905,
+					"transaction begins": 86590,
+					"transaction checkpoint currently running": 0,
+					"transaction checkpoint currently running for history store file": 0,
+					"transaction checkpoint generation": 1305,
+					"transaction checkpoint history store file duration (usecs)": 4,
+					"transaction checkpoint max time (msecs)": 110,
+					"transaction checkpoint min time (msecs)": 28,
+					"transaction checkpoint most recent duration for gathering all handles (usecs)": 249,
+					"transaction checkpoint most recent duration for gathering applied handles (usecs)": 33,
+					"transaction checkpoint most recent duration for gathering skipped handles (usecs)": 118,
+					"transaction checkpoint most recent handles applied": 5,
+					"transaction checkpoint most recent handles skipped": 70,
+					"transaction checkpoint most recent handles walked": 156,
+					"transaction checkpoint most recent time (msecs)": 58,
+					"transaction checkpoint prepare currently running": 0,
+					"transaction checkpoint prepare max time (msecs)": 4,
+					"transaction checkpoint prepare min time (msecs)": 0,
+					"transaction checkpoint prepare most recent time (msecs)": 0,
+					"transaction checkpoint prepare total time (msecs)": 7,
+					"transaction checkpoint scrub dirty target": 0,
+					"transaction checkpoint scrub time (msecs)": 0,
+					"transaction checkpoint stop timing stress active": 0,
+					"transaction checkpoint total time (msecs)": 72060,
+					"transaction checkpoints": 1304,
+					"transaction checkpoints due to obsolete pages": 28,
+					"transaction checkpoints skipped because database was clean": 0,
+					"transaction fsync calls for checkpoint after allocating the transaction ID": 1304,
+					"transaction fsync duration for checkpoint after allocating the transaction ID (usecs)": 27969,
+					"transaction range of IDs currently pinned": 0,
+					"transaction range of IDs currently pinned by a checkpoint": 0,
+					"transaction range of timestamps currently pinned": 1288490188800,
+					"transaction range of timestamps pinned by a checkpoint": "7293509704523710470",
+					"transaction range of timestamps pinned by the oldest active read timestamp": 0,
+					"transaction range of timestamps pinned by the oldest timestamp": 1288490188800,
+					"transaction read timestamp of the oldest active reader": 0,
+					"transaction rollback to stable currently running": 0,
+					"transaction walk of concurrent sessions": 991869,
+					"transactions committed": 17869,
+					"transactions rolled back": 68721,
+					"update conflicts": 0
+				},
+				"concurrentTransactions": {
+					"write": {
+						"out": 0,
+						"available": 128,
+						"totalTickets": 128
+					},
+					"read": {
+						"out": 0,
+						"available": 128,
+						"totalTickets": 128
+					}
+				},
+				"snapshot-window-settings": {
+					"total number of SnapshotTooOld errors": 0,
+					"minimum target snapshot window size in seconds": 300,
+					"current available snapshot window size in seconds": 300,
+					"latest majority snapshot timestamp available": "Oct 24 13:02:39:6",
+					"oldest majority snapshot timestamp available": "Oct 24 12:57:39:6",
+					"pinned timestamp requests": 0,
+					"min pinned timestamp": "-1"
+				},
+				"oplog": {
+					"visibility timestamp": "7293509704523710470"
+				}
+			},
+			"mem": {
+				"bits": 64,
+				"resident": 155,
+				"virtual": 1843,
+				"supported": true
+			},
+			"metrics": {
+				"apiVersions": {
+					"SYSTRAN / SES-Console / information": [
+						"default"
+					],
+					"MongoDB Shell": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / translationResource": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / user": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / production": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / settings": [
+						"default"
+					],
+					"mongodb-vscode 1.3.1": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / notifications": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / Resources": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / stats": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / Profiles": [
+						"default"
+					],
+					"SYSTRAN / SES-Console / feedbacks": [
+						"default"
+					]
+				},
+				"aggStageCounters": {
+					"$_internalApplyOplogUpdate": 0,
+					"$_internalBoundedSort": 0,
+					"$_internalConvertBucketIndexStats": 0,
+					"$_internalFindAndModifyImageLookup": 0,
+					"$_internalInhibitOptimization": 0,
+					"$_internalReshardingIterateTransaction": 0,
+					"$_internalReshardingOwnershipMatch": 0,
+					"$_internalSetWindowFields": 0,
+					"$_internalSplitPipeline": 0,
+					"$_internalUnpackBucket": 0,
+					"$_unpackBucket": 0,
+					"$addFields": 0,
+					"$bucket": 0,
+					"$bucketAuto": 0,
+					"$changeStream": 0,
+					"$collStats": 0,
+					"$count": 0,
+					"$currentOp": 0,
+					"$documents": 0,
+					"$facet": 0,
+					"$geoNear": 0,
+					"$graphLookup": 0,
+					"$group": 14,
+					"$indexStats": 0,
+					"$limit": 0,
+					"$listLocalSessions": 0,
+					"$listSessions": 0,
+					"$lookup": 0,
+					"$match": 7,
+					"$merge": 0,
+					"$mergeCursors": 0,
+					"$operationMetrics": 0,
+					"$out": 0,
+					"$planCacheStats": 0,
+					"$project": 21,
+					"$queue": 0,
+					"$redact": 0,
+					"$replaceRoot": 0,
+					"$replaceWith": 0,
+					"$sample": 0,
+					"$set": 936,
+					"$setWindowFields": 0,
+					"$skip": 0,
+					"$sort": 0,
+					"$sortByCount": 0,
+					"$unionWith": 0,
+					"$unset": 0,
+					"$unwind": 0
+				},
+				"changeStreams": {
+					"largeEventsFailed": 0
+				},
+				"commands": {
+					"<UNKNOWN>": 1,
+					"_addShard": {
+						"failed": 0,
+						"total": 0
+					},
+					"_cloneCollectionOptionsFromPrimaryShard": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrAbortReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrAddShard": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrAddShardToZone": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrBalancerCollectionStatus": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrBalancerStart": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrBalancerStatus": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrBalancerStop": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCleanupReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrClearJumboFlag": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitChunkMerge": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitChunkMigration": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitChunkSplit": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitChunksMerge": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitMovePrimary": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCommitReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrCreateDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrDropCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrDropDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrEnableSharding": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrEnsureChunkVersionIsGreaterThan": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrMoveChunk": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrMovePrimary": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRefineCollectionShardKey": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRemoveChunks": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRemoveShard": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRemoveShardFromZone": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRemoveTags": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRenameCollectionMetadata": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrRepairShardedCollectionChunksHistory": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrSetAllowMigrations": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrShardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_configsvrUpdateZoneKeyRange": {
+						"failed": 0,
+						"total": 0
+					},
+					"_flushDatabaseCacheUpdates": {
+						"failed": 0,
+						"total": 0
+					},
+					"_flushDatabaseCacheUpdatesWithWriteConcern": {
+						"failed": 0,
+						"total": 0
+					},
+					"_flushReshardingStateChange": {
+						"failed": 0,
+						"total": 0
+					},
+					"_flushRoutingTableCacheUpdates": {
+						"failed": 0,
+						"total": 0
+					},
+					"_flushRoutingTableCacheUpdatesWithWriteConcern": {
+						"failed": 0,
+						"total": 0
+					},
+					"_getNextSessionMods": {
+						"failed": 0,
+						"total": 0
+					},
+					"_getUserCacheGeneration": {
+						"failed": 0,
+						"total": 0
+					},
+					"_isSelf": {
+						"failed": 0,
+						"total": 0
+					},
+					"_killOperations": {
+						"failed": 0,
+						"total": 0
+					},
+					"_mergeAuthzCollections": {
+						"failed": 0,
+						"total": 0
+					},
+					"_migrateClone": {
+						"failed": 0,
+						"total": 0
+					},
+					"_recvChunkAbort": {
+						"failed": 0,
+						"total": 0
+					},
+					"_recvChunkCommit": {
+						"failed": 0,
+						"total": 0
+					},
+					"_recvChunkStart": {
+						"failed": 0,
+						"total": 0
+					},
+					"_recvChunkStatus": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrAbortReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrCleanupReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrCloneCatalogData": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrCommitReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrCreateCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrCreateCollectionParticipant": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrDropCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrDropCollectionIfUUIDNotMatching": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrDropCollectionParticipant": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrDropDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrDropDatabaseParticipant": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrMovePrimary": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrRefineCollectionShardKey": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrRenameCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrRenameCollectionParticipant": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrRenameCollectionParticipantUnblock": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrReshardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrReshardingOperationTime": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrSetAllowMigrations": {
+						"failed": 0,
+						"total": 0
+					},
+					"_shardsvrShardCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"_transferMods": {
+						"failed": 0,
+						"total": 0
+					},
+					"abortTransaction": {
+						"failed": 0,
+						"total": 0
+					},
+					"aggregate": {
+						"allowDiskUseTrue": 0,
+						"failed": 0,
+						"total": 7
+					},
+					"appendOplogNote": {
+						"failed": 0,
+						"total": 0
+					},
+					"applyOps": {
+						"failed": 0,
+						"total": 0
+					},
+					"authenticate": {
+						"failed": 0,
+						"total": 0
+					},
+					"autoSplitVector": {
+						"failed": 0,
+						"total": 0
+					},
+					"availableQueryOptions": {
+						"failed": 0,
+						"total": 0
+					},
+					"buildInfo": {
+						"failed": 0,
+						"total": 47353
+					},
+					"checkShardingIndex": {
+						"failed": 0,
+						"total": 0
+					},
+					"cleanupOrphaned": {
+						"failed": 0,
+						"total": 0
+					},
+					"cloneCollectionAsCapped": {
+						"failed": 0,
+						"total": 0
+					},
+					"collMod": {
+						"failed": 0,
+						"total": 0,
+						"validator": {
+							"failed": 0,
+							"jsonSchema": 0,
+							"total": 0
+						}
+					},
+					"collStats": {
+						"failed": 0,
+						"total": 0
+					},
+					"commitTransaction": {
+						"failed": 0,
+						"total": 0
+					},
+					"compact": {
+						"failed": 0,
+						"total": 0
+					},
+					"connPoolStats": {
+						"failed": 0,
+						"total": 0
+					},
+					"connPoolSync": {
+						"failed": 0,
+						"total": 0
+					},
+					"connectionStatus": {
+						"failed": 0,
+						"total": 5
+					},
+					"convertToCapped": {
+						"failed": 0,
+						"total": 0
+					},
+					"coordinateCommitTransaction": {
+						"failed": 0,
+						"total": 0
+					},
+					"count": {
+						"failed": 0,
+						"total": 159
+					},
+					"create": {
+						"failed": 0,
+						"total": 0,
+						"validator": {
+							"failed": 0,
+							"jsonSchema": 0,
+							"total": 0
+						}
+					},
+					"createIndexes": {
+						"failed": 0,
+						"total": 1078
+					},
+					"createRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"createUser": {
+						"failed": 0,
+						"total": 0
+					},
+					"currentOp": {
+						"failed": 0,
+						"total": 0
+					},
+					"dataSize": {
+						"failed": 0,
+						"total": 0
+					},
+					"dbCheck": {
+						"failed": 0,
+						"total": 0
+					},
+					"dbHash": {
+						"failed": 0,
+						"total": 0
+					},
+					"dbStats": {
+						"failed": 0,
+						"total": 0
+					},
+					"delete": {
+						"failed": 0,
+						"total": 279
+					},
+					"distinct": {
+						"failed": 0,
+						"total": 0
+					},
+					"donorAbortMigration": {
+						"failed": 0,
+						"total": 0
+					},
+					"donorForgetMigration": {
+						"failed": 0,
+						"total": 0
+					},
+					"donorStartMigration": {
+						"failed": 0,
+						"total": 0
+					},
+					"driverOIDTest": {
+						"failed": 0,
+						"total": 0
+					},
+					"drop": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropAllRolesFromDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropAllUsersFromDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropConnections": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropDatabase": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropIndexes": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"dropUser": {
+						"failed": 0,
+						"total": 0
+					},
+					"endSessions": {
+						"failed": 0,
+						"total": 23676
+					},
+					"explain": {
+						"failed": 0,
+						"total": 0
+					},
+					"features": {
+						"failed": 0,
+						"total": 0
+					},
+					"filemd5": {
+						"failed": 0,
+						"total": 0
+					},
+					"find": {
+						"failed": 0,
+						"total": 2014
+					},
+					"findAndModify": {
+						"arrayFilters": 0,
+						"failed": 0,
+						"pipeline": 0,
+						"total": 591
+					},
+					"flushRouterConfig": {
+						"failed": 0,
+						"total": 0
+					},
+					"fsync": {
+						"failed": 0,
+						"total": 0
+					},
+					"fsyncUnlock": {
+						"failed": 0,
+						"total": 0
+					},
+					"getCmdLineOpts": {
+						"failed": 0,
+						"total": 0
+					},
+					"getDatabaseVersion": {
+						"failed": 0,
+						"total": 0
+					},
+					"getDefaultRWConcern": {
+						"failed": 0,
+						"total": 0
+					},
+					"getDiagnosticData": {
+						"failed": 0,
+						"total": 0
+					},
+					"getLastError": {
+						"failed": 0,
+						"total": 0
+					},
+					"getLog": {
+						"failed": 0,
+						"total": 0
+					},
+					"getMore": {
+						"failed": 0,
+						"total": 0
+					},
+					"getParameter": {
+						"failed": 0,
+						"total": 1
+					},
+					"getShardMap": {
+						"failed": 0,
+						"total": 0
+					},
+					"getShardVersion": {
+						"failed": 0,
+						"total": 0
+					},
+					"getnonce": {
+						"failed": 0,
+						"total": 0
+					},
+					"grantPrivilegesToRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"grantRolesToRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"grantRolesToUser": {
+						"failed": 0,
+						"total": 0
+					},
+					"hello": {
+						"failed": 66,
+						"total": 140339
+					},
+					"hostInfo": {
+						"failed": 0,
+						"total": 1
+					},
+					"insert": {
+						"failed": 0,
+						"total": 0
+					},
+					"internalRenameIfOptionsAndIndexesMatch": {
+						"failed": 0,
+						"total": 0
+					},
+					"invalidateUserCache": {
+						"failed": 0,
+						"total": 0
+					},
+					"isMaster": {
+						"failed": 0,
+						"total": 174360
+					},
+					"killAllSessions": {
+						"failed": 0,
+						"total": 0
+					},
+					"killAllSessionsByPattern": {
+						"failed": 0,
+						"total": 0
+					},
+					"killCursors": {
+						"failed": 0,
+						"total": 0
+					},
+					"killOp": {
+						"failed": 0,
+						"total": 0
+					},
+					"killSessions": {
+						"failed": 0,
+						"total": 0
+					},
+					"listCollections": {
+						"failed": 0,
+						"total": 2
+					},
+					"listCommands": {
+						"failed": 0,
+						"total": 0
+					},
+					"listDatabases": {
+						"failed": 0,
+						"total": 2
+					},
+					"listIndexes": {
+						"failed": 0,
+						"total": 543
+					},
+					"lockInfo": {
+						"failed": 0,
+						"total": 0
+					},
+					"logRotate": {
+						"failed": 0,
+						"total": 0
+					},
+					"logout": {
+						"failed": 0,
+						"total": 0
+					},
+					"mapReduce": {
+						"failed": 0,
+						"total": 0
+					},
+					"mergeChunks": {
+						"failed": 0,
+						"total": 0
+					},
+					"moveChunk": {
+						"failed": 0,
+						"total": 0
+					},
+					"ping": {
+						"failed": 0,
+						"total": 83
+					},
+					"planCacheClear": {
+						"failed": 0,
+						"total": 0
+					},
+					"planCacheClearFilters": {
+						"failed": 0,
+						"total": 0
+					},
+					"planCacheListFilters": {
+						"failed": 0,
+						"total": 0
+					},
+					"planCacheSetFilter": {
+						"failed": 0,
+						"total": 0
+					},
+					"prepareTransaction": {
+						"failed": 0,
+						"total": 0
+					},
+					"profile": {
+						"failed": 0,
+						"total": 0
+					},
+					"reIndex": {
+						"failed": 0,
+						"total": 0
+					},
+					"recipientForgetMigration": {
+						"failed": 0,
+						"total": 0
+					},
+					"recipientSyncData": {
+						"failed": 0,
+						"total": 0
+					},
+					"refreshSessions": {
+						"failed": 0,
+						"total": 0
+					},
+					"renameCollection": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetAbortPrimaryCatchUp": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetFreeze": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetGetConfig": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetGetRBID": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetGetStatus": {
+						"failed": 0,
+						"total": 47352
+					},
+					"replSetHeartbeat": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetInitiate": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetMaintenance": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetReconfig": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetRequestVotes": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetResizeOplog": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetStepDown": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetStepDownWithForce": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetStepUp": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetSyncFrom": {
+						"failed": 0,
+						"total": 0
+					},
+					"replSetUpdatePosition": {
+						"failed": 0,
+						"total": 0
+					},
+					"revokePrivilegesFromRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"revokeRolesFromRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"revokeRolesFromUser": {
+						"failed": 0,
+						"total": 0
+					},
+					"rolesInfo": {
+						"failed": 0,
+						"total": 0
+					},
+					"rotateCertificates": {
+						"failed": 0,
+						"total": 0
+					},
+					"saslContinue": {
+						"failed": 0,
+						"total": 47782
+					},
+					"saslStart": {
+						"failed": 0,
+						"total": 0
+					},
+					"serverStatus": {
+						"failed": 0,
+						"total": 23687
+					},
+					"setDefaultRWConcern": {
+						"failed": 0,
+						"total": 0
+					},
+					"setFeatureCompatibilityVersion": {
+						"failed": 0,
+						"total": 0
+					},
+					"setIndexCommitQuorum": {
+						"failed": 0,
+						"total": 0
+					},
+					"setParameter": {
+						"failed": 0,
+						"total": 0
+					},
+					"setProfilingFilterGlobally": {
+						"failed": 0,
+						"total": 0
+					},
+					"setShardVersion": {
+						"failed": 0,
+						"total": 0
+					},
+					"shardingState": {
+						"failed": 0,
+						"total": 0
+					},
+					"shutdown": {
+						"failed": 0,
+						"total": 0
+					},
+					"splitChunk": {
+						"failed": 0,
+						"total": 0
+					},
+					"splitVector": {
+						"failed": 0,
+						"total": 0
+					},
+					"startRecordingTraffic": {
+						"failed": 0,
+						"total": 0
+					},
+					"startSession": {
+						"failed": 0,
+						"total": 0
+					},
+					"stopRecordingTraffic": {
+						"failed": 0,
+						"total": 0
+					},
+					"top": {
+						"failed": 0,
+						"total": 0
+					},
+					"update": {
+						"arrayFilters": 0,
+						"failed": 0,
+						"pipeline": 468,
+						"total": 135
+					},
+					"updateRole": {
+						"failed": 0,
+						"total": 0
+					},
+					"updateUser": {
+						"failed": 0,
+						"total": 0
+					},
+					"usersInfo": {
+						"failed": 0,
+						"total": 0
+					},
+					"validate": {
+						"failed": 0,
+						"total": 0
+					},
+					"validateDBMetadata": {
+						"failed": 0,
+						"total": 0
+					},
+					"voteCommitIndexBuild": {
+						"failed": 0,
+						"total": 0
+					},
+					"waitForFailPoint": {
+						"failed": 0,
+						"total": 0
+					},
+					"whatsmyuri": {
+						"failed": 0,
+						"total": 23676
+					}
+				},
+				"cursor": {
+					"moreThanOneBatch": 0,
+					"timedOut": 0,
+					"totalOpened": 7,
+					"lifespan": {
+						"greaterThanOrEqual10Minutes": 0,
+						"lessThan10Minutes": 0,
+						"lessThan15Seconds": 0,
+						"lessThan1Minute": 0,
+						"lessThan1Second": 7,
+						"lessThan30Seconds": 0,
+						"lessThan5Seconds": 0
+					},
+					"open": {
+						"noTimeout": 0,
+						"pinned": 0,
+						"total": 0
+					}
+				},
+				"document": {
+					"deleted": 14,
+					"inserted": 0,
+					"returned": 3989,
+					"updated": 817
+				},
+				"dotsAndDollarsFields": {
+					"inserts": 0,
+					"updates": 0
+				},
+				"getLastError": {
+					"wtime": {
+						"num": 2063,
+						"totalMillis": 0
+					},
+					"wtimeouts": 0,
+					"default": {
+						"unsatisfiable": 0,
+						"wtimeouts": 0
+					}
+				},
+				"mongos": {
+					"cursor": {
+						"moreThanOneBatch": 0,
+						"totalOpened": 0
+					}
+				},
+				"operation": {
+					"scanAndOrder": 6,
+					"transactionTooLargeForCacheErrors": 0,
+					"transactionTooLargeForCacheErrorsConvertedToWriteConflict": 0,
+					"writeConflicts": 0
+				},
+				"operatorCounters": {
+					"expressions": {
+						"$_internalJsEmit": 0,
+						"$abs": 0,
+						"$acos": 0,
+						"$acosh": 0,
+						"$add": 0,
+						"$allElementsTrue": 0,
+						"$and": 0,
+						"$anyElementTrue": 0,
+						"$arrayElemAt": 7,
+						"$arrayToObject": 7,
+						"$asin": 0,
+						"$asinh": 0,
+						"$atan": 0,
+						"$atan2": 0,
+						"$atanh": 0,
+						"$avg": 0,
+						"$binarySize": 0,
+						"$bsonSize": 0,
+						"$ceil": 0,
+						"$cmp": 0,
+						"$concat": 0,
+						"$concatArrays": 35,
+						"$cond": 42,
+						"$const": 0,
+						"$convert": 0,
+						"$cos": 0,
+						"$cosh": 0,
+						"$dateAdd": 0,
+						"$dateDiff": 0,
+						"$dateFromParts": 0,
+						"$dateFromString": 0,
+						"$dateSubtract": 0,
+						"$dateToParts": 0,
+						"$dateToString": 0,
+						"$dateTrunc": 0,
+						"$dayOfMonth": 0,
+						"$dayOfWeek": 0,
+						"$dayOfYear": 0,
+						"$degreesToRadians": 0,
+						"$divide": 0,
+						"$eq": 14,
+						"$exp": 0,
+						"$filter": 7,
+						"$first": 0,
+						"$floor": 0,
+						"$function": 0,
+						"$getField": 0,
+						"$gt": 0,
+						"$gte": 0,
+						"$hour": 0,
+						"$ifNull": 0,
+						"$in": 14,
+						"$indexOfArray": 0,
+						"$indexOfBytes": 0,
+						"$indexOfCP": 0,
+						"$isArray": 0,
+						"$isNumber": 0,
+						"$isoDayOfWeek": 0,
+						"$isoWeek": 0,
+						"$isoWeekYear": 0,
+						"$last": 0,
+						"$let": 0,
+						"$literal": 0,
+						"$ln": 0,
+						"$log": 0,
+						"$log10": 0,
+						"$lt": 0,
+						"$lte": 0,
+						"$ltrim": 0,
+						"$map": 7,
+						"$max": 0,
+						"$mergeObjects": 0,
+						"$meta": 0,
+						"$millisecond": 0,
+						"$min": 0,
+						"$minute": 0,
+						"$mod": 0,
+						"$month": 0,
+						"$multiply": 0,
+						"$ne": 0,
+						"$not": 7,
+						"$objectToArray": 14,
+						"$or": 0,
+						"$pow": 0,
+						"$radiansToDegrees": 0,
+						"$rand": 0,
+						"$range": 0,
+						"$reduce": 42,
+						"$regexFind": 0,
+						"$regexFindAll": 0,
+						"$regexMatch": 0,
+						"$replaceAll": 0,
+						"$replaceOne": 0,
+						"$reverseArray": 0,
+						"$round": 0,
+						"$rtrim": 0,
+						"$second": 0,
+						"$setDifference": 0,
+						"$setEquals": 0,
+						"$setField": 0,
+						"$setIntersection": 0,
+						"$setIsSubset": 0,
+						"$setUnion": 0,
+						"$sin": 0,
+						"$sinh": 0,
+						"$size": 0,
+						"$slice": 0,
+						"$split": 0,
+						"$sqrt": 0,
+						"$stdDevPop": 0,
+						"$stdDevSamp": 0,
+						"$strLenBytes": 0,
+						"$strLenCP": 0,
+						"$strcasecmp": 0,
+						"$substr": 0,
+						"$substrBytes": 0,
+						"$substrCP": 0,
+						"$subtract": 0,
+						"$sum": 0,
+						"$switch": 0,
+						"$tan": 0,
+						"$tanh": 0,
+						"$toBool": 0,
+						"$toDate": 0,
+						"$toDecimal": 0,
+						"$toDouble": 0,
+						"$toHashedIndexKey": 0,
+						"$toInt": 0,
+						"$toLong": 0,
+						"$toLower": 0,
+						"$toObjectId": 0,
+						"$toString": 0,
+						"$toUpper": 0,
+						"$trim": 0,
+						"$trunc": 0,
+						"$type": 0,
+						"$unsetField": 0,
+						"$week": 0,
+						"$year": 0,
+						"$zip": 0
+					},
+					"groupAccumulators": {
+						"$_internalJsReduce": 0,
+						"$accumulator": 0,
+						"$addToSet": 21,
+						"$avg": 0,
+						"$count": 0,
+						"$first": 7,
+						"$last": 0,
+						"$max": 0,
+						"$mergeObjects": 0,
+						"$min": 0,
+						"$push": 0,
+						"$stdDevPop": 0,
+						"$stdDevSamp": 0,
+						"$sum": 0
+					},
+					"match": {
+						"$all": 0,
+						"$alwaysFalse": 0,
+						"$alwaysTrue": 0,
+						"$and": 7,
+						"$bitsAllClear": 0,
+						"$bitsAllSet": 0,
+						"$bitsAnyClear": 0,
+						"$bitsAnySet": 0,
+						"$comment": 0,
+						"$elemMatch": 0,
+						"$eq": 1432,
+						"$exists": 5,
+						"$expr": 0,
+						"$geoIntersects": 0,
+						"$geoWithin": 0,
+						"$gt": 6,
+						"$gte": 1,
+						"$in": 954,
+						"$jsonSchema": 0,
+						"$lt": 261,
+						"$lte": 1,
+						"$mod": 0,
+						"$ne": 21,
+						"$near": 0,
+						"$nearSphere": 0,
+						"$nin": 0,
+						"$nor": 0,
+						"$not": 0,
+						"$or": 14,
+						"$regex": 13,
+						"$sampleRate": 0,
+						"$size": 0,
+						"$text": 0,
+						"$type": 0,
+						"$where": 0
+					},
+					"windowAccumulators": {
+						"$addToSet": 0,
+						"$avg": 0,
+						"$count": 0,
+						"$covariancePop": 0,
+						"$covarianceSamp": 0,
+						"$denseRank": 0,
+						"$derivative": 0,
+						"$documentNumber": 0,
+						"$expMovingAvg": 0,
+						"$first": 0,
+						"$integral": 0,
+						"$last": 0,
+						"$max": 0,
+						"$min": 0,
+						"$push": 0,
+						"$rank": 0,
+						"$shift": 0,
+						"$stdDevPop": 0,
+						"$stdDevSamp": 0,
+						"$sum": 0
+					}
+				},
+				"query": {
+					"deleteManyCount": 23675,
+					"planCacheTotalSizeEstimateBytes": 20915,
+					"updateDeleteManyDocumentsMaxCount": 1,
+					"updateDeleteManyDocumentsTotalCount": 8,
+					"updateDeleteManyDurationMaxMs": 13,
+					"updateDeleteManyDurationTotalMs": 669,
+					"updateManyCount": 18,
+					"updateOneOpStyleBroadcastWithExactIDCount": 0,
+					"multiPlanner": {
+						"classicCount": 6,
+						"classicMicros": 22516,
+						"classicWorks": 0,
+						"sbeCount": 0,
+						"sbeMicros": 0,
+						"sbeNumReads": 0,
+						"histograms": {
+							"classicMicros": [
+								{
+									"lowerBound": 0,
+									"count": 3
+								},
+								{
+									"lowerBound": 1024,
+									"count": 1
+								},
+								{
+									"lowerBound": 4096,
+									"count": 2
+								},
+								{
+									"lowerBound": 16384,
+									"count": 0
+								},
+								{
+									"lowerBound": 65536,
+									"count": 0
+								},
+								{
+									"lowerBound": 262144,
+									"count": 0
+								},
+								{
+									"lowerBound": 1048576,
+									"count": 0
+								},
+								{
+									"lowerBound": 4194304,
+									"count": 0
+								},
+								{
+									"lowerBound": 16777216,
+									"count": 0
+								},
+								{
+									"lowerBound": 67108864,
+									"count": 0
+								},
+								{
+									"lowerBound": 268435456,
+									"count": 0
+								},
+								{
+									"lowerBound": 1073741824,
+									"count": 0
+								}
+							],
+							"classicNumPlans": [
+								{
+									"lowerBound": 0,
+									"count": 0
+								},
+								{
+									"lowerBound": 2,
+									"count": 4
+								},
+								{
+									"lowerBound": 4,
+									"count": 2
+								},
+								{
+									"lowerBound": 8,
+									"count": 0
+								},
+								{
+									"lowerBound": 16,
+									"count": 0
+								},
+								{
+									"lowerBound": 32,
+									"count": 0
+								}
+							],
+							"classicWorks": [
+								{
+									"lowerBound": 0,
+									"count": 6
+								},
+								{
+									"lowerBound": 128,
+									"count": 0
+								},
+								{
+									"lowerBound": 256,
+									"count": 0
+								},
+								{
+									"lowerBound": 512,
+									"count": 0
+								},
+								{
+									"lowerBound": 1024,
+									"count": 0
+								},
+								{
+									"lowerBound": 2048,
+									"count": 0
+								},
+								{
+									"lowerBound": 4096,
+									"count": 0
+								},
+								{
+									"lowerBound": 8192,
+									"count": 0
+								},
+								{
+									"lowerBound": 16384,
+									"count": 0
+								},
+								{
+									"lowerBound": 32768,
+									"count": 0
+								}
+							],
+							"sbeMicros": [
+								{
+									"lowerBound": 0,
+									"count": 0
+								},
+								{
+									"lowerBound": 1024,
+									"count": 0
+								},
+								{
+									"lowerBound": 4096,
+									"count": 0
+								},
+								{
+									"lowerBound": 16384,
+									"count": 0
+								},
+								{
+									"lowerBound": 65536,
+									"count": 0
+								},
+								{
+									"lowerBound": 262144,
+									"count": 0
+								},
+								{
+									"lowerBound": 1048576,
+									"count": 0
+								},
+								{
+									"lowerBound": 4194304,
+									"count": 0
+								},
+								{
+									"lowerBound": 16777216,
+									"count": 0
+								},
+								{
+									"lowerBound": 67108864,
+									"count": 0
+								},
+								{
+									"lowerBound": 268435456,
+									"count": 0
+								},
+								{
+									"lowerBound": 1073741824,
+									"count": 0
+								}
+							],
+							"sbeNumPlans": [
+								{
+									"lowerBound": 0,
+									"count": 0
+								},
+								{
+									"lowerBound": 2,
+									"count": 0
+								},
+								{
+									"lowerBound": 4,
+									"count": 0
+								},
+								{
+									"lowerBound": 8,
+									"count": 0
+								},
+								{
+									"lowerBound": 16,
+									"count": 0
+								},
+								{
+									"lowerBound": 32,
+									"count": 0
+								}
+							],
+							"sbeNumReads": [
+								{
+									"lowerBound": 0,
+									"count": 0
+								},
+								{
+									"lowerBound": 128,
+									"count": 0
+								},
+								{
+									"lowerBound": 256,
+									"count": 0
+								},
+								{
+									"lowerBound": 512,
+									"count": 0
+								},
+								{
+									"lowerBound": 1024,
+									"count": 0
+								},
+								{
+									"lowerBound": 2048,
+									"count": 0
+								},
+								{
+									"lowerBound": 4096,
+									"count": 0
+								},
+								{
+									"lowerBound": 8192,
+									"count": 0
+								},
+								{
+									"lowerBound": 16384,
+									"count": 0
+								},
+								{
+									"lowerBound": 32768,
+									"count": 0
+								}
+							]
+						}
+					}
+				},
+				"queryExecutor": {
+					"scanned": 7987,
+					"scannedObjects": 5358,
+					"collectionScans": {
+						"nonTailable": 82,
+						"total": 82
+					}
+				},
+				"record": {
+					"moves": 0
+				},
+				"repl": {
+					"executor": {
+						"pool": {
+							"inProgressCount": 0
+						},
+						"queues": {
+							"networkInProgress": 0,
+							"sleepers": 0
+						},
+						"unsignaledEvents": 0,
+						"shuttingDown": false,
+						"networkInterface": "DEPRECATED: getDiagnosticString is deprecated in NetworkInterfaceTL"
+					},
+					"apply": {
+						"attemptsToBecomeSecondary": 1,
+						"batchSize": 1,
+						"batches": {
+							"num": 1,
+							"totalMillis": 0
+						},
+						"ops": 1
+					},
+					"buffer": {
+						"count": 0,
+						"maxSizeBytes": 268435456,
+						"sizeBytes": 0
+					},
+					"initialSync": {
+						"completed": 0,
+						"failedAttempts": 0,
+						"failures": 0
+					},
+					"network": {
+						"bytes": 0,
+						"getmores": {
+							"num": 0,
+							"totalMillis": 0,
+							"numEmptyBatches": 0
+						},
+						"notPrimaryLegacyUnacknowledgedWrites": 0,
+						"notPrimaryUnacknowledgedWrites": 0,
+						"oplogGetMoresProcessed": {
+							"num": 0,
+							"totalMillis": 0
+						},
+						"ops": 0,
+						"readersCreated": 0,
+						"replSetUpdatePosition": {
+							"num": 0
+						}
+					},
+					"reconfig": {
+						"numAutoReconfigsForRemovalOfNewlyAddedFields": 0
+					},
+					"stateTransition": {
+						"lastStateTransition": "stepUp",
+						"userOperationsKilled": 0,
+						"userOperationsRunning": 1
+					},
+					"syncSource": {
+						"numSelections": 1,
+						"numSyncSourceChangesDueToSignificantlyCloserNode": 0,
+						"numTimesChoseDifferent": 0,
+						"numTimesChoseSame": 0,
+						"numTimesCouldNotFind": 1
+					}
+				},
+				"ttl": {
+					"deletedDocuments": 330,
+					"passes": 1305
+				}
+			},
+			"ok": 1,
+			"$clusterTime": {
+				"clusterTime": "7293509704523710470",
+				"signature": {
+					"hash": "AVUr5zUb8v+3NyNumGTff7OQzv4=",
+					"keyId": "7291329153922498561"
+				}
+			},
+			"operationTime": "7293509704523710470",
+			"app": {
+				"version": "5.0.21"
+			},
+			"name": "MongoDB",
+			"status": "running",
+			"hostname": "mongodb"
+		},
+		{
+			"id": "65300697500b846a60b4e239",
+			"type": "Redis",
+			"hostname": "Redis",
+			"insertedAt": "2023-10-24T07:13:31.197Z",
+			"app": {
+				"version": "7.0.12",
+				"semverVersion": "7.0.12",
+				"invalidVersion": false
+			},
+			"data": {
+				"Server": {
+					"redis_version": "7.0.12",
+					"redis_git_sha1": "8e73f9d3",
+					"redis_git_dirty": "1",
+					"redis_buildid": "1701a0940a42666b",
+					"redis_mode": "standalone",
+					"os": "Linux 5.15.0-87-generic x86_64",
+					"arch_bits": "64",
+					"monotonic_clock": "POSIX clock_gettime",
+					"multiplexing_api": "epoll",
+					"atomicvar_api": "c11-builtin",
+					"gcc_version": "8.5.0",
+					"processid": "7",
+					"process_supervised": "no",
+					"runid": "a0addfd8c8bd1e83e5eb9572b42d519c278438bb",
+					"tcp_port": "6379",
+					"server_time_usec": "1698053792942670",
+					"uptime_in_seconds": "1444",
+					"uptime_in_days": "0",
+					"hz": "10",
+					"configured_hz": "10",
+					"lru_clock": "3554976",
+					"executable": "/opt/systran/redis/bin/redis-server",
+					"config_file": "",
+					"io_threads_active": "0"
+				},
+				"Clients": {
+					"connected_clients": "1",
+					"cluster_connections": "0",
+					"maxclients": "10000",
+					"client_recent_max_input_buffer": "0",
+					"client_recent_max_output_buffer": "0",
+					"blocked_clients": "0",
+					"tracking_clients": "0",
+					"clients_in_timeout_table": "0"
+				},
+				"Memory": {
+					"used_memory": "975112",
+					"used_memory_human": "952.26K",
+					"used_memory_rss": "5873664",
+					"used_memory_rss_human": "5.60M",
+					"used_memory_peak": "975112",
+					"used_memory_peak_human": "952.26K",
+					"used_memory_peak_perc": "100.00%",
+					"used_memory_overhead": "859176",
+					"used_memory_startup": "858696",
+					"used_memory_dataset": "115936",
+					"used_memory_dataset_perc": "99.59%",
+					"allocator_allocated": "1284160",
+					"allocator_active": "1626112",
+					"allocator_resident": "5599232",
+					"total_system_memory": "33234829312",
+					"total_system_memory_human": "30.95G",
+					"used_memory_lua": "31744",
+					"used_memory_vm_eval": "31744",
+					"used_memory_lua_human": "31.00K",
+					"used_memory_scripts_eval": "0",
+					"number_of_cached_scripts": "0",
+					"number_of_functions": "0",
+					"number_of_libraries": "0",
+					"used_memory_vm_functions": "32768",
+					"used_memory_vm_total": "64512",
+					"used_memory_vm_total_human": "63.00K",
+					"used_memory_functions": "184",
+					"used_memory_scripts": "184",
+					"used_memory_scripts_human": "184B",
+					"maxmemory": "0",
+					"maxmemory_human": "0B",
+					"maxmemory_policy": "noeviction",
+					"allocator_frag_ratio": "1.27",
+					"allocator_frag_bytes": "341952",
+					"allocator_rss_ratio": "3.44",
+					"allocator_rss_bytes": "3973120",
+					"rss_overhead_ratio": "1.05",
+					"rss_overhead_bytes": "274432",
+					"mem_fragmentation_ratio": "6.28",
+					"mem_fragmentation_bytes": "4938544",
+					"mem_not_counted_for_evict": "0",
+					"mem_replication_backlog": "0",
+					"mem_total_replication_buffers": "0",
+					"mem_clients_slaves": "0",
+					"mem_clients_normal": "0",
+					"mem_cluster_links": "0",
+					"mem_aof_buffer": "0",
+					"mem_allocator": "jemalloc-5.2.1",
+					"active_defrag_running": "0",
+					"lazyfree_pending_objects": "0",
+					"lazyfreed_objects": "0"
+				},
+				"Persistence": {
+					"loading": "0",
+					"async_loading": "0",
+					"current_cow_peak": "0",
+					"current_cow_size": "0",
+					"current_cow_size_age": "0",
+					"current_fork_perc": "0.00",
+					"current_save_keys_processed": "0",
+					"current_save_keys_total": "0",
+					"rdb_changes_since_last_save": "0",
+					"rdb_bgsave_in_progress": "0",
+					"rdb_last_save_time": "1698052348",
+					"rdb_last_bgsave_status": "ok",
+					"rdb_last_bgsave_time_sec": "-1",
+					"rdb_current_bgsave_time_sec": "-1",
+					"rdb_saves": "0",
+					"rdb_last_cow_size": "0",
+					"rdb_last_load_keys_expired": "0",
+					"rdb_last_load_keys_loaded": "6",
+					"aof_enabled": "0",
+					"aof_rewrite_in_progress": "0",
+					"aof_rewrite_scheduled": "0",
+					"aof_last_rewrite_time_sec": "-1",
+					"aof_current_rewrite_time_sec": "-1",
+					"aof_last_bgrewrite_status": "ok",
+					"aof_rewrites": "0",
+					"aof_rewrites_consecutive_failures": "0",
+					"aof_last_write_status": "ok",
+					"aof_last_cow_size": "0",
+					"module_fork_in_progress": "0",
+					"module_fork_last_cow_size": "0"
+				},
+				"Stats": {
+					"total_connections_received": "85",
+					"total_commands_processed": "338",
+					"instantaneous_ops_per_sec": "0",
+					"total_net_input_bytes": "7041",
+					"total_net_output_bytes": "876446",
+					"total_net_repl_input_bytes": "0",
+					"total_net_repl_output_bytes": "0",
+					"instantaneous_input_kbps": "0.00",
+					"instantaneous_output_kbps": "0.00",
+					"instantaneous_input_repl_kbps": "0.00",
+					"instantaneous_output_repl_kbps": "0.00",
+					"rejected_connections": "0",
+					"sync_full": "0",
+					"sync_partial_ok": "0",
+					"sync_partial_err": "0",
+					"expired_keys": "1",
+					"expired_stale_perc": "0.00",
+					"expired_time_cap_reached_count": "0",
+					"expire_cycle_cpu_milliseconds": "28",
+					"evicted_keys": "0",
+					"evicted_clients": "0",
+					"total_eviction_exceeded_time": "0",
+					"current_eviction_exceeded_time": "0",
+					"keyspace_hits": "0",
+					"keyspace_misses": "0",
+					"pubsub_channels": "0",
+					"pubsub_patterns": "0",
+					"pubsubshard_channels": "0",
+					"latest_fork_usec": "0",
+					"total_forks": "0",
+					"migrate_cached_sockets": "0",
+					"slave_expires_tracked_keys": "0",
+					"active_defrag_hits": "0",
+					"active_defrag_misses": "0",
+					"active_defrag_key_hits": "0",
+					"active_defrag_key_misses": "0",
+					"total_active_defrag_time": "0",
+					"current_active_defrag_time": "0",
+					"tracking_total_keys": "0",
+					"tracking_total_items": "0",
+					"tracking_total_prefixes": "0",
+					"unexpected_error_replies": "0",
+					"total_error_replies": "0",
+					"dump_payload_sanitizations": "0",
+					"total_reads_processed": "339",
+					"total_writes_processed": "338",
+					"io_threaded_reads_processed": "0",
+					"io_threaded_writes_processed": "0",
+					"reply_buffer_shrinks": "0",
+					"reply_buffer_expands": "0"
+				},
+				"Replication": {
+					"role": "master",
+					"connected_slaves": "0",
+					"master_failover_state": "no-failover",
+					"master_replid": "19b3cdf85904cf10f0b49b764764ca414fa5911f",
+					"master_replid2": "0000000000000000000000000000000000000000",
+					"master_repl_offset": "0",
+					"second_repl_offset": "-1",
+					"repl_backlog_active": "0",
+					"repl_backlog_size": "1048576",
+					"repl_backlog_first_byte_offset": "0",
+					"repl_backlog_histlen": "0"
+				},
+				"CPU": {
+					"used_cpu_sys": "0.952369",
+					"used_cpu_user": "0.873632",
+					"used_cpu_sys_children": "0.000000",
+					"used_cpu_user_children": "0.000000",
+					"used_cpu_sys_main_thread": "0.953525",
+					"used_cpu_user_main_thread": "0.872051"
+				},
+				"Modules": {},
+				"Commandstats": {
+					"cmdstat_quit": [
+						"calls=84",
+						"usec=50",
+						"usec_per_call=0.60",
+						"rejected_calls=0",
+						"failed_calls=0"
+					],
+					"cmdstat_info": [
+						"calls=169",
+						"usec=16047",
+						"usec_per_call=94.95",
+						"rejected_calls=0",
+						"failed_calls=0"
+					],
+					"cmdstat_auth": [
+						"calls=85",
+						"usec=430",
+						"usec_per_call=5.06",
+						"rejected_calls=0",
+						"failed_calls=0"
+					]
+				},
+				"Errorstats": {},
+				"Latencystats": {
+					"latency_percentiles_usec_quit": [
+						"p50=1.003",
+						"p99=2.007",
+						"p99.9=3.007"
+					],
+					"latency_percentiles_usec_info": [
+						"p50=90.111",
+						"p99=186.367",
+						"p99.9=364.543"
+					],
+					"latency_percentiles_usec_auth": [
+						"p50=5.023",
+						"p99=14.015",
+						"p99.9=29.055"
+					]
+				},
+				"Cluster": {
+					"cluster_enabled": "0"
+				},
+				"Keyspace": {
+					"db0": [
+						"keys=5",
+						"expires=0",
+						"avg_ttl=0"
+					]
+				},
+				"app": {
+					"version": "7.0.12",
+					"semverVersion": "7.0.12",
+					"invalidVersion": false
+				},
+				"name": "Redis",
+				"status": "running",
+				"hostname": "redis:6379"
+			},
+			"lastSuccessfulUpdate": "2023-10-23T09:36:32.943Z",
+			"lastUpdate": "2023-10-23T09:36:32.943Z",
+			"status": "running",
+			"lastFailedUpdate": "2023-10-22T02:24:53.621Z",
+			"lastPollingError": "Redis client error",
+			"warning": true,
+			"name": "Redis"
+		},
+		{
+			"id" : "SES Console",
+			"name": "SES Console",
+			"status": "running",
+			"hostname": "https://localhost:3449",
+			"app": {
+				"version": null
+			}
+		}
+	],
+	"total": 18,
+	"running": 4,
+	"failed": 14
+}

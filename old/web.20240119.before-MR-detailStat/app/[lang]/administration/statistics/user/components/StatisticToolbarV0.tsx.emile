@@ -1,0 +1,165 @@
+import { SelectChangeEvent } from '@mui/material/Select';
+import CalendarIcon from '@systran/react-components/lib/atoms/Icons/CalendarIcon';
+import SelectBox from '@';
+
+import {
+  GridToolbarContainer,
+  GridToolbarExport
+} from '@systran/react-components/lib/organisms/Table/Table';
+
+import {
+  LeftToolbarContainer,
+  RightToolbarContainer
+} from '@systran/react-components/lib/organisms/RowAction/RowActionToolbar';
+import TextField from '@systran/react-components/lib/atoms/TextField';
+import { useTranslation } from 'react-i18next';
+import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
+import { DateRange, DateRangePicker } from '@mui/x-date-pickers-pro';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo';
+import { useState } from 'react';
+
+type CustomToolbarProps = {
+  // onChange: (event: SelectChangeEvent<string>) => void;
+  totalChar: number;
+  totalUsers: number;
+  setDateValue: (value: DateRange<Dayjs>) => void;
+};
+
+export default function StatisticToolbar({ ...props }: CustomToolbarProps) {
+  const { t } = useTranslation();
+  const selectChange = (event: SelectChangeEvent<string>) => {
+    console.log(' event==>', event);
+  };
+
+  return (
+    <GridToolbarContainer
+      sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+    >
+      <LeftToolbarContainer
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <SelectBox
+          // defaultValue?: string;
+          value={'toto'}
+          // name?: string;
+          // placeholder?: string;
+          itemList={['titi', 'toto', 'tata']}
+          onChange={selectChange}
+          // sx?: SxProps;
+        />
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateRangePicker
+            onChange={props.setDateValue}
+            label={t('Date Period')}
+            slots={{ field: SingleInputDateRangeField }}
+            name='allowedRange'
+            slotProps={{
+              textField: {
+                InputProps: { endAdornment: <CalendarIcon /> }
+              },
+              shortcuts: {
+                items: addShortCut()
+              }
+            }}
+          />
+        </LocalizationProvider>
+        <TextField
+          id='outlined-read-only-input'
+          label={t('Total Characters')}
+          value={props.totalChar}
+          InputProps={{
+            readOnly: true
+          }}
+        />
+        <TextField
+          id='outlined-read-only-input'
+          label={t('Total Users')}
+          value={props.totalUsers}
+          InputProps={{
+            readOnly: true
+          }}
+        />
+      </LeftToolbarContainer>
+      <RightToolbarContainer style={{ paddingRight: '3rem' }}>
+        <GridToolbarExport />
+      </RightToolbarContainer>
+    </GridToolbarContainer>
+  );
+}
+
+import * as React from 'react';
+import dayjs, { Dayjs } from 'dayjs';
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+// import { StaticDateRangePicker } from '@mui/x-date-pickers-pro/StaticDateRangePicker';
+import { PickersShortcutsItem } from '@mui/x-date-pickers/PickersShortcuts';
+// import { DateRange } from '@mui/x-date-pickers-pro';
+
+function addShortCut(): PickersShortcutsItem<DateRange<Dayjs>>[] {
+  const { t } = useTranslation();
+
+  const shortcutsItems: PickersShortcutsItem<DateRange<Dayjs>>[] = [
+    {
+      label: t('This Week'),
+      getValue: () => {
+        const today = dayjs();
+        return [today.startOf('week'), today.endOf('week')];
+      }
+    },
+    {
+      label: t('This Month'),
+      getValue: () => {
+        const today = dayjs();
+        return [today.startOf('month'), today.endOf('month')];
+      }
+    },
+    {
+      label: t('Last 7 Days'),
+      getValue: () => {
+        const today = dayjs();
+        return [today.subtract(7, 'day'), today];
+      }
+    },
+    {
+      label: t('Last Month'),
+      getValue: () => {
+        const today = dayjs();
+        const endOfLastMonth = today.startOf('month').subtract(1, 'day');
+        return [endOfLastMonth.startOf('month'), endOfLastMonth];
+      }
+    },
+    {
+      label: t('Last Week'),
+      getValue: () => {
+        const today = dayjs();
+        const prevWeek = today.subtract(7, 'day');
+        return [prevWeek.startOf('week'), prevWeek.endOf('week')];
+      }
+    },
+    { label: 'Reset', getValue: () => [null, null] }
+  ];
+
+  return shortcutsItems;
+}
+
+// export default function BasicRangeShortcuts() {
+//   return (
+//     <LocalizationProvider dateAdapter={AdapterDayjs}>
+//       <StaticDateRangePicker
+//         slotProps={{
+//           shortcuts: {
+//             items: shortcutsItems
+//           },
+//           actionBar: { actions: [] }
+//         }}
+//         calendars={2}
+//       />
+//     </LocalizationProvider>
+//   );
+// }

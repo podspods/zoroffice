@@ -1,0 +1,7 @@
+Corpora:
+  - path: my.tmx
+    displayName: My Corpus
+
+  - path: europarl-v7.enfr.txt
+    displayName: European Parliament Proceedings v7
+    hidden: true

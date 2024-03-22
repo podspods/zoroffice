@@ -1,0 +1,8 @@
+{
+    "embeddedScripts": [],
+    "externalScripts": [],
+    "icon": "translate_server_icon.ico",
+    "logo": "translate_server_logo.svg",
+    "theme": "translate_server_theme.json",
+    "hideSystranLogo": false
+}

@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavCategoryDirectorBuilder: NavCategory, TranslateServerNavCategories, UserAuthorizations with DefaultRolesPermissions DirectorBuilder.makeAdminItems() 1`] = `undefined`;
+
+exports[`NavCategoryDirectorBuilder: NavCategory, TranslateServerNavCategories, UserAuthorizations with DefaultRolesPermissions DirectorBuilder.makeItems() 1`] = `
+[
+  {
+    "categoryTitle": "TRANSLATION TOOLS",
+    "navItems": [
+      {
+        "icon": <NavBarIcons
+          shape="language"
+        />,
+        "link": "/translationTools/text",
+        "nestedItems": [],
+        "title": "Text Translation",
+      },
+      {
+        "icon": <NavBarIcons
+          shape="files"
+        />,
+        "link": "/translationTools/file",
+        "nestedItems": [],
+        "title": "File Translation",
+      },
+    ],
+  },
+  {
+    "categoryTitle": "MONITORING",
+    "navItems": [
+      {
+        "icon": <NavBarIcons
+          shape="userStat"
+        />,
+        "link": "/monitoring/myStatistics",
+        "nestedItems": [],
+        "title": "My Statistics",
+      },
+    ],
+  },
+]
+`;
+
+exports[`NavCategoryDirectorBuilder: NavCategory, TranslateServerNavCategories, UserAuthorizations with superRolesPermissions DirectorBuilder.makeAdminItems() 1`] = `
+{
+  "categoryTitle": "ADMIN PANEL",
+  "navItems": [
+    {
+      "icon": <NavBarIcons
+        shape="usersGear"
+      />,
+      "nestedItems": [
+        {
+          "link": "/administration/userManagement/users",
+          "title": "Users",
+        },
+        {
+          "link": "/administration/userManagement/groups",
+          "title": "Groups",
+        },
+        {
+          "link": "/administration/userManagement/roles",
+          "title": "Roles",
+        },
+      ],
+      "title": "User Management",
+    },
+    {
+      "icon": <NavBarIcons
+        shape="rectangleHistory"
+      />,
+      "link": "/administration/translationResources",
+      "nestedItems": [],
+      "title": "Translation Resources",
+    },
+    {
+      "icon": <NavBarIcons
+        shape="chart"
+      />,
+      "nestedItems": [
+        {
+          "link": "/administration/statistics/user",
+          "title": "Users",
+        },
+        {
+          "link": "/administration/statistics/group",
+          "title": "Groups",
+        },
+        {
+          "link": "/administration/statistics/global",
+          "title": "Profiles",
+        },
+        {
+          "link": "/administration/statistics/session",
+          "title": "Sessions",
+        },
+        {
+          "link": "/administration/statistics/details",
+          "title": "Full View",
+        },
+      ],
+      "title": "Advanced Statistics",
+    },
+    {
+      "icon": <NavBarIcons
+        shape="gear"
+      />,
+      "nestedItems": [
+        {
+          "link": "/administration/serverManagement/settings",
+          "title": "Server Settings",
+        },
+        {
+          "link": "/information/edit",
+          "title": "Info Page Edition",
+        },
+        {
+          "link": "/administration/serverManagement/licenses",
+          "title": "Licenses",
+        },
+        {
+          "link": "/administration/serverManagement/services",
+          "title": "Service Status",
+        },
+        {
+          "link": "/administration/serverManagement/routes",
+          "title": "Routes",
+        },
+        {
+          "link": "/administration/serverManagement/queues",
+          "title": "Queues",
+        },
+      ],
+      "title": "Server Management",
+    },
+  ],
+}
+`;
+
+exports[`NavCategoryDirectorBuilder: NavCategory, TranslateServerNavCategories, UserAuthorizations with superRolesPermissions DirectorBuilder.makeItems() 1`] = `
+[
+  {
+    "categoryTitle": "TRANSLATION TOOLS",
+    "navItems": [
+      {
+        "icon": <NavBarIcons
+          shape="language"
+        />,
+        "link": "/translationTools/text",
+        "nestedItems": [],
+        "title": "Text Translation",
+      },
+      {
+        "icon": <NavBarIcons
+          shape="files"
+        />,
+        "link": "/translationTools/file",
+        "nestedItems": [],
+        "title": "File Translation",
+      },
+      {
+        "icon": <NavBarIcons
+          shape="soundWave"
+        />,
+        "link": "/translationTools/speech",
+        "nestedItems": [],
+        "title": "Speech Translation",
+      },
+    ],
+  },
+  {
+    "categoryTitle": "LINGUISTIC CONFIGURATION",
+    "navItems": [
+      {
+        "icon": <NavBarIcons
+          shape="layers"
+        />,
+        "link": "/linguisticConfiguration/translationProfiles",
+        "nestedItems": [],
+        "title": "Translation Profiles",
+      },
+      {
+        "icon": <NavBarIcons
+          shape="cubes"
+        />,
+        "nestedItems": [
+          {
+            "link": "/linguisticConfiguration/resources/dictionary",
+            "title": "Dictionaries",
+          },
+          {
+            "link": "/linguisticConfiguration/resources/normalization",
+            "title": "Normalizations",
+          },
+          {
+            "link": "/linguisticConfiguration/resources/translationMemory",
+            "title": "Translation Memories",
+          },
+        ],
+        "title": "Resources",
+      },
+    ],
+  },
+  {
+    "categoryTitle": "MONITORING",
+    "navItems": [
+      {
+        "icon": <NavBarIcons
+          shape="flag"
+        />,
+        "link": "/monitoring/translationReviews",
+        "nestedItems": [],
+        "title": "Translation Reviews",
+      },
+      {
+        "icon": <NavBarIcons
+          shape="userStat"
+        />,
+        "link": "/monitoring/myStatistics",
+        "nestedItems": [],
+        "title": "My Statistics",
+      },
+    ],
+  },
+]
+`;

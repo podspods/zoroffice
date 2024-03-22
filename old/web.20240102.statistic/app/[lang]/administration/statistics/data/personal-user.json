@@ -1,0 +1,2955 @@
+{
+	"total": 78,
+	"accounts": [
+		{
+			"id": "65798e972c3a1c125871aca9",
+			"enable": true,
+			"accountName": "charles.ragot@systrangroup.com",
+			"displayName": "Charles RAGOT",
+			"login": "charles.ragot@systrangroup.com",
+			"email": "charles.ragot@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-12-13T10:59:35.484Z",
+			"name": {
+				"givenName": "Charles",
+				"familyName": "RAGOT"
+			}
+		},
+		{
+			"id": "65788e5e2c3a1c125870d98e",
+			"enable": true,
+			"accountName": "Petra.BAYRAMI@systrangroup.com",
+			"displayName": "Petra BAYRAMI",
+			"login": "petra.bayrami@systrangroup.com",
+			"email": "Petra.BAYRAMI@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-12-12T16:46:22.253Z",
+			"name": {
+				"givenName": "Petra",
+				"familyName": "BAYRAMI"
+			}
+		},
+		{
+			"id": "65775e56f9d78e6a40d376af",
+			"enable": true,
+			"accountName": "patricia.haddadi@systrangroup.com",
+			"displayName": "Patricia HADDADI",
+			"login": "patricia.haddadi@systrangroup.com",
+			"email": "patricia.haddadi@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-12-11T19:09:10.961Z",
+			"name": {
+				"givenName": "Patricia",
+				"familyName": "HADDADI"
+			}
+		},
+		{
+			"id": "6564c1d1892db455dff25cf7",
+			"enable": true,
+			"accountName": "thierry.vo@systrangroup.com",
+			"displayName": "Thierry VO",
+			"login": "thierry.vo@systrangroup.com",
+			"email": "thierry.vo@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-27T16:20:33.666Z",
+			"name": {
+				"givenName": "Thierry",
+				"familyName": "VO"
+			}
+		},
+		{
+			"id": "6554e887f7231055f12c3aea",
+			"enable": true,
+			"accountName": "bruno.djegadissane@systrangroup.com",
+			"displayName": "Bruno DJEGADISSANE",
+			"login": "bruno.djegadissane@systrangroup.com",
+			"email": "bruno.djegadissane@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-15T15:49:27.945Z",
+			"name": {
+				"givenName": "Bruno",
+				"familyName": "DJEGADISSANE"
+			}
+		},
+		{
+			"id": "65524f3b98cc014977e5e0e9",
+			"enable": true,
+			"accountName": "nguyentriet",
+			"displayName": "Van Triet NGUYEN",
+			"login": "nguyentriet",
+			"email": "vantriet.nguyen@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-13T16:30:52.024Z",
+			"name": {
+				"givenName": "Van Triet",
+				"familyName": "NGUYEN"
+			}
+		},
+		{
+			"id": "654ba5e17c16ac499336a67b",
+			"enable": true,
+			"accountName": "maria.liden@systrangroup.com",
+			"displayName": "Maria LIDEN",
+			"login": "maria.liden@systrangroup.com",
+			"email": "maria.liden@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-08T15:14:41.486Z",
+			"name": {
+				"givenName": "Maria",
+				"familyName": "LIDEN"
+			}
+		},
+		{
+			"id": "654ba535ad144a55f59f0040",
+			"enable": true,
+			"accountName": "charlotte.vandevelde@systrangroup.com",
+			"displayName": "Charlotte VAN DE VELDE",
+			"login": "charlotte.vandevelde@systrangroup.com",
+			"email": "charlotte.vandevelde@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-08T15:11:50.082Z",
+			"name": {
+				"givenName": "Charlotte",
+				"familyName": "VAN DE VELDE"
+			}
+		},
+		{
+			"id": "654a38f0268fd3498ea25172",
+			"enable": true,
+			"accountName": "khater",
+			"displayName": "Yara Khater",
+			"login": "khater",
+			"email": "yara.khater@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-11-07T13:17:36.183Z",
+			"name": {
+				"givenName": "Yara",
+				"familyName": "Khater"
+			}
+		},
+		{
+			"id": "652508657b69ca63f952c1db",
+			"enable": true,
+			"accountName": "koichi.sano@systrangroup.com",
+			"displayName": "Koichi Sano",
+			"login": "koichi.sano@systrangroup.com",
+			"email": "koichi.sano@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Customer Service Administrators",
+					"roles": [
+						{
+							"id": "5beaf229062c942ba7e5f4fe",
+							"name": "CustomerService Administrators"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "6009b404b2900529b0d59efd",
+							"name": "default spns"
+						}
+					],
+					"id": "5beaf29e5944c029b254326e"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "5437f9ddb9f48ae5040a33c2",
+					"name": "default legacy"
+				}
+			],
+			"insertedAt": "2023-10-10T08:16:37.208Z",
+			"name": {
+				"givenName": "Koichi",
+				"familyName": "Sano"
+			}
+		},
+		{
+			"id": "6514143d1d67bd7395c2fb54",
+			"enable": true,
+			"accountName": "hunglv",
+			"displayName": "Vang Hung LE",
+			"login": "hunglv",
+			"email": "vanhung.le@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-09-27T11:38:37.793Z",
+			"name": {
+				"givenName": "Vang Hung",
+				"familyName": "LE"
+			}
+		},
+		{
+			"id": "64fec81bf415717389e578fa",
+			"enable": true,
+			"accountName": "julien.pirou@systrangroup.com",
+			"displayName": "Julien PIROU",
+			"login": "julien.pirou@systrangroup.com",
+			"email": "julien.pirou@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-09-11T07:56:11.883Z",
+			"name": {
+				"givenName": "Julien",
+				"familyName": "PIROU"
+			}
+		},
+		{
+			"id": "64edc8db4cf89310e9fb6adb",
+			"enable": true,
+			"accountName": "marko.avila@systrangroup.com",
+			"displayName": "Marko Avila",
+			"login": "marko.avila@systrangroup.com",
+			"email": "marko.avila@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TestingUsers",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						},
+						{
+							"id": "54c27705ccb18cea1e610643",
+							"name": "view_stats"
+						},
+						{
+							"id": "560d3b377c770c502e3ddabd",
+							"name": "TestingPackages"
+						}
+					],
+					"id": "560d3b9ca882ea502e566905"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-08-29T10:30:51.285Z",
+			"name": {
+				"givenName": "Marko",
+				"familyName": "Avila"
+			}
+		},
+		{
+			"id": "64888c316e44ec21e880d0f4",
+			"enable": true,
+			"accountName": "emile.destrieux",
+			"displayName": "Emile DESTRIEUX",
+			"login": "emile.destrieux",
+			"email": "emile.destrieux@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-06-13T15:33:05.951Z",
+			"name": {
+				"givenName": "Emile",
+				"familyName": "DESTRIEUX"
+			}
+		},
+		{
+			"id": "64060e34c0c3ee1a8709e5ee",
+			"enable": true,
+			"accountName": "malek",
+			"displayName": "Malek FAKHFAKH",
+			"login": "malek",
+			"email": "malek.fakhfakh@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "5575b3cacbb0c5c036cecd1b",
+					"name": "qa"
+				},
+				{
+					"id": "56127a99361894ba1d4d4d78",
+					"name": "beta"
+				}
+			],
+			"insertedAt": "2023-03-06T16:00:52.772Z",
+			"name": {
+				"givenName": "Malek",
+				"familyName": "FAKHFAKH"
+			}
+		},
+		{
+			"id": "63fc7fe2b399c442f8ba40ed",
+			"enable": true,
+			"accountName": "floriane.garde@systrangroup.com",
+			"displayName": "Floriane GARDE",
+			"login": "floriane.garde@systrangroup.com",
+			"email": "floriane.garde@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-02-27T10:03:14.672Z",
+			"name": {
+				"givenName": "Floriane",
+				"familyName": "GARDE"
+			}
+		},
+		{
+			"id": "63e5220cb399c442f8841943",
+			"enable": true,
+			"accountName": "am",
+			"displayName": "Alexis MEYER",
+			"login": "am",
+			"email": "alexis.meyer@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"roles": [
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "SYSTRAN Account Manager",
+					"id": "600698761dbec813fff70480"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "Customer Service Administrators",
+					"roles": [
+						{
+							"id": "5beaf229062c942ba7e5f4fe",
+							"name": "CustomerService Administrators"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "6009b404b2900529b0d59efd",
+							"name": "default spns"
+						}
+					],
+					"id": "5beaf29e5944c029b254326e"
+				},
+				{
+					"name": "Customer Service",
+					"roles": [
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a1c912367fc036043f92"
+				}
+			],
+			"roles": [
+				{
+					"id": "54abe051d0a238dc491fd424",
+					"name": "CustomerService"
+				},
+				{
+					"id": "61b89df5b1507750fada7116",
+					"name": "ModelStudio Translate PRO"
+				},
+				{
+					"id": "544e46f528e7c73b573a0bab",
+					"name": "TR Creator"
+				},
+				{
+					"id": "5fdb8143b27b7f7d1e24e6c3",
+					"name": "SYSTRAN Translate"
+				}
+			],
+			"insertedAt": "2023-02-09T16:40:44.576Z",
+			"name": {
+				"givenName": "Alexis",
+				"familyName": "MEYER"
+			}
+		},
+		{
+			"id": "63e51f482aee482d22abbf7f",
+			"enable": true,
+			"accountName": "ctura",
+			"displayName": "Catherine Tura",
+			"login": "ctura",
+			"email": "catherine.tura@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-02-09T16:28:56.403Z",
+			"name": {
+				"givenName": "Catherine",
+				"familyName": "Tura"
+			}
+		},
+		{
+			"id": "63dad3e1b399c442f86a46e3",
+			"enable": true,
+			"accountName": "sonal.rana",
+			"displayName": "Sonal RANA",
+			"login": "sonal.rana",
+			"email": "sonal.rana@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "54a4027e43c6ae826b7e8598",
+					"name": "files"
+				},
+				{
+					"id": "54a4028243c6ae826b7e8599",
+					"name": "files upload"
+				},
+				{
+					"id": "6009b404b2900529b0d59efd",
+					"name": "default spns"
+				},
+				{
+					"id": "63b4765fc96b6b173c766768",
+					"name": "API Access"
+				},
+				{
+					"id": "54abe051d0a238dc491fd424",
+					"name": "CustomerService"
+				}
+			],
+			"insertedAt": "2023-02-01T21:04:33.543Z",
+			"name": {
+				"givenName": "Sonal",
+				"familyName": "RANA"
+			}
+		},
+		{
+			"id": "63b3f239c96b6b173c74d18c",
+			"enable": true,
+			"accountName": "izzy.skelley@systrangroup.com",
+			"displayName": "Izzy SKELLEY",
+			"login": "izzy.skelley@systrangroup.com",
+			"email": "izzy.skelley@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "Customer Service",
+					"roles": [
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a1c912367fc036043f92"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2023-01-03T09:15:37.911Z",
+			"name": {
+				"givenName": "Izzy",
+				"familyName": "SKELLEY"
+			}
+		},
+		{
+			"id": "63973537c96b6b173c2af426",
+			"enable": true,
+			"accountName": "pham",
+			"displayName": "MinhThuc PHAM",
+			"login": "pham",
+			"email": "minhthuc.pham@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "52a9d09db489039d5b960cb8",
+					"name": "super"
+				}
+			],
+			"insertedAt": "2022-12-12T14:05:43.407Z",
+			"name": {
+				"givenName": "MinhThuc",
+				"familyName": "PHAM"
+			}
+		},
+		{
+			"id": "63637e92a1dd4e4df88faf6b",
+			"enable": true,
+			"accountName": "annalena.hutsch@systrangroup.com",
+			"displayName": "Annalena HÜTSCH",
+			"login": "annalena.hutsch@systrangroup.com",
+			"email": "annalena.hutsch@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-11-03T08:40:50.125Z",
+			"name": {
+				"givenName": "Annalena",
+				"familyName": "HÜTSCH"
+			}
+		},
+		{
+			"id": "634435aed96b4f26909efe8d",
+			"enable": true,
+			"accountName": "sacha.wanono",
+			"displayName": "Sacha WANONO",
+			"login": "sacha.wanono",
+			"email": "sacha.wanono@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-10-10T15:09:34.792Z",
+			"name": {
+				"givenName": "Sacha",
+				"familyName": "WANONO"
+			}
+		},
+		{
+			"id": "633f6a784db11b268e2b0b20",
+			"enable": true,
+			"accountName": "karina.gencheva@systrangroup.com",
+			"displayName": "Karina GENCHEVA",
+			"login": "karina.gencheva@systrangroup.com",
+			"email": "karina.gencheva@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-10-06T23:53:28.324Z",
+			"name": {
+				"givenName": "Karina",
+				"familyName": "GENCHEVA"
+			}
+		},
+		{
+			"id": "633c441ed0fa3276bf575b5b",
+			"enable": true,
+			"accountName": "elena.spiridonova@systrangroup.com",
+			"displayName": "Elena Spiridonova",
+			"login": "elena.spiridonova@systrangroup.com",
+			"email": "elena.spiridonova@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "61b89df5b1507750fada7116",
+					"name": "ModelStudio Translate PRO"
+				}
+			],
+			"insertedAt": "2022-10-04T14:33:02.494Z",
+			"name": {
+				"givenName": "Elena",
+				"familyName": "Spiridonova"
+			}
+		},
+		{
+			"id": "633aecc74db11b268e1fa9d9",
+			"enable": true,
+			"accountName": "casteigts",
+			"displayName": "aude casteigts",
+			"login": "casteigts",
+			"email": "aude.casteigts@systrangroup.com",
+			"groups": [
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				}
+			],
+			"roles": [
+				{
+					"id": "52a9d09db489039d5b960cb8",
+					"name": "super"
+				}
+			],
+			"insertedAt": "2022-10-03T14:08:07.954Z",
+			"name": {
+				"givenName": "aude",
+				"familyName": "casteigts"
+			}
+		},
+		{
+			"id": "62f292154db11b268e4e0370",
+			"enable": true,
+			"accountName": "aurore.augizeau@systrangroup.com",
+			"displayName": "Aurore AUGIZEAU",
+			"login": "aurore.augizeau@systrangroup.com",
+			"email": "aurore.augizeau@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-08-09T16:57:57.930Z",
+			"name": {
+				"givenName": "Aurore",
+				"familyName": "AUGIZEAU"
+			}
+		},
+		{
+			"id": "62e4057219625840e8a99979",
+			"enable": true,
+			"accountName": "juan.pablo@systransoft.com",
+			"displayName": "Juan Pablo BARRAZA",
+			"login": "juan.pablo@systransoft.com",
+			"email": "juan.pablo@systransoft.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "SYSTRAN LATINOAMERICA_01",
+					"id": "62e4057219625840e8a99977"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "61d6c0e599c58b15bdc07728",
+					"name": "Customer IAM Manager"
+				}
+			],
+			"insertedAt": "2022-07-29T16:06:10.192Z",
+			"name": {
+				"givenName": "Juan Pablo",
+				"familyName": "BARRAZA"
+			}
+		},
+		{
+			"id": "62a93733f8954e66e264701e",
+			"enable": true,
+			"accountName": "kelly.kim@systrangroup.com",
+			"displayName": "Kelly KIM",
+			"login": "kelly.kim@systrangroup.com",
+			"email": "kelly.kim@systrangroup.com",
+			"groups": [
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [],
+					"name": "Systran Linguists",
+					"id": "5fdb8597ce3fc32e51c8ec87"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "5437f9ddb9f48ae5040a33c2",
+					"name": "default legacy"
+				},
+				{
+					"id": "5fdb8143b27b7f7d1e24e6c3",
+					"name": "SYSTRAN Translate"
+				}
+			],
+			"insertedAt": "2022-06-15T01:34:43.452Z",
+			"name": {
+				"givenName": "Kelly",
+				"familyName": "KIM"
+			}
+		},
+		{
+			"id": "62a727b6f8954e66e255d47d",
+			"enable": true,
+			"accountName": "vincent.godard@systrangroup.com",
+			"displayName": "Vincent GODARD",
+			"login": "vincent.godard@systrangroup.com",
+			"email": "vincent.godard@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-06-13T12:04:06.525Z",
+			"name": {
+				"givenName": "Vincent",
+				"familyName": "GODARD"
+			}
+		},
+		{
+			"id": "6262a6372055732d96eaf43a",
+			"enable": true,
+			"accountName": "alexandre.dubois@systrangroup.com",
+			"displayName": "Alexandre DUBOIS",
+			"login": "alexandre.dubois@systrangroup.com",
+			"email": "alexandre.dubois@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-04-22T12:57:27.367Z",
+			"name": {
+				"givenName": "Alexandre",
+				"familyName": "DUBOIS"
+			}
+		},
+		{
+			"id": "6245a6232055732d965628ea",
+			"enable": true,
+			"accountName": "esther.bille@systrangroup.com",
+			"displayName": "Esther BILLE",
+			"login": "esther.bille@systrangroup.com",
+			"email": "esther.bille@systrangroup.com",
+			"groups": [
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "SYSTRAN Account Manager",
+					"id": "600698761dbec813fff70480"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "54a4027e43c6ae826b7e8598",
+					"name": "files"
+				},
+				{
+					"id": "54a4028243c6ae826b7e8599",
+					"name": "files upload"
+				},
+				{
+					"id": "54c27705ccb18cea1e610643",
+					"name": "view_stats"
+				}
+			],
+			"insertedAt": "2022-03-31T13:01:23.631Z",
+			"name": {
+				"givenName": "Esther",
+				"familyName": "BILLE"
+			}
+		},
+		{
+			"id": "623a6e56d817252d90a80204",
+			"enable": true,
+			"accountName": "gina.oh@systrangroup.com",
+			"displayName": "Gina Oh",
+			"login": "gina.oh@systrangroup.com",
+			"email": "gina.oh@systrangroup.com",
+			"groups": [
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "5437f9ddb9f48ae5040a33c2",
+					"name": "default legacy"
+				},
+				{
+					"id": "5fdb8143b27b7f7d1e24e6c3",
+					"name": "SYSTRAN Translate"
+				}
+			],
+			"insertedAt": "2022-03-23T00:48:22.555Z",
+			"name": {
+				"givenName": "Gina",
+				"familyName": "Oh"
+			}
+		},
+		{
+			"id": "6238480977fc2b603db543c5",
+			"enable": true,
+			"accountName": "benjamin.pasco",
+			"displayName": "Benjamin PASCO",
+			"login": "benjamin.pasco",
+			"email": "benjamin.pasco@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-21T09:40:25.556Z",
+			"name": {
+				"givenName": "Benjamin",
+				"familyName": "PASCO"
+			}
+		},
+		{
+			"id": "6220efdb2055732d96ceabe9",
+			"enable": true,
+			"accountName": "mickael.kifajisocar@systrangroup.com",
+			"displayName": "Mickaël KIFAJI SOCAR",
+			"login": "mickael.kifajisocar@systrangroup.com",
+			"email": "mickael.kifajisocar@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T16:42:03.526Z",
+			"name": {
+				"givenName": "Mickaël",
+				"familyName": "KIFAJI SOCAR"
+			}
+		},
+		{
+			"id": "6220eccbd817252d9049927d",
+			"enable": true,
+			"accountName": "dylan.suon@systrangroup.com",
+			"displayName": "Dylan SUON",
+			"login": "dylan.suon@systrangroup.com",
+			"email": "dylan.suon@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T16:28:59.192Z",
+			"name": {
+				"givenName": "Dylan",
+				"familyName": "SUON"
+			}
+		},
+		{
+			"id": "6220e58ed817252d904974e6",
+			"enable": true,
+			"accountName": "caroline.royer@systrangroup.com",
+			"displayName": "Caroline ROYER",
+			"login": "caroline.royer@systrangroup.com",
+			"email": "caroline.royer@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T15:58:06.655Z",
+			"name": {
+				"givenName": "Caroline",
+				"familyName": "ROYER"
+			}
+		},
+		{
+			"id": "6220e55b2055732d96ce81ba",
+			"enable": true,
+			"accountName": "christelle.nedellec@systrangroup.com",
+			"displayName": "Christelle NEDELLEC",
+			"login": "christelle.nedellec@systrangroup.com",
+			"email": "christelle.nedellec@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T15:57:15.196Z",
+			"name": {
+				"givenName": "Christelle",
+				"familyName": "NEDELLEC"
+			}
+		},
+		{
+			"id": "6220e5172055732d96ce8032",
+			"enable": true,
+			"accountName": "sandrine.hegarcia@systrangroup.com",
+			"displayName": "Sandrine HE GARCIA",
+			"login": "sandrine.hegarcia@systrangroup.com",
+			"email": "sandrine.hegarcia@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T15:56:07.485Z",
+			"name": {
+				"givenName": "Sandrine",
+				"familyName": "HE GARCIA"
+			}
+		},
+		{
+			"id": "6220e4e277fc2b603d5ef15b",
+			"enable": true,
+			"accountName": "eleonore.gaultier@systrangroup.com",
+			"displayName": "Eleonore GAULTIER",
+			"login": "eleonore.gaultier@systrangroup.com",
+			"email": "eleonore.gaultier@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T15:55:14.383Z",
+			"name": {
+				"givenName": "Eleonore",
+				"familyName": "GAULTIER"
+			}
+		},
+		{
+			"id": "6220e47dd817252d90496e81",
+			"enable": true,
+			"accountName": "stanislas.assierdepompignan@systrangroup.com",
+			"displayName": "Stanislas ASSIER DE POMPIGNAN",
+			"login": "stanislas.assierdepompignan@systrangroup.com",
+			"email": "stanislas.assierdepompignan@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-03-03T15:53:33.509Z",
+			"name": {
+				"givenName": "Stanislas",
+				"familyName": "ASSIER DE POMPIGNAN"
+			}
+		},
+		{
+			"id": "621e0e13720faf7eb126655a",
+			"enable": true,
+			"accountName": "ngkien",
+			"displayName": "Kien NGUYEN",
+			"login": "ngkien",
+			"email": "kien.nguyen.external@systrangroup.com",
+			"groups": [
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "files upload",
+					"roles": [
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						}
+					],
+					"id": "5575a6a512367fc036043f97"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				}
+			],
+			"roles": [],
+			"insertedAt": "2022-03-01T12:14:11.017Z",
+			"name": {
+				"givenName": "Kien",
+				"familyName": "NGUYEN"
+			}
+		},
+		{
+			"id": "62179e74c59df17eb705c8e8",
+			"enable": true,
+			"accountName": "asenellart",
+			"displayName": "Antoine Senellart",
+			"login": "asenellart",
+			"email": "antoine.senellart@systrangroup.com",
+			"groups": [
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2022-02-24T15:04:20.990Z",
+			"name": {
+				"givenName": "Antoine",
+				"familyName": "Senellart"
+			}
+		},
+		{
+			"id": "619263848f7e8d6c0d754e47",
+			"enable": true,
+			"accountName": "guillaume.bretin@systrangroup.com",
+			"displayName": "Guillaume BRETIN",
+			"login": "guillaume.bretin@systrangroup.com",
+			"email": "guillaume.bretin@systrangroup.com",
+			"groups": [
+				{
+					"name": "QA",
+					"roles": [
+						{
+							"id": "5575b3cacbb0c5c036cecd1b",
+							"name": "qa"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575b3bc12367fc036043f9a"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "Customer Service",
+					"roles": [
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a1c912367fc036043f92"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "560d3b377c770c502e3ddabd",
+					"name": "TestingPackages"
+				}
+			],
+			"insertedAt": "2021-11-15T13:41:24.486Z",
+			"name": {
+				"givenName": "Guillaume",
+				"familyName": "BRETIN"
+			}
+		},
+		{
+			"id": "6182c023edd99a740a83649f",
+			"enable": true,
+			"accountName": "ahmed",
+			"displayName": "Mohamed AHMED",
+			"login": "ahmed",
+			"email": "mohamed.ahmed@systrangroup.com",
+			"groups": [
+				{
+					"name": "Dev_Team_SSA",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						},
+						{
+							"id": "54abe051d0a238dc491fd424",
+							"name": "CustomerService"
+						},
+						{
+							"id": "56d86f1856316f6a059bbddd",
+							"name": "Package creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "5ba3a49ca501de0f4195b949",
+							"name": "Dev_Team_SSA"
+						}
+					],
+					"id": "5c29e9f6c538703a71576551"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				},
+				{
+					"id": "52a9d09db489039d5b960cb8",
+					"name": "super"
+				}
+			],
+			"insertedAt": "2021-11-03T17:00:20.224Z",
+			"name": {
+				"givenName": "Mohamed",
+				"familyName": "AHMED"
+			}
+		},
+		{
+			"id": "61815e91faab7c741038f7bd",
+			"enable": true,
+			"accountName": "ramzi.rahli@systrangroup.com",
+			"displayName": "Ramzi RAHLI",
+			"login": "ramzi.rahli@systrangroup.com",
+			"email": "ramzi.rahli@systrangroup.com",
+			"groups": [
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "files upload",
+					"roles": [
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						}
+					],
+					"id": "5575a6a512367fc036043f97"
+				},
+				{
+					"name": "TestingUsers",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						},
+						{
+							"id": "54c27705ccb18cea1e610643",
+							"name": "view_stats"
+						},
+						{
+							"id": "560d3b377c770c502e3ddabd",
+							"name": "TestingPackages"
+						}
+					],
+					"id": "560d3b9ca882ea502e566905"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				},
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2021-11-02T15:51:45.108Z",
+			"name": {
+				"givenName": "Ramzi",
+				"familyName": "RAHLI"
+			}
+		},
+		{
+			"id": "6148512645035b6b4fe2be84",
+			"enable": true,
+			"accountName": "afendi",
+			"displayName": "amine afendi",
+			"login": "afendi",
+			"email": "amine.afendi@systrangroup.com",
+			"groups": [
+				{
+					"name": "QA",
+					"roles": [
+						{
+							"id": "5575b3cacbb0c5c036cecd1b",
+							"name": "qa"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575b3bc12367fc036043f9a"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2021-09-20T09:15:18.279Z",
+			"name": {
+				"givenName": "amine",
+				"familyName": "afendi"
+			}
+		},
+		{
+			"id": "6135d1eb7267e505a3b4ce9f",
+			"enable": true,
+			"accountName": "wichou",
+			"displayName": "MohamedReda WICHOU",
+			"login": "wichou",
+			"email": "mohamedreda.wichou@systrangroup.com",
+			"groups": [
+				{
+					"name": "QA",
+					"roles": [
+						{
+							"id": "5575b3cacbb0c5c036cecd1b",
+							"name": "qa"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575b3bc12367fc036043f9a"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2021-09-06T08:31:39.393Z",
+			"name": {
+				"givenName": "MohamedReda",
+				"familyName": "WICHOU"
+			}
+		},
+		{
+			"id": "6065bdc64b77ab43ac387a38",
+			"enable": true,
+			"accountName": "lazucena",
+			"displayName": "Lourdes AZUCENA",
+			"login": "lazucena",
+			"email": "lourdes.azucena@systrangroup.com",
+			"groups": [
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2021-04-01T12:34:14.810Z",
+			"name": {
+				"givenName": "Lourdes",
+				"familyName": "AZUCENA"
+			}
+		},
+		{
+			"id": "6051d45a91012f39e2a5d445",
+			"enable": true,
+			"accountName": "zhangdakun",
+			"displayName": "Dakun Zhang",
+			"login": "zhangdakun",
+			"email": "dakun.zhang@systrangroup.com",
+			"groups": [
+				{
+					"name": "default",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "600962fc2fc92e140d5f73fe",
+							"name": "default"
+						}
+					],
+					"id": "545a03e4f00f305337d080f3"
+				},
+				{
+					"name": "TR Creator",
+					"roles": [
+						{
+							"id": "544e46f528e7c73b573a0bab",
+							"name": "TR Creator"
+						},
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						}
+					],
+					"id": "5575a0fd12367fc036043f91"
+				},
+				{
+					"name": "files",
+					"roles": [
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						}
+					],
+					"id": "5575a3a712367fc036043f93"
+				},
+				{
+					"name": "files upload",
+					"roles": [
+						{
+							"id": "54a4028243c6ae826b7e8599",
+							"name": "files upload"
+						}
+					],
+					"id": "5575a6a512367fc036043f97"
+				},
+				{
+					"name": "TestingUsers",
+					"roles": [
+						{
+							"id": "5437f9ddb9f48ae5040a33c2",
+							"name": "default legacy"
+						},
+						{
+							"id": "54a4027e43c6ae826b7e8598",
+							"name": "files"
+						},
+						{
+							"id": "54c27705ccb18cea1e610643",
+							"name": "view_stats"
+						},
+						{
+							"id": "560d3b377c770c502e3ddabd",
+							"name": "TestingPackages"
+						}
+					],
+					"id": "560d3b9ca882ea502e566905"
+				},
+				{
+					"roles": [
+						{
+							"id": "5fdb8143b27b7f7d1e24e6c3",
+							"name": "SYSTRAN Translate"
+						},
+						{
+							"id": "61b89df5b1507750fada7116",
+							"name": "ModelStudio Translate PRO"
+						}
+					],
+					"name": "Systran",
+					"id": "5f2bcf23cc8ca147cd9c8824"
+				}
+			],
+			"roles": [
+				{
+					"id": "600962fc2fc92e140d5f73fe",
+					"name": "default"
+				}
+			],
+			"insertedAt": "2021-03-17T10:05:14.270Z",
+			"name": {
+				"givenName": "Dakun",
+				"familyName": "Zhang"
+			}
+		}
+	],
+	"offset": 0,
+	"limit": 50
+}

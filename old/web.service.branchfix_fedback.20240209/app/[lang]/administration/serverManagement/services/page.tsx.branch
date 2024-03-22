@@ -1,0 +1,16 @@
+'use client';
+
+import {TemporaryPageBox} from '@/components/TemporaryPageBox';
+import ServiceTable from './components/ServiceTable';
+import PageTitle from '@/components/PageTitle';
+import { useTranslation } from 'react-i18next';
+
+export default function AdministrationServerManagementServices() {
+  const { t } = useTranslation();
+  return (
+    <TemporaryPageBox>
+      <PageTitle>{t('Service Status')}</PageTitle>
+      <ServiceTable />
+    </TemporaryPageBox>
+  );
+}

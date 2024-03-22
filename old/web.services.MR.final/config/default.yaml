@@ -1,0 +1,16 @@
+StaticServer:
+  env: DEV
+
+  https:
+#    activate: true
+#    http2: false
+    privateKey: ../certificates/server.key
+    certificate: ../certificates/server.crt
+
+  Proxy:
+    consoleUrl: https://localhost:3443
+    strictSSL: false
+
+  Frontend:
+    publicUrl: https://localhost:3450
+    port: 3450

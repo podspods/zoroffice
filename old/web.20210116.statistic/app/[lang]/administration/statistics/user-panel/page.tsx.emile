@@ -1,0 +1,238 @@
+'use client';
+
+import useSWR from 'swr';
+import {
+  AppBar,
+  Box,
+  SelectChangeEvent,
+  Tab,
+  Tabs,
+  Typography
+} from '@mui/material';
+import PageTitle from '@/components/PageTitle';
+import Table, {
+  useRemoteHooks
+} from '@systran/react-components/lib/organisms/Table/Table';
+import useColumns from './components/useColumns';
+import { Apis, Statistic } from './components/statisticsType';
+import ErrorCard from '@systran/react-components/lib/atoms/ErrorCard';
+import { useTranslation } from 'react-i18next';
+import { SyntheticEvent, useRef, useState } from 'react';
+import { DateRange } from '@mui/x-date-pickers-pro';
+import dayjs, { Dayjs } from 'dayjs';
+import TextField from '@systran/react-components/lib/atoms/TextField';
+import useRefreshBuilder from '@systran/react-components/lib/organisms/Table/hooks/useRefresh';
+import {
+  convertData,
+  defaultPeriod,
+  formatDate,
+  // toRowList,
+  toStatProfile
+} from './components/statisticUtils';
+// import datajson from '../data/userDetail.json';
+import datajson from '../data/activity_chineese-spns8.json';
+import SelectBox from '@/components/SelectBox';
+import TableUser from './components/TableUser';
+import TableDefault from './components/TableDefault';
+// import { tableSubject, typeTable } from './components/statisticTable';
+
+// const show = false;
+const show = true;
+
+const labelList = ['Users', 'Groups', 'Profils', 'Sessions', 'Full View'];
+
+export default function AdministrationStatisticsUser() {
+  const [value, setValue] = useState<number>(0);
+
+  const handleChange = (event: SelectChangeEvent<string>) => {
+    console.log('handleChange event ==>', event);
+    console.log(
+      'handleChange Object.values(event.target.value) ==>',
+      labelList.indexOf(event.target.value)
+    );
+
+    setValue(labelList.indexOf(event.target.value));
+    // setValue(newValue);
+  };
+  interface TabPanelProps {
+    children?: React.ReactNode;
+    index: number;
+    value: number;
+  }
+
+  function TabPanel({ children, value, index }: TabPanelProps) {
+    return (
+      <div
+        role='tabpanel'
+        hidden={value !== index}
+        id={`tabpanel-${index}`}
+        aria-labelledby={`tab-${index}`}
+      >
+        {value === index && <Box p={3}>{children}</Box>}
+      </div>
+    );
+  }
+
+  // interface MyTabsProps {
+  //   labels: string[];
+  // }
+
+  // const MyTabs: React.FC<MyTabsProps> = ({ labels }) => {
+  //   const [value, setValue] = useState(0);
+
+  //   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  //     setValue(newValue);
+  //   };
+
+  return (
+    <>
+      <TableDefault name={'Table Default'} />
+    </>
+  );
+}
+
+/*
+
+export type tableStatCategoryProps = {
+  statCategoryName: string;
+};
+
+export function tableStatCategory({ ...props }: tableStatCategoryProps) {
+  switch (props.statCategoryName) {
+    case statCategory[0]:
+      return <TableUser />;
+    // case statCategory[0]:
+    //   return <TableGroup />;
+    // case statCategory[2]:
+    //   return <TableProfil />;
+    // case statCategory[3]:
+    //   return <TableSession />;
+    default:
+      return <TableUser />;
+  }
+
+  return <></>;
+}
+*/
+// export default function AdministrationStatisticsUser() {
+
+export function V1_AdministrationStatisticsUser() {
+  const columns = useColumns();
+  const { t } = useTranslation();
+  const [totalChar, setTotalChar] = useState<number>(0);
+  const [totalUsers, setTotalUsers] = useState<number>(0);
+  const [dateValue, setDateValue] = useState<DateRange<Dayjs>>(defaultPeriod());
+
+  const useRefresh = useRefreshBuilder<Statistic>({
+    route: Apis.statistics.list,
+    useSWR,
+    adaptParamsOpts: {
+      paginationParamsFields: {
+        limit: 'limit',
+        skip: 'skip'
+      },
+      additionalParams: {
+        sortName: 'sourceLanguage',
+        sortOrder: 'desc',
+        startDate: dateValue[0] ? dateValue[0].valueOf() : new Date().getTime(),
+        endDate: dateValue[1] ? dateValue[1].valueOf() : new Date().getTime(),
+        groupBy: 'profiles'
+      }
+      // dayjs(date).valueOf()
+    },
+    adaptResponseOpts: {
+      validateRowFct: () => true,
+      rowsField: 'data',
+      totalRowCountField: 'total'
+    }
+  });
+
+  const {
+    mutate,
+    loading,
+    refreshRate,
+    setRefreshRate: setRefreshInterval,
+    rows: rawData,
+    rowCount,
+    // rowCount:(owCount) => rowCount*13,
+    ...remainningRemoteHookData
+  } = useRemoteHooks<Statistic>({
+    useRefresh: useRefresh,
+    refreshRate: 'Never'
+  });
+
+  const rowList = toStatProfile(rawData);
+
+  const updateTotalChar = () => {
+    // console.log(' updateTotalChar==>', totalChar);
+
+    setTotalChar(totalChar + 1);
+  };
+  const updateTotalUser = () => {
+    // console.log(' updateTotalUser==>', totalUsers);
+    setTotalUsers(totalUsers + 11);
+  };
+
+  const handleMutate = () => {
+    void mutate();
+  };
+  return (
+    <Box sx={{ width: '100%', margin: '2rem' }}>
+      <PageTitle>{t('Statistics')}</PageTitle>
+      <Table
+        pagination
+        sx={{ overflowY: 'scroll', maxHeight: '70vh' }}
+        rows={rowList}
+        maxHeight={'auto'} // allow to have vertical scroll on overflow
+        columns={columns}
+        // checkboxSelection
+        slots={{ toolbar: StatisticToolbar }}
+        slotProps={{
+          toolbar: {
+            totalChar: rowCount,
+            totalUsers: totalUsers,
+            setDateValue: setDateValue
+          }
+        }}
+      />
+      {show && (
+        <div>
+          <button onClick={updateTotalChar}>updateChar</button>
+          <button onClick={updateTotalUser}>updateUser</button>
+          <button onClick={handleMutate}>mutateData</button>
+          {/* <button onClick={void mutateUser()}>mutateUser</button> */}
+          <button onClick={() => convertData(datajson)}>convertData</button>
+          <TextField
+            id='outlined-read-only-input'
+            label={t('dateValue')}
+            value={formatDate(dateValue)}
+            InputProps={{
+              readOnly: true
+            }}
+          />
+          <TextField
+            id='outlined-read-only-input'
+            value={dateValue[0]}
+            InputProps={{
+              readOnly: true
+            }}
+          />
+          <TextField
+            id='outlined-read-only-input'
+            value={dateValue[1]}
+            InputProps={{
+              readOnly: true
+            }}
+          />
+        </div>
+      )}
+    </Box>
+  );
+}
+// https://localhost:3450/administration/statistics/fullview
+
+/**
+ * old : https://localhost:3450/activity/user/654b98590e9e5000c7a3ec52/details?date=2024-1&skip=0&limit=10&sortName=request&sortOrder=desc
+ * new : https://localhost:3450/activity/user/654b98590e9e5000c7a3ec52/details?date=2024-1&skip=0&limit=10&sortName=request&sortOrder=desc
+ *
+ */

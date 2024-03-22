@@ -1,0 +1,141 @@
+/* eslint-disable no-console */
+import { useRefreshProps, QueryOptions } from '@systran/react-components/lib/organisms/Table/hooks/useRemoteHooks';
+import { useMemo } from 'react';
+
+function buildAdaptPaginationParams({
+  limit,
+  skip
+}: PaginationParamsFields): AdaptPaginationFunctionParams {
+  return function adaptPaginationParams(
+    paginationModel: useRefreshProps['paginationModel']
+  ) {
+    return {
+      [limit]: paginationModel.pageSize,
+      [skip]: paginationModel.page * paginationModel.pageSize
+    };
+  };
+}
+
+function buildAdaptSortParams({
+  sortName,
+  sortOrder
+}: SortParamsFields): AdaptQueryOptionsFunctionParams {
+  return function adaptSortParams(queryOptions: QueryOptions) {
+    if (!queryOptions.sortModel?.[0]) {
+      return {};
+    }
+    const { field, sort } = queryOptions.sortModel?.[0] || {};
+    return { [sortName]: field, [sortOrder]: sort };
+  };
+}
+
+function buildAdaptFilterParams(
+  filterParamsFieldFct: FilterParamsFieldFct
+): AdaptQueryOptionsFunctionParams {
+  return function adaptFilterParams(queryOptions: QueryOptions) {
+    const query: { [key: string]: unknown } = {};
+    queryOptions.filterModel?.items.forEach(({ field, value }) => {
+      query[filterParamsFieldFct(field)] = value;
+    });
+    return query;
+  };
+}
+
+type AdaptPaginationFunctionParams = (
+  model: useRefreshProps['paginationModel']
+) => { [x: string]: any };
+type AdaptQueryOptionsFunctionParams = (
+  queryOptions: QueryOptions
+) => { [x: string]: any };
+type PaginationParamsFields = { limit: string; skip: string };
+type SortParamsFields = { sortName: string; sortOrder: string };
+type FilterParamsFieldFct = (field: string) => string;
+export type AdditionalParams = { [key: string]: string | boolean | number };
+
+export type adaptParamsBuilderOpts = {
+  paginationParamsFields?: PaginationParamsFields;
+  sortParamsField?: SortParamsFields;
+  filterParamsFieldFct?: FilterParamsFieldFct;
+  additionalParams?: AdditionalParams;
+};
+
+type buildAdaptParamsOpts = {
+  adaptPaginationParams: AdaptPaginationFunctionParams;
+  adaptSortParams: AdaptQueryOptionsFunctionParams;
+  adaptFilterParams: AdaptQueryOptionsFunctionParams;
+  additionalParams: AdditionalParams;
+};
+
+function buildAdaptParams({
+  adaptPaginationParams,
+  adaptSortParams,
+  adaptFilterParams,
+  additionalParams
+}: buildAdaptParamsOpts) {
+  return function adaptParams({
+    paginationModel,
+    queryOptions
+  }: useRefreshProps): string {
+    console.log(' paginationModel 48==>', paginationModel);
+    console.log(' queryOptions 48==>', queryOptions);
+    console.log(' Object.entries(adaptFilterParams(queryOptions)) 48==>', Object.entries(adaptFilterParams(queryOptions)));
+
+    const result = new URLSearchParams([
+      ...Object.entries(adaptPaginationParams(paginationModel)),
+      ...Object.entries(adaptSortParams(queryOptions)),
+      ...Object.entries(adaptFilterParams(queryOptions)),
+      ...Object.entries(additionalParams)
+    ]).toString();
+    console.log(' result 57==>', result);
+
+    return new URLSearchParams([
+      ...Object.entries(adaptPaginationParams(paginationModel)),
+      ...Object.entries(adaptSortParams(queryOptions)),
+      ...Object.entries(adaptFilterParams(queryOptions)),
+      ...Object.entries(additionalParams)
+    ]).toString();
+  };
+}
+
+export default function adaptParamsBuilder(
+  builderOpts?: adaptParamsBuilderOpts
+) {
+  const {
+    paginationParamsFields = { limit: 'limit', skip: 'skip' },
+    sortParamsField = { sortName: 'sortName', sortOrder: 'sortOrder' },
+    filterParamsFieldFct = (field: string) => `eleFilters[${field}][]`,
+    additionalParams = {}
+  } = builderOpts || {};
+
+  console.log(' adaptParamsBuilder 76==>', 65);
+  console.log(' filterParamsFieldFct 77 ==>', filterParamsFieldFct);
+  console.log(' adaptParamsBuilder 78==>', 65);
+
+  const adaptPaginationParams = useMemo(
+    () => buildAdaptPaginationParams(paginationParamsFields),
+    [paginationParamsFields]
+  );
+  const adaptSortParams = useMemo(() => buildAdaptSortParams(sortParamsField), [
+    sortParamsField
+  ]);
+  const adaptFilterParams = useMemo(
+    () => buildAdaptFilterParams(filterParamsFieldFct),
+    [filterParamsFieldFct]
+  );
+  const adaptParams = useMemo(
+    () =>
+      buildAdaptParams({
+        adaptPaginationParams,
+        adaptSortParams,
+        adaptFilterParams,
+        additionalParams
+      }),
+    [
+      adaptPaginationParams,
+      adaptSortParams,
+      adaptFilterParams,
+      additionalParams
+    ]
+  );
+  return adaptParams;
+}

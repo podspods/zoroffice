@@ -1,0 +1,21 @@
+
+.borderLine{
+  border: 1px red solid;
+}
+
+.mainNotification {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+
+.markChoice {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background-color: rebeccapurple;
+}
+

@@ -1,0 +1,3581 @@
+{
+  "_label": "SES Config",
+  "_type": "object",
+  "workers": {
+    "_hidden": true
+  },
+  "pingTimeout": {
+    "_hidden": true
+  },
+  "env": {
+    "_hidden": true
+  },
+  "mode": {
+    "_hidden": true
+  },
+  "disableProfileWithoutInstances": {
+    "_hidden": true
+  },
+  "Taas": {
+    "_hidden": true
+  },
+  "jadeCache": {
+    "_hidden": true
+  },
+  "tmpDir": {
+    "_hidden": true
+  },
+  "Workers": {
+    "_label": "Workers settings",
+    "_type": "object",
+    "sesConsole": {
+      "_type": "number",
+      "_required": true,
+      "_label": "Number of worker processes for Console service"
+    },
+    "sesFileTranslationConsumer": {
+      "_type": "number",
+      "_required": true,
+      "_label": "Number of worker processes for File Translation Consumer service"
+    },
+    "sesActivityCollector": {
+      "_type": "number",
+      "_required": true,
+      "_label": "Number of worker processes for Activity Collector service"
+    },
+    "pingTimeout": {
+      "_type": "number",
+      "_required": true,
+      "_label": "Value of the timeout to detect that a worker process is unreachable"
+    }
+  },
+  "https": {
+    "_label": "HTTPS settings",
+    "_type": "object",
+    "http2": {
+      "_hidden": true
+    },
+    "activate": {
+      "_type": "boolean",
+      "_label": "Activation of the HTTPS service",
+      "_description": "To ensure a secure communication when translating a Web page, set 'Activation of the HTTPS service' to true. To deactivate, set it to false."
+    },
+    "privateKey": {
+      "_type": "string",
+      "_label": "HTTPS private key"
+    },
+    "certificate": {
+      "_type": "string",
+      "_label": "HTTPS certificate"
+    },
+    "secureOptions": {
+      "_type": "array",
+      "_label": "SSL/TLS Options",
+      "_enum": [
+        "SSL_OP_NO_SSLv2",
+        "SSL_OP_NO_SSLv3",
+        "SSL_OP_NO_TLSv1",
+        "SSL_OP_NO_TLSv1_1"
+      ]
+    },
+    "ciphers": {
+      "_type": "array",
+      "_label": "Ciphers Options",
+      "_description": "If you want to prevent users to not use unsecured ciphers",
+      "_enum": [
+        "!TLS_AES_256_GCM_SHA384",
+        "!TLS_CHACHA20_POLY1305_SHA256",
+        "!TLS_AES_128_GCM_SHA256",
+        "!TLS_AES_128_CCM_SHA256",
+        "!TLS_AES_128_CCM_8_SHA256",
+        "!ECDHE-RSA-AES128-GCM-SHA256",
+        "!ECDHE-ECDSA-AES128-GCM-SHA256",
+        "!ECDHE-RSA-AES256-GCM-SHA384",
+        "!ECDHE-ECDSA-AES256-GCM-SHA384",
+        "!DHE-RSA-AES128-GCM-SHA256",
+        "!ECDHE-RSA-AES128-SHA256",
+        "!DHE-RSA-AES128-SHA256",
+        "!ECDHE-RSA-AES256-SHA384",
+        "!DHE-RSA-AES256-SHA384",
+        "!ECDHE-RSA-AES256-SHA256",
+        "!DHE-RSA-AES256-SHA256",
+        "!HIGH",
+        "!aNULL",
+        "!eNULL",
+        "!EXPORT",
+        "!DES",
+        "!RC4",
+        "!MD5",
+        "!PSK",
+        "!SRP",
+        "!CAMELLIA"
+      ]
+    }
+  },
+  "Console": {
+    "_type": "object",
+    "_label": "Console Settings",
+    "_description": "To edit the hostname and port of the application",
+    "http": {
+      "_type": "number",
+      "_required": true,
+      "_label": "HTTP Port"
+    },
+    "https": {
+      "_type": "number",
+      "_required": true,
+      "_label": "HTTPS Port"
+    },
+    "publicUrls": {
+      "_type": "object",
+      "_label": "Public URLs",
+      "http": {
+        "_type": "string"
+      },
+      "https": {
+        "_type": "string"
+      }
+    }
+  },
+  "Consumer": {
+    "_hidden": true
+  },
+  "Auth": {
+    "_type": "object",
+    "_label": "Authentication settings",
+    "_description": "Define user connection on SES9",
+    "mode": {
+      "_type": "string",
+      "_label": "Default Authentication mode",
+      "_enum": [
+        "local",
+        "ldap",
+        "saml",
+        "httpHeader",
+        "oauth"
+      ]
+    },
+    "enabledProviders": {
+      "_type": "array",
+      "_label": "Enabled authentication modes",
+      "_description": "List of enabled authentication modes",
+      "_enum": [
+        "local",
+        "ldap",
+        "saml",
+        "httpHeader",
+        "oauth"
+      ]
+    },
+    "Ldap": {
+      "_type": "object",
+      "_label": "LDAP settings",
+      "_description": "Administrators do not have to create a SES9 account for each user. Users can log in via their corporate credentials, using LDAP protocol ",
+      "url": {
+        "_type": "string",
+        "_label": "LDAP URL"
+      },
+      "searchBase": {
+        "_type": "string",
+        "_label": "LDAP search base",
+        "_enum": [
+          "ou=people,o=sevenSeas"
+        ]
+      },
+      "searchFilter": {
+        "_type": "string",
+        "_label": "LDAP search filter",
+        "_enum": [
+          "(uid={{username}})"
+        ]
+      },
+      "searchAttributes": {
+        "_type": "array",
+        "_label": "Search attributes",
+        "_enum": [
+          "mail",
+          "givenName",
+          "sn"
+        ]
+      },
+      "adminDn": {
+        "_type": "string",
+        "_label": "adminDN",
+        "_enum": [
+          "cn='root'"
+        ]
+      },
+      "adminPassword": {
+        "_type": "string",
+        "_label": "Password for adminDN",
+        "_secret": true
+      },
+      "tlsOptions": {
+        "_type": "string",
+        "_label": "TLS Options for LDAP server",
+        "_description": "for tls attributes, go to http://nodejs.org/api/tls.html#tls_tls_connect_options_callback"
+      },
+      "GroupsFilter": {
+        "_type": "object",
+        "_label": "Groups filter",
+        "_description": "You can use special characters to filter groups:\n -  ^admin will filter groups that start with admin\n -  api$ will filter groups that end with api\n -  user-.* will filter groups that contain the string user- followed by any characters (e.g. user-translation)",
+        "blacklist": {
+          "_type": "array",
+          "_label": "Groups blacklist",
+          "_description": "Array of regex to filter out groups that match one of the patterns, the blacklist is applied before the whitelist"
+        },
+        "whitelist": {
+          "_type": "array",
+          "_label": "Groups whitelist",
+          "_description": "Array of regex to select groups that match one of the patterns, the whitelist is applied after the blacklist"
+        }
+      },
+      "Mapping": {
+        "_type": "object",
+        "_label": "LDAP mapping",
+        "providerId": {
+          "_type": "string",
+          "_label": "Mapping of identifier",
+          "_description": "By default, the email mapping value will be used"
+        },
+        "email": {
+          "_type": "string",
+          "_label": "Mapping of email"
+        },
+        "name.givenName": {
+          "_type": "string",
+          "_label": "Mapping of given name"
+        },
+        "name.familyName": {
+          "_type": "string",
+          "_label": "Mapping of family name"
+        },
+        "groups": {
+          "_type": "string",
+          "_label": "Mapping of groups"
+        },
+        "login": {
+          "_type": "string",
+          "_label": "Mapping of login"
+        }
+      }
+    },
+    "Saml": {
+      "_type": "object",
+      "_label": "SAML settings",
+      "_description": "Administrators do not have to create a SES9 account for each user. Users can log in via their corporate credentials, using SAML 2.0 protocol",
+      "entryPoint": {
+        "_type": "string",
+        "_label": "Identity Provider Entrypoint",
+        "_description": "ex: https://yourIdpServer.com/adfs/ls/"
+      },
+      "issuer": {
+        "_type": "string",
+        "_label": "Identity Provider Issuer",
+        "_description": "Issuer string to supply to identity provider. ex: https://yourSesServer.com:3443"
+      },
+      "logoutUrl": {
+        "_type": "string",
+        "_label": "Identity Provider Logout URL",
+        "_description": "IDP SLO endpoint used by server to perform user logout"
+      },
+      "callbackUrl": {
+        "_type": "string",
+        "_label": "Identity Provider SSO Callback URL",
+        "_description": "SSO callback URL to supply to identity provider. default to: https://<SPNS_URL>/signin/callback"
+      },
+      "logoutCallbackUrl": {
+        "_type": "string",
+        "_label": "Identity Provider SLO Callback URL",
+        "_description": "SLO callback URL to supply to identity provider. ex: https://IdP/homepage"
+      },
+      "GroupsFilter": {
+        "_type": "object",
+        "_label": "Groups filter",
+        "_description": "You can use special characters to filter groups:\n -  ^admin will filter groups that start with admin\n -  api$ will filter groups that end with api\n -  user-.* will filter groups that contain the string user- followed by any characters (e.g. user-translation)",
+        "blacklist": {
+          "_type": "array",
+          "_label": "Groups blacklist",
+          "_description": "Array of regex to filter out groups that match one of the patterns, the blacklist is applied before the whitelist"
+        },
+        "whitelist": {
+          "_type": "array",
+          "_label": "Groups whitelist",
+          "_description": "Array of regex to select groups that match one of the patterns, the whitelist is applied after the blacklist"
+        }
+      },
+      "Certificates": {
+        "_type": "object",
+        "idpSigningCert": {
+          "_type": "string",
+          "_label": "Identity provider signature public key"
+        },
+        "signingPvk": {
+          "_type": "string",
+          "_label": "SES signature private key"
+        },
+        "signingCert": {
+          "_type": "string",
+          "_label": "SES signature public key"
+        },
+        "decryptionPvk": {
+          "_type": "string",
+          "_label": "SES Decryption/Encryption private key"
+        },
+        "decryptionCert": {
+          "_type": "string",
+          "_label": "SES Decryption/Encryption public key"
+        },
+        "cert": {
+          "_hidden": true
+        },
+        "privateCert": {
+          "_hidden": true
+        }
+      },
+      "Mapping": {
+        "_type": "object",
+        "_label": "SAML Mapping",
+        "providerId": {
+          "_type": "string",
+          "_label": "Mapping of identifier"
+        },
+        "name.givenName": {
+          "_type": "string",
+          "_label": "Mapping of given name"
+        },
+        "name.familyName": {
+          "_type": "string",
+          "_label": "Mapping of family name"
+        },
+        "email": {
+          "_type": "string",
+          "_label": "Mapping of email"
+        },
+        "groups": {
+          "_type": "string",
+          "_label": "Mapping of groups"
+        },
+        "login": {
+          "_type": "string",
+          "_label": "Mapping of login"
+        }
+      },
+      "acceptedClockSkewMs": {
+        "_type": "string",
+        "_label": "Accepted Clock skew",
+        "_description": "Time in milliseconds of skew that is acceptable between client and server when checking OnBefore and NotOnOrAfter assertion condition validity timestamps"
+      },
+      "identifierFormat": {
+        "_type": "string",
+        "_label": "Identifier format",
+        "_description": "Name identifier format to request from identity provider, ex: urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      },
+      "signatureAlgorithm": {
+        "_type": "string",
+        "_label": "Signature algorithm",
+        "_description": "Signature algorithm: either sha1 or sha256",
+        "_enum": [
+          "sha256",
+          "sha1"
+        ]
+      },
+      "attributeConsumingServiceIndex": {
+        "_type": "string",
+        "_label": "Attribute consuming service index",
+        "_description": "AttributeConsumingServiceIndex attribute to add to AuthnRequest to instruct the IDP which attribute set to attach to the response"
+      },
+      "Authn": {
+        "_type": "object",
+        "_label": "Authentication context",
+        "authnContext": {
+          "_label": "Authentication context",
+          "_type": "string",
+          "_enum": [
+            "urn:federation:authentication:windows"
+          ]
+        },
+        "disableRequestedAuthnContext": {
+          "_type": "boolean",
+          "_label": "Do not request specific authentication context",
+          "_description": "Do not request a specific auth context"
+        },
+        "forceAuthn": {
+          "_type": "boolean",
+          "_label": "Force re-authentication",
+          "_description": "Identity provider should force re-authentication of the user"
+        },
+        "formAuthAfterSignout": {
+          "_label": "Use form authentication after signout",
+          "_type": "boolean",
+          "-description": "After a signout, force another Auth context to avoid automatic re-signin"
+        },
+        "authnContextAfterSignout": {
+          "_label": "Name identifier format for form authentication",
+          "_type": "string",
+          "_description": "Authentication context to use after a signout",
+          "_enum": [
+            "urn:oasis:names:tc:SAML:2.0:ac:classes:Password"
+          ]
+        }
+      }
+    },
+    "HttpHeader": {
+      "_label": "Http Header settings",
+      "_type": "object",
+      "_description": "Administrators do not have to create a SES9 account for each user. Users can log in via the information set in the header part of the HTTP requests",
+      "requiredFields": {
+        "_label": "Required fields",
+        "_type": "array",
+        "-description": "Atleast 'login' is require. (This field corresponds with SES 'login' field in the below mapping)",
+        "_enum": [
+          "login",
+          "email",
+          "nom",
+          "prenom",
+          "affectation"
+        ]
+      },
+      "signoutUrl": {
+        "_type": "string",
+        "_label": "Sign out URL",
+        "_description": " url to which user will be redirected when log out from SES."
+      },
+      "GroupsFilter": {
+        "_type": "object",
+        "_label": "Groups filter",
+        "_description": "You can use special characters to filter groups:\n -  ^admin will filter groups that start with admin\n -  api$ will filter groups that end with api\n -  user-.* will filter groups that contain the string user- followed by any characters (e.g. user-translation)",
+        "blacklist": {
+          "_type": "array",
+          "_label": "Groups blacklist",
+          "_description": "Array of regex to filter out groups that match one of the patterns, the blacklist is applied before the whitelist"
+        },
+        "whitelist": {
+          "_type": "array",
+          "_label": "Groups whitelist",
+          "_description": "Array of regex to select groups that match one of the patterns, the whitelist is applied after the blacklist"
+        }
+      },
+      "Mapping": {
+        "_type": "object",
+        "_label": "Http Header Mapping",
+        "providerId": {
+          "_type": "string",
+          "_label": "Mapping of identifier"
+        },
+        "login": {
+          "_type": "string",
+          "_label": "Mapping of identifier"
+        },
+        "email": {
+          "_type": "string",
+          "_label": "Mapping of email"
+        },
+        "name.givenName": {
+          "_type": "string",
+          "_label": "Mapping of given name"
+        },
+        "name.familyName": {
+          "_type": "string",
+          "_label": "Mapping of family name"
+        },
+        "groups": {
+          "_type": "string",
+          "_label": "Mapping of groups"
+        }
+      }
+    },
+    "Oauth": {
+      "_label": "Oauth settings",
+      "_type": "object",
+      "authorizationUrl": {
+        "_type": "string",
+        "_label": "Authorization Url",
+        "_description": "Provider's endpoint to retrieve the authorization code"
+      },
+      "clientId": {
+        "_type": "string",
+        "_label": "Client ID",
+        "_description": "Oauth client ID"
+      },
+      "clientSecret": {
+        "_type": "string",
+        "_label": "Client Secret",
+        "_description": "Oauth client secret"
+      },
+      "callbackRoute": {
+        "_type": "string",
+        "_label": "Callback route",
+        "_description": "After a successful authorization, the provider will redirect the user to this route"
+      },
+      "logoutRedirectUri": {
+        "_type": "string",
+        "_label": "Post logout uri",
+        "_description": "After a successful logout, the provider will redirect the user to this uri"
+      },
+      "backchannelLogout": {
+        "_type": "boolean",
+        "_label": "Back Channel Logout",
+        "_description": "Enable route /api/auth/oauth/backchannel_logout on the server. After a successful logout, the provider will call this route to kill the user's session"
+      },
+      "sessionManagement": {
+        "_type": "boolean",
+        "_label": "OIDC session management",
+        "_description": "Enable OIDC session management"
+      },
+      "GroupsFilter": {
+        "_type": "object",
+        "_label": "Groups filter",
+        "_description": "You can use special characters to filter groups:\n -  ^admin will filter groups that start with admin\n -  api$ will filter groups that end with api\n -  user-.* will filter groups that contain the string user- followed by any characters (e.g. user-translation)",
+        "blacklist": {
+          "_type": "array",
+          "_label": "Groups blacklist",
+          "_description": "Array of regex to filter out groups that match one of the patterns, the blacklist is applied before the whitelist"
+        },
+        "whitelist": {
+          "_type": "array",
+          "_label": "Groups whitelist",
+          "_description": "Array of regex to select groups that match one of the patterns, the whitelist is applied after the blacklist"
+        }
+      },
+      "Mapping": {
+        "_type": "object",
+        "_label": "Oauth Mapping",
+        "providerId": {
+          "_type": "string",
+          "_label": "Mapping of identifier"
+        },
+        "name.givenName": {
+          "_type": "string",
+          "_label": "Mapping of given name"
+        },
+        "name.familyName": {
+          "_type": "string",
+          "_label": "Mapping of family name"
+        },
+        "email": {
+          "_type": "string",
+          "_label": "Mapping of email"
+        },
+        "groups": {
+          "_type": "string",
+          "_label": "Mapping of groups"
+        },
+        "login": {
+          "_type": "string",
+          "_label": "Mapping of login"
+        }
+      }
+    }
+  },
+  "Users": {
+    "_label": "Users settings",
+    "_description": "To define the default role and the default group a newly created user will have",
+    "defaultGroups": {
+      "_label": "Default groups for new users",
+      "_type": "array",
+      "_enum": [
+        "Administrator",
+        "Default"
+      ]
+    },
+    "defaultRoles": {
+      "_label": "Default roles for new users",
+      "_type": "array",
+      "_enum": [
+        "super",
+        "Anonymous",
+        "Administrator",
+        "IAM Manager",
+        "Resource Manager",
+        "Default User"
+      ]
+    }
+  },
+  "terminateInstance": {
+    "_hidden": true
+  },
+  "usePrivateDns": {
+    "_hidden": true
+  },
+  "Redis": {
+    "_type": "object",
+    "_label": "Redis settings",
+    "_description": "SES9 uses Redis for its Cache Server. For more information, see http://redis.io/",
+    "mode": {
+      "_label": "Redis mode",
+      "_description": "SES9 is compatible with a single Redis instance (default) or with Redis Sentinel (sentinel)",
+      "_type": "string",
+      "_enum": [
+        "default",
+        "sentinel"
+      ]
+    },
+    "default": {
+      "_type": "object",
+      "_label": "Default mode",
+      "host": {
+        "_label": "Redis server hostname",
+        "_type": "string"
+      },
+      "port": {
+        "_label": "Redis server port",
+        "_type": "number"
+      },
+      "password": {
+        "_label": "Redis authentication password",
+        "_type": "string",
+        "_secret": true
+      }
+    },
+    "sentinel": {
+      "_type": "object",
+      "_label": "Sentinel mode",
+      "nodes": {
+        "_label": "Redis Sentinel nodes",
+        "_description": "Sentinel nodes must be in the following format \"redis-sentinel1:port\"",
+        "_type": "array"
+      },
+      "password": {
+        "_label": "Redis server authentication password",
+        "_type": "string",
+        "_secret": true
+      },
+      "sentinelPassword": {
+        "_label": "Redis Sentinel authentication password",
+        "_type": "string",
+        "_secret": true
+      },
+      "name": {
+        "_label": "Redis instances identifier",
+        "_type": "string",
+        "_description": "must be the same value as configured in redis sentinels"
+      }
+    }
+  },
+  "ActivityServer": {
+    "_type": "object",
+    "_label": "Activity Server settings",
+    "_description": "SES9 uses Activity Server for collect data",
+    "host": {
+      "_label": "Activity Server hostname",
+      "_type": "string"
+    },
+    "port": {
+      "_label": "Activity Server port",
+      "_type": "number",
+      "_required": true,
+      "_enum": [
+        8701
+      ]
+    },
+    "https": {
+      "_label": "HTTPS settings",
+      "_type": "object",
+      "activate": {
+        "_type": "boolean",
+        "_label": "Activation of the HTTPS service",
+        "_description": "Expose activity-collector service with protocol HTTPS"
+      },
+      "key": {
+        "_type": "string",
+        "_label": "HTTPS private key"
+      },
+      "cert": {
+        "_type": "string",
+        "_label": "HTTPS certificate"
+      }
+    }
+  },
+  "Log": {
+    "_label": "Log settings",
+    "_description": "Determine how much data should be provided in the logs",
+    "level": {
+      "_type": "string",
+      "_required": true,
+      "_enum": [
+        "debug",
+        "info",
+        "warn",
+        "error"
+      ]
+    },
+    "colorize": {
+      "_type": "boolean",
+      "_hidden": true
+    }
+  },
+  "Database": {
+    "_label": "Database settings",
+    "_readOnly": true,
+    "_description": "The parameters that relate to SES9's database where Users, Profiles, translation projects, etc. are stocked.",
+    "hosts": {
+      "_type": "object"
+    },
+    "replicaSet": {
+      "_label": "Replica set",
+      "_type": "string",
+      "_enum": [
+        "indexers"
+      ]
+    },
+    "poolSize": {
+      "_label": "Pool size",
+      "_type": "number",
+      "_required": true,
+      "_enum": [
+        10
+      ]
+    },
+    "writeConcern": {
+      "w": {
+        "_type": "string"
+      },
+      "j": {
+        "_type": "string"
+      },
+      "wtimeout": {
+        "_type": "number"
+      }
+    },
+    "readConcern": {
+      "level": {
+        "_type": "string"
+      }
+    },
+    "readPreference": {
+      "_type": "string"
+    },
+    "mongoose": {
+      "_type": "object",
+      "debug": {
+        "_type": "string"
+      }
+    },
+    "tls": {
+      "_type": "string"
+    },
+    "tlsInsecure": {
+      "_type": "boolean",
+      "_label": "Validate"
+    },
+    "tlsCAFile": {
+      "_type": "string",
+      "_label": "TLS CA"
+    },
+    "tlsCertificateKeyFile": {
+      "_type": "string",
+      "_label": "TLS Certificates"
+    },
+    "tlsCertificateKeyFilePassword": {
+      "_type": "string",
+      "_label": "TLS Certificate password",
+      "_secret": true
+    },
+    "tlsAllowInvalidCertificates": {
+      "_type": "boolean"
+    },
+    "tlsAllowInvalidHostnames": {
+      "_type": "boolean"
+    },
+    "User": {
+      "_type": "object",
+      "login": {
+        "_type": "string",
+        "_label": "User login"
+      },
+      "password": {
+        "_type": "string",
+        "_label": "User password",
+        "_secret": true
+      }
+    }
+  },
+  "Scaling": {
+    "_label": "Scaling settings",
+    "_type": "object",
+    "_description": "to determine the criteria concerning how to choose which machine to install and run instances on. These parameters help the Administrator regulate the workload",
+    "maxNbInstances": {
+      "_label": "Maximum Number of Instances",
+      "_type": "number",
+      "_enum": [
+        10
+      ]
+    },
+    "maxMemoryPerInstances": {
+      "_label": "Maximum Memory Per Instance",
+      "_type": "number",
+      "_enum": [
+        4000000
+      ]
+    },
+    "defaultNumberInstance": {
+      "_label": "Default number instance",
+      "_description": "When a user create a Profile on a non-running Translation Resource (TR), \"Default number instance\" value will be applied for the TR",
+      "_type": "number",
+      "_enum": [
+        1
+      ]
+    },
+    "loadCpuThreshold": {
+      "_label": "load CPU threshold",
+      "_description": "in %, default to 5.\n The \"CPUusage\" rule will not be applied if computing nodes have not a significant gap (threshold)\n ex: with a load CPU threshold to 5\n * CPU loads NodeA: 10%, NodeB: 12%, rule won't be applied.\n * CPU loads NodeA: 10%, NodeB: 16%, rule will be applied.",
+      "_type": "number",
+      "_enum": [
+        5
+      ]
+    },
+    "rules": {
+      "_label": "Computing Nodes allocation rules",
+      "_type": "array",
+      "_description": "default to rules : 'instances', 'cpuUsage', 'installed', 'freeMemory'\n Rules will distribute instance on nodes with :\n * instances: on each available nodes\n * cpuUsage: the lower CPU usage (see also \"load CPU threshold\")\n * installed: the TR is already installed\n * freeMemory: the lower RAM usage\n\n Recommendations :\n For performances purpose: ['instances', 'cpuUsage', 'installed', 'freeMemory'] (default rules)\n To save disk storage and/or network bandwidth: ['instances', 'installed', 'cpuUsage', 'freeMemory']\n Legacy (to keep stability): ['freeMemory'] ",
+      "_enum": [
+        "instances",
+        "cpuUsage",
+        "installed",
+        "freeMemory"
+      ]
+    },
+    "disk": {
+      "_type": "object",
+      "_label": "Disk Setting",
+      "min": {
+        "_label": "Minimum Disk",
+        "_type": "number",
+        "_description": "in KB",
+        "_enum": [
+          10000000
+        ]
+      }
+    }
+  },
+  "AWS": {
+    "_hidden": true
+  },
+  "Queue": {
+    "_type": "object",
+    "_label": "Queue settings",
+    "_description": "SES9 uses RabbitMQ for its message broker software. For more information, see http://www.rabbitmq.com/",
+    "url": {
+      "_type": "string",
+      "_label": "Queue URL",
+      "_required": true,
+      "_enum": [
+        "amqp://localhost:5672",
+        "amqps://localhost:5671"
+      ]
+    },
+    "management": {
+      "_type": "string",
+      "_label": "Queue URL management",
+      "_enum": [
+        "http://localhost:15672/"
+      ]
+    },
+    "heartbeat": {
+      "_type": "number",
+      "_label": "Heartbeat",
+      "_description": "Connection heartbeat (in s)",
+      "_enum": [
+        30
+      ]
+    },
+    "pollingTimeout": {
+      "_type": "number",
+      "_label": "Polling timeout",
+      "_description": "Maximum asynchronous tasks duration allowed (in ms)",
+      "_enum": [
+        86400000
+      ]
+    },
+    "pollingInterval": {
+      "_type": "object",
+      "_label": "Polling interval",
+      "_description": "Time between two asynchronous jobs status check (transcription/translation) (in ms)",
+      "min": {
+        "_type": "number",
+        "_enum": [
+          500
+        ]
+      },
+      "max": {
+        "_type": "number",
+        "_enum": [
+          30000
+        ]
+      }
+    },
+    "OnEnvironment": {
+      "_hidden": true
+    },
+    "user": {
+      "_type": "string",
+      "_label": "Username"
+    },
+    "pass": {
+      "_type": "string",
+      "_label": "Password",
+      "_secret": true
+    },
+    "expires": {
+      "_type": "number",
+      "_label": "Queue expiration",
+      "_description": "Duration after which the queue is destroyed if not used (in ms)",
+      "_enum": [
+        3600000
+      ]
+    },
+    "autoDelete": {
+      "_type": "boolean",
+      "_label": "Exchange auto-delete",
+      "_description": "Automatically delete exchanges that are not bound to any queue"
+    },
+    "ssl": {
+      "_type": "object",
+      "_label": "TLS settings",
+      "cert": {
+        "_type": "string",
+        "_label": "Certificate"
+      },
+      "key": {
+        "_type": "string",
+        "_label": "Key"
+      },
+      "pfx": {
+        "_type": "string",
+        "_label": "Pfx"
+      },
+      "passphrase": {
+        "_type": "string",
+        "_label": "Passphrase",
+        "_secret": true
+      },
+      "ca": {
+        "_type": "array",
+        "_label": "CAs"
+      }
+    }
+  },
+  "ElasticSearch": {
+    "_type": "object",
+    "_label": "ElasticSearch settings",
+    "url": {
+      "_label": "URL",
+      "_type": "string",
+      "_enum": [
+        "http://localhost:9200"
+      ]
+    }
+  },
+  "FeedbackManager": {
+    "_type": "object",
+    "_label": "Feedback Manager settings",
+    "_description": "You can configure the settings to receive an email each time a feedback is updated.",
+    "sendEmailToSubmitter": {
+      "_label": "Send Notification Email to Submitter",
+      "_type": "boolean"
+    },
+    "from": {
+      "_label": "Sender Email",
+      "_type": "string",
+      "_enum": [
+        "no-reply@systrangroup.com"
+      ]
+    }
+  },
+  "CorpusManager": {
+    "_type": "object",
+    "_label": "Corpus Manager settings",
+    "_description": "Modify the location of the stock of all the Translation Memories.",
+    "url": {
+      "_label": "URL",
+      "_type": "string",
+      "_enum": [
+        "http://localhost:8889"
+      ]
+    },
+    "threshold": {
+      "_label": "threshold",
+      "_type": "number",
+      "_description": "Threshold serve to corpus/match in post-editor",
+      "_enum": [
+        0.7
+      ]
+    }
+  },
+  "TmIndexer": {
+    "_type": "object",
+    "_label": "TM Indexer settings",
+    "url": {
+      "_label": "URL",
+      "_type": "string",
+      "_enum": [
+        "http://localhost:8890"
+      ]
+    }
+  },
+  "Gateway": {
+    "_type": "object",
+    "_label": "Gateway settings",
+    "url": {
+      "_label": "URL",
+      "_type": "string",
+      "_enum": [
+        "http://localhost:8903"
+      ]
+    },
+    "publicUrl": {
+      "_label": "Public URL",
+      "_type": "string",
+      "_enum": [
+        "http://localhost:8903"
+      ]
+    },
+    "RateLimiter": {
+      "_label": "Rate Limiter",
+      "_type": "object",
+      "userId": {
+        "_label": "User Id",
+        "_type": "object",
+        "short": {
+          "_label": "Short",
+          "_type": "number"
+        },
+        "medium": {
+          "_label": "Medium",
+          "_type": "number"
+        },
+        "long": {
+          "_label": "Long",
+          "_type": "number"
+        }
+      },
+      "ip": {
+        "_label": "IP Address",
+        "_type": "object",
+        "short": {
+          "_label": "Short",
+          "_type": "number"
+        },
+        "medium": {
+          "_label": "Medium",
+          "_type": "number"
+        },
+        "long": {
+          "_label": "Long",
+          "_type": "number"
+        }
+      }
+    }
+  },
+  "TranslationResourceStore": {
+    "_type": "object",
+    "_label": "Translation Resource Store settings",
+    "url": {
+      "_label": "URL",
+      "_type": "string",
+      "_enum": [
+        "https://localhost:3445"
+      ]
+    },
+    "delTrSES": {
+      "_label": null,
+      "_type": "boolean",
+      "_description": "Delete the tr from SES worksapce when uploading to TRS"
+    }
+  },
+  "TranslationResourceManagerSES": {
+    "_type": "object",
+    "_label": "Translation Resource Manager settings",
+    "_description": "Some translation tasks on SES9 generate temporary files. 'Translation Resource Manager settings' define the directories where temporary files can be worked on, for example to extract and re-compress a Profile. Temporary files are automatically deleted once they are no longer needed for the task at hand.",
+    "trWorkspace": {
+      "_label": "Path of the workspace directory",
+      "_type": "string",
+      "_enum": [
+        "workspace/translationResource"
+      ]
+    },
+    "default": {
+      "_type": "object",
+      "descriptionCfg": {
+        "_label": "Path of the description.cfg file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/default/description.cfg"
+        ]
+      },
+      "configurationTemplate": {
+        "_label": "Path of the configuration.template file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/default/configuration.template"
+        ]
+      },
+      "run": {
+        "_label": "Path of the run script",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/default/run"
+        ]
+      },
+      "runCfg": {
+        "_label": "Path of the run.cfg file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/default/run.cfg"
+        ]
+      },
+      "postconfig": {
+        "_label": "Path of the postconfig script",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/default/postconfig"
+        ]
+      }
+    },
+    "csli": {
+      "descriptionCfg": {
+        "_label": "Path of the CSLI description.cfg file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/description.cfg"
+        ]
+      },
+      "configurationTemplate": {
+        "_label": "Path of the CSLI configuration.template file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/configuration.template"
+        ]
+      },
+      "run": {
+        "_label": "Path of the CSLI run script",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/run"
+        ]
+      },
+      "runCfg": {
+        "_label": "Path of the CSLI run.cfg file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/run.cfg"
+        ]
+      },
+      "configDefaultOptionsCfg": {
+        "_label": "Path of the CSLI config_default_options.cfg file",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/config_default_options.cfg"
+        ]
+      },
+      "postconfig": {
+        "_label": "Path of the CSLI postconfig script",
+        "_type": "string",
+        "_enum": [
+          "etc/trmSES/csli/postconfig"
+        ]
+      }
+    },
+    "csliLanguagePairs": {
+      "_type": "array",
+      "_label": "CSLI Language Pairs",
+      "_enum": [
+        "jako",
+        "koja",
+        "kozh",
+        "zhko",
+        "enko",
+        "koen"
+      ]
+    }
+  },
+  "EngineManager": {
+    "_type": "object",
+    "_label": "Engine Manager settings",
+    "engineWorkspace": {
+      "_label": "Path of the workspace directory",
+      "_type": "string",
+      "_enum": [
+        "workspace/translationResource"
+      ]
+    },
+    "optionConverter": {
+      "_label": "Path of the optionConverter.xml file",
+      "_type": "string",
+      "_enum": [
+        "etc/engine/optionConverter.xml"
+      ]
+    },
+    "descriptionCfg": {
+      "_label": "Path of the description.cfg file",
+      "_type": "string",
+      "_enum": [
+        "etc/engine/description.cfg"
+      ]
+    },
+    "configurationTemplate": {
+      "_label": "Path of the configuration.template file",
+      "_type": "string",
+      "_enum": [
+        "etc/engine/configuration.template"
+      ]
+    },
+    "run": {
+      "_label": "Path of the run script",
+      "_type": "string",
+      "_enum": [
+        "etc/engine/run"
+      ]
+    },
+    "runCfg": {
+      "_label": "Path of the run.cfg file",
+      "_type": "string",
+      "_enum": [
+        "etc/engine/run.cfg"
+      ]
+    }
+  },
+  "Poller": {
+    "_type": "object",
+    "_label": "Poller settings",
+    "_description": "to set the parameters of the Poller, the component that monitors the status of all components of the system and is alerted in the event of a bug.",
+    "pollingInterval": {
+      "_label": "Polling Interval",
+      "_type": "number",
+      "_required": true,
+      "_enum": [
+        5000
+      ]
+    },
+    "timeout": {
+      "_label": "Timeout",
+      "_type": "number",
+      "_required": true,
+      "_enum": [
+        5000
+      ]
+    }
+  },
+  "UpgradeTR": {
+    "_type": "object",
+    "_label": "Upgrade TR settings",
+    "pollingTrTimeout": {
+      "_label": "Polling TR Timeout",
+      "_description": "60 * 60 * 1000 : 60 minutes",
+      "_type": "number",
+      "_enum": [
+        3600000
+      ]
+    }
+  },
+  "FileTranslation": {
+    "_type": "object",
+    "_label": "File Translation settings",
+    "dispatcherApi": {
+      "_type": "string",
+      "_label": "Dispatcher API",
+      "_description": "For better performances, we recommend async mode for Dispatcher API",
+      "_enum": [
+        "async",
+        "sync"
+      ]
+    },
+    "maximumNbCharsPerFile": {
+      "_type": "number",
+      "_label": "Maximum character allowed per files"
+    },
+    "timeToLive": {
+      "_label": "Time To Live",
+      "_description": "in seconds",
+      "_type": "number",
+      "_enum": [
+        259200
+      ]
+    },
+    "downloadTimeout": {
+      "_label": "Download Timeout",
+      "_description": "in seconds",
+      "_type": "number",
+      "_enum": [
+        300
+      ]
+    },
+    "backendTimeout": {
+      "_label": "Backend Timeout",
+      "_description": "Timeout for request with the Translation backend (in milliseconds)",
+      "_type": "number",
+      "_enum": [
+        30000
+      ]
+    },
+    "enableAnonymousUser": {
+      "_label": "Enable Anonymous User by Session",
+      "_type": "boolean",
+      "_description": "Activate list of file translation for anonymous user by session"
+    },
+    "expectedOutputPdfFormat": {
+      "_hidden": true
+    },
+    "translationFilePerUserLimit": {
+      "_type": "object",
+      "_label": "File Translation Cache",
+      "_description": "Options to limit translation processing of files at the same time",
+      "enable": {
+        "_type": "boolean",
+        "_label": "Deactivate redis cache on file translation",
+        "_description": "redis 6.2 is needed to use this feature"
+      },
+      "number": {
+        "_type": "number",
+        "_label": "Number of files processed by user at the same time (0 to disable limits)",
+        "_description": "Number of files processed by user at the same time (0 to disable limits)"
+      },
+      "fileLockTTL": {
+        "_type": "number",
+        "_label": "time in seconds to expiration of lock"
+      },
+      "checkLockTTL": {
+        "_type": "number",
+        "_label": "time in seconds to define expiration of file in process of translation file",
+        "_description": "limit the number of file that could be processed at the same time by user"
+      }
+    },
+    "RetryTasks": {
+      "_type": "object",
+      "_label": "Retry failed tasks",
+      "maxRetry": {
+        "_type": "number",
+        "_label": "Number of retry",
+        "_description": "Failed tasks will be retried",
+        "_enum": [
+          {
+            "label": "disabled",
+            "value": 0
+          },
+          3
+        ]
+      },
+      "minDelay": {
+        "_type": "number",
+        "_label": "Min delay before next retry",
+        "_description": "a delay will be generated randomly between minDelay & maxDelay (in ms)",
+        "_enum": [
+          3000
+        ]
+      },
+      "maxDelay": {
+        "_type": "number",
+        "_label": "Max delay before next retry",
+        "_description": "a delay will be generated randomly between minDelay & maxDelay (in ms)",
+        "_enum": [
+          30000
+        ]
+      }
+    },
+    "Notification": {
+      "_type": "object",
+      "_label": "Notification",
+      "threshold": {
+        "_type": "array",
+        "_label": "Threshold consumption percent before getting a warning notification",
+        "_enum": [
+          100
+        ]
+      }
+    }
+  },
+  "Dictionary": {
+    "_type": "object",
+    "_label": "Dictionary settings",
+    "_description": "Modify the path to all components relating to Dictionaries. ",
+    "SDictLookup": {
+      "_label": "SDictLookup settings",
+      "url": {
+        "_label": "URL",
+        "_type": "string",
+        "_enum": [
+          "http://localhost:8891"
+        ]
+      }
+    },
+    "GDict": {
+      "_type": "object",
+      "_label": "GDict settings",
+      "url": {
+        "_label": "URL",
+        "_type": "string",
+        "_enum": [
+          "http://localhost:8892"
+        ]
+      },
+      "Database": {
+        "_type": "object",
+        "user": {
+          "_type": "string"
+        },
+        "password": {
+          "_type": "string",
+          "_secret": true
+        },
+        "host": {
+          "_type": "string"
+        },
+        "database": {
+          "_type": "string",
+          "_enum": [
+            "gdict_common"
+          ]
+        }
+      }
+    },
+    "DctIndexer": {
+      "_type": "object",
+      "_label": "DCT Indexer settings",
+      "url": {
+        "_label": "URL",
+        "_type": "string",
+        "_enum": [
+          "http://localhost:8893"
+        ]
+      }
+    }
+  },
+  "Security": {
+    "_type": "object",
+    "_label": "Security settings",
+    "Cookies": {
+      "_type": "object",
+      "_label": "Cookies settings",
+      "domain": {
+        "_label": "Domain",
+        "_type": "string"
+      },
+      "maxAge": {
+        "_type": "number",
+        "_label": "Max-Age",
+        "_description": "Session timeout. By default, a cookie will be stored for 20 min (20*60*1000 = 1200000)\\n set 28800000 for 8 hours (8*60*60*1000) or 1200000 for 20 min (20*60*1000)"
+      }
+    },
+    "Session": {
+      "_type": "object",
+      "_label": "Session",
+      "_description": "Session Management",
+      "interval": {
+        "_type": "number",
+        "_label": "interval",
+        "_description": "With policy \"silent\". The session will be checked every interval (in ms)",
+        "_enum": [
+          60000
+        ]
+      },
+      "margin": {
+        "_type": "number",
+        "_label": "margin",
+        "_description": "With policy \"silent\". The session will be renewed before the expiration minus a margin time (in ms)",
+        "_enum": [
+          120000
+        ]
+      },
+      "Policy": {
+        "_type": "object",
+        "inactivity": {
+          "_type": "string",
+          "_label": "inactivity",
+          "_description": "Policies\n * silent: Inactivity Timeout. The session will be expires if no request have been made after maxAge\n ** NOTE: The session will be silently renewed if the browser is still active. If not an error message will be displayed (session expired)\n * disabled: Absolute Timeout. The session will be expired after maxAge value\n ",
+          "_enum": [
+            "disabled",
+            "silent"
+          ]
+        }
+      }
+    },
+    "OIDC": {
+      "_type": "object",
+      "_label": "OIDC settings",
+      "refreshTokenTTL": {
+        "_label": "refreshTokenTTL",
+        "_type": "number",
+        "_description": "Refresh token TTL in seconds, after this period the session will expire. (14 days by default)"
+      },
+      "accessTokenTTL": {
+        "_label": "accessTokenTTL",
+        "_type": "number",
+        "_description": "Access token TTL in seconds, after this period the session will expire. (1 hour by default)"
+      },
+      "clientCredentialsTTL": {
+        "_label": "clientCredentialsTTL",
+        "_type": "number",
+        "_description": "Client credentials token TTL in seconds, after this period the session will expire. (10 minutes by default)"
+      }
+    },
+    "jadeCache": {
+      "_type": "boolean",
+      "_label": "Activation of the cache setting for rendering"
+    },
+    "noCache": {
+      "_type": "boolean",
+      "_label": "Deactivation of the cache setting on the HTTP response"
+    },
+    "withRememberMe": {
+      "_type": "boolean",
+      "_label": "Activation of the \"Remember Me\" mechanism",
+      "_description": "By default, SES9 remembers a user's identity between sessions so they do not have to log in each time; set to 'false' to deactivate"
+    },
+    "trustProxy": {
+      "_type": "boolean",
+      "_label": "Activation of the \"Trust Proxy\" mechanism",
+      "_description": "Set to true to activate a proxy between the client and the server"
+    },
+    "enforcePasswordHistory": {
+      "_type": "number",
+      "_label": "Activation of the \"Enforce Password History\" mechanism",
+      "_description": "Set the number of times before a password can be reused (24 by default)."
+    },
+    "withResetPassword": {
+      "_type": "boolean",
+      "_label": "Activation of the \"Reset Password\" mechanism"
+    },
+    "RateLimit": {
+      "_type": "object",
+      "_label": "Limit request on url",
+      "block": {
+        "_type": "object",
+        "_label": "block call resquest for x duration",
+        "urls": {
+          "_type": "array",
+          "_enum": [
+            "/resourcesManagement*",
+            "/translationTools*",
+            "/feedbacks*",
+            "/profilesManagement",
+            "/advancedConfiguration*",
+            "/notifications",
+            "/administration*",
+            "/users*",
+            "/groups*"
+          ]
+        },
+        "duration": {
+          "_type": "number",
+          "_description": "Time in milliseconds that request will be blocked.(ex: 300000 ms = 5 * 60 * 1000 = 5 min)"
+        },
+        "maxCall": {
+          "_type": "number"
+        }
+      },
+      "slow": {
+        "_type": "object",
+        "_label": "slow call request x time before being blocked",
+        "urls": {
+          "_type": "array",
+          "_enum": [
+            "/resourcesManagement*",
+            "/translationTools*",
+            "/feedbacks*",
+            "/profilesManagement",
+            "/advancedConfiguration*",
+            "/notifications",
+            "/administration*",
+            "/users*",
+            "/groups*"
+          ]
+        },
+        "duration": {
+          "_type": "number",
+          "_description": "Time in milliseconds that request will be blocked.(ex: 300000 ms = 5 * 60 * 1000 = 5 min)"
+        },
+        "maxCallBeforeSlow": {
+          "_type": "number"
+        },
+        "maxCallBeforeBlock": {
+          "_type": "number"
+        }
+      }
+    },
+    "ResetPassword": {
+      "_type": "object",
+      "_label": "Reset Password settings",
+      "from": {
+        "_type": "string",
+        "_label": "From field in the email sent to reset a password"
+      },
+      "timeToLive": {
+        "_type": "number",
+        "_label": "Validity period of the link sent by email to reset a password",
+        "_enum": [
+          1200
+        ]
+      }
+    },
+    "BruteForce": {
+      "_type": "object",
+      "_label": "Brute force attack prevention settings",
+      "version": {
+        "_hidden": true
+      },
+      "freeRetries": {
+        "_label": "Free retries",
+        "_type": "number",
+        "_description": "Two retry allowed",
+        "_enum": [
+          2
+        ]
+      },
+      "minWait": {
+        "_label": "Minimum ban time",
+        "_type": "number",
+        "_description": "Minimum amount of time in milliseconds that connection will be blocked.(ex: 500 ms = 0.5 * 60 * 1000)",
+        "_enum": [
+          500
+        ]
+      },
+      "maxWait": {
+        "_label": "Maximum ban time",
+        "_type": "number",
+        "_description": "Maximum amount of time in milliseconds that connection will be blocked. (ex: 15 min = 15 * 60 * 1000)",
+        "_enum": [
+          900000
+        ]
+      },
+      "lifetime": {
+        "_type": "number"
+      }
+    },
+    "Password": {
+      "_label": "Password security settings",
+      "_type": "object",
+      "policy": {
+        "_type": "string",
+        "_label": "policy level",
+        "_value": "Medium",
+        "_enum": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    "TranslateBox": {
+      "_type": "object",
+      "limitCharacters": {
+        "_type": "number",
+        "_label": "Limit character size",
+        "_description": "set 0 to unlimited characters or set an integer > 0"
+      },
+      "timeout": {
+        "_type": "number",
+        "_label": "Timeout request in translate box",
+        "_description": "In case the server does not reply, the request may run indefinitely. To prevent this, you can set a timeout. The unit is in milliseconds. When the timeout has been reached, the following error message will be displayed: Error! request timeout. (ex: 120000 = 2*60*1000 2min)"
+      },
+      "speechRecognition": {
+        "_type": "boolean",
+        "_label": "Activation of the voice recognition",
+        "_description": "Use the browser API speechRecognition"
+      },
+      "exposeTranslateFree": {
+        "_type": "boolean",
+        "_label": "Expose Anonymous Translate Box",
+        "_description": "Text Translation for Anonymous users (no authenticated)"
+      },
+      "TranslateBoxV2": {
+        "_type": "boolean",
+        "_label": "Translate box v2",
+        "_description": "the new translate box is on beta and use translate/json api"
+      },
+      "cache": {
+        "_type": "boolean",
+        "_label": "Enable translation cache",
+        "_description": "Translate box using cache system"
+      },
+      "autodetectionMode": {
+        "_name": "autodetectionMode",
+        "_in": "query",
+        "_description": "When source is not provided (auto-detect)\nIf \"unique\", detect a language for all the text of the input table and translate with it\nIf \"multi\", the detected language will depend on the element of inputs array\n",
+        "_enum": [
+          "single",
+          "multi"
+        ],
+        "_default": "single",
+        "_type": "string"
+      },
+      "RateLimiting": {
+        "_type": "object",
+        "_label": "Rate Limiting",
+        "Requests": {
+          "_type": "object",
+          "_description": "To ensure the quality of service. You could restrict the number of requests by user-sessions. Requests counter will be reset until the given time",
+          "number": {
+            "_type": "number",
+            "_label": "Number of request allowed in translate box",
+            "_description": "Number of requests allowed by user-sessions."
+          },
+          "time": {
+            "_type": "number",
+            "_label": "Time",
+            "_description": "Time allowed by user-sessions. (in ms)"
+          }
+        },
+        "Chars": {
+          "_type": "object",
+          "_description": "To ensure the quality of service. You could restrict the number of chars by user-sessions. Requests counter will be reset until the given time",
+          "number": {
+            "_type": "number",
+            "_label": "Number of chars allowed in translate box",
+            "_description": "Number of requests allowed by user-sessions."
+          },
+          "time": {
+            "_type": "number",
+            "_label": "Time",
+            "_description": "Time allowed by user-sessions. (in ms)"
+          }
+        }
+      }
+    },
+    "Concordance": {
+      "_type": "object",
+      "limitCharacters": {
+        "_type": "number",
+        "_label": "Limit character size",
+        "_description": "Limits the number of characters to search in the Concordance search box. By default, the number of characters is limited to 60. ",
+        "_enum": [
+          0,
+          60
+        ]
+      }
+    },
+    "FileUpload": {
+      "_type": "object",
+      "_label": "File upload settings",
+      "tmpDir": {
+        "_type": "string",
+        "_label": "Directory for temporary files",
+        "_description": "use OS default directory for temp files."
+      },
+      "sizeLimit": {
+        "_type": "number",
+        "_label": "File size limit",
+        "_description": "ex: 52428800 = 50M in bytes: 50*1024*1024"
+      },
+      "maxUploadFileTranslationNumber": {
+        "_type": "number",
+        "_label": "Number of files accepted to be upload at the same time",
+        "_description": "limit the number of file that could be uploaded at the same time"
+      },
+      "FileTranslationType": {
+        "_description": "Size limit file by categories",
+        "_label": "File translation size type",
+        "_type": "object",
+        "Small": {
+          "_hidden": false,
+          "_type": "object",
+          "extensions": {
+            "_label": "Extensions",
+            "_type": "array",
+            "_enum": [
+              "txt"
+            ]
+          },
+          "size": {
+            "_label": "Size limit (mo)",
+            "_type": "number"
+          }
+        },
+        "Medium": {
+          "_hidden": false,
+          "_type": "object",
+          "extensions": {
+            "_label": "Extensions",
+            "_type": "array"
+          },
+          "size": {
+            "_label": "Size limit (mo)",
+            "_type": "number"
+          }
+        },
+        "Large": {
+          "_type": "object",
+          "_hidden": false,
+          "extensions": {
+            "_label": "Extensions",
+            "_type": "array"
+          },
+          "size": {
+            "_label": "Size limit (mo)",
+            "_type": "number"
+          }
+        }
+      },
+      "WhiteList": {
+        "_type": "object",
+        "_label": "Extension white list",
+        "corpus": {
+          "_type": "array",
+          "_label": "Corpus & Translation memory",
+          "_enum": [
+            "tmx",
+            "txt"
+          ]
+        },
+        "profile": {
+          "_hidden": true
+        },
+        "dictionary": {
+          "_type": "array",
+          "_label": "Dictionary",
+          "_enum": [
+            "dic",
+            "dct",
+            "xml",
+            "tmx",
+            "tbx",
+            "xliff",
+            "xlf",
+            "txt",
+            "xls",
+            "json"
+          ]
+        },
+        "trc": {
+          "_type": "array",
+          "_label": "Translation Choice",
+          "_enum": [
+            "trc"
+          ]
+        },
+        "sts": {
+          "_type": "array",
+          "_label": "Stylesheets",
+          "_enum": [
+            "xslt",
+            "xsl",
+            "xsd",
+            "dtd",
+            "xml"
+          ]
+        },
+        "entityRule": {
+          "_type": "array",
+          "_label": "Entity Rules",
+          "_enum": [
+            "rules"
+          ]
+        },
+        "database": {
+          "_hidden": true
+        }
+      }
+    },
+    "Advanced": {
+      "_type": "object",
+      "enabled": {
+        "_type": "boolean"
+      },
+      "Csp": {
+        "_type": "object",
+        "disabled": {
+          "_type": "boolean"
+        },
+        "frameSrc": {
+          "_type": "array"
+        },
+        "frameAncestors": {
+          "_type": "array"
+        },
+        "defaultSrc": {
+          "_type": "array"
+        },
+        "baseUri": {
+          "_type": "array"
+        },
+        "fontSrc": {
+          "_type": "array"
+        },
+        "imgSrc": {
+          "_type": "array"
+        },
+        "objectSrc": {
+          "_type": "array"
+        },
+        "scriptSrc": {
+          "_type": "array"
+        },
+        "styleSrc": {
+          "_type": "array"
+        }
+      },
+      "FeaturePolicy": {
+        "_type": "object",
+        "disabled": {
+          "_type": "boolean"
+        }
+      },
+      "Frameguard": {
+        "_type": "object",
+        "disabled": {
+          "_type": "boolean"
+        }
+      },
+      "Hsts": {
+        "_type": "object",
+        "disabled": {
+          "_type": "boolean"
+        }
+      },
+      "XssFilter": {
+        "_type": "object",
+        "disabled": {
+          "_type": "boolean"
+        }
+      }
+    }
+  },
+  "localization": {
+    "_type": "object",
+    "_label": "Localization settings",
+    "_description": "choose which supported languages to display in SES9 and which to hide",
+    "supported": {
+      "_hidden": true
+    },
+    "provided": {
+      "_type": "array",
+      "_label": "Languages",
+      "_enum": [
+        "en",
+        "fr",
+        "ko",
+        "de",
+        "ja",
+        "ar",
+        "es",
+        "pt",
+        "zh"
+      ]
+    }
+  },
+  "Email": {
+    "_label": "Email settings",
+    "_type": "object",
+    "smtp": {
+      "_type": "string",
+      "_description": "embedded or external, for embedded, the port 25 must be opened",
+      "_enum": [
+        "embedded",
+        "external"
+      ]
+    },
+    "options": {
+      "_type": "object",
+      "_label": "Options",
+      "_description": "Options for \"external\" mode",
+      "host": {
+        "_type": "string",
+        "_description": "is the hostname or IP address to connect to (defaults to \"localhost\")"
+      },
+      "port": {
+        "_type": "number",
+        "_description": "is the port to connect to (defaults to 587 if is secure is false or 465 if true)",
+        "_enum": [
+          587,
+          465
+        ]
+      },
+      "secure": {
+        "_type": "boolean",
+        "_description": "if true the connection will use TLS when connecting to server. If false (the default) then TLS is used if server supports the STARTTLS extension. In most cases set this value to true if you are connecting to port 465. For port 587 or 25 keep it false"
+      },
+      "auth": {
+        "_type": "object",
+        "_label": "Authentication",
+        "_description": null,
+        "user": {
+          "_type": "string",
+          "_description": "username"
+        },
+        "pass": {
+          "_type": "string",
+          "_secret": true,
+          "_label": "password",
+          "_description": "the password for the user if normal login is used"
+        },
+        "type": {
+          "_description": "defaults to \"login\", other option is \"oauth2\".",
+          "_enum": [
+            "login",
+            "oauth2"
+          ]
+        },
+        "oauth2": {
+          "_type": "object",
+          "_description": "see https://nodemailer.com/smtp/oauth2/",
+          "clientId": {
+            "_type": "string"
+          },
+          "clientSecret": {
+            "_type": "string"
+          },
+          "refreshToken": {
+            "_type": "string"
+          },
+          "expires": {
+            "_type": "string"
+          },
+          "accessUrl": {
+            "_type": "string"
+          }
+        }
+      },
+      "tlsOptions": {
+        "_label": "Transport Layer Security",
+        "_type": "object",
+        "servername": {
+          "_type": "string",
+          "_description": "is optional hostname for TLS validation if host was set to an IP address"
+        },
+        "ignoreTLS": {
+          "_label": "Ignore TLS",
+          "_type": "boolean",
+          "_description": "if this is true and secure is false then TLS is not used even if the server supports STARTTLS extension"
+        },
+        "requireTLS": {
+          "_label": "Require TLS",
+          "_type": "boolean",
+          "_description": "if this is true and secure is false then Nodemailer tries to use STARTTLS even if the server does not advertise support for it. If the connection can not be encrypted then message is not sent"
+        },
+        "tls": {
+          "_type": "object",
+          "_label": "Advanced",
+          "_description": "Advanced TLS options",
+          "rejectUnauthorized": {
+            "_type": "boolean",
+            "_description": "Reject self-signed certificates"
+          }
+        }
+      },
+      "advancedOptions": {
+        "_type": "object",
+        "_label": "Advanced Options",
+        "proxy": {
+          "_type": "string",
+          "_label": "proxy URL (optional)",
+          "_description": "use HTTP proxy for connecting to SMTP servers. see https://nodemailer.com/smtp/proxies/"
+        },
+        "service": {
+          "_type": "string",
+          "_label": "service (optional)",
+          "_description": "WELL-KNOWN SERVICES"
+        },
+        "pool": {
+          "_type": "boolean",
+          "_description": "If pooling is used then Nodemailer keeps a fixed amount of connections open and sends the next message once a connection becomes available. It is mostly useful when you have a large number of messages that you want to send in batches or your provider allows you to only use a small amount of parallel connections."
+        },
+        "maxConnection": {
+          "_type": "number",
+          "_description": "The count of maximum simultaneous connections to make against the SMTP server (defaults to 5)"
+        },
+        "maxMessages": {
+          "_type": "number",
+          "_description": "limits the message count to be sent using a single connection (defaults to 100). After maxMessages is reached the connection is dropped and a new one is created for the following messages"
+        },
+        "name": {
+          "_type": "string",
+          "_description": "optional hostname of the client, used for identifying to the server, defaults to hostname of the machine"
+        },
+        "localAddress": {
+          "_label": "Local addresss",
+          "_type": "string"
+        },
+        "connectionTimeout": {
+          "_label": "Connection timeout",
+          "_type": "string"
+        },
+        "greetingTimeout": {
+          "_label": "Greeting timeout",
+          "_type": "string"
+        },
+        "socketTimeout": {
+          "_label": "Socket timeout",
+          "_type": "string"
+        },
+        "authMethod": {
+          "_label": "Authentication method",
+          "_type": "string",
+          "_description": "defines preferred authentication method, defaults to \"PLAIN\"",
+          "_enum": [
+            "PLAIN"
+          ]
+        }
+      }
+    }
+  },
+  "Theme": {
+    "_type": "object",
+    "css": {
+      "_type": "string",
+      "_description": "A custom css can be defined in enterprise-server/public/stylesheets/custom.css"
+    }
+  },
+  "SpeechRecognition": {
+    "_type": "object",
+    "_label": "Speech Recognition settings",
+    "url": {
+      "_hidden": true
+    },
+    "user": {
+      "_hidden": true
+    },
+    "pass": {
+      "_hidden": true
+    },
+    "format": {
+      "_hidden": true
+    },
+    "language": {
+      "_hidden": true
+    },
+    "provider": {
+      "_type": "string",
+      "_label": "Speech provider",
+      "_required": true,
+      "_enum": [
+        "Vocapia",
+        "Nuance",
+        "Apptek",
+        "WhisperASR"
+      ]
+    },
+    "Nuance": {
+      "_type": "object",
+      "url": {
+        "_type": "string"
+      },
+      "format": {
+        "_type": "array",
+        "_enum": [
+          "wav"
+        ]
+      },
+      "operatingMode": {
+        "_label": "Operating mode",
+        "_type": "string",
+        "_enum": [
+          "accurate",
+          "fast",
+          "warp"
+        ]
+      },
+      "language": {
+        "en": {
+          "_type": "string",
+          "_enum": [
+            "eng-USA",
+            "eng-GBR",
+            "eng-AUS",
+            "eng-CAN"
+          ]
+        },
+        "ru": {
+          "_type": "string",
+          "_enum": [
+            "rus-RUS"
+          ]
+        },
+        "fr": {
+          "_type": "string",
+          "_enum": [
+            "fra-XWW",
+            "fra-FRA",
+            "fra-CAN"
+          ]
+        },
+        "de": {
+          "_type": "string",
+          "_enum": [
+            "deu-DEU"
+          ]
+        },
+        "pt": {
+          "_type": "string",
+          "_enum": [
+            "por-PRT"
+          ]
+        },
+        "it": {
+          "_type": "string",
+          "_enum": [
+            "ita-ITA"
+          ]
+        },
+        "es": {
+          "_type": "string",
+          "_enum": [
+            "spa-XWW",
+            "spa-CHL",
+            "spa-COL",
+            "spa-ESP",
+            "spa-MEX",
+            "spa-USA"
+          ]
+        },
+        "ca": {
+          "_type": "string",
+          "_enum": [
+            "cat-ESP"
+          ]
+        },
+        "ko": {
+          "_type": "string",
+          "_enum": [
+            "kor-KOR"
+          ]
+        },
+        "ar": {
+          "_type": "string",
+          "_enum": [
+            "ara-SAU",
+            "ara-XWW"
+          ]
+        },
+        "nl": {
+          "_type": "string",
+          "_enum": [
+            "nld-NLD"
+          ]
+        },
+        "tr": {
+          "_type": "string",
+          "_enum": [
+            "tur-TUR"
+          ]
+        },
+        "zh": {
+          "_type": "string",
+          "_enum": [
+            "cmn-CHN",
+            "cmn-TWN",
+            "wuu-CHN",
+            "yue-CHN"
+          ]
+        },
+        "ja": {
+          "_type": "string",
+          "_enum": [
+            "jpn-JPN"
+          ]
+        },
+        "he": {
+          "_type": "string",
+          "_enum": [
+            "heb-ISR"
+          ]
+        },
+        "hi": {
+          "_type": "string",
+          "_enum": [
+            "hin-IND"
+          ]
+        },
+        "hu": {
+          "_type": "string",
+          "_enum": [
+            "hun-HUN"
+          ]
+        }
+      }
+    },
+    "Vocapia": {
+      "_type": "object",
+      "url": {
+        "_type": "string"
+      },
+      "user": {
+        "_type": "string"
+      },
+      "pass": {
+        "_type": "string",
+        "_secret": true
+      },
+      "format": {
+        "_type": "array",
+        "_enum": [
+          "mp3",
+          "wav",
+          "m4a"
+        ]
+      },
+      "language": {
+        "en": {
+          "_type": "string",
+          "_label": "English",
+          "_enum": [
+            "eng",
+            "eng-usa"
+          ]
+        },
+        "ru": {
+          "_type": "string",
+          "_label": "Russian",
+          "_enum": [
+            "rus"
+          ]
+        },
+        "fr": {
+          "_type": "string",
+          "_label": "French",
+          "_enum": [
+            "fre"
+          ]
+        },
+        "de": {
+          "_type": "string",
+          "_label": "German",
+          "_enum": [
+            "ger"
+          ]
+        },
+        "pt": {
+          "_type": "string",
+          "_label": "Portuguese",
+          "_enum": [
+            "por"
+          ]
+        },
+        "it": {
+          "_type": "string",
+          "_label": "Italian",
+          "_enum": [
+            "ita"
+          ]
+        },
+        "es": {
+          "_type": "string",
+          "_label": "Spanish",
+          "_enum": [
+            "spa"
+          ]
+        },
+        "ko": {
+          "_type": "string",
+          "_label": "Korean",
+          "_enum": [
+            "kor"
+          ]
+        },
+        "ar": {
+          "_type": "string",
+          "_label": "Arabic",
+          "_enum": [
+            "ara"
+          ]
+        },
+        "nl": {
+          "_type": "string",
+          "_label": "Dutch",
+          "_enum": [
+            "dut"
+          ]
+        },
+        "fi": {
+          "_type": "string",
+          "_label": "Finnish",
+          "_enum": [
+            "fin"
+          ]
+        },
+        "el": {
+          "_type": "string",
+          "_label": "Greek",
+          "_enum": [
+            "gre"
+          ]
+        },
+        "lt": {
+          "_type": "string",
+          "_label": "Lithuanian",
+          "_enum": [
+            "lit"
+          ]
+        },
+        "pl": {
+          "_type": "string",
+          "_label": "Polish",
+          "_enum": [
+            "pol"
+          ]
+        },
+        "ro": {
+          "_type": "string",
+          "_label": "Romanian",
+          "_enum": [
+            "rum"
+          ]
+        },
+        "tr": {
+          "_type": "string",
+          "_label": "Turkish",
+          "_enum": [
+            "tur"
+          ]
+        },
+        "zh": {
+          "_type": "string",
+          "_label": "Chinese",
+          "_enum": [
+            "chi"
+          ]
+        },
+        "zt": {
+          "_type": "string",
+          "_label": "Chinese (traditional)",
+          "_enum": [
+            "chi"
+          ]
+        },
+        "hi": {
+          "_type": "string",
+          "_label": "Hindi",
+          "_enum": [
+            "hin"
+          ]
+        },
+        "hu": {
+          "_type": "string",
+          "_label": "Hungarian",
+          "_enum": [
+            "hun"
+          ]
+        },
+        "lv": {
+          "_type": "string",
+          "_label": "Latvian",
+          "_enum": [
+            "lav"
+          ]
+        },
+        "fa": {
+          "_type": "string",
+          "_label": "Persian",
+          "_enum": [
+            "per"
+          ]
+        },
+        "sw": {
+          "_type": "string",
+          "_label": "Swahili",
+          "_enum": [
+            "swa"
+          ]
+        },
+        "ur": {
+          "_type": "string",
+          "_label": "Urdu",
+          "_enum": [
+            "urd"
+          ]
+        },
+        "he": {
+          "_type": "string",
+          "_label": "Hebrew",
+          "_enum": [
+            "heb"
+          ]
+        },
+        "ps": {
+          "_type": "string",
+          "_label": "Pashto",
+          "_enum": [
+            "pus"
+          ]
+        },
+        "uk": {
+          "_type": "string",
+          "_label": "Ukrainian",
+          "_enum": [
+            "ukr"
+          ]
+        },
+        "sv": {
+          "_type": "string",
+          "_label": "Swedish",
+          "_enum": [
+            "swe"
+          ]
+        }
+      }
+    },
+    "Apptek": {
+      "_type": "object",
+      "url": {
+        "_type": "string"
+      },
+      "token": {
+        "_type": "string",
+        "_secret": true
+      },
+      "format": {
+        "_type": "array",
+        "_enum": [
+          "mp3",
+          "wav",
+          "m4a",
+          "ogg",
+          "flac"
+        ]
+      },
+      "language": {
+        "ar": {
+          "_type": "string",
+          "_label": "Arabic",
+          "_enum": [
+            "ar-ae.bcn",
+            "ar-msa.bcn",
+            "ar-eg.bcn"
+          ]
+        },
+        "pl": {
+          "_type": "string",
+          "_label": "Polish",
+          "_enum": [
+            "pl-pl.bcn"
+          ]
+        },
+        "en": {
+          "_type": "string",
+          "_label": "English",
+          "_enum": [
+            "en-ca.bcn",
+            "en-gb-wls.bcn",
+            "en-au.bcn",
+            "en-gb-sct.bcn",
+            "en-gb.bcn",
+            "en-sg.bcn",
+            "en-us.bcn",
+            "en-ie.bcn",
+            "en-in.bcn"
+          ]
+        },
+        "et": {
+          "_type": "string",
+          "_label": "Estonian",
+          "_enum": [
+            "et-ee.bcn"
+          ]
+        },
+        "uk": {
+          "_type": "string",
+          "_label": "Ukrainian",
+          "_enum": [
+            "uk-ua.bcn"
+          ]
+        },
+        "fr": {
+          "_type": "string",
+          "_label": "French",
+          "_enum": [
+            "fr-fr.bcn"
+          ]
+        },
+        "hi": {
+          "_type": "string",
+          "_label": "Hindi",
+          "_enum": [
+            "hi-in.bcn"
+          ]
+        },
+        "de": {
+          "_type": "string",
+          "_label": "German",
+          "_enum": [
+            "de-de.bcn",
+            "de-ch.bcn"
+          ]
+        },
+        "zt": {
+          "_type": "string",
+          "_label": "Chinese (traditional)",
+          "_enum": [
+            "zh-tw.bcn"
+          ]
+        },
+        "ja": {
+          "_type": "string",
+          "_label": "Japanese",
+          "_enum": [
+            "ja-jp.bcn"
+          ]
+        },
+        "ro": {
+          "_type": "string",
+          "_label": "Romanian",
+          "_enum": [
+            "ro-ro.bcn"
+          ]
+        },
+        "tr": {
+          "_type": "string",
+          "_label": "Turkish",
+          "_enum": [
+            "tr-tr.bcn"
+          ]
+        },
+        "pt": {
+          "_type": "string",
+          "_label": "Portuguese",
+          "_enum": [
+            "pt-br.bcn"
+          ]
+        },
+        "bg": {
+          "_type": "string",
+          "_label": "Bulgarian",
+          "_enum": [
+            "bg-bg.bcn"
+          ]
+        },
+        "hu": {
+          "_type": "string",
+          "_label": "Hungarian",
+          "_enum": [
+            "hu-hu.bcn"
+          ]
+        },
+        "es": {
+          "_type": "string",
+          "_label": "Spanish",
+          "_enum": [
+            "es-us.bcn"
+          ]
+        },
+        "th": {
+          "_type": "string",
+          "_label": "Thai",
+          "_enum": [
+            "th-th.bcn"
+          ]
+        },
+        "id": {
+          "_type": "string",
+          "_label": "Indonesian",
+          "_enum": [
+            "id-id.bcn"
+          ]
+        },
+        "nl": {
+          "_type": "string",
+          "_label": "Dutch",
+          "_enum": [
+            "nl-nl.bcn"
+          ]
+        },
+        "el": {
+          "_type": "string",
+          "_label": "Greek",
+          "_enum": [
+            "el-gr.bcn"
+          ]
+        },
+        "fa": {
+          "_type": "string",
+          "_label": "Persian",
+          "_enum": [
+            "fa-ir.bcn"
+          ]
+        },
+        "ko": {
+          "_type": "string",
+          "_label": "Korean",
+          "_enum": [
+            "ko-kr.bcn"
+          ]
+        },
+        "lt": {
+          "_type": "string",
+          "_label": "Lithuanian",
+          "_enum": [
+            "lt-lt.bcn"
+          ]
+        },
+        "vi": {
+          "_type": "string",
+          "_label": "Vietnamese",
+          "_enum": [
+            "vi-vn.bcn"
+          ]
+        },
+        "he": {
+          "_type": "string",
+          "_label": "Hebrew",
+          "_enum": [
+            "he-il.bcn"
+          ]
+        },
+        "ru": {
+          "_type": "string",
+          "_label": "Russian",
+          "_enum": [
+            "ru-ru.bcn"
+          ]
+        },
+        "sk": {
+          "_type": "string",
+          "_label": "Slovak",
+          "_enum": [
+            "sk-sk.bcn"
+          ]
+        },
+        "af": {
+          "_type": "string",
+          "_label": "Afrikaans",
+          "_enum": [
+            "af-za.bcn"
+          ]
+        },
+        "lv": {
+          "_type": "string",
+          "_label": "Latvian",
+          "_enum": [
+            "lv-lv.bcn"
+          ]
+        },
+        "it": {
+          "_type": "string",
+          "_label": "Italian",
+          "_enum": [
+            "it-it.bcn"
+          ]
+        },
+        "ps": {
+          "_type": "string",
+          "_label": "Pashto",
+          "_enum": [
+            "ps-af.bcn"
+          ]
+        },
+        "sv": {
+          "_type": "string",
+          "_label": "Swedish",
+          "_enum": [
+            "sv-se.bcn"
+          ]
+        },
+        "zh": {
+          "_type": "string",
+          "_label": "Chinese",
+          "_enum": [
+            "zh-cn.bcn"
+          ]
+        },
+        "tl": {
+          "_type": "string",
+          "_label": "Tagalog",
+          "_enum": [
+            "tl-ph.bcn"
+          ]
+        },
+        "sl": {
+          "_type": "string",
+          "_label": "Slovenian",
+          "_enum": [
+            "sl-si.bcn"
+          ]
+        },
+        "ms": {
+          "_type": "string",
+          "_label": "Malay",
+          "_enum": [
+            "ms-my.bcn"
+          ]
+        }
+      }
+    },
+    "WhisperASR": {
+      "_type": "object",
+      "url": {
+        "_type": "string"
+      },
+      "format": {
+        "_type": "array",
+        "_enum": [
+          "aac",
+          "aiff",
+          "alac",
+          "avi",
+          "flac",
+          "m4a",
+          "mkv",
+          "mov",
+          "mp3",
+          "mp4",
+          "mpeg",
+          "ogg",
+          "wav",
+          "webm",
+          "wma",
+          "wmv"
+        ]
+      },
+      "language": {
+        "ar": {
+          "_type": "string",
+          "_label": "Arabic",
+          "_enum": [
+            "ar"
+          ]
+        },
+        "pl": {
+          "_type": "string",
+          "_label": "Polish",
+          "_enum": [
+            "pl"
+          ]
+        },
+        "en": {
+          "_type": "string",
+          "_label": "English",
+          "_enum": [
+            "en"
+          ]
+        },
+        "et": {
+          "_type": "string",
+          "_label": "Estonian",
+          "_enum": [
+            "et"
+          ]
+        },
+        "uk": {
+          "_type": "string",
+          "_label": "Ukrainian",
+          "_enum": [
+            "uk"
+          ]
+        },
+        "fr": {
+          "_type": "string",
+          "_label": "French",
+          "_enum": [
+            "fr"
+          ]
+        },
+        "hi": {
+          "_type": "string",
+          "_label": "Hindi",
+          "_enum": [
+            "hi"
+          ]
+        },
+        "de": {
+          "_type": "string",
+          "_label": "German",
+          "_enum": [
+            "de"
+          ]
+        },
+        "ja": {
+          "_type": "string",
+          "_label": "Japanese",
+          "_enum": [
+            "ja"
+          ]
+        },
+        "ro": {
+          "_type": "string",
+          "_label": "Romanian",
+          "_enum": [
+            "ro"
+          ]
+        },
+        "tr": {
+          "_type": "string",
+          "_label": "Turkish",
+          "_enum": [
+            "tr"
+          ]
+        },
+        "pt": {
+          "_type": "string",
+          "_label": "Portuguese",
+          "_enum": [
+            "pt"
+          ]
+        },
+        "bg": {
+          "_type": "string",
+          "_label": "Bulgarian",
+          "_enum": [
+            "bg"
+          ]
+        },
+        "hu": {
+          "_type": "string",
+          "_label": "Hungarian",
+          "_enum": [
+            "hu"
+          ]
+        },
+        "es": {
+          "_type": "string",
+          "_label": "Spanish",
+          "_enum": [
+            "es"
+          ]
+        },
+        "th": {
+          "_type": "string",
+          "_label": "Thai",
+          "_enum": [
+            "th"
+          ]
+        },
+        "id": {
+          "_type": "string",
+          "_label": "Indonesian",
+          "_enum": [
+            "id"
+          ]
+        },
+        "nl": {
+          "_type": "string",
+          "_label": "Dutch",
+          "_enum": [
+            "nl"
+          ]
+        },
+        "el": {
+          "_type": "string",
+          "_label": "Greek",
+          "_enum": [
+            "el"
+          ]
+        },
+        "fa": {
+          "_type": "string",
+          "_label": "Persian",
+          "_enum": [
+            "fa"
+          ]
+        },
+        "ko": {
+          "_type": "string",
+          "_label": "Korean",
+          "_enum": [
+            "ko"
+          ]
+        },
+        "lt": {
+          "_type": "string",
+          "_label": "Lithuanian",
+          "_enum": [
+            "lt"
+          ]
+        },
+        "vi": {
+          "_type": "string",
+          "_label": "Vietnamese",
+          "_enum": [
+            "vi"
+          ]
+        },
+        "he": {
+          "_type": "string",
+          "_label": "Hebrew",
+          "_enum": [
+            "he"
+          ]
+        },
+        "ru": {
+          "_type": "string",
+          "_label": "Russian",
+          "_enum": [
+            "ru"
+          ]
+        },
+        "sk": {
+          "_type": "string",
+          "_label": "Slovak",
+          "_enum": [
+            "sk"
+          ]
+        },
+        "af": {
+          "_type": "string",
+          "_label": "Afrikaans",
+          "_enum": [
+            "af"
+          ]
+        },
+        "lv": {
+          "_type": "string",
+          "_label": "Latvian",
+          "_enum": [
+            "lv"
+          ]
+        },
+        "it": {
+          "_type": "string",
+          "_label": "Italian",
+          "_enum": [
+            "it"
+          ]
+        },
+        "ps": {
+          "_type": "string",
+          "_label": "Pashto",
+          "_enum": [
+            "ps"
+          ]
+        },
+        "sv": {
+          "_type": "string",
+          "_label": "Swedish",
+          "_enum": [
+            "sv"
+          ]
+        },
+        "zh": {
+          "_type": "string",
+          "_label": "Chinese",
+          "_enum": [
+            "zh"
+          ]
+        },
+        "tl": {
+          "_type": "string",
+          "_label": "Tagalog",
+          "_enum": [
+            "tl"
+          ]
+        },
+        "sl": {
+          "_type": "string",
+          "_label": "Slovenian",
+          "_enum": [
+            "sl"
+          ]
+        },
+        "ms": {
+          "_type": "string",
+          "_label": "Malay",
+          "_enum": [
+            "ms"
+          ]
+        },
+        "ca": {
+          "_type": "string",
+          "_label": "Catalan",
+          "_enum": [
+            "ca"
+          ]
+        },
+        "fi": {
+          "_type": "string",
+          "_label": "Finnish",
+          "_enum": [
+            "fi"
+          ]
+        },
+        "cs": {
+          "_type": "string",
+          "_label": "Czech",
+          "_enum": [
+            "cs"
+          ]
+        },
+        "da": {
+          "_type": "string",
+          "_label": "Danish",
+          "_enum": [
+            "da"
+          ]
+        },
+        "ta": {
+          "_type": "string",
+          "_label": "Tamil",
+          "_enum": [
+            "ta"
+          ]
+        },
+        "no": {
+          "_type": "string",
+          "_label": "Norwegian",
+          "_enum": [
+            "no"
+          ]
+        },
+        "ur": {
+          "_type": "string",
+          "_label": "Urdu",
+          "_enum": [
+            "ur"
+          ]
+        },
+        "hr": {
+          "_type": "string",
+          "_label": "Croatian",
+          "_enum": [
+            "hr"
+          ]
+        },
+        "la": {
+          "_type": "string",
+          "_label": "Latin",
+          "_enum": [
+            "la"
+          ]
+        },
+        "mi": {
+          "_type": "string",
+          "_label": "Maori",
+          "_enum": [
+            "mi"
+          ]
+        },
+        "ml": {
+          "_type": "string",
+          "_label": "Malayalam",
+          "_enum": [
+            "ml"
+          ]
+        },
+        "cy": {
+          "_type": "string",
+          "_label": "Welsh",
+          "_enum": [
+            "cy"
+          ]
+        },
+        "te": {
+          "_type": "string",
+          "_label": "Telugu",
+          "_enum": [
+            "te"
+          ]
+        },
+        "bn": {
+          "_type": "string",
+          "_label": "Bengali",
+          "_enum": [
+            "bn"
+          ]
+        },
+        "sr": {
+          "_type": "string",
+          "_label": "Serbian",
+          "_enum": [
+            "sr"
+          ]
+        },
+        "az": {
+          "_type": "string",
+          "_label": "Azerbaijani",
+          "_enum": [
+            "az"
+          ]
+        },
+        "kn": {
+          "_type": "string",
+          "_label": "Kannada",
+          "_enum": [
+            "kn"
+          ]
+        },
+        "mk": {
+          "_type": "string",
+          "_label": "Macedonian",
+          "_enum": [
+            "mk"
+          ]
+        },
+        "br": {
+          "_type": "string",
+          "_label": "Breton",
+          "_enum": [
+            "br"
+          ]
+        },
+        "eu": {
+          "_type": "string",
+          "_label": "Basque",
+          "_enum": [
+            "eu"
+          ]
+        },
+        "is": {
+          "_type": "string",
+          "_label": "Icelandic",
+          "_enum": [
+            "is"
+          ]
+        },
+        "hy": {
+          "_type": "string",
+          "_label": "Armenian",
+          "_enum": [
+            "hy"
+          ]
+        },
+        "ne": {
+          "_type": "string",
+          "_label": "Nepali",
+          "_enum": [
+            "ne"
+          ]
+        },
+        "mn": {
+          "_type": "string",
+          "_label": "Mongolian",
+          "_enum": [
+            "mn"
+          ]
+        },
+        "bs": {
+          "_type": "string",
+          "_label": "Bosnian",
+          "_enum": [
+            "bs"
+          ]
+        },
+        "kk": {
+          "_type": "string",
+          "_label": "Kazakh",
+          "_enum": [
+            "kk"
+          ]
+        },
+        "sq": {
+          "_type": "string",
+          "_label": "Albanian",
+          "_enum": [
+            "sq"
+          ]
+        },
+        "sw": {
+          "_type": "string",
+          "_label": "Swahili",
+          "_enum": [
+            "sw"
+          ]
+        },
+        "gl": {
+          "_type": "string",
+          "_label": "Galician",
+          "_enum": [
+            "gl"
+          ]
+        },
+        "mr": {
+          "_type": "string",
+          "_label": "Marathi",
+          "_enum": [
+            "mr"
+          ]
+        },
+        "pa": {
+          "_type": "string",
+          "_label": "Punjabi",
+          "_enum": [
+            "pa"
+          ]
+        },
+        "si": {
+          "_type": "string",
+          "_label": "Sinhala",
+          "_enum": [
+            "si"
+          ]
+        },
+        "km": {
+          "_type": "string",
+          "_label": "Khmer",
+          "_enum": [
+            "km"
+          ]
+        },
+        "sn": {
+          "_type": "string",
+          "_label": "Shona",
+          "_enum": [
+            "sn"
+          ]
+        },
+        "yo": {
+          "_type": "string",
+          "_label": "Yoruba",
+          "_enum": [
+            "yo"
+          ]
+        },
+        "so": {
+          "_type": "string",
+          "_label": "Somali",
+          "_enum": [
+            "so"
+          ]
+        },
+        "oc": {
+          "_type": "string",
+          "_label": "Occitan",
+          "_enum": [
+            "oc"
+          ]
+        },
+        "ka": {
+          "_type": "string",
+          "_label": "Georgian",
+          "_enum": [
+            "ka"
+          ]
+        },
+        "be": {
+          "_type": "string",
+          "_label": "Belarusian",
+          "_enum": [
+            "be"
+          ]
+        },
+        "tg": {
+          "_type": "string",
+          "_label": "Tajik",
+          "_enum": [
+            "tg"
+          ]
+        },
+        "sd": {
+          "_type": "string",
+          "_label": "Sindhi",
+          "_enum": [
+            "sd"
+          ]
+        },
+        "gu": {
+          "_type": "string",
+          "_label": "Gujarati",
+          "_enum": [
+            "gu"
+          ]
+        },
+        "am": {
+          "_type": "string",
+          "_label": "Amharic",
+          "_enum": [
+            "am"
+          ]
+        },
+        "yi": {
+          "_type": "string",
+          "_label": "Yiddish",
+          "_enum": [
+            "yi"
+          ]
+        },
+        "lo": {
+          "_type": "string",
+          "_label": "Lao",
+          "_enum": [
+            "lo"
+          ]
+        },
+        "uz": {
+          "_type": "string",
+          "_label": "Uzbek",
+          "_enum": [
+            "uz"
+          ]
+        },
+        "fo": {
+          "_type": "string",
+          "_label": "Faroese",
+          "_enum": [
+            "fo"
+          ]
+        },
+        "ht": {
+          "_type": "string",
+          "_label": "Haitian Creole",
+          "_enum": [
+            "ht"
+          ]
+        },
+        "tk": {
+          "_type": "string",
+          "_label": "Turkmen",
+          "_enum": [
+            "tk"
+          ]
+        },
+        "nn": {
+          "_type": "string",
+          "_label": "Nynorsk",
+          "_enum": [
+            "nn"
+          ]
+        },
+        "mt": {
+          "_type": "string",
+          "_label": "Maltese",
+          "_enum": [
+            "mt"
+          ]
+        },
+        "sa": {
+          "_type": "string",
+          "_label": "Sanskrit",
+          "_enum": [
+            "sa"
+          ]
+        },
+        "lb": {
+          "_type": "string",
+          "_label": "Luxembourgish",
+          "_enum": [
+            "lb"
+          ]
+        },
+        "my": {
+          "_type": "string",
+          "_label": "Myanmar",
+          "_enum": [
+            "my"
+          ]
+        },
+        "bo": {
+          "_type": "string",
+          "_label": "Tibetan",
+          "_enum": [
+            "bo"
+          ]
+        },
+        "mg": {
+          "_type": "string",
+          "_label": "Malagasy",
+          "_enum": [
+            "mg"
+          ]
+        },
+        "as": {
+          "_type": "string",
+          "_label": "Assamese",
+          "_enum": [
+            "as"
+          ]
+        },
+        "tt": {
+          "_type": "string",
+          "_label": "Tatar",
+          "_enum": [
+            "tt"
+          ]
+        },
+        "haw": {
+          "_type": "string",
+          "_label": "Hawaiian",
+          "_enum": [
+            "haw"
+          ]
+        },
+        "ln": {
+          "_type": "string",
+          "_label": "Lingala",
+          "_enum": [
+            "ln"
+          ]
+        },
+        "ha": {
+          "_type": "string",
+          "_label": "Hausa",
+          "_enum": [
+            "ha"
+          ]
+        },
+        "ba": {
+          "_type": "string",
+          "_label": "Bashkir",
+          "_enum": [
+            "ba"
+          ]
+        },
+        "jw": {
+          "_type": "string",
+          "_label": "Javanese",
+          "_enum": [
+            "jw"
+          ]
+        },
+        "su": {
+          "_type": "string",
+          "_label": "Sundanese",
+          "_enum": [
+            "su"
+          ]
+        }
+      }
+    }
+  },
+  "Stats": {
+    "_type": "object",
+    "_label": "Statistics settings",
+    "statsTTL": {
+      "_type": "number",
+      "_label": "Detailed stats TTL",
+      "_description": "Duration (in seconds) for the detailed stats conservation",
+      "_enum": [
+        31540000
+      ]
+    },
+    "AggregatedStats": {
+      "_label": "Aggregated stats",
+      "_type": "object",
+      "_description": "Default value is true",
+      "disabled": {
+        "_label": "Deactivation",
+        "_type": "boolean"
+      },
+      "TTL": {
+        "_label": "Duration of stats conservation in ms",
+        "_type": "object"
+      },
+      "Limits": {
+        "_type": "object",
+        "_label": "Limits",
+        "enabled": {
+          "_type": "boolean",
+          "_label": "Activate Limits"
+        }
+      }
+    }
+  },
+  "ServicesHealth": {
+    "_label": "Services health",
+    "_type": "object",
+    "enable": {
+      "_label": "Enable services health",
+      "_type": "boolean"
+    }
+  },
+  "Notification": {
+    "_type": "object",
+    "_label": "Browser Notification settings",
+    "notificationTitle": {
+      "_type": "string",
+      "_label": "Notification title",
+      "_description": "This setting allows you to set a title for notifications"
+    },
+    "disableNotification": {
+      "_type": "boolean",
+      "_label": "Deactivate browser notifications",
+      "_description": "Set enabled to deactivate the browser notifications"
+    }
+  },
+  "Features": {
+    "_type": "object",
+    "_label": "Features settings",
+    "PreferredDomain": {
+      "_type": "object",
+      "_label": "Preferred Domain",
+      "enable": {
+        "_type": "boolean",
+        "_label": "Enable Preferred Domain"
+      }
+    }
+  }
+}

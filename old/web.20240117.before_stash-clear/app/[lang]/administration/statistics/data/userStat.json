@@ -1,0 +1,79 @@
+{
+	"global": {
+		"elapsedTime": 5352,
+		"lastUsed": "2024-01-04T08:46:38.384Z",
+		"mimeType": [
+			"text/plain"
+		],
+		"nbCacheHits": 1,
+		"nbCharacters": 232,
+		"nbCharactersCacheHits": 5,
+		"nbSegments": 22,
+		"nbTus": 33,
+		"nbTusFailed": 0,
+		"request": 22,
+		"success": 22,
+		"userAgent": [
+			"Translation Box",
+			"gateway"
+		]
+	},
+	"id": "659570d315a664000bca909c",
+	"name": "Administrator",
+	"date": "2024-1",
+	"data": [
+		{
+			"id": "db523545-5c34-4328-a6f8-daca26edc1d1",
+			"lastUsed": "2024-01-03T17:25:15.906Z",
+			"name": "Translator NMT Generic (L) - ENFR",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 4328,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 1,
+				"nbCharacters": 201,
+				"nbCharactersCacheHits": 5,
+				"nbSegments": 19,
+				"nbTus": 30,
+				"nbTusFailed": 0,
+				"request": 19,
+				"success": 19,
+				"userAgent": [
+					"Translation Box",
+					"gateway"
+				]
+			},
+			"translationResourceId": "0344d189-9ed5-4043-8067-946a072e6e55"
+		},
+		{
+			"id": "85b77ca0-295c-4fee-a3cf-28a276f58eb3",
+			"lastUsed": "2024-01-04T08:46:38.384Z",
+			"name": "Translator NMT Generic (L) - FREN",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 1024,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 31,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 3,
+				"nbTus": 3,
+				"nbTusFailed": 0,
+				"request": 3,
+				"success": 3,
+				"userAgent": [
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "10b0b924-8e39-43ea-81c8-cc62478b25fa"
+		}
+	],
+	"total": 2,
+	"offset": 0
+}

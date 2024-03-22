@@ -1,0 +1,43 @@
+import SimpleTable from '@systran/react-components/lib/organisms/table/SimpleTable';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { columnList } from './notifications.column';
+import {
+  notificationsStore,
+  setCheckedList,
+  setPaginationModel
+} from './notifications.store';
+import { PAGINATION_STEP } from './notifications.constant';
+import { useStore } from '@nanostores/react';
+
+export function NotificationsTable() {
+  const { t } = useTranslation();
+  const { notificationList, pageSize } = useStore(notificationsStore);
+  console.log('pageSize 18  ==>', pageSize);
+
+  return (
+    <React.Fragment>
+      <SimpleTable
+        columns={columnList.map((oneColumn) => ({
+          ...oneColumn,
+          headerName: t(oneColumn.headerName)
+        }))}
+        // paginationModel={paginationModel}
+        pageSize={pageSize}
+        onPaginationModelChange={setPaginationModel}
+        rows={notificationList}
+        pageSizeOptions={PAGINATION_STEP} // get pagesize as input in store
+        pagination
+        // showCellVerticalBorder
+        // showColumnVerticalBorder
+        checkboxSelection
+        onRowSelectionModelChange={setCheckedList}
+        initialState={{
+          pagination: {
+            paginationModel: { pageSize: PAGINATION_STEP[0], page: 0 } //Number as input in store
+          }
+        }}
+      />
+    </React.Fragment>
+  );
+}

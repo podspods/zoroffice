@@ -1,0 +1,56 @@
+{
+	"total": 3,
+	"offset": 0,
+	"notifications": [
+		{
+			"id": "654ba938fe0caa00f95b3b5f",
+			"insertedAt": "2023-11-08T15:28:56.294Z",
+			"level": "error",
+			"str": {
+				"display": "cache ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "node totot"
+					}
+				},
+				"v": 2
+			},
+			"read": false
+		},
+		{
+			"id": "654ba938fe0caa00f95b3b25",
+			"insertedAt": "2023-11-08T15:28:56.294Z",
+			"level": "error",
+			"str": {
+				"display": "cache ${hostname} registered",
+				"data": {
+					"hostname": {
+						"type": "string",
+						"value": "node totot"
+					}
+				},
+				"v": 2
+			},
+			"read": true
+		},
+		{
+			"id": "6488959f18de370e30ebb15e",
+			"insertedAt": "2023-11-08T15:28:56.294Z",
+			"level": "error",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "7be078af-8542-44bb-89b9-01fb697dddaa",
+						"label": "Organization_chart_SYSTRAN_SAS_2023-06-12.pdf"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		}
+	]
+}

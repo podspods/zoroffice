@@ -1,0 +1,89 @@
+Installer:
+  overwriteSettings: false # or merge
+  Database:
+    hosts:
+      - host: localhost
+        port: 27017
+    replicaSet: indexers
+    serverSelectionTimeoutMS: 15000 # Time to wait for the driver to successfully connect to a viable server
+    poolSize: 10
+    mongoose:
+      debug: false
+
+    tls: false
+    tlsInsecure: false
+    tlsCAFile: null # file or array of files
+    tlsCertificateKeyFile: null # file
+    tlsCertificateKeyFilePassword: null
+    # tlsAllowInvalidCertificates: false # boolean
+    # tlsAllowInvalidHostnames: null # boolean
+    # readConcern:
+    #   level: local # 'local' 'available' 'majority' 'linearizable' 'snapshot'
+    # writeConcern:
+    #   w: 1 # 1 or majority
+    #   j: false
+    #   wtimeout: 5000
+
+    addUser: false # add user to db as admin
+
+    User:
+      login: systran
+      password: SESpassword
+    #root admin
+    Admin:
+      login: systranAdmin
+      password: SESpasswordAdmin
+    #List databases name is mandatory if user information is informed
+    Databases:
+      - Monitoring
+      - Profiles
+      - feedbacks
+      - locales
+      - notifications
+      - production
+      - settings
+      - stats
+      - user
+      - translationResource
+      - information
+      - Resources
+      - TRSL
+      - config
+      - corpus
+      - dictionary
+      - dispatcher
+      - indexer
+      - routes
+      - asr
+
+    # Usage to put specific login password
+    # - name : { db name }
+    #   User :
+    #      login: { login }
+    #      password { password }
+
+  Groups:
+    - name: Default
+    - name: Administrator
+
+  Administrator:
+    firstName:
+    lastName: Administrator
+    email: admin@systran.fr
+    # password: at least 10 characters
+    password: SESpassword
+
+#  TranslationResources:
+#    path: null
+#    jsonPath: null
+#    setAsDefault: false
+
+  Licenses:
+    onlineActivation: true # default; if false then no activation will be done
+    ProductKeys: [] # can be an array of Product Key strings, or just one Product Key string
+
+  Oidc:
+    credentialsPath: /opt/systran/apps-node/translation-gateway/certificates/
+  Console:
+    publicUrls:
+      https:

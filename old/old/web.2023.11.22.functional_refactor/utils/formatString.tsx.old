@@ -1,0 +1,29 @@
+import moment from 'moment';
+
+/** dateString should be mongoDb data format e.g  'Y-MM-DD HH:mm:ss.SSS Z'*/
+export function durationFromNow(dateString: string): string {
+  if (!dateString) return undefined;
+  return moment(dateString)
+    .fromNow()
+    .toString();
+}
+
+export function elapsedTime(nbSecond: number) {
+  return moment.duration(nbSecond, 'seconds').humanize();
+}
+
+export function displayByte(value: number): string {
+  if (!value || value <= 0) return '0 B';
+  const threshold = 0.8;
+  const kConst = 1024;
+  const mConst = kConst * 1024;
+  const gConst = mConst * 1024;
+  const gValue = value / gConst;
+  if (gValue > threshold) return `${gValue.toFixed(2)} GB`;
+  const mValue = value / mConst;
+  if (mValue > threshold) return `${mValue.toFixed(2)} MB`;
+  const kValue = value / kConst;
+  if (kValue > threshold) return `${kValue.toFixed(2)} KB`;
+
+  return `${value} B`;
+}

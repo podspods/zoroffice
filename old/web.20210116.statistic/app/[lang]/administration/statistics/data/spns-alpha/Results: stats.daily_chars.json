@@ -1,0 +1,651 @@
+[
+  {
+    "_id": "65703d409f22e73f6e7a9a45",
+    "key": {
+      "userAgent": "Integration test",
+      "groupId": "65703d3f956563ee785e64a6",
+      "date": "2023-12-06T00:00:00.000Z"
+    },
+    "accountId": {
+      "65703bd4189489000d84dd58": {
+        "name": "Administrator",
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "domain": {
+      "Generic": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "elapsedTime": 1890,
+    "groupName": "Test Group 5436bbba-e5bd-4c6e-9fe2-7a070eb5e5c0",
+    "groups": {
+      "65703d3f956563ee785e64a6": {
+        "groupName": "Test Group 5436bbba-e5bd-4c6e-9fe2-7a070eb5e5c0",
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "lastUsed": "2023-12-06T09:22:09.621Z",
+    "mimeType": {
+      "text/plain": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "nbCacheHits": 0,
+    "nbCharacters": 356,
+    "nbCharactersCacheHits": 0,
+    "nbSegments": 2,
+    "nbTokens": 0,
+    "nbTus": 3,
+    "nbTusFailed": 0,
+    "owner": {
+      "Systran": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "product": {
+      "SYSTRAN Translate API": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "profile": {
+      "ab3b5b12-4b43-4548-8e6c-58a32eec8f45": {
+        "name": "Translator NMT Generic (L) - FREN",
+        "nbCharacters": 228,
+        "request": 1
+      },
+      "a266f630-df89-4c4c-8c2c-d4e35e7a3ce3": {
+        "name": "Translator NMT Generic (L) - ENFR",
+        "nbCharacters": 128,
+        "request": 1
+      }
+    },
+    "request": 2,
+    "serviceName": {
+      "translate/file": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "size": {
+      "L": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "source": {
+      "fr": {
+        "nbCharacters": 228,
+        "request": 1
+      },
+      "en": {
+        "nbCharacters": 128,
+        "request": 1
+      }
+    },
+    "success": 2,
+    "target": {
+      "en": {
+        "nbCharacters": 228,
+        "request": 1
+      },
+      "fr": {
+        "nbCharacters": 128,
+        "request": 1
+      }
+    },
+    "techName": {
+      "Docker-OpenNMT-ctranslate": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "techType": {
+      "NMT": {
+        "nbCharacters": 356,
+        "request": 2
+      }
+    },
+    "translationResourceId": {
+      "c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+        "nbCharacters": 228,
+        "request": 1
+      },
+      "548b59bd-4a81-4743-ba4c-a0c0768c9acc": {
+        "nbCharacters": 128,
+        "request": 1
+      }
+    }
+  },
+  {
+    "_id": "65703d569f22e73f6e7aa450",
+    "key": {
+      "userAgent": "Integration test",
+      "groupId": "65703d5495656381af5e677d",
+      "date": "2023-12-06T00:00:00.000Z"
+    },
+    "accountId": {
+      "65703d53956563a0695e66df": {
+        "name": "ScimGivenName4f43e802-9 ScimFamilyNamea3041d01-5",
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "65703d539565635fe55e672b": {
+        "name": "ScimGivenName286aeea9-0 ScimFamilyName318e3885-a",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d549565630dfe5e673e": {
+        "name": "ScimGivenName459fe8af-f ScimFamilyName2eb084d6-2",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d5495656365595e6751": {
+        "name": "ScimGivenName4ab09e14-3 ScimFamilyNameff3b5115-e",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d5495656300c05e6764": {
+        "name": "ScimGivenNamef0f82c4e-6 ScimFamilyName64e7dd5b-0",
+        "nbCharacters": 0,
+        "request": 2
+      }
+    },
+    "domain": {
+      "Generic": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "elapsedTime": 3207,
+    "groupName": "Test Group 9691a2a5-c169-4a30-836f-0d36a95137e3",
+    "groups": {
+      "65703d54956563763f5e6774": {
+        "groupName": "Test Group 00e7c781-4462-4349-8967-0bce9a121650",
+        "nbCharacters": 4,
+        "request": 9
+      },
+      "65703d5495656381af5e677d": {
+        "groupName": "Test Group 9691a2a5-c169-4a30-836f-0d36a95137e3",
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "lastUsed": "2023-12-06T09:22:32.971Z",
+    "mimeType": {
+      "text/plain": {
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "nbCacheHits": 0,
+    "nbCharacters": 4,
+    "nbCharactersCacheHits": 0,
+    "nbSegments": 1,
+    "nbTokens": 0,
+    "nbTus": 1,
+    "nbTusFailed": 0,
+    "owner": {
+      "Systran": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "product": {
+      "SYSTRAN Translate API": {
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "profile": {
+      "a266f630-df89-4c4c-8c2c-d4e35e7a3ce3": {
+        "name": "Translator NMT Generic (L) - ENFR",
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "ab3b5b12-4b43-4548-8e6c-58a32eec8f45": {
+        "name": "Translator NMT Generic (L) - FREN",
+        "nbCharacters": 0,
+        "request": 4
+      }
+    },
+    "request": 9,
+    "serviceName": {
+      "translate/file": {
+        "nbCharacters": 4,
+        "request": 5
+      },
+      "translate/async/file": {
+        "nbCharacters": 0,
+        "request": 4
+      }
+    },
+    "size": {
+      "L": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "source": {
+      "en": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "fr": {
+        "nbCharacters": 0,
+        "request": 8
+      }
+    },
+    "success": 1,
+    "target": {
+      "fr": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "en": {
+        "nbCharacters": 0,
+        "request": 8
+      }
+    },
+    "techName": {
+      "Docker-OpenNMT-ctranslate": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "techType": {
+      "NMT": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "translationResourceId": {
+      "548b59bd-4a81-4743-ba4c-a0c0768c9acc": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+        "nbCharacters": 0,
+        "request": 4
+      }
+    }
+  },
+  {
+    "_id": "65703d569f22e73f6e7aa451",
+    "key": {
+      "userAgent": "Integration test",
+      "groupId": "65703d54956563763f5e6774",
+      "date": "2023-12-06T00:00:00.000Z"
+    },
+    "accountId": {
+      "65703d53956563a0695e66df": {
+        "name": "ScimGivenName4f43e802-9 ScimFamilyNamea3041d01-5",
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "65703d539565635fe55e672b": {
+        "name": "ScimGivenName286aeea9-0 ScimFamilyName318e3885-a",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d549565630dfe5e673e": {
+        "name": "ScimGivenName459fe8af-f ScimFamilyName2eb084d6-2",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d5495656365595e6751": {
+        "name": "ScimGivenName4ab09e14-3 ScimFamilyNameff3b5115-e",
+        "nbCharacters": 0,
+        "request": 2
+      },
+      "65703d5495656300c05e6764": {
+        "name": "ScimGivenNamef0f82c4e-6 ScimFamilyName64e7dd5b-0",
+        "nbCharacters": 0,
+        "request": 2
+      }
+    },
+    "domain": {
+      "Generic": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "elapsedTime": 3207,
+    "groupName": "Test Group 00e7c781-4462-4349-8967-0bce9a121650",
+    "groups": {
+      "65703d54956563763f5e6774": {
+        "groupName": "Test Group 00e7c781-4462-4349-8967-0bce9a121650",
+        "nbCharacters": 4,
+        "request": 9
+      },
+      "65703d5495656381af5e677d": {
+        "groupName": "Test Group 9691a2a5-c169-4a30-836f-0d36a95137e3",
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "lastUsed": "2023-12-06T09:22:32.971Z",
+    "mimeType": {
+      "text/plain": {
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "nbCacheHits": 0,
+    "nbCharacters": 4,
+    "nbCharactersCacheHits": 0,
+    "nbSegments": 1,
+    "nbTokens": 0,
+    "nbTus": 1,
+    "nbTusFailed": 0,
+    "owner": {
+      "Systran": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "product": {
+      "SYSTRAN Translate API": {
+        "nbCharacters": 4,
+        "request": 9
+      }
+    },
+    "profile": {
+      "a266f630-df89-4c4c-8c2c-d4e35e7a3ce3": {
+        "name": "Translator NMT Generic (L) - ENFR",
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "ab3b5b12-4b43-4548-8e6c-58a32eec8f45": {
+        "name": "Translator NMT Generic (L) - FREN",
+        "nbCharacters": 0,
+        "request": 4
+      }
+    },
+    "request": 9,
+    "serviceName": {
+      "translate/file": {
+        "nbCharacters": 4,
+        "request": 5
+      },
+      "translate/async/file": {
+        "nbCharacters": 0,
+        "request": 4
+      }
+    },
+    "size": {
+      "L": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "source": {
+      "en": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "fr": {
+        "nbCharacters": 0,
+        "request": 8
+      }
+    },
+    "success": 1,
+    "target": {
+      "fr": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "en": {
+        "nbCharacters": 0,
+        "request": 8
+      }
+    },
+    "techName": {
+      "Docker-OpenNMT-ctranslate": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "techType": {
+      "NMT": {
+        "nbCharacters": 4,
+        "request": 5
+      }
+    },
+    "translationResourceId": {
+      "548b59bd-4a81-4743-ba4c-a0c0768c9acc": {
+        "nbCharacters": 4,
+        "request": 1
+      },
+      "c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+        "nbCharacters": 0,
+        "request": 4
+      }
+    }
+  },
+  {
+    "_id": "65703d5c9f22e73f6e7aa981",
+    "key": {
+      "userAgent": "Integration test",
+      "groupId": "65703d5a95656385f75e6aed",
+      "date": "2023-12-06T00:00:00.000Z"
+    },
+    "accountId": {
+      "65703d5a9565633b9a5e6ab7": {
+        "name": "ScimGivenName58f4beb0-0 ScimFamilyNamef5a384fa-5",
+        "nbCharacters": 114,
+        "request": 2
+      },
+      "65703d5a956563c4695e6add": {
+        "name": "ScimGivenNamebe666774-3 ScimFamilyName8152e905-e",
+        "nbCharacters": 114,
+        "request": 2
+      }
+    },
+    "domain": {
+      "Generic": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "elapsedTime": 1283,
+    "groupName": "Test Group 9c00a01a-f719-40ce-a4ff-c70f5cba1700",
+    "groups": {
+      "65703d5a95656385f75e6aed": {
+        "groupName": "Test Group 9c00a01a-f719-40ce-a4ff-c70f5cba1700",
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "lastUsed": "2023-12-06T09:22:36.485Z",
+    "mimeType": {
+      "text/plain": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "nbCacheHits": 3,
+    "nbCharacters": 228,
+    "nbCharactersCacheHits": 171,
+    "nbSegments": 4,
+    "nbTokens": 0,
+    "nbTus": 4,
+    "nbTusFailed": 0,
+    "owner": {
+      "Systran": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "product": {
+      "SYSTRAN Translate API": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "profile": {
+      "a266f630-df89-4c4c-8c2c-d4e35e7a3ce3": {
+        "name": "Translator NMT Generic (L) - ENFR",
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "request": 4,
+    "serviceName": {
+      "translate/file": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "size": {
+      "L": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "source": {
+      "en": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "success": 4,
+    "target": {
+      "fr": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "techName": {
+      "Docker-OpenNMT-ctranslate": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "techType": {
+      "NMT": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    },
+    "translationResourceId": {
+      "548b59bd-4a81-4743-ba4c-a0c0768c9acc": {
+        "nbCharacters": 228,
+        "request": 4
+      }
+    }
+  },
+  {
+    "_id": "65703dd59f22e73f6e7aebd5",
+    "key": {
+      "userAgent": "Integration test",
+      "groupId": "65703dbd95656333865e83a0",
+      "date": "2023-12-06T00:00:00.000Z"
+    },
+    "accountId": {
+      "65703dbd9565636ff85e8395": {
+        "name": "ScimGivenName64878872-7 ScimFamilyNameedde4fbb-9",
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "domain": {
+      "Generic": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "elapsedTime": 1476,
+    "groupName": "Test Group 4e3f67c2-6492-43e7-87a0-e88e98661ce9",
+    "groups": {
+      "65703dbd95656333865e83a0": {
+        "groupName": "Test Group 4e3f67c2-6492-43e7-87a0-e88e98661ce9",
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "lastUsed": "2023-12-06T09:24:37.328Z",
+    "mimeType": {
+      "text/plain": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "nbCacheHits": 0,
+    "nbCharacters": 228,
+    "nbCharactersCacheHits": 0,
+    "nbSegments": 1,
+    "nbTokens": 0,
+    "nbTus": 2,
+    "nbTusFailed": 0,
+    "owner": {
+      "Systran": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "product": {
+      "SYSTRAN Translate API": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "profile": {
+      "b0bcc856-f046-4325-b1d7-cb88430d01c8": {
+        "name": "ProfileSharedWithGroup",
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "request": 1,
+    "serviceName": {
+      "translate/file": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "size": {
+      "L": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "source": {
+      "fr": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "success": 1,
+    "target": {
+      "en": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "techName": {
+      "Docker-OpenNMT-ctranslate": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "techType": {
+      "NMT": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    },
+    "translationResourceId": {
+      "c1659c3e-83d9-4252-a759-2b894d2fabfb": {
+        "nbCharacters": 228,
+        "request": 1
+      }
+    }
+  }
+]

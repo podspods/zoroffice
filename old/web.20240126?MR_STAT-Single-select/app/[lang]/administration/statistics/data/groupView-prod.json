@@ -1,0 +1,356 @@
+{
+	"global": {
+		"elapsedTime": 13439328,
+		"lastUsed": "2024-01-18T13:36:36.610Z",
+		"mimeType": [
+			"text/plain",
+			"application/vnd.openxmlformats",
+			"xml/application",
+			"text/bitext",
+			"text/html-old",
+			"application/pdf",
+			"image/jpeg"
+		],
+		"nbCacheHits": 9406,
+		"nbCharacters": 2088087,
+		"nbCharactersCacheHits": 286207,
+		"nbSegments": 37118,
+		"nbTokens": 0,
+		"nbTus": 37839,
+		"nbTusFailed": 2,
+		"request": 15843,
+		"success": 15843,
+		"userAgent": [
+			"Translation Box",
+			"File Translate Box",
+			"gateway",
+			"SYSTRAN Windows App",
+			"CMLess Relativity Agent",
+			"CMLess Relativity Admin Tool",
+			"SYSTRAN Browser Extension - Chrome / Page",
+			"Office Add-Ins - Text Translation",
+			"Office Add-Ins - File Translation",
+			"SYSTRAN Browser Extension - Chrome / Text",
+			"Google compat mode",
+			"Translation Alternatives",
+			"SYSTRAN Browser Extension - Firefox / Text",
+			"SYSTRAN macOS App",
+			"SYSTRAN Linux App",
+			"SYSTRAN Windows App - File Translation"
+		]
+	},
+	"id": "601bf10868bffa1db67a072f",
+	"name": "Systran",
+	"date": "2024-1",
+	"data": [
+		{
+			"id": "cef6d1d1-9361-4e4b-b9cd-c7d592f538cd",
+			"lastUsed": "2024-01-17T16:55:18.376Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "en",
+			"target": "es",
+			"total": {
+				"elapsedTime": 904713,
+				"mimeType": [
+					"xml/application",
+					"text/plain"
+				],
+				"nbCacheHits": 1225,
+				"nbCharacters": 72246,
+				"nbCharactersCacheHits": 14195,
+				"nbSegments": 2689,
+				"nbTokens": 0,
+				"nbTus": 2596,
+				"nbTusFailed": 0,
+				"request": 2594,
+				"success": 2594,
+				"userAgent": [
+					"CMLess Relativity Admin Tool",
+					"SYSTRAN Browser Extension - Chrome / Page",
+					"SYSTRAN Browser Extension - Chrome / Text",
+					"Translation Alternatives",
+					"Translation Box",
+					"SYSTRAN Windows App"
+				]
+			},
+			"translationResourceId": "f4d6b5fc-db45-4898-9f0c-86842eb2d5e3"
+		},
+		{
+			"id": "376b97d7-5653-43c2-84cf-f9298fba486a",
+			"lastUsed": "2024-01-18T12:26:22.798Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 1819464,
+				"mimeType": [
+					"text/plain",
+					"xml/application",
+					"application/vnd.openxmlformats",
+					"text/html-old",
+					"text/bitext"
+				],
+				"nbCacheHits": 884,
+				"nbCharacters": 162539,
+				"nbCharactersCacheHits": 24324,
+				"nbSegments": 2757,
+				"nbTokens": 0,
+				"nbTus": 2478,
+				"nbTusFailed": 0,
+				"request": 2232,
+				"success": 2232,
+				"userAgent": [
+					"Translation Box",
+					"CMLess Relativity Admin Tool",
+					"SYSTRAN Windows App",
+					"gateway",
+					"File Translate Box",
+					"Google compat mode",
+					"SYSTRAN Browser Extension - Firefox / Text",
+					"SYSTRAN Browser Extension - Chrome / Text",
+					"Office Add-Ins - Text Translation",
+					"SYSTRAN Browser Extension - Chrome / Page",
+					"SYSTRAN macOS App",
+					"Office Add-Ins - File Translation"
+				]
+			},
+			"translationResourceId": "422fa011-5a0b-4922-ae6e-99dbae47f772"
+		},
+		{
+			"id": "70396b16-7821-4a0a-b194-5d2203d5e5e2",
+			"lastUsed": "2024-01-16T16:41:54.974Z",
+			"name": "Translator NMT myGenericPLUS (L) - ENIT",
+			"source": "en",
+			"target": "it",
+			"total": {
+				"elapsedTime": 1934912,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 46681,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 1245,
+				"nbTokens": 0,
+				"nbTus": 1125,
+				"nbTusFailed": 0,
+				"request": 1115,
+				"success": 1115,
+				"userAgent": [
+					"SYSTRAN Browser Extension - Chrome / Page",
+					"SYSTRAN Browser Extension - Chrome / Text"
+				]
+			},
+			"translationResourceId": "ce87256c-ca72-4b0b-93b5-ad6b5f2d3b12"
+		},
+		{
+			"id": "b61789f8-d4f2-409b-b1e7-689c5453fe12",
+			"lastUsed": "2024-01-17T16:26:31.794Z",
+			"name": "Model: Dialog (by SYSTRAN)",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 270356,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 176,
+				"nbCharacters": 18070,
+				"nbCharactersCacheHits": 1941,
+				"nbSegments": 906,
+				"nbTokens": 0,
+				"nbTus": 890,
+				"nbTusFailed": 0,
+				"request": 890,
+				"success": 890,
+				"userAgent": [
+					"SYSTRAN Windows App",
+					"SYSTRAN macOS App",
+					"SYSTRAN Browser Extension - Chrome / Page"
+				]
+			},
+			"translationResourceId": "422fa011-5a0b-4922-ae6e-99dbae47f772"
+		},
+		{
+			"id": "736817f0-dca7-42fc-9b91-bb01d327a854",
+			"lastUsed": "2024-01-10T00:34:19.924Z",
+			"name": "English to French 1",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 700960,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 0,
+				"nbCharacters": 26546,
+				"nbCharactersCacheHits": 0,
+				"nbSegments": 789,
+				"nbTokens": 0,
+				"nbTus": 717,
+				"nbTusFailed": 0,
+				"request": 717,
+				"success": 717,
+				"userAgent": [
+					"SYSTRAN Browser Extension - Chrome / Page"
+				]
+			},
+			"translationResourceId": "422fa011-5a0b-4922-ae6e-99dbae47f772"
+		},
+		{
+			"id": "c7058a35-bce3-4baa-9a39-febe617048f6",
+			"lastUsed": "2024-01-16T16:32:23.334Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "en",
+			"target": "ja",
+			"total": {
+				"elapsedTime": 536510,
+				"mimeType": [
+					"text/plain",
+					"xml/application"
+				],
+				"nbCacheHits": 400,
+				"nbCharacters": 24334,
+				"nbCharactersCacheHits": 9436,
+				"nbSegments": 875,
+				"nbTokens": 0,
+				"nbTus": 864,
+				"nbTusFailed": 0,
+				"request": 700,
+				"success": 700,
+				"userAgent": [
+					"gateway",
+					"CMLess Relativity Admin Tool",
+					"SYSTRAN Browser Extension - Chrome / Page"
+				]
+			},
+			"translationResourceId": "b7f98ea6-8717-4669-909e-2612256334c5"
+		},
+		{
+			"id": "85a005b6-3275-47db-a8c4-a542af3f21d9",
+			"lastUsed": "2024-01-17T21:58:03.191Z",
+			"name": "CADTH_ENFR",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 268936,
+				"mimeType": [
+					"text/plain",
+					"application/vnd.openxmlformats",
+					"application/pdf"
+				],
+				"nbCacheHits": 1002,
+				"nbCharacters": 704065,
+				"nbCharactersCacheHits": 9920,
+				"nbSegments": 5222,
+				"nbTokens": 0,
+				"nbTus": 5199,
+				"nbTusFailed": 0,
+				"request": 588,
+				"success": 588,
+				"userAgent": [
+					"SYSTRAN Windows App",
+					"SYSTRAN Browser Extension - Chrome / Page",
+					"File Translate Box",
+					"Translation Box"
+				]
+			},
+			"translationResourceId": "422fa011-5a0b-4922-ae6e-99dbae47f772"
+		},
+		{
+			"id": "71a96631-0d5d-4439-8754-62be08dc2556",
+			"lastUsed": "2024-01-17T18:01:33.907Z",
+			"name": "Model: Generic (by SYSTRAN)",
+			"source": "fr",
+			"target": "en",
+			"total": {
+				"elapsedTime": 173690,
+				"mimeType": [
+					"text/plain",
+					"xml/application",
+					"application/vnd.openxmlformats",
+					"text/html-old"
+				],
+				"nbCacheHits": 222,
+				"nbCharacters": 40136,
+				"nbCharactersCacheHits": 14506,
+				"nbSegments": 710,
+				"nbTokens": 0,
+				"nbTus": 918,
+				"nbTusFailed": 0,
+				"request": 560,
+				"success": 560,
+				"userAgent": [
+					"Translation Box",
+					"SYSTRAN Windows App",
+					"CMLess Relativity Agent",
+					"CMLess Relativity Admin Tool",
+					"Office Add-Ins - File Translation",
+					"SYSTRAN Browser Extension - Chrome / Text",
+					"gateway",
+					"SYSTRAN macOS App",
+					"SYSTRAN Linux App",
+					"Office Add-Ins - Text Translation"
+				]
+			},
+			"translationResourceId": "c1659c3e-83d9-4252-a759-2b894d2fabfb"
+		},
+		{
+			"id": "03b7a834-f19a-4efc-a7f2-b66d1b35d2e8",
+			"lastUsed": "2024-01-05T17:40:32.662Z",
+			"name": "Model: Generic_Formal (by SYSTRAN)",
+			"source": "en",
+			"target": "de",
+			"total": {
+				"elapsedTime": 1031172,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 323,
+				"nbCharacters": 19627,
+				"nbCharactersCacheHits": 9018,
+				"nbSegments": 593,
+				"nbTokens": 0,
+				"nbTus": 560,
+				"nbTusFailed": 0,
+				"request": 560,
+				"success": 560,
+				"userAgent": [
+					"SYSTRAN Browser Extension - Chrome / Page"
+				]
+			},
+			"translationResourceId": "6fa67340-b7b0-4eaa-897f-b6a0fa7cff27"
+		},
+		{
+			"id": "b6ead001-d7a3-49eb-a3c5-8f6205dc3d17",
+			"lastUsed": "2024-01-12T16:31:01.352Z",
+			"name": "Model: Medical (by Systran)",
+			"source": "en",
+			"target": "fr",
+			"total": {
+				"elapsedTime": 511979,
+				"mimeType": [
+					"text/plain"
+				],
+				"nbCacheHits": 192,
+				"nbCharacters": 19137,
+				"nbCharactersCacheHits": 8311,
+				"nbSegments": 446,
+				"nbTokens": 0,
+				"nbTus": 416,
+				"nbTusFailed": 0,
+				"request": 416,
+				"success": 416,
+				"userAgent": [
+					"SYSTRAN Windows App",
+					"SYSTRAN Browser Extension - Chrome / Page",
+					"SYSTRAN Browser Extension - Chrome / Text",
+					"SYSTRAN macOS App"
+				]
+			},
+			"translationResourceId": "ab517986-30d2-4081-8997-c20b92388fd5"
+		}
+	],
+	"total": 446,
+	"offset": 0
+}

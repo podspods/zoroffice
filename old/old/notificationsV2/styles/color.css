@@ -1,0 +1,22 @@
+.row-color-success {
+  background-color:#eaf7f3;
+}
+
+.row-color-error {
+  background-color:#fde6de;
+}
+
+.row-color-info {
+  background-color: #d9f3fd;
+}
+
+.flex {
+  display: flex;
+}
+
+.content-center {
+  justify-content: center;
+}
+.item-center {
+  align-items:center
+}

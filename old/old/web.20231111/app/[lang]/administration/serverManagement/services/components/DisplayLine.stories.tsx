@@ -1,0 +1,52 @@
+import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
+import { DisplayLine } from './DisplayLine';
+import { Status } from '../services.type';
+
+const meta = {
+  // eslint-disable-next-line storybook/no-title-property-in-meta
+  title: 'Services/DisplayLine',
+  component: DisplayLine,
+  args: {
+    label: 'my label',
+    value: 'value text',
+    innerHtml: <h1>H1 text </h1>,
+    column: 0,
+    leading: true,
+    columnSize: 10,
+    leadingSize: 1,
+    status: Status.SUCCESS
+  }
+
+} satisfies Meta<typeof DisplayLine>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const TestOne: Story = {
+  args: {
+    label: 'test one'
+  }
+};
+
+export const Leading: Story = {
+  args: { label: 'label Leading', value: 'ma value with leading ', leading: true }
+};
+
+export const SimiColumn: Story = {
+  args: { label: 'label SimiColumn', value: '', innerHtml: <>innerhtml</>}
+};
+
+export const SimiColumn_2: Story = {
+  args: { label: 'label SimiColumn_2', value: 'text' }
+};
+
+
+export const SimiColumn_3: Story = {
+  args: { label: 'label SimiColumn_3', value: 'text', innerHtml: <>innerhtml</>}
+};
+
+export const SimiColumn_4: Story = {
+  args: { label: 'label SimiColumn_4', innerHtml: <></>}
+};

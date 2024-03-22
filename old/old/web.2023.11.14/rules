@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Rules client
+# Authentication :
+# export API_KEY=<YOUR_API_KEY>
+
+operation=$1
+shift
+
+RULES_CLIENT_LIBRARY_PATH=./lib/rules_client/
+
+if [[ $URL = "" ]]
+  then
+    URL="https://localhost:3443";
+fi
+
+case $operation in
+  create) # name / uri / action / conditions
+    if [[ $1 = "-h" ]];
+      then
+        echo -e "$0 create name uri action conditions";
+      else
+        $RULES_CLIENT_LIBRARY_PATH/create_rule.sh $URL $API_KEY $@;
+    fi;;
+  list)
+    $RULES_CLIENT_LIBRARY_PATH/list_rules.sh $URL $API_KEY $@;;
+  delete)
+    $RULES_CLIENT_LIBRARY_PATH/delete_rule.sh $URL $API_KEY $@;;
+  apply)
+    if [[ $1 = "-h" ]];
+      then
+        echo -e "$0 apply user|group id rule_id";
+      else
+        $RULES_CLIENT_LIBRARY_PATH/apply_rule.sh $URL $API_KEY $@;
+    fi;;
+  applied)
+    $RULES_CLIENT_LIBRARY_PATH/get_applied_rule.sh $URL $API_KEY $@;;
+  remove)
+    $RULES_CLIENT_LIBRARY_PATH/remove_applied_rule.sh $URL $API_KEY $@;;
+  *)
+    echo "Supported operations : create, list, delete, apply, applied, remove";;
+esac

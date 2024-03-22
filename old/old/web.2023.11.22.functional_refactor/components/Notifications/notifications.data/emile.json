@@ -1,0 +1,78 @@
+{
+	"total": 4,
+	"offset": 0,
+	"notifications": [
+		{
+			"id": "652006b6d530515cf4dc93c5",
+			"insertedAt": "2023-10-06T13:08:06.665Z",
+			"level": "success",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "821aa0d0-889b-44bf-bb28-73ce5b94c57f",
+						"label": "OAuthPkceClient.jpg"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		},
+		{
+			"id": "6488959f18de370e30ebb15e",
+			"insertedAt": "2023-06-13T16:13:19.306Z",
+			"level": "success",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "7be078af-8542-44bb-89b9-01fb697dddaa",
+						"label": "Organization_chart_SYSTRAN_SAS_2023-06-12.pdf"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		},
+		{
+			"id": "648894cb3a335e212d553abe",
+			"insertedAt": "2023-06-13T16:09:47.062Z",
+			"level": "success",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "28f5e90a-31ed-4979-b7af-6457fc16037c",
+						"label": "SYSTRAN_livret_accueil_2023-06-12.pdf"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		},
+		{
+			"id": "64889399e09e8e0e381d233e",
+			"insertedAt": "2023-06-13T16:04:41.973Z",
+			"level": "success",
+			"str": {
+				"display": "File ${filename} successfully translated",
+				"data": {
+					"filename": {
+						"type": "fileTranslation",
+						"value": "521e2bd3-21dc-42e5-a252-f594903070b0",
+						"label": "doc-to-read.md"
+					}
+				},
+				"v": 2
+			},
+			"read": true,
+			"pushed": true
+		}
+	]
+}

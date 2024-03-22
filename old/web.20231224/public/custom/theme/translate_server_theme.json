@@ -1,0 +1,12 @@
+{
+  "palette": {
+    "primary": {
+    "extraDark": "#033261",
+    "dark": "#133F7A",
+    "main": "#1A519A",
+    "border": "#8CA8CE",
+    "light": "#E5F1F8",
+    "extraLight": "#F1F9FE"
+    }
+  }
+}
